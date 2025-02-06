@@ -254,6 +254,8 @@ sequence_number,sequence,complete,length,document_name,link,sequences
 7,ma-ri,True,2,HT 128a,https://sigla.phis.me/document/HT%20128a/,7
 1,*100-A329,True,2,HT 128b,https://sigla.phis.me/document/HT%20128b/,2
 2,ru-[?],False,2,HT 128b,https://sigla.phis.me/document/HT%20128b/,2
+1,tu-ru-ta2,True,3,HT 129,https://sigla.phis.me/document/HT%20129/,2
+2,qif-ri-na-AB120/GRA,True,4,HT 129,https://sigla.phis.me/document/HT%20129/,2
 1,ka-u-de-ta,True,4,HT 13,https://sigla.phis.me/document/HT%2013/,8
 2,re-za,True,2,HT 13,https://sigla.phis.me/document/HT%2013/,8
 3,te-tu,True,2,HT 13,https://sigla.phis.me/document/HT%2013/,8
@@ -262,6 +264,9 @@ sequence_number,sequence,complete,length,document_name,link,sequences
 6,da-si-*118,True,3,HT 13,https://sigla.phis.me/document/HT%2013/,8
 7,i-du-ne-si,True,4,HT 13,https://sigla.phis.me/document/HT%2013/,8
 8,ku-ro,True,2,HT 13,https://sigla.phis.me/document/HT%2013/,8
+1,sa-ra2,False,2,HT 130,https://sigla.phis.me/document/HT%20130/,3
+2,ro,False,1,HT 130,https://sigla.phis.me/document/HT%20130/,3
+3,AB41,False,1,HT 130,https://sigla.phis.me/document/HT%20130/,3
 1,[?],False,1,HT 131a,https://sigla.phis.me/document/HT%20131a/,2
 2,i-qa-*118,True,3,HT 131a,https://sigla.phis.me/document/HT%20131a/,2
 1,[?],False,1,HT 131b,https://sigla.phis.me/document/HT%20131b/,2
@@ -426,6 +431,8 @@ sequence_number,sequence,complete,length,document_name,link,sequences
 9,pa-ta-qe,True,3,HT 31,https://sigla.phis.me/document/HT%2031/,9
 1,sa-ra2,True,2,HT 32,https://sigla.phis.me/document/HT%2032/,2
 2,su-re,True,2,HT 32,https://sigla.phis.me/document/HT%2032/,2
+1,[?],False,1,HT 33,https://sigla.phis.me/document/HT%2033/,2
+2,sa-ra2,True,2,HT 33,https://sigla.phis.me/document/HT%2033/,2
 1,da-ju-te,True,3,HT 34,https://sigla.phis.me/document/HT%2034/,4
 2,si-A516,True,2,HT 34,https://sigla.phis.me/document/HT%2034/,4
 3,sa-ra2,True,2,HT 34,https://sigla.phis.me/document/HT%2034/,4
@@ -665,6 +672,11 @@ sequence_number,sequence,complete,length,document_name,link,sequences
 9,sa-ma-ro,True,3,HT 88,https://sigla.phis.me/document/HT%2088/,11
 10,da-ta-re,True,3,HT 88,https://sigla.phis.me/document/HT%2088/,11
 11,ku-ro,True,2,HT 88,https://sigla.phis.me/document/HT%2088/,11
+1,a-sa-ra2,True,3,HT 89,https://sigla.phis.me/document/HT%2089/,5
+2,ma-i-mi,True,3,HT 89,https://sigla.phis.me/document/HT%2089/,5
+3,ta-ra,True,2,HT 89,https://sigla.phis.me/document/HT%2089/,5
+4,ku-ro,True,2,HT 89,https://sigla.phis.me/document/HT%2089/,5
+5,*131a,False,1,HT 89,https://sigla.phis.me/document/HT%2089/,5
 1,je-di,True,2,HT 8a,https://sigla.phis.me/document/HT%208a/,6
 2,*56-ka-ra-ti,True,4,HT 8a,https://sigla.phis.me/document/HT%208a/,6
 3,te-A301,True,2,HT 8a,https://sigla.phis.me/document/HT%208a/,6
@@ -696,6 +708,10 @@ sequence_number,sequence,complete,length,document_name,link,sequences
 12,pa-se-ja,False,3,HT 93a,https://sigla.phis.me/document/HT%2093a/,13
 13,[?]-ka,False,2,HT 93a,https://sigla.phis.me/document/HT%2093a/,13
 1,ki-ro,True,2,HT 93b,https://sigla.phis.me/document/HT%2093b/,1
+1,ka-pa,True,2,HT 94a,https://sigla.phis.me/document/HT%2094a/,4
+2,ku-ro,True,2,HT 94a,https://sigla.phis.me/document/HT%2094a/,4
+3,sa-ra2,True,2,HT 94a,https://sigla.phis.me/document/HT%2094a/,4
+4,A318-A306,True,2,HT 94a,https://sigla.phis.me/document/HT%2094a/,4
 1,ki-ro,True,2,HT 94b,https://sigla.phis.me/document/HT%2094b/,9
 2,tu-ma,True,2,HT 94b,https://sigla.phis.me/document/HT%2094b/,9
 3,pa-ta-ne,True,3,HT 94b,https://sigla.phis.me/document/HT%2094b/,9

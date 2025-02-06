@@ -917,10 +917,20 @@ sign_number,sign,function,document_name,link,signs
 5,ru,Syllabogram,HT 128b,https://sigla.phis.me/document/HT%20128b/,7
 6,[?],Syllabogram,HT 128b,https://sigla.phis.me/document/HT%20128b/,7
 7,A579,Logogram,HT 128b,https://sigla.phis.me/document/HT%20128b/,7
-1,tu,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,15
-2,ru,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,15
-3,ta2,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,15
-4,AB120/GRA,Logogram,HT 129,https://sigla.phis.me/document/HT%20129/,15
+1,tu,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+2,ru,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+3,ta2,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+4,AB120/GRA,Logogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+5,A304,Logogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+6,AB30/FIC,Logogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+7,tu,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+8,qif,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+9,ri,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+10,na,Syllabogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+11,AB120/GRA,Logogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+12,A707,Fraction,HT 129,https://sigla.phis.me/document/HT%20129/,14
+13,A608,Logogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
+14,A618,Logogram,HT 129,https://sigla.phis.me/document/HT%20129/,14
 1,ka,Syllabogram,HT 13,https://sigla.phis.me/document/HT%2013/,27
 2,u,Syllabogram,HT 13,https://sigla.phis.me/document/HT%2013/,27
 3,de,Syllabogram,HT 13,https://sigla.phis.me/document/HT%2013/,27
@@ -952,6 +962,11 @@ sign_number,sign,function,document_name,link,signs
 2,sa,Syllabogram,HT 130,https://sigla.phis.me/document/HT%20130/,9
 3,ra2,Syllabogram,HT 130,https://sigla.phis.me/document/HT%20130/,9
 4,A303,Logogram,HT 130,https://sigla.phis.me/document/HT%20130/,9
+5,ro,Syllabogram,HT 130,https://sigla.phis.me/document/HT%20130/,9
+6,AB41,Logogram,HT 130,https://sigla.phis.me/document/HT%20130/,9
+7,A303,Logogram,HT 130,https://sigla.phis.me/document/HT%20130/,9
+8,AB30/FIC,Logogram,HT 130,https://sigla.phis.me/document/HT%20130/,9
+9,AB131/VINa,Logogram,HT 130,https://sigla.phis.me/document/HT%20130/,9
 1,AB30/FIC,Logogram,HT 131a,https://sigla.phis.me/document/HT%20131a/,11
 2,[?],Syllabogram,HT 131a,https://sigla.phis.me/document/HT%20131a/,11
 3,i,Syllabogram,HT 131a,https://sigla.phis.me/document/HT%20131a/,11
@@ -1232,8 +1247,8 @@ sign_number,sign,function,document_name,link,signs
 13,A704,Fraction,HT 21,https://sigla.phis.me/document/HT%2021/,15
 14,AB122/OLIV,Logogram,HT 21,https://sigla.phis.me/document/HT%2021/,15
 15,A704,Fraction,HT 21,https://sigla.phis.me/document/HT%2021/,15
-1,A585,Logogram,HT 22,https://sigla.phis.me/document/HT%2022/,3
-2,A643,Logogram,HT 22,https://sigla.phis.me/document/HT%2022/,3
+1,A585,Logogram,HT 22,https://sigla.phis.me/document/HT%2022/,2
+2,A643,Logogram,HT 22,https://sigla.phis.me/document/HT%2022/,2
 1,ka,Syllabogram,HT 23a,https://sigla.phis.me/document/HT%2023a/,30
 2,na,Syllabogram,HT 23a,https://sigla.phis.me/document/HT%2023a/,30
 3,A303,Logogram,HT 23a,https://sigla.phis.me/document/HT%2023a/,30
@@ -1407,21 +1422,21 @@ sign_number,sign,function,document_name,link,signs
 1,mi,Syllabogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 2,da,Syllabogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 3,A592,Logogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
-4,AB31,Transaction sign?,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
+4,AB31,Transaction sign,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 5,A597,Logogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
-6,AB31,Transaction sign?,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
-7,AB27,Transaction sign?,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
+6,AB31,Transaction sign,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
+7,AB27,Transaction sign,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 8,A590,Logogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 9,[?],Syllabogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 10,[?],Syllabogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 11,pa,Syllabogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 12,se,Syllabogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 13,A591,Logogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
-14,AB31,Transaction sign?,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
-15,AB27,Transaction sign?,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
+14,AB31,Transaction sign,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
+15,AB27,Transaction sign,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 16,A597,Logogram,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
-17,AB31,Transaction sign?,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
-18,AB27,Transaction sign?,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
+17,AB31,Transaction sign,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
+18,AB27,Transaction sign,HT 27b,https://sigla.phis.me/document/HT%2027b/,18
 1,a,Syllabogram,HT 28a,https://sigla.phis.me/document/HT%2028a/,31
 2,si,Syllabogram,HT 28a,https://sigla.phis.me/document/HT%2028a/,31
 3,ja,Syllabogram,HT 28a,https://sigla.phis.me/document/HT%2028a/,31
@@ -1618,22 +1633,23 @@ sign_number,sign,function,document_name,link,signs
 16,A612,Logogram,HT 32,https://sigla.phis.me/document/HT%2032/,18
 17,AB27,Logogram,HT 32,https://sigla.phis.me/document/HT%2032/,18
 18,AB07,Logogram,HT 32,https://sigla.phis.me/document/HT%2032/,18
-1,[?],Syllabogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
-2,sa,Syllabogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
-3,ra2,Syllabogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
-4,A653,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
-5,A509,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
-6,A704,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,18
-7,A508,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
-8,A7092,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,18
-9,A7094,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,18
-10,A526,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
-11,A704,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,18
-12,A7092,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,18
-13,A552,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
-14,A703,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,18
-15,A305,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
-16,A646,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,18
+1,[?],Syllabogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+2,sa,Syllabogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+3,ra2,Syllabogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+4,A653,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+5,A509,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+6,A704,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,17
+7,A508,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+8,A7092,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,17
+9,A7094,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,17
+10,A526,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+11,A704,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,17
+12,A7092,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,17
+13,A552,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+14,A703,Fraction,HT 33,https://sigla.phis.me/document/HT%2033/,17
+15,A305,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+16,A646,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
+17,A537,Logogram,HT 33,https://sigla.phis.me/document/HT%2033/,17
 1,da,Syllabogram,HT 34,https://sigla.phis.me/document/HT%2034/,29
 2,ju,Syllabogram,HT 34,https://sigla.phis.me/document/HT%2034/,29
 3,te,Syllabogram,HT 34,https://sigla.phis.me/document/HT%2034/,29
@@ -1643,7 +1659,7 @@ sign_number,sign,function,document_name,link,signs
 7,ra2,Syllabogram,HT 34,https://sigla.phis.me/document/HT%2034/,29
 8,A552,Logogram,HT 34,https://sigla.phis.me/document/HT%2034/,29
 9,A702,Fraction,HT 34,https://sigla.phis.me/document/HT%2034/,29
-10,AB38,Transaction sign?,HT 34,https://sigla.phis.me/document/HT%2034/,29
+10,AB38,Transaction sign,HT 34,https://sigla.phis.me/document/HT%2034/,29
 11,AB120/GRA,Logogram,HT 34,https://sigla.phis.me/document/HT%2034/,29
 12,A525,Logogram,HT 34,https://sigla.phis.me/document/HT%2034/,29
 13,A706,Fraction,HT 34,https://sigla.phis.me/document/HT%2034/,29
@@ -1774,9 +1790,9 @@ sign_number,sign,function,document_name,link,signs
 12,ku,Syllabogram,HT 40,https://sigla.phis.me/document/HT%2040/,12
 1,qe,Syllabogram,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
 2,tu,Syllabogram,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
-3,A305,Transaction sign?,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
+3,A305,Transaction sign,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
 4,A304,Logogram,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
-5,AB27,Transaction sign?,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
+5,AB27,Transaction sign,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
 6,A304,Logogram,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
 7,mi,Syllabogram,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
 8,da,Syllabogram,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
@@ -1787,8 +1803,8 @@ sign_number,sign,function,document_name,link,signs
 13,A703,Fraction,HT 41a,https://sigla.phis.me/document/HT%2041a/,13
 1,[?],Syllabogram,HT 41b,https://sigla.phis.me/document/HT%2041b/,1
 1,ta,Syllabogram,HT 42+59,https://sigla.phis.me/document/HT%2042%2B59/,20
-2,A529,Transaction sign?,HT 42+59,https://sigla.phis.me/document/HT%2042%2B59/,20
-3,AB04,Transaction sign?,HT 42+59,https://sigla.phis.me/document/HT%2042%2B59/,20
+2,A529,Transaction sign,HT 42+59,https://sigla.phis.me/document/HT%2042%2B59/,20
+3,AB04,Transaction sign,HT 42+59,https://sigla.phis.me/document/HT%2042%2B59/,20
 4,A618,Logogram,HT 42+59,https://sigla.phis.me/document/HT%2042%2B59/,20
 5,A610,Logogram,HT 42+59,https://sigla.phis.me/document/HT%2042%2B59/,20
 6,sa,Syllabogram,HT 42+59,https://sigla.phis.me/document/HT%2042%2B59/,20
@@ -1826,12 +1842,12 @@ sign_number,sign,function,document_name,link,signs
 11,AB30/FIC,Logogram,HT 44a,https://sigla.phis.me/document/HT%2044a/,12
 12,AB131/VINa,Logogram,HT 44a,https://sigla.phis.me/document/HT%2044a/,12
 1,[?],Syllabogram,HT 44b,https://sigla.phis.me/document/HT%2044b/,4
-2,AB04,Transaction sign?,HT 44b,https://sigla.phis.me/document/HT%2044b/,4
+2,AB04,Transaction sign,HT 44b,https://sigla.phis.me/document/HT%2044b/,4
 3,A582,Logogram,HT 44b,https://sigla.phis.me/document/HT%2044b/,4
 4,AB30/FIC,Logogram,HT 44b,https://sigla.phis.me/document/HT%2044b/,4
 1,A7092,Fraction,HT 45a,https://sigla.phis.me/document/HT%2045a/,6
 2,pa,Syllabogram,HT 45a,https://sigla.phis.me/document/HT%2045a/,6
-3,AB86,Transaction sign?,HT 45a,https://sigla.phis.me/document/HT%2045a/,6
+3,AB86,Transaction sign,HT 45a,https://sigla.phis.me/document/HT%2045a/,6
 4,A305,Logogram,HT 45a,https://sigla.phis.me/document/HT%2045a/,6
 5,A318,Logogram,HT 45a,https://sigla.phis.me/document/HT%2045a/,6
 6,A305,Logogram,HT 45a,https://sigla.phis.me/document/HT%2045a/,6
@@ -1841,7 +1857,7 @@ sign_number,sign,function,document_name,link,signs
 4,A7092,Fraction,HT 45b,https://sigla.phis.me/document/HT%2045b/,19
 5,ku,Syllabogram,HT 45b,https://sigla.phis.me/document/HT%2045b/,19
 6,A704,Fraction,HT 45b,https://sigla.phis.me/document/HT%2045b/,19
-7,A318,Transaction sign?,HT 45b,https://sigla.phis.me/document/HT%2045b/,19
+7,A318,Transaction sign,HT 45b,https://sigla.phis.me/document/HT%2045b/,19
 8,A305,Logogram,HT 45b,https://sigla.phis.me/document/HT%2045b/,19
 9,A509,Logogram,HT 45b,https://sigla.phis.me/document/HT%2045b/,19
 10,A7092,Fraction,HT 45b,https://sigla.phis.me/document/HT%2045b/,19
@@ -1942,7 +1958,7 @@ sign_number,sign,function,document_name,link,signs
 13,A587,Logogram,HT 50a,https://sigla.phis.me/document/HT%2050a/,15
 14,A704,Fraction,HT 50a,https://sigla.phis.me/document/HT%2050a/,15
 15,A705,Fraction,HT 50a,https://sigla.phis.me/document/HT%2050a/,15
-1,[?],Logogram?,HT 50b,https://sigla.phis.me/document/HT%2050b/,4
+1,[?],Logogram,HT 50b,https://sigla.phis.me/document/HT%2050b/,4
 2,A618,Logogram,HT 50b,https://sigla.phis.me/document/HT%2050b/,4
 3,[?],Syllabogram,HT 50b,https://sigla.phis.me/document/HT%2050b/,4
 4,A608,Logogram,HT 50b,https://sigla.phis.me/document/HT%2050b/,4
@@ -2006,7 +2022,7 @@ sign_number,sign,function,document_name,link,signs
 3,ri,Syllabogram,HT 55b,https://sigla.phis.me/document/HT%2055b/,5
 4,ja,Syllabogram,HT 55b,https://sigla.phis.me/document/HT%2055b/,5
 5,i,Syllabogram,HT 55b,https://sigla.phis.me/document/HT%2055b/,5
-1,AB188,Transaction sign?,HT 56a,https://sigla.phis.me/document/HT%2056a/,4
+1,AB188,Transaction sign,HT 56a,https://sigla.phis.me/document/HT%2056a/,4
 2,sa,Syllabogram,HT 56a,https://sigla.phis.me/document/HT%2056a/,4
 3,A707,Fraction,HT 56a,https://sigla.phis.me/document/HT%2056a/,4
 4,u,Syllabogram,HT 56a,https://sigla.phis.me/document/HT%2056a/,4
@@ -2069,8 +2085,8 @@ sign_number,sign,function,document_name,link,signs
 26,sa,Syllabogram,HT 62+73,https://sigla.phis.me/document/HT%2062%2B73/,28
 27,ro,Syllabogram,HT 62+73,https://sigla.phis.me/document/HT%2062%2B73/,28
 28,qe,Syllabogram,HT 62+73,https://sigla.phis.me/document/HT%2062%2B73/,28
-1,A305,Transaction sign?,HT 63,https://sigla.phis.me/document/HT%2063/,7
-2,AB04,Transaction sign?,HT 63,https://sigla.phis.me/document/HT%2063/,7
+1,A305,Transaction sign,HT 63,https://sigla.phis.me/document/HT%2063/,7
+2,AB04,Transaction sign,HT 63,https://sigla.phis.me/document/HT%2063/,7
 3,ka,Syllabogram,HT 63,https://sigla.phis.me/document/HT%2063/,7
 4,ti,Syllabogram,HT 63,https://sigla.phis.me/document/HT%2063/,7
 5,su,Syllabogram,HT 63,https://sigla.phis.me/document/HT%2063/,7
@@ -2085,7 +2101,7 @@ sign_number,sign,function,document_name,link,signs
 7,AB22/CAPf,Logogram,HT 64,https://sigla.phis.me/document/HT%2064/,7
 1,A644,Logogram,HT 65,https://sigla.phis.me/document/HT%2065/,2
 2,A708,Fraction,HT 65,https://sigla.phis.me/document/HT%2065/,2
-1,AB79,Transaction sign?,HT 66,https://sigla.phis.me/document/HT%2066/,7
+1,AB79,Transaction sign,HT 66,https://sigla.phis.me/document/HT%2066/,7
 2,AB100/VIR,Logogram,HT 66,https://sigla.phis.me/document/HT%2066/,7
 3,di,Syllabogram,HT 66,https://sigla.phis.me/document/HT%2066/,7
 4,ta,Syllabogram,HT 66,https://sigla.phis.me/document/HT%2066/,7
@@ -2156,12 +2172,12 @@ sign_number,sign,function,document_name,link,signs
 23,na,Syllabogram,HT 6b,https://sigla.phis.me/document/HT%206b/,24
 24,A707,Fraction,HT 6b,https://sigla.phis.me/document/HT%206b/,24
 1,AB30/FIC,Logogram,HT 70,https://sigla.phis.me/document/HT%2070/,8
-2,AB04,Transaction sign?,HT 70,https://sigla.phis.me/document/HT%2070/,8
+2,AB04,Transaction sign,HT 70,https://sigla.phis.me/document/HT%2070/,8
 3,qa,Syllabogram,HT 70,https://sigla.phis.me/document/HT%2070/,8
 4,*118,Syllabogram,HT 70,https://sigla.phis.me/document/HT%2070/,8
 5,sa,Syllabogram,HT 70,https://sigla.phis.me/document/HT%2070/,8
 6,A704,Fraction,HT 70,https://sigla.phis.me/document/HT%2070/,8
-7,AB28,Logogram?,HT 70,https://sigla.phis.me/document/HT%2070/,8
+7,AB28,Logogram,HT 70,https://sigla.phis.me/document/HT%2070/,8
 8,[?],Syllabogram,HT 70,https://sigla.phis.me/document/HT%2070/,8
 1,si,Syllabogram,HT 72,https://sigla.phis.me/document/HT%2072/,5
 2,*100,Syllabogram,HT 72,https://sigla.phis.me/document/HT%2072/,5
@@ -2176,7 +2192,7 @@ sign_number,sign,function,document_name,link,signs
 1,mu,Syllabogram,HT 78,https://sigla.phis.me/document/HT%2078/,2
 2,A312,Syllabogram,HT 78,https://sigla.phis.me/document/HT%2078/,2
 1,[?],Syllabogram,HT 79+83,https://sigla.phis.me/document/HT%2079%2B83/,13
-2,A305,Transaction sign?,HT 79+83,https://sigla.phis.me/document/HT%2079%2B83/,13
+2,A305,Transaction sign,HT 79+83,https://sigla.phis.me/document/HT%2079%2B83/,13
 3,ka,Syllabogram,HT 79+83,https://sigla.phis.me/document/HT%2079%2B83/,13
 4,da,Syllabogram,HT 79+83,https://sigla.phis.me/document/HT%2079%2B83/,13
 5,*56,Syllabogram,HT 79+83,https://sigla.phis.me/document/HT%2079%2B83/,13
@@ -2213,7 +2229,7 @@ sign_number,sign,function,document_name,link,signs
 2,ra,Syllabogram,HT 80,https://sigla.phis.me/document/HT%2080/,2
 1,a,Syllabogram,HT 81,https://sigla.phis.me/document/HT%2081/,9
 2,se,Syllabogram,HT 81,https://sigla.phis.me/document/HT%2081/,9
-3,A550,Transaction sign?,HT 81,https://sigla.phis.me/document/HT%2081/,9
+3,A550,Transaction sign,HT 81,https://sigla.phis.me/document/HT%2081/,9
 4,A706,Fraction,HT 81,https://sigla.phis.me/document/HT%2081/,9
 5,ri,Syllabogram,HT 81,https://sigla.phis.me/document/HT%2081/,9
 6,su,Syllabogram,HT 81,https://sigla.phis.me/document/HT%2081/,9
@@ -2385,16 +2401,26 @@ sign_number,sign,function,document_name,link,signs
 29,re,Syllabogram,HT 88,https://sigla.phis.me/document/HT%2088/,31
 30,ku,Syllabogram,HT 88,https://sigla.phis.me/document/HT%2088/,31
 31,ro,Syllabogram,HT 88,https://sigla.phis.me/document/HT%2088/,31
-1,a,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,21
-2,sa,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,21
-3,ra2,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,21
-4,A307,Transaction sign,HT 89,https://sigla.phis.me/document/HT%2089/,21
-5,A305,Logogram,HT 89,https://sigla.phis.me/document/HT%2089/,21
-6,A542,Logogram,HT 89,https://sigla.phis.me/document/HT%2089/,21
-7,ma,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,21
-8,i,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,21
-9,mi,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,21
-10,A570,Logogram,HT 89,https://sigla.phis.me/document/HT%2089/,21
+1,a,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+2,sa,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+3,ra2,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+4,A307,Transaction sign,HT 89,https://sigla.phis.me/document/HT%2089/,20
+5,A305,Logogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+6,A542,Logogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+7,ma,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+8,i,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+9,mi,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+10,A570,Logogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+11,ta,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+12,ra,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+13,ku,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+14,ro,Syllabogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+15,A303,Logogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+16,A707,Fraction,HT 89,https://sigla.phis.me/document/HT%2089/,20
+17,A704,Fraction,HT 89,https://sigla.phis.me/document/HT%2089/,20
+18,AB30/FIC,Logogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
+19,A704,Fraction,HT 89,https://sigla.phis.me/document/HT%2089/,20
+20,*131a,Logogram,HT 89,https://sigla.phis.me/document/HT%2089/,20
 1,je,Syllabogram,HT 8a,https://sigla.phis.me/document/HT%208a/,27
 2,di,Syllabogram,HT 8a,https://sigla.phis.me/document/HT%208a/,27
 3,A618,Logogram,HT 8a,https://sigla.phis.me/document/HT%208a/,27
@@ -2486,7 +2512,7 @@ sign_number,sign,function,document_name,link,signs
 23,A622,Logogram,HT 91,https://sigla.phis.me/document/HT%2091/,25
 24,A701,Fraction,HT 91,https://sigla.phis.me/document/HT%2091/,25
 25,AB38,Logogram,HT 91,https://sigla.phis.me/document/HT%2091/,25
-1,AB04,Transaction sign?,HT 92,https://sigla.phis.me/document/HT%2092/,6
+1,AB04,Transaction sign,HT 92,https://sigla.phis.me/document/HT%2092/,6
 2,a,Syllabogram,HT 92,https://sigla.phis.me/document/HT%2092/,6
 3,du,Syllabogram,HT 92,https://sigla.phis.me/document/HT%2092/,6
 4,AB120/GRA,Logogram,HT 92,https://sigla.phis.me/document/HT%2092/,6
@@ -2545,12 +2571,32 @@ sign_number,sign,function,document_name,link,signs
 1,A706,Fraction,HT 93b,https://sigla.phis.me/document/HT%2093b/,3
 2,ki,Syllabogram,HT 93b,https://sigla.phis.me/document/HT%2093b/,3
 3,ro,Syllabogram,HT 93b,https://sigla.phis.me/document/HT%2093b/,3
-1,ka,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,27
-2,pa,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,27
-3,AB100/VIR,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,27
-4,AB86,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,27
-5,A523,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,27
-6,A571,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,27
+1,ka,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+2,pa,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+3,AB100/VIR,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+4,AB86,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+5,A523,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+6,A571,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+7,AB59,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+8,ku,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+9,ro,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+10,sa,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+11,ra2,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+12,A303,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+13,AB30/FIC,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+14,A706,Fraction,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+15,A318,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+16,A306,Syllabogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+17,A303,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+18,A703,Fraction,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+19,A703,Fraction,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+20,AB30/FIC,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+21,A703,Fraction,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+22,A703,Fraction,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+23,[?],Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+24,A707,Fraction,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+25,AB30/FIC,Logogram,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
+26,A703,Fraction,HT 94a,https://sigla.phis.me/document/HT%2094a/,26
 1,ki,Syllabogram,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
 2,ro,Syllabogram,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
 3,tu,Syllabogram,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
@@ -2567,7 +2613,7 @@ sign_number,sign,function,document_name,link,signs
 14,ru,Syllabogram,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
 15,ku,Syllabogram,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
 16,ro,Syllabogram,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
-17,AB86,Transaction sign?,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
+17,AB86,Transaction sign,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
 18,ra,Syllabogram,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
 19,[?],Syllabogram,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
 20,de,Syllabogram,HT 94b,https://sigla.phis.me/document/HT%2094b/,24
@@ -2661,7 +2707,7 @@ sign_number,sign,function,document_name,link,signs
 6,*118,Syllabogram,HT 96b,https://sigla.phis.me/document/HT%2096b/,19
 7,ra,Syllabogram,HT 96b,https://sigla.phis.me/document/HT%2096b/,19
 8,re,Syllabogram,HT 96b,https://sigla.phis.me/document/HT%2096b/,19
-9,A516,Transaction sign?,HT 96b,https://sigla.phis.me/document/HT%2096b/,19
+9,A516,Transaction sign,HT 96b,https://sigla.phis.me/document/HT%2096b/,19
 10,AB120/GRA,Logogram,HT 96b,https://sigla.phis.me/document/HT%2096b/,19
 11,A707,Fraction,HT 96b,https://sigla.phis.me/document/HT%2096b/,19
 12,A704,Fraction,HT 96b,https://sigla.phis.me/document/HT%2096b/,19
@@ -2674,7 +2720,7 @@ sign_number,sign,function,document_name,link,signs
 19,[?],Erasure (Unknown?),HT 96b,https://sigla.phis.me/document/HT%2096b/,19
 1,ka,Syllabogram,HT 97a,https://sigla.phis.me/document/HT%2097a/,25
 2,ru,Syllabogram,HT 97a,https://sigla.phis.me/document/HT%2097a/,25
-3,A638,Transaction sign?,HT 97a,https://sigla.phis.me/document/HT%2097a/,25
+3,A638,Transaction sign,HT 97a,https://sigla.phis.me/document/HT%2097a/,25
 4,A568,Logogram,HT 97a,https://sigla.phis.me/document/HT%2097a/,25
 5,A327,Logogram,HT 97a,https://sigla.phis.me/document/HT%2097a/,25
 6,ka,Syllabogram,HT 97a,https://sigla.phis.me/document/HT%2097a/,25
@@ -2809,6 +2855,7 @@ sign_number,sign,function,document_name,link,signs
 24,u,Syllabogram,HT 9b,https://sigla.phis.me/document/HT%209b/,26
 25,ku,Syllabogram,HT 9b,https://sigla.phis.me/document/HT%209b/,26
 26,ro,Syllabogram,HT 9b,https://sigla.phis.me/document/HT%209b/,26
+1,A631,Logogram,HT Wa _1021bis_,https://sigla.phis.me/document/HT%20Wa%20%3C1021bis%3E/,1
 1,da,Syllabogram,HT Wa 1001,https://sigla.phis.me/document/HT%20Wa%201001/,2
 2,ka,Syllabogram,HT Wa 1001,https://sigla.phis.me/document/HT%20Wa%201001/,2
 1,da,Syllabogram,HT Wa 1002,https://sigla.phis.me/document/HT%20Wa%201002/,2
@@ -2861,8 +2908,8 @@ sign_number,sign,function,document_name,link,signs
 2,du,Syllabogram,HT Wa 1021α,https://sigla.phis.me/document/HT%20Wa%201021%CE%B1/,2
 1,A707,Fraction,HT Wa 1021β,https://sigla.phis.me/document/HT%20Wa%201021%CE%B2/,2
 2,A704,Fraction,HT Wa 1021β,https://sigla.phis.me/document/HT%20Wa%201021%CE%B2/,2
-1,A529,Logogram?,HT Wa 1021γ,https://sigla.phis.me/document/HT%20Wa%201021%CE%B3/,2
-2,A541,Logogram?,HT Wa 1021γ,https://sigla.phis.me/document/HT%20Wa%201021%CE%B3/,2
+1,A529,Logogram,HT Wa 1021γ,https://sigla.phis.me/document/HT%20Wa%201021%CE%B3/,2
+2,A541,Logogram,HT Wa 1021γ,https://sigla.phis.me/document/HT%20Wa%201021%CE%B3/,2
 1,A520,Logogram,HT Wa 1022,https://sigla.phis.me/document/HT%20Wa%201022/,1
 1,A704,Fraction,HT Wa 1024,https://sigla.phis.me/document/HT%20Wa%201024/,1
 1,A707,Fraction,HT Wa 1025α,https://sigla.phis.me/document/HT%20Wa%201025%CE%B1/,1
@@ -3051,7 +3098,7 @@ sign_number,sign,function,document_name,link,signs
 1,AB54/TELA,Logogram,HT Wc 3019,https://sigla.phis.me/document/HT%20Wc%203019/,1
 1,*188,Syllabogram,HT Wc 3020a,https://sigla.phis.me/document/HT%20Wc%203020a/,2
 2,du,Syllabogram,HT Wc 3020a,https://sigla.phis.me/document/HT%20Wc%203020a/,2
-1,A630,Logogram?,HT Wc 3020b,https://sigla.phis.me/document/HT%20Wc%203020b/,1
+1,A630,Logogram,HT Wc 3020b,https://sigla.phis.me/document/HT%20Wc%203020b/,1
 1,AB100/VIR,Logogram,HT Wc 3022,https://sigla.phis.me/document/HT%20Wc%203022/,1
 1,[?],Syllabogram,HT Zb 158a,https://sigla.phis.me/document/HT%20Zb%20158a/,5
 2,tu,Syllabogram,HT Zb 158a,https://sigla.phis.me/document/HT%20Zb%20158a/,5
@@ -3670,8 +3717,8 @@ sign_number,sign,function,document_name,link,signs
 8,ku,Syllabogram,KH 99,https://sigla.phis.me/document/KH%2099/,10
 9,ka,Syllabogram,KH 99,https://sigla.phis.me/document/KH%2099/,10
 10,[?],Syllabogram,KH 99,https://sigla.phis.me/document/KH%2099/,10
-1,A640,Logogram?,KH Wa 1001α,https://sigla.phis.me/document/KH%20Wa%201001%CE%B1/,1
-1,A501,Logogram?,KH Wa 1001γ,https://sigla.phis.me/document/KH%20Wa%201001%CE%B3/,1
+1,A640,Logogram,KH Wa 1001α,https://sigla.phis.me/document/KH%20Wa%201001%CE%B1/,1
+1,A501,Logogram,KH Wa 1001γ,https://sigla.phis.me/document/KH%20Wa%201001%CE%B3/,1
 1,A640,Syllabogram,KH Wa 1002α,https://sigla.phis.me/document/KH%20Wa%201002%CE%B1/,1
 1,A501,Syllabogram,KH Wa 1002γ,https://sigla.phis.me/document/KH%20Wa%201002%CE%B3/,1
 1,AB82,Logogram,KH Wa 1003,https://sigla.phis.me/document/KH%20Wa%201003/,3
@@ -3745,9 +3792,9 @@ sign_number,sign,function,document_name,link,signs
 1,AB164a,Logogram,KH Wc 2042,https://sigla.phis.me/document/KH%20Wc%202042/,1
 1,AB164a,Logogram,KH Wc 2043,https://sigla.phis.me/document/KH%20Wc%202043/,1
 1,AB164a,Logogram,KH Wc 2044,https://sigla.phis.me/document/KH%20Wc%202044/,1
-1,AB164d,Logogram,KH Wc 2045,https://sigla.phis.me/document/KH%20Wc%202045/,61
+1,AB164d,Logogram,KH Wc 2045,https://sigla.phis.me/document/KH%20Wc%202045/,1
 1,A606,Logogram,KH Wc 2046,https://sigla.phis.me/document/KH%20Wc%202046/,1
-1,A606,Logogram,KH Wc 2047,https://sigla.phis.me/document/KH%20Wc%202047/,2
+1,A606,Logogram,KH Wc 2047,https://sigla.phis.me/document/KH%20Wc%202047/,1
 1,A606,Logogram,KH Wc 2048,https://sigla.phis.me/document/KH%20Wc%202048/,1
 1,A606,Logogram,KH Wc 2049,https://sigla.phis.me/document/KH%20Wc%202049/,1
 1,A606,Logogram,KH Wc 2050,https://sigla.phis.me/document/KH%20Wc%202050/,1
@@ -3757,14 +3804,14 @@ sign_number,sign,function,document_name,link,signs
 1,A605,Logogram,KH Wc 2054,https://sigla.phis.me/document/KH%20Wc%202054/,1
 1,A605,Logogram,KH Wc 2055,https://sigla.phis.me/document/KH%20Wc%202055/,1
 1,A645,Logogram,KH Wc 2056,https://sigla.phis.me/document/KH%20Wc%202056/,1
-1,A645,Logogram,KH Wc 2057,https://sigla.phis.me/document/KH%20Wc%202057/,2
+1,A645,Logogram,KH Wc 2057,https://sigla.phis.me/document/KH%20Wc%202057/,1
 1,A566,Logogram,KH Wc 2058,https://sigla.phis.me/document/KH%20Wc%202058/,1
 1,A566,Logogram,KH Wc 2059,https://sigla.phis.me/document/KH%20Wc%202059/,1
 1,A566,Logogram,KH Wc 2060,https://sigla.phis.me/document/KH%20Wc%202060/,1
 1,A566,Logogram,KH Wc 2061,https://sigla.phis.me/document/KH%20Wc%202061/,1
 1,AB21/OVIS,Logogram,KH Wc 2062,https://sigla.phis.me/document/KH%20Wc%202062/,1
-1,A553,Logogram?,KH Wc 2064,https://sigla.phis.me/document/KH%20Wc%202064/,1
-1,A607,Logogram,KH Wc 2065,https://sigla.phis.me/document/KH%20Wc%202065/,2
+1,A553,Logogram,KH Wc 2064,https://sigla.phis.me/document/KH%20Wc%202064/,1
+1,A607,Logogram,KH Wc 2065,https://sigla.phis.me/document/KH%20Wc%202065/,1
 1,A516,Logogram,KH Wc 2066,https://sigla.phis.me/document/KH%20Wc%202066/,1
 1,A338,Logogram,KH Wc 2067,https://sigla.phis.me/document/KH%20Wc%202067/,2
 2,[?],Erasure (Unknown?),KH Wc 2067,https://sigla.phis.me/document/KH%20Wc%202067/,2
@@ -4255,10 +4302,10 @@ sign_number,sign,function,document_name,link,signs
 2,ki,Syllabogram,PH Wa 32,https://sigla.phis.me/document/PH%20Wa%2032/,4
 3,ra,Syllabogram,PH Wa 32,https://sigla.phis.me/document/PH%20Wa%2032/,4
 4,ta,Syllabogram,PH Wa 32,https://sigla.phis.me/document/PH%20Wa%2032/,4
-1,[?],Logogram?,PH Wb 33a,https://sigla.phis.me/document/PH%20Wb%2033a/,1
-1,[?],Logogram?,PH Wb 33b,https://sigla.phis.me/document/PH%20Wb%2033b/,1
-1,[?],Logogram?,PH Wb 34,https://sigla.phis.me/document/PH%20Wb%2034/,1
-1,[?],Logogram?,PH Wb 35,https://sigla.phis.me/document/PH%20Wb%2035/,1
+1,[?],Logogram,PH Wb 33a,https://sigla.phis.me/document/PH%20Wb%2033a/,1
+1,[?],Logogram,PH Wb 33b,https://sigla.phis.me/document/PH%20Wb%2033b/,1
+1,[?],Logogram,PH Wb 34,https://sigla.phis.me/document/PH%20Wb%2034/,1
+1,[?],Logogram,PH Wb 35,https://sigla.phis.me/document/PH%20Wb%2035/,1
 1,AB04,Logogram,PH Wb 36,https://sigla.phis.me/document/PH%20Wb%2036/,1
 1,ka,Syllabogram,PH Wc 37a,https://sigla.phis.me/document/PH%20Wc%2037a/,3
 2,A314,Syllabogram,PH Wc 37a,https://sigla.phis.me/document/PH%20Wc%2037a/,3
@@ -4374,7 +4421,7 @@ sign_number,sign,function,document_name,link,signs
 3,A618,Logogram,TY 3a,https://sigla.phis.me/document/TY%203a/,38
 4,A704,Fraction,TY 3a,https://sigla.phis.me/document/TY%203a/,38
 5,A610,Logogram,TY 3a,https://sigla.phis.me/document/TY%203a/,38
-6,A514,Logogram?,TY 3a,https://sigla.phis.me/document/TY%203a/,38
+6,A514,Logogram,TY 3a,https://sigla.phis.me/document/TY%203a/,38
 7,A611,Logogram,TY 3a,https://sigla.phis.me/document/TY%203a/,38
 8,A707,Fraction,TY 3a,https://sigla.phis.me/document/TY%203a/,38
 9,A622,Logogram,TY 3a,https://sigla.phis.me/document/TY%203a/,38
