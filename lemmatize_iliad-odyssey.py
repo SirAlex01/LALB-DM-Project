@@ -59,4 +59,5 @@ path2 ='./gr_eng_text.csv'
 if "transformer" not in nlp.pipe_names:
     transformer = nlp.add_pipe("transformer", first=True)
  
-lemmatize_iliad_and_odyssey(path1, path2)   
+df = lemmatize_iliad_and_odyssey(path1, path2)   
+df.to_csv('./lemmatized_homeric_greek. csv', index=False)
