@@ -3901,6 +3901,11 @@ sign_number,sign,function,document_name,link,signs
 1,nu,Syllabogram,KN Wb 33b,https://sigla.phis.me/document/KN%20Wb%2033b/,3
 2,se,Syllabogram,KN Wb 33b,https://sigla.phis.me/document/KN%20Wb%2033b/,3
 3,[?],Syllabogram,KN Wb 33b,https://sigla.phis.me/document/KN%20Wb%2033b/,3
+1,[?],Syllabogram,KN Wc _24a_,https://sigla.phis.me/document/KN%20Wc%20%3C24a%3E/,3
+2,[?],Syllabogram,KN Wc _24a_,https://sigla.phis.me/document/KN%20Wc%20%3C24a%3E/,3
+3,A708,Fraction,KN Wc _24a_,https://sigla.phis.me/document/KN%20Wc%20%3C24a%3E/,3
+1,[?],Logogram,KN Wc _24b_,https://sigla.phis.me/document/KN%20Wc%20%3C24b%3E/,1
+1,AB77,Logogram,KN Wc _25_,https://sigla.phis.me/document/KN%20Wc%20%3C25%3E/,1
 1,ru,Syllabogram,KN Wc 26a,https://sigla.phis.me/document/KN%20Wc%2026a/,2
 2,ja,Syllabogram,KN Wc 26a,https://sigla.phis.me/document/KN%20Wc%2026a/,2
 1,ni,Syllabogram,KN Wc 26b,https://sigla.phis.me/document/KN%20Wc%2026b/,2
@@ -4000,6 +4005,7 @@ sign_number,sign,function,document_name,link,signs
 17,a,Syllabogram,KN Zf 13,https://sigla.phis.me/document/KN%20Zf%2013/,19
 18,ja,Syllabogram,KN Zf 13,https://sigla.phis.me/document/KN%20Zf%2013/,19
 19,ku,Syllabogram,KN Zf 13,https://sigla.phis.me/document/KN%20Zf%2013/,19
+1,A528,Logogram,KN Zg _21_,https://sigla.phis.me/document/KN%20Zg%20%3C21%3E/,Stone weight,1
 1,A581,Logogram,KY Zg 1,https://sigla.phis.me/document/KY%20Zg%201/,1
 1,ru,Syllabogram,MA 10a,https://sigla.phis.me/document/MA%2010a/,4
 2,A660,Logogram,MA 10a,https://sigla.phis.me/document/MA%2010a/,4
@@ -4068,6 +4074,11 @@ sign_number,sign,function,document_name,link,signs
 2,A599,Logogram,MA 6c,https://sigla.phis.me/document/MA%206c/,3
 3,A599,Logogram,MA 6c,https://sigla.phis.me/document/MA%206c/,3
 1,AB180,Logogram,MA 6d,https://sigla.phis.me/document/MA%206d/,1
+1,a,Syllabogram,MA Wc _5a_,https://sigla.phis.me/document/MA%20Wc%20%3C5a%3E/,4
+2,sa,Syllabogram,MA Wc _5a_,https://sigla.phis.me/document/MA%20Wc%20%3C5a%3E/,4
+3,da,Syllabogram,MA Wc _5a_,https://sigla.phis.me/document/MA%20Wc%20%3C5a%3E/,4
+4,ka,Syllabogram,MA Wc _5a_,https://sigla.phis.me/document/MA%20Wc%20%3C5a%3E/,4
+1,A581,Logogram,MA Wc _5b_,https://sigla.phis.me/document/MA%20Wc%20%3C5b%3E/,1
 1,AB180,Logogram,MA Wc 7,https://sigla.phis.me/document/MA%20Wc%207/,1
 1,pu,Syllabogram,MI 2,https://sigla.phis.me/document/MI%202/,5
 2,du,Syllabogram,MI 2,https://sigla.phis.me/document/MI%202/,5
@@ -4307,6 +4318,7 @@ sign_number,sign,function,document_name,link,signs
 1,[?],Logogram,PH Wb 34,https://sigla.phis.me/document/PH%20Wb%2034/,1
 1,[?],Logogram,PH Wb 35,https://sigla.phis.me/document/PH%20Wb%2035/,1
 1,AB04,Logogram,PH Wb 36,https://sigla.phis.me/document/PH%20Wb%2036/,1
+1,A328,Logogram,PH Wc _47_,https://sigla.phis.me/document/PH%20Wc%20%3C47%3E/,1
 1,ka,Syllabogram,PH Wc 37a,https://sigla.phis.me/document/PH%20Wc%2037a/,3
 2,A314,Syllabogram,PH Wc 37a,https://sigla.phis.me/document/PH%20Wc%2037a/,3
 3,si,Syllabogram,PH Wc 37a,https://sigla.phis.me/document/PH%20Wc%2037a/,3

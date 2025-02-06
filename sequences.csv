@@ -1078,6 +1078,7 @@ sequence_number,sequence,complete,length,document_name,link,sequences
 1,u-na-na,False,3,MA 2c,https://sigla.phis.me/document/MA%202c/,2
 2,ja-ma-u-ti,False,4,MA 2c,https://sigla.phis.me/document/MA%202c/,2
 1,a-[?]-ja,False,3,MA 4b,https://sigla.phis.me/document/MA%204b/,1
+1,a-sa-da-ka,True,4,MA Wc _5a_,https://sigla.phis.me/document/MA%20Wc%20%3C5a%3E/,1
 1,pu,False,1,MI 2,https://sigla.phis.me/document/MI%202/,3
 2,du-ka,False,2,MI 2,https://sigla.phis.me/document/MI%202/,3
 3,ka,False,1,MI 2,https://sigla.phis.me/document/MI%202/,3
