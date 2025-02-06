@@ -107,6 +107,10 @@ with open(signs_csv, "w", encoding="utf-8", newline="") as csvfile:
                         seq = seq[:-1]
                     if seq.startswith("]"):
                         seq = seq[1:]
+                    if seq.endswith("-"):
+                        seq = seq[:-1]
+                    if seq.startswith("-"):
+                        seq = seq[1:]
     
                     length = seq.count("-") + 1
                     #length = sign_popup.find("span", class_="role").text
