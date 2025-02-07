@@ -78,12 +78,13 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                 doc_text = doc_soup.find("div", id="table-text-container").text.split()
                 sequences = []
                 for s in doc_text:
-                    if s in "[],/↓→⸤⸥/⟦⟧" or s.startswith(".") or s.endswith(".") or s=="vacat":
+                    if s in "[],/↓→⸤⸥/⟦⟧" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest.":
                         continue
 
                     s = remove_dots_below(s)
-                    s = s.replace("[•]", "(TEMP)").replace("[-•-]","(TEMPP)").replace("-]", "-").replace("[-", "-").replace("]-", "-") \
-                         .replace("-[", "-").replace("--", "-").replace("(TEMP)","[?]").replace("(TEMPP)","-[?]-").replace("⟦","").replace("⟧","")
+                    s = s.replace("[•]", "(TEMP)").replace("[-•-]","(TEMPP)").replace("'","").replace('"',"").replace("-]", "-").replace("[-", "-").replace("]-", "-") \
+                         .replace("-[", "-").replace("--", "-").replace("(TEMP)","[?]").replace("(TEMPP)","-[?]-").replace("⟦","").replace("⟧","")\
+                         
                     complete = not (s.startswith("]") or s.endswith("[") or s.startswith("[") or s.endswith("]") or s.startswith("-") or s.endswith("-") or "[?]" in s)
                     if s.startswith("]") or (s.startswith("[") and not s.startswith("[?]")):
                         s = s[1:]
@@ -95,7 +96,7 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                         s = s[:-1]
 
                     sequences.append(s)
-
+                print(sequences,link)
 
                 signs_counter = 0
                 sign_data = []
