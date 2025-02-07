@@ -1,9 +1,22 @@
 import spacy
 import pandas as pd
+from IPython.display import display
 
 def lemmatize_iliad_and_odyssey(path, path2):
 
 	df = pd.read_csv(path)
+	df = df.drop("KEY", axis=1)
+	display(df)
+	
+	#For df2 we duplicate column of greek text rename it and remove the others
+	df2 = pd.read_csv(path2)
+	df2 = df2.drop("book",  axis=1).drop("line start",axis=1).drop("line end", axis=1).drop("english text", axis=1)
+	df2['TRANSLIT'] = df2.loc[:, 'greek text']
+	df2['OGTXT'] = df2.loc[:, 'greek text']
+	df2 = df2.drop('greek text', axis=1)
+	display(df2)
+	
+	#Lemmatize df1
 	for index, row in df.iterrows():
 		original = row["TRANSLIT"]
 		
@@ -21,17 +34,9 @@ def lemmatize_iliad_and_odyssey(path, path2):
 			
 		df.at[index, 'TRANSLIT'] = lemmatized
 
-	df = df.drop("KEY")
-	print(df)
-
-	#For df2 we duplicate column of greek text rename it and remove the others
-	df2 = pd.read_csv(path2)
-	df2 = df2.drop("book", "line start", "line end", "english text")
-	df2['OGTXT'] = df2.loc[:, 'greek text']
-	print(df2)
-
+	#Lemmatize df2
 	for index, row in df2.iterrows():
-		original = row["greek text"]
+		original = row["TRANSLIT"]
 
 		if index % 50 == 0:
 			print(f"Original line {index} is: {original}")
@@ -45,11 +50,10 @@ def lemmatize_iliad_and_odyssey(path, path2):
 		if index % 50 == 0:
 			print(f"Lemmatized line {index} is: {lemmatized}")
 
-		df.at[index, 'greek text'] = lemmatized
+		df2.at[index, 'TRANSLIT'] = lemmatized
 
 	
-	df2 = df2.rename(columns={"greek_text":"TRANSLIT"})
-	df = pd.concat([df, df2], axis=1)
+	df = pd.concat([df, df2], ignore_index=True)
 	return df
 
 
