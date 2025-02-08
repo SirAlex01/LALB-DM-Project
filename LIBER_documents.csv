@@ -1282,7 +1282,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 1354,KN X 7552,https://liber.cnr.it/tablet/view/1354,,,,,,Herakleion M.,4,1
 1355,KN X 7553,https://liber.cnr.it/tablet/view/1355,,,,,,Herakleion M.,4,2
 1356,KN X 7554,https://liber.cnr.it/tablet/view/1356,,,,,,Herakleion M.,4,1
-1357,KN X 7556+8654,https://liber.cnr.it/tablet/view/1357,,,,,,Herakleion M.,9,5
+1357,KN X 7556+8654,https://liber.cnr.it/tablet/view/1357,,,,,,Herakleion M.,8,4
 1358,KN X 7557,https://liber.cnr.it/tablet/view/1358,,,,,,Herakleion M.,3,1
 1359,KN X 7559,https://liber.cnr.it/tablet/view/1359,(F4) W. Magazine V,,,LM III A2,Herakleion M.,4,1
 1360,KN X 7560,https://liber.cnr.it/tablet/view/1360,,,,,,Herakleion M.,4,1
@@ -2226,7 +2226,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 2315,MI Wv 6,https://liber.cnr.it/tablet/view/2315,S.W. slope - S.E. of Rooms 1-4 approximate findspot,approximate findspot,,,LH III B2,Nauplio M. 28141,11,4
 2316,MY Au 102,https://liber.cnr.it/tablet/view/2316,House of Oil Merchant - Room 2,,52,,LH III B1,National Archaeological M. Athens 7668,75,33
 2317,MY Au 609+frr.,https://liber.cnr.it/tablet/view/2317,House of Sphinxes - Room 6,,57,,LH III B1,National Archaeological M. Athens 7707,49,26
-2318,MY Au 653,https://liber.cnr.it/tablet/view/2318,W. House - Room 1,,62,,LH III B1,Mycenae M. 2051 BE 29137,20,9
+2318,MY Au 653,https://liber.cnr.it/tablet/view/2318,W. House - Room 1,,62,,LH III B1,Mycenae M. 2051 BE 29137,19,8
 2320,MY Au 657,https://liber.cnr.it/tablet/view/2320,W. House - Entrance Rooms 1-3 pars inf.,pars inf.,W. House - Room 1 pars sup.,pars sup.,62,,LH III B1,Mycenae M. 2054 BE 29141,45,22
 2321,MY Au 658,https://liber.cnr.it/tablet/view/2321,W. House - Room 1,,62,,LH III B1,Mycenae M. 2057 BB 29142,16,11
 2322,MY Au 660+fr.,https://liber.cnr.it/tablet/view/2322,W. House - Room 1,,62,,LH III B1,Mycenae M. 2056 BE 29144,13,9
@@ -2274,7 +2274,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 2364,MY Oe 132,https://liber.cnr.it/tablet/view/2364,House of Oil Merchant - Room 2,,56,,LH III B1,National Archaeological M. Athens 7695,5,2
 2365,MY Oe 137,https://liber.cnr.it/tablet/view/2365,House of Oil Merchant - Room 2,,56?,,LH III B1,National Archaeological M. Athens 7698,1,1
 2366,MY Oe 140,https://liber.cnr.it/tablet/view/2366,House of Oil Merchant - Room 2,,,,LH III B1,National Archaeological M. Athens 7699,1,1
-2367,MY Oi 701,https://liber.cnr.it/tablet/view/2367,Citadel House - Room 1,,63,,LH III B2,Mycenae M. 2044 BE 29148,40,16
+2367,MY Oi 701,https://liber.cnr.it/tablet/view/2367,Citadel House - Room 1,,63,,LH III B2,Mycenae M. 2044 BE 29148,39,15
 2368,MY Oi 702,https://liber.cnr.it/tablet/view/2368,Citadel House - Room 4,,64,,LH III B2,Mycenae M. 2067 BE 29149,21,12
 2369,MY Oi 703,https://liber.cnr.it/tablet/view/2369,Citadel House - Room 4,,64,,LH III B2,Mycenae M. 2065 BE 29150,20,8
 2370,MY Oi 704,https://liber.cnr.it/tablet/view/2370,Citadel House - Room 4,,64,,LH III B2,Mycenae M. 2046 BE 29151,25,9
@@ -2285,7 +2285,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 2375,MY Ue 652+656,https://liber.cnr.it/tablet/view/2375,W. House - Room 1,,,,LH III B1,Mycenae M. 2040 BE 29138,36,24
 2376,MY Ue 661,https://liber.cnr.it/tablet/view/2376,W. House - Room 1,,,,LH III B1,Mycenae M. 2063 BE 29145,11,7
 2377,MY Ue 663,https://liber.cnr.it/tablet/view/2377,W. House - Room 1,,,,LH III B1,Mycenae M. 2049 BE 29147,5,4
-2378,MY Ui 4,https://liber.cnr.it/tablet/view/2378,Petsas House - Well of Room Pi,,,,LH III A2,Mycenae M. BE 30461,4,4
+2378,MY Ui 4,https://liber.cnr.it/tablet/view/2378,Petsas House - Well of Room Pi,,,,LH III A2,Mycenae M. BE 30461,3,3
 2379,MY Ui 11,https://liber.cnr.it/tablet/view/2379,Petsas House - Well of Room Pi,,,,LH III A2,Mycenae M.,6,6
 2380,MY Ui 651,https://liber.cnr.it/tablet/view/2380,W. House - Room 1,,,,LH III B1,Mycenae M. 2059 BE 29136,38,25
 2381,MY Ui 709,https://liber.cnr.it/tablet/view/2381,House of Sphinxes - Room 4,,57,,LH III B1,Mycenae M. 2055 BE 29156,10,6
@@ -2310,7 +2310,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 2400,MY X 12,https://liber.cnr.it/tablet/view/2400,Petsas House - Well of Room Pi,,,,LH III A2,Mycenae M.,1,1
 2401,MY X 13,https://liber.cnr.it/tablet/view/2401,Petsas House - Well of Room Pi,,,,LH III A2,Mycenae M.,0,0
 2402,MY X 508,https://liber.cnr.it/tablet/view/2402,House of Shields - W. Room,,,,LH III B1,National Archaeological M. Athens 7700,14,5
-2403,MY X 707,https://liber.cnr.it/tablet/view/2403,Citadel House - Room 4,,,,LH III B2,Mycenae M. 13861,22,9
+2403,MY X 707,https://liber.cnr.it/tablet/view/2403,Citadel House - Room 4,,,,LH III B2,Mycenae M. 13861,21,8
 2404,MY Z 202,https://liber.cnr.it/tablet/view/2404,"Poros wall (approximate findspot) Wace, BSA 48 (1953), p. 6","(approximate findspot) Wace, BSA 48 (1953), p. 6",519,,LH III B,National Archaeological M. Athens 7628,5,2
 2405,MY Z 203,https://liber.cnr.it/tablet/view/2405,"Poros wall (approximate findspot) Wace, BSA 48 (1953), p. 6","(approximate findspot) Wace, BSA 48 (1953), p. 6",,,LH III B,Nauplio M. 10925,1,1
 2406,MY Z 205,https://liber.cnr.it/tablet/view/2406,"Schliemann's dump (approximate findspot) Wace, Mycenae (1949), p. 4","(approximate findspot) Wace, Mycenae (1949), p. 4",,,,Nauplio M. 406,2,1
@@ -2344,7 +2344,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 2434,TI X 15,https://liber.cnr.it/tablet/view/2434,"Lower Citadel, House VI - end of Long Corridor [LXII/42]",,,,LH III B,Tiryns Apothekes,3,1
 2435,TI X 16,https://liber.cnr.it/tablet/view/2435,"Lower Citadel, House VI - end of Long Corridor [LXII/42]",,,,LH III B,Tiryns Apothekes,3,2
 2436,TI X 17,https://liber.cnr.it/tablet/view/2436,"Lower Citadel, House VI - end of Long Corridor [LXII/42]",,,,LH III B,Tiryns Apothekes,2,2
-2437,TI X 18,https://liber.cnr.it/tablet/view/2437,"Lower Citadel, House VI - end of Long Corridor [LXII/42]",,,,LH III B,Tiryns Apothekes,1,1
+2437,TI X 18,https://liber.cnr.it/tablet/view/2437,"Lower Citadel, House VI - end of Long Corridor [LXII/42]",,,,LH III B,Tiryns Apothekes,0,0
 2438,TI X 19+20,https://liber.cnr.it/tablet/view/2438,"Lower Citadel, House VI - end of Long Corridor [LXII/42]",,,,LH III B,Tiryns Apothekes,3,1
 2439,TI X 21,https://liber.cnr.it/tablet/view/2439,"Lower Citadel, House VI - end of Long Corridor [LXII/42]",,,,LH III B,Tiryns Apothekes,0,0
 2440,TI X 22,https://liber.cnr.it/tablet/view/2440,"Lower Citadel, House VI - end of Long Corridor [LXII/42]",,,,LH III B,Tiryns Apothekes,0,0
@@ -2467,7 +2467,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 2557,KN Ak(2) 617,https://liber.cnr.it/tablet/view/2557,"(F8) W. Magazine IX Minos 35-36, p. 209 (ex F14?)","Minos 35-36, p. 209 (ex F14?)",108,,LM III A2,Herakleion M. 1114,25,15
 2558,KN Ak(1) 619+5633+5892+5963+6010+8258+8687+fr.,https://liber.cnr.it/tablet/view/2558,(F14) W. Magazine XV,,103,,LM III A2,Herakleion M. 930,36,21
 2559,KN Ak(1) 620+6028+fr.,https://liber.cnr.it/tablet/view/2559,(F14) W. Magazine XV,,103,,LM III A2,Herakleion M. 928,18,14
-2560,KN Ak(2) 621,https://liber.cnr.it/tablet/view/2560,(F7) W. Magazine VIII,,108,,LM III A2,Herakleion M. 1057,22,14
+2560,KN Ak(2) 621,https://liber.cnr.it/tablet/view/2560,(F7) W. Magazine VIII,,108,,LM III A2,Herakleion M. 1057,21,13
 2561,KN Ak(2) 622,https://liber.cnr.it/tablet/view/2561,(F7) W. Magazine VIII,,108,,LM III A2,Herakleion M. 1058,12,4
 2562,KN Ak(1) 624,https://liber.cnr.it/tablet/view/2562,(F14) W. Magazine XV,,103,,LM III A2,Herakleion M. 925,24,14
 2563,KN Ak(1) 626[+]630,https://liber.cnr.it/tablet/view/2563,(F14) W. Magazine XV,,103,,LM III A2,Herakleion M. 936 [+] 950,34,19
@@ -2684,7 +2684,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 2781,KN Cf 913,https://liber.cnr.it/tablet/view/2781,(I3) Area of Bull Relief,,112,,LM III A2,Herakleion M. 659,18,10
 2782,KN Cf 914,https://liber.cnr.it/tablet/view/2782,(I3) Area of Bull Relief,,112,,LM III A2,Herakleion M. 117,15,7
 2783,KN Cf 915,https://liber.cnr.it/tablet/view/2783,(I3) Area of Bull Relief,,112,,LM III A2,Herakleion M. 1084,15,8
-2784,KN C(2) 917+7729+9748+frr.(7)[+]918,https://liber.cnr.it/tablet/view/2784,(I3) Area of Bull Relief,,111?,,LM III A2,Herakleion M.1196 [+] 283,28,18
+2784,KN C(2) 917+7729+9748+frr.(7)[+]918,https://liber.cnr.it/tablet/view/2784,(I3) Area of Bull Relief,,111?,,LM III A2,Herakleion M.1196 [+] 283,26,16
 2785,KN Cf 922+5764,https://liber.cnr.it/tablet/view/2785,(I3) Area of Bull Relief,,112,,LM III A2,Herakleion M. 681,6,3
 2786,KN Cf 941+1016+fr.,https://liber.cnr.it/tablet/view/2786,(I3) Area of Bull Relief,,112,,LM III A2,Herakleion M. 1093 + 1111,18,8
 2787,KN C 954+‹1632›+5016,https://liber.cnr.it/tablet/view/2787,(I3) Area of Bull Relief,,,,LM III A2,Herakleion M. 195 + 518,48,28
@@ -3198,7 +3198,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 3297,KN Dg 5280+5401,https://liber.cnr.it/tablet/view/3297,,,117,,,Herakleion M.,9,9
 3298,KN Dh(1) 1240,https://liber.cnr.it/tablet/view/3298,(J1) E.W. Corridor,,117,,LM III A2,Herakleion M. 127,12,9
 3299,KN Dh(1) 1243,https://liber.cnr.it/tablet/view/3299,(J1) E.W. Corridor,,117,,LM III A2,Herakleion M. 579,9,6
-3300,KN Dh(1) 1406+5678+8046+fr.,https://liber.cnr.it/tablet/view/3300,(J1) E.W. Corridor,,117,,LM III A2,Herakleion M. 1014,13,9
+3300,KN Dh(1) 1406+5678+8046+fr.,https://liber.cnr.it/tablet/view/3300,(J1) E.W. Corridor,,117,,LM III A2,Herakleion M. 1014,12,8
 3301,KN Dh(2) 1646+7919,https://liber.cnr.it/tablet/view/3301,,,120,,,Ashmolean M. 1938.712 / Herakleion M. 5050 = 1014,9,5
 3302,KN Dh(2) 7128+8618,https://liber.cnr.it/tablet/view/3302,,,120?,,,Herakleion M.,5,3
 3303,KN Dh(2) 7231+9346+frr.(5),https://liber.cnr.it/tablet/view/3303,,,120,,,Herakleion M.,6,5
@@ -3216,7 +3216,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 3315,KN Dk(2) 1064,https://liber.cnr.it/tablet/view/3315,(J1) E.W. Corridor,,119,,LM III A2,Herakleion M. 154,18,12
 3316,KN Dk(2) 1065,https://liber.cnr.it/tablet/view/3316,(J1) E.W. Corridor,,119,,LM III A2,Herakleion M. 126,17,13
 3317,KN Dk(2) 1066,https://liber.cnr.it/tablet/view/3317,(J1) E.W. Corridor,,119,,LM III A2,Herakleion M. 955,11,8
-3318,KN Dk(2) 1067+5189,https://liber.cnr.it/tablet/view/3318,"(J1) E.W. Corridor Minos 35-36, p. 90 (ex J1?)","Minos 35-36, p. 90 (ex J1?)",119,,LM III A2,Herakleion M. 556 + 619,17,11
+3318,KN Dk(2) 1067+5189,https://liber.cnr.it/tablet/view/3318,"(J1) E.W. Corridor Minos 35-36, p. 90 (ex J1?)","Minos 35-36, p. 90 (ex J1?)",119,,LM III A2,Herakleion M. 556 + 619,16,10
 3319,KN Dk(2) 1068,https://liber.cnr.it/tablet/view/3319,(J1) E.W. Corridor,,119,,LM III A2,Herakleion M. 121,12,9
 3320,KN Dk(2) 1069,https://liber.cnr.it/tablet/view/3320,(J1) E.W. Corridor,,119,,LM III A2,Herakleion M. 954,10,8
 3321,KN Dk(2) 1070,https://liber.cnr.it/tablet/view/3321,(J1) E.W. Corridor,,119,,LM III A2,Herakleion M. 951,13,9
@@ -3271,7 +3271,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 3370,KN Dk(1) 7902,https://liber.cnr.it/tablet/view/3370,,,120?,,,Herakleion M.,4,2
 3371,KN Dk(1) 8018,https://liber.cnr.it/tablet/view/3371,,,120?,,,Herakleion M.,2,2
 3372,KN Dk(2) 8209,https://liber.cnr.it/tablet/view/3372,,,119,,,Ashmolean M. 1941.1247,9,4
-3373,KN Dk(2) 8353,https://liber.cnr.it/tablet/view/3373,,,119,,,Herakleion M.,4,4
+3373,KN Dk(2) 8353,https://liber.cnr.it/tablet/view/3373,,,119,,,Herakleion M.,3,3
 3374,KN Dk(2) 8403,https://liber.cnr.it/tablet/view/3374,,,119?,,,Herakleion M.,1,1
 3375,KN Dk(1) 8463,https://liber.cnr.it/tablet/view/3375,,,120?,,,Herakleion M.,4,4
 3376,KN Dk(1) 8464,https://liber.cnr.it/tablet/view/3376,,,120,,,Herakleion M.,4,4
@@ -4564,11 +4564,11 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 4693,PY Ae 1485,https://liber.cnr.it/tablet/view/4693,,,,LH III B2,National Archaeological M. Athens 24253,2,2
 4694,PY An 1+frr.,https://liber.cnr.it/tablet/view/4694,Room 8 (8.31B),1,,LH III B2,National Archaeological M. Athens 14181,38,18
 4695,PY An 5,https://liber.cnr.it/tablet/view/4695,Room 8 (8.3261B),,,LH III B2,National Archaeological M. Athens 12575,81,33
-4696,PY An 18,https://liber.cnr.it/tablet/view/4696,Room 8 (8.31B),11,,LH III B2,National Archaeological M. Athens 23345,72,34
+4696,PY An 18,https://liber.cnr.it/tablet/view/4696,Room 8 (8.31B),11,,LH III B2,National Archaeological M. Athens 23345,71,33
 4697,PY An 31+115+1423,https://liber.cnr.it/tablet/view/4697,"Room 8 (8B, 3156B)",SW Area VIM,3,,LH III B2,National Archaeological M. Athens 23353,35,21
 4698,PY An 35,https://liber.cnr.it/tablet/view/4698,Room 8 (8.3102B),3/—,,LH III B2,National Archaeological M. Athens 23355,51,27
 4699,PY An 37+fr.,https://liber.cnr.it/tablet/view/4699,"Room 8 (8B, 31B –11B)",1,,LH III B2,National Archaeological M. Athens 23357,25,10
-4700,PY An 39,https://liber.cnr.it/tablet/view/4700,"Room 8 (8.2193B, 3104B)",9A/9B/—,,LH III B2,National Archaeological M. Athens 23358,124,57
+4700,PY An 39,https://liber.cnr.it/tablet/view/4700,"Room 8 (8.2193B, 3104B)",9A/9B/—,,LH III B2,National Archaeological M. Athens 23358,123,56
 4701,PY An 101,https://liber.cnr.it/tablet/view/4701,Room 8 (8.1208B –19B),3,,LH III B2,National Archaeological M. Athens 23390,8,6
 4702,PY An 128,https://liber.cnr.it/tablet/view/4702,Room 8 (8.1319B –77),42,,LH III B2,National Archaeological M. Athens 23405,42,32
 4703,PY An 129,https://liber.cnr.it/tablet/view/4703,Room 8 (8.3273B),22,,LH III B2,National Archaeological M. Athens 12576,53,24
@@ -4585,11 +4585,11 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 4714,PY An 340+frr.(5),https://liber.cnr.it/tablet/view/4714,"Room 8 (8.22 –86, 2391)",22,,LH III B2,National Archaeological M. Athens 23518,113,56
 4715,PY An 424+frr.(3),https://liber.cnr.it/tablet/view/4715,Room 8 (8.22 –05 –16 –24),3,,LH III B2,National Archaeological M. Athens 23572,57,25
 4716,PY An 427,https://liber.cnr.it/tablet/view/4716,Room 8 (8.2215),3,,LH III B2,National Archaeological M. Athens 23574,42,19
-4717,PY An 435+1477+1516+frr.(5)[+]1033[+]1060+1061+1465+frr.(19)[+]fr.,https://liber.cnr.it/tablet/view/4717,Room 8 (8.22 –64),3,,LH III B2,National Archaeological M. Athens 23579,86,49
+4717,PY An 435+1477+1516+frr.(5)[+]1033[+]1060+1061+1465+frr.(19)[+]fr.,https://liber.cnr.it/tablet/view/4717,Room 8 (8.22 –64),3,,LH III B2,National Archaeological M. Athens 23579,85,48
 4718,PY An 519+fr.,https://liber.cnr.it/tablet/view/4718,Room 8 (8.3424 –33),1,,LH III B2,National Archaeological M. Athens 23626,118,40
-4719,PY An 594,https://liber.cnr.it/tablet/view/4719,Room 8 (8.2166),9B/—,,LH III B2,National Archaeological M. Athens 23676,28,14
+4719,PY An 594,https://liber.cnr.it/tablet/view/4719,Room 8 (8.2166),9B/—,,LH III B2,National Archaeological M. Athens 23676,27,13
 4720,PY An 607,https://liber.cnr.it/tablet/view/4720,Room 7 (7.4348),1,,LH III B2,National Archaeological M. Athens 23684,104,41
-4721,PY An 610+1136+frr.(17)[+]1151,https://liber.cnr.it/tablet/view/4721,Room 7 (7.4337 –47 –56 –57 –58),1,,LH III B2,National Archaeological M. Athens 23686,159,74
+4721,PY An 610+1136+frr.(17)[+]1151,https://liber.cnr.it/tablet/view/4721,Room 7 (7.4337 –47 –56 –57 –58),1,,LH III B2,National Archaeological M. Athens 23686,158,73
 4722,PY An 614+1124+1127+1130+1137+1508+frr.(13)[+]1510+frr.(3)[+]frr.[+]frr.[+]frr.[+]fr.,https://liber.cnr.it/tablet/view/4722,Room 7 (7.4356 –57),1,,LH III B2,National Archaeological M. Athens 23689,35,17
 4723,PY An 615,https://liber.cnr.it/tablet/view/4723,Room 7 (7.4356 –57 –58 –66),1,,LH III B2,National Archaeological M. Athens 23690,106,59
 4724,PY An 654,https://liber.cnr.it/tablet/view/4724,Room 7 (7.6267),X1 (X1.83),1,,LH III B2,National Archaeological M. Athens 23718,140,49
@@ -4657,7 +4657,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 4788,PY Ea 52,https://liber.cnr.it/tablet/view/4788,Room 8 (8.1182B),43,Energetikos,LH III B2,National Archaeological M. Athens 23366,22,9
 4789,PY Ea 56,https://liber.cnr.it/tablet/view/4789,Room 8 (8.1106B –14B –25B –82B),43,,LH III B2,National Archaeological M. Athens 23368,16,8
 4790,PY Ea 57[+]1007,https://liber.cnr.it/tablet/view/4790,Room 8 (8.1182B),43,,LH III B2,National Archaeological M. Athens 23369,16,7
-4791,PY Ea 59,https://liber.cnr.it/tablet/view/4791,Room 8 (8.1182B),43,,LH III B2,National Archaeological M. Athens 23371,132,81
+4791,PY Ea 59,https://liber.cnr.it/tablet/view/4791,Room 8 (8.1182B),43,,LH III B2,National Archaeological M. Athens 23371,131,80
 4792,PY Ea 71,https://liber.cnr.it/tablet/view/4792,Room 8 (8.1310B),43,Energetikos,LH III B2,National Archaeological M. Athens 23380,18,10
 4793,PY Ea 102+107,https://liber.cnr.it/tablet/view/4793,Room 8 (8.1217B –18B –68),43,,LH III B2,National Archaeological M. Athens 23391,12,6
 4794,PY Ea 109,https://liber.cnr.it/tablet/view/4794,Room 8 (8.1214B –16B),43,,LH III B2,National Archaeological M. Athens 23397,17,8
@@ -4727,7 +4727,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 4858,PY Eb 321+1156+frr.[+]327[+]1153+fr.,https://liber.cnr.it/tablet/view/4858,Room 8 (8.22 –17),41,,LH III B2,National Archaeological M. Athens 23503,34,13
 4859,PY Eb 338+fr.,https://liber.cnr.it/tablet/view/4859,Room 8 (8.3207),41,,LH III B2,National Archaeological M. Athens 23516,42,14
 4860,PY Eb 339[+]409,https://liber.cnr.it/tablet/view/4860,"Room 8 (8.2296, 3207)",41,,LH III B2,National Archaeological M. Athens 23517,33,13
-4861,PY Eb 347[+]1354,https://liber.cnr.it/tablet/view/4861,Room 8 (8.2314 –33),X2,41,,LH III B2,National Archaeological M. Athens 23524,32,14
+4861,PY Eb 347[+]1354,https://liber.cnr.it/tablet/view/4861,Room 8 (8.2314 –33),X2,41,,LH III B2,National Archaeological M. Athens 23524,31,13
 4862,PY Eb 364+366+fr.,https://liber.cnr.it/tablet/view/4862,"Room 8 (8.12, 2342 –43 –45 –64)",41,Energetikos,LH III B2,National Archaeological M. Athens 23534,25,9
 4863,PY Eb 369,https://liber.cnr.it/tablet/view/4863,Room 8 (8.2345 –54 –64),41,,LH III B2,National Archaeological M. Athens 23537,34,13
 4864,PY Eb 377,https://liber.cnr.it/tablet/view/4864,"Room 8 (8.2365, 2423)",41,,LH III B2,National Archaeological M. Athens 23541,26,10
@@ -4816,7 +4816,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 4948,PY Ep 212+1018+1162,https://liber.cnr.it/tablet/view/4948,Room 8 (8.1352 –53 –54 –55 –56 –66),1,,LH III B2,National Archaeological M. Athens 12600,331,144
 4949,PY Ep 301,https://liber.cnr.it/tablet/view/4949,"Room 8 (8.1288 –89, 1380, 3460)",1,,LH III B2,National Archaeological M. Athens 23488,338,141
 4950,PY Ep 539+1084+1095+frr.(3),https://liber.cnr.it/tablet/view/4950,"Room 8 (8.33 –16 –68, 3440 –50 –51)",1,,LH III B2,National Archaeological M. Athens 23636,420,167
-4951,PY Ep 613+617+1117+1119+1121+1123+1134+1152+frr.(7)[+]1131,https://liber.cnr.it/tablet/view/4951,Room 7 (7.4355 –56 –57 –66),1,,LH III B2,National Archaeological M. Athens 23688,512,218
+4951,PY Ep 613+617+1117+1119+1121+1123+1134+1152+frr.(7)[+]1131,https://liber.cnr.it/tablet/view/4951,Room 7 (7.4355 –56 –57 –66),1,,LH III B2,National Archaeological M. Athens 23688,511,217
 4953,PY Ep 704+619,https://liber.cnr.it/tablet/view/4953,"Room 7 (7.4355 –97, 5305)",1,,LH III B2,National Archaeological M. Athens 12579 ⊕ 23341,205,82
 4954,PY Ep 705,https://liber.cnr.it/tablet/view/4954,"Room 7 (7.4357, 4484 –92, 7314)",X1 (X1.55),1,,LH III B2,National Archaeological M. Athens 23756,325,142
 4955,PY Eq 36+1451+frr.(7)[+]887,https://liber.cnr.it/tablet/view/4955,Room 8 (8.2193B),X,1,,LH III B2,National Archaeological M. Athens 23356,98,43
@@ -4846,7 +4846,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 4979,PY Fg 368,https://liber.cnr.it/tablet/view/4979,Room 8 (8.2334 –52),21,,LH III B2,National Archaeological M. Athens 23536,8,5
 4980,PY Fg 374,https://liber.cnr.it/tablet/view/4980,Room 8 (8.2345 –74),1?,,LH III B2,National Archaeological M. Athens 23540,12,6
 4981,PY Fg 828,https://liber.cnr.it/tablet/view/4981,Room 7 (7.54),1,,LH III B2,National Archaeological M. Athens 23865,6,3
-4982,PY Fn 7+1427+fr.,https://liber.cnr.it/tablet/view/4982,Room 8 (8.3261B –62B),SW Area 31,3,,LH III B2,National Archaeological M. Athens 23337,81,43
+4982,PY Fn 7+1427+fr.,https://liber.cnr.it/tablet/view/4982,Room 8 (8.3261B –62B),SW Area 31,3,,LH III B2,National Archaeological M. Athens 23337,80,42
 4983,PY Fn 41+1421+1422+frr.,https://liber.cnr.it/tablet/view/4983,Room 8 (8.2191B –94B),SW Area XXVIIISW,SW Area XXVISW,45,,LH III B2,National Archaeological M. Athens 23359,36,26
 4984,PY Fn 50+fr.,https://liber.cnr.it/tablet/view/4984,Room 8 (8.1105B –14B –82B),,,LH III B2,National Archaeological M. Athens 23365,160,75
 4985,PY Fn 79+1192,https://liber.cnr.it/tablet/view/4985,Room 8 (8.1303B –15B),X0,45,,LH III B2,National Archaeological M. Athens 23383,154,101
@@ -5005,7 +5005,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 5141,PY Mb 1436,https://liber.cnr.it/tablet/view/5141,SW Area IIM,14,,LH III B2,National Archaeological M. Athens 24229,3,2
 5142,PY Mn 11+14+frr.(7),https://liber.cnr.it/tablet/view/5142,Room 8 (8.3272B),2,,LH III B2,National Archaeological M. Athens 23340,48,31
 5143,PY Mn 162[+]1011,https://liber.cnr.it/tablet/view/5143,X2 (X2.25),2,,LH III B2,National Archaeological M. Athens 23419,24,16
-5144,PY Mn 456,https://liber.cnr.it/tablet/view/5144,Room 8 (8.1441),2,,LH III B2,National Archaeological M. Athens 23590,55,29
+5144,PY Mn 456,https://liber.cnr.it/tablet/view/5144,Room 8 (8.1441),2,,LH III B2,National Archaeological M. Athens 23590,54,28
 5145,PY Mn 1367,https://liber.cnr.it/tablet/view/5145,SW Area SW22,14,,LH III B2,National Archaeological M. Athens 24174,3,3
 5146,PY Mn 1368,https://liber.cnr.it/tablet/view/5146,SW Area LTIIa,14,,LH III B2,National Archaeological M. Athens 24175,16,9
 5147,PY Mn 1369,https://liber.cnr.it/tablet/view/5147,SW Area SW22,14,,LH III B2,National Archaeological M. Athens 24176,3,3
@@ -5015,7 +5015,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 5151,PY Mn 1408,https://liber.cnr.it/tablet/view/5151,SW Area VISW,10,,LH III B2,National Archaeological M. Athens 24208,21,10
 5152,PY Mn 1409,https://liber.cnr.it/tablet/view/5152,SW Area 25,14,,LH III B2,National Archaeological M. Athens 24209,4,2
 5153,PY Mn 1410,https://liber.cnr.it/tablet/view/5153,SW Area VIIISW,14,,LH III B2,National Archaeological M. Athens 24210,12,6
-5154,PY Mn 1411,https://liber.cnr.it/tablet/view/5154,SW Area VISW,14,,LH III B2,National Archaeological M. Athens 24211,13,7
+5154,PY Mn 1411,https://liber.cnr.it/tablet/view/5154,SW Area VISW,14,,LH III B2,National Archaeological M. Athens 24211,12,6
 5155,PY Mn 1412,https://liber.cnr.it/tablet/view/5155,SW Area VIIISW,SW Area VISW,14,,LH III B2,National Archaeological M. Athens 24212,28,12
 5156,PY Na 58,https://liber.cnr.it/tablet/view/5156,Room 8 (8.1182B),1,,LH III B2,National Archaeological M. Athens 23370,7,2
 5157,PY Na 66,https://liber.cnr.it/tablet/view/5157,Room 8 (8.1219B),1,,LH III B2,National Archaeological M. Athens 23377,14,6
@@ -5187,7 +5187,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 5325,PY Sa 843+1190+1270+FRR.,https://liber.cnr.it/tablet/view/5325,"X1 (X1, 55)",26,,LH III B2,National Archaeological M. Athens 23877,11,6
 5326,PY Sa 1264,https://liber.cnr.it/tablet/view/5326,X1,26,,LH III B2,National Archaeological M. Athens 24101,14,6
 5327,PY Sa 1265,https://liber.cnr.it/tablet/view/5327,X1,26,,LH III B2,National Archaeological M. Athens 24102,13,6
-5328,PY Sa 1266[+]fr.,https://liber.cnr.it/tablet/view/5328,X1,26?,,LH III B2,National Archaeological M. Athens 24103,22,9
+5328,PY Sa 1266[+]fr.,https://liber.cnr.it/tablet/view/5328,X1,26?,,LH III B2,National Archaeological M. Athens 24103,20,7
 5329,PY Sa 1267+1268+FR.,https://liber.cnr.it/tablet/view/5329,X1,26,,LH III B2,National Archaeological M. Athens 24104,13,6
 5330,PY Sa 1313,https://liber.cnr.it/tablet/view/5330,"Room 98 in red brick earth (Palaima 1988, p. 156, fig. 19)","in red brick earth (Palaima 1988, p. 156, fig. 19)",26,,LH III B2,National Archaeological M. Athens 24145,5,2
 5331,PY Sa 1561,https://liber.cnr.it/tablet/view/5331,,26,,LH III B2,National Archaeological M. Athens 24321,2,2
@@ -5268,7 +5268,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 5406,PY Vn 20,https://liber.cnr.it/tablet/view/5406,Room 8 (8.3157B),25,,LH III B2,National Archaeological M. Athens 12584,58,22
 5407,PY Vn 34+1006+1191[+]fr.,https://liber.cnr.it/tablet/view/5407,Room 8 (8.3135B),X0,,,LH III B2,National Archaeological M. Athens 23354,69,27
 5408,PY Vn 46+fr.,https://liber.cnr.it/tablet/view/5408,"Room 8 (8.1182B, 2162B)",,,LH III B2,National Archaeological M. Athens 23361,106,39
-5409,PY Vn 48+frr.(7),https://liber.cnr.it/tablet/view/5409,Room 8 (8.2142B),,,LH III B2,National Archaeological M. Athens 23363,59,22
+5409,PY Vn 48+frr.(7),https://liber.cnr.it/tablet/view/5409,Room 8 (8.2142B),,,LH III B2,National Archaeological M. Athens 23363,58,21
 5410,PY Vn 130,https://liber.cnr.it/tablet/view/5410,Room 8 (8.3264B),1,,LH III B2,National Archaeological M. Athens 12573,134,50
 5411,PY Vn 493+frr.(3),https://liber.cnr.it/tablet/view/5411,"Room 8 (8B, 2199, 2280, 3147B –56B)",,,LH III B2,National Archaeological M. Athens 23611,69,25
 5412,PY Vn 851+fr.[+]914,https://liber.cnr.it/tablet/view/5412,Room 2 (2.0677),Room 8 (8.2328),X1 (X1.45),12/—,,LH III B2,National Archaeological M. Athens 23883,116,52
@@ -5354,7 +5354,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 5493,PY Xa 1443,https://liber.cnr.it/tablet/view/5493,Drain to NE [50 m from NE Building],,,LH III B2,National Archaeological M. Athens 24238,2,1
 5494,PY Xa 1444,https://liber.cnr.it/tablet/view/5494,,,,LH III B2,National Archaeological M. Athens 24239,2,2
 5495,PY Xa 1487,https://liber.cnr.it/tablet/view/5495,,,,LH III B2,National Archaeological M. Athens 24255,1,1
-5496,PY Xa 1491,https://liber.cnr.it/tablet/view/5496,Room 8 (8.2371),,,LH III B2,National Archaeological M. Athens 24259,1,1
+5496,PY Xa 1491,https://liber.cnr.it/tablet/view/5496,Room 8 (8.2371),,,LH III B2,National Archaeological M. Athens 24259,0,0
 5497,PY Xa 1492,https://liber.cnr.it/tablet/view/5497,,,,LH III B2,National Archaeological M. Athens 24260,0,0
 5498,PY Xa 1507,https://liber.cnr.it/tablet/view/5498,,,,LH III B2,National Archaeological M. Athens 24271,0,0
 5499,PY Xa 1526,https://liber.cnr.it/tablet/view/5499,Room 8 (8.1377),,,LH III B2,National Archaeological M. Athens 24286,1,1
