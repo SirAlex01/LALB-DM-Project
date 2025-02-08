@@ -37,6 +37,17 @@ os.makedirs(pics, exist_ok=True)
 def remove_dots_below(text):
     return ''.join(c for c in unicodedata.normalize('NFD', text) if not unicodedata.combining(c))
 
+# Function to make requests reliably: all documents are present for sure (manually checked failures)
+def make_request(url, stream=False):
+    while True:
+        try:
+            response = requests.get(url, stream=stream)
+            response.raise_for_status()
+            return response
+        except requests.RequestException:
+            print("REQUEST FAILED. Retrying in 5 seconds...")
+            time.sleep(5)
+
 # time to web-scrape 
 with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
     writer = csv.writer(csvfile)
@@ -50,8 +61,7 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
             doc_id, doc, link = data[i]
             try:
                 time.sleep(0.1)
-                doc_response = requests.get(link)
-                doc_response.raise_for_status()
+                doc_response = make_request(link)
                 doc_soup = BeautifulSoup(doc_response.text, "html.parser")
 
                 info = doc_soup.find_all("h6", class_="info_tab")
@@ -69,22 +79,35 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                 for j, url in enumerate(pic_urls):
                     sign_pic_name = os.path.join(doc_pics, f"{j+1}.png")
                     time.sleep(0.1)
-                    img_response = requests.get(pref_url + url["href"], stream=True)
-                    img_response.raise_for_status()
+                    img_response = make_request(pref_url + url["href"], stream=True)
 
                     with open(sign_pic_name, "wb") as f:
                         shutil.copyfileobj(img_response.raw, f)
 
                 doc_text = doc_soup.find("div", id="table-text-container").text.split()
                 sequences = []
-                for s in doc_text:
-                    if s in "[],/↓→⸤⸥/⟦⟧" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest.":
+
+                j = 0
+                while j < len(doc_text):
+                    s = doc_text[j]
+                    if s in "[],/↓→⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
+                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior":
+                        j += 1
                         continue
 
                     s = remove_dots_below(s)
                     s = s.replace("[•]", "(TEMP)").replace("[-•-]","(TEMPP)").replace("'","").replace('"',"").replace("-]", "-").replace("[-", "-").replace("]-", "-") \
-                         .replace("-[", "-").replace("--", "-").replace("(TEMP)","[?]").replace("(TEMPP)","-[?]-").replace("⟦","").replace("⟧","")\
-                         
+                         .replace("-[", "-").replace("--", "-").replace("?", "").replace("(TEMP)","[?]").replace("(TEMPP)","-[?]-").replace("•-•","[?]-[?]") \
+                         .replace("⟦","").replace("⟧","").replace("[[","[").replace("]]","]").replace("⸥","").replace("⸤","").replace("•","[?]")\
+                    
+                    # skip all rows referring to sigillum
+                    if s == "supra" or s == "sigillum":
+                        for k in range(j+6 if s == "sigillum" else j+7):
+                            if j + k < len(doc_text):
+                                print("SKIPPING:",doc_text[j+k])
+                        j = j + 6 if s == "sigillum" else j + 7
+                        continue
+
                     complete = not (s.startswith("]") or s.endswith("[") or s.startswith("[") or s.endswith("]") or s.startswith("-") or s.endswith("-") or "[?]" in s)
                     if s.startswith("]") or (s.startswith("[") and not s.startswith("[?]")):
                         s = s[1:]
@@ -95,7 +118,11 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                     if s.endswith("-"):
                         s = s[:-1]
 
-                    sequences.append(s)
+                    if len(s) > 0 and not (s in "[],/↓→⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
+                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior"):
+                        sequences.append(s)
+                    
+                    j += 1
                 print(sequences,link)
 
                 signs_counter = 0
