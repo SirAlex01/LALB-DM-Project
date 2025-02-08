@@ -84,21 +84,28 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                     with open(sign_pic_name, "wb") as f:
                         shutil.copyfileobj(img_response.raw, f)
 
-                doc_text = doc_soup.find("div", id="table-text-container").text.split()
+                doc_text = doc_soup.find("div", id="table-text-container")
+                
+                if doc_text is None:
+                    for _ in range(2):
+                        data[i].append(0)
+                    continue
+                
+                doc_text = doc_text.text.split()
                 sequences = []
 
                 j = 0
                 while j < len(doc_text):
                     s = doc_text[j]
                     if s in "[],/↓→⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
-                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior":
+                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito":
                         j += 1
                         continue
 
                     s = remove_dots_below(s)
                     s = s.replace("[•]", "(TEMP)").replace("[-•-]","(TEMPP)").replace("'","").replace('"',"").replace("-]", "-").replace("[-", "-").replace("]-", "-") \
                          .replace("-[", "-").replace("--", "-").replace("?", "").replace("(TEMP)","[?]").replace("(TEMPP)","-[?]-").replace("•-•","[?]-[?]") \
-                         .replace("⟦","").replace("⟧","").replace("[[","[").replace("]]","]").replace("⸥","").replace("⸤","").replace("•","[?]")\
+                         .replace("⟦","").replace("⟧","").replace("[[","[").replace("]]","]").replace("⸥","").replace("⸤","").replace("•","[?]").replace("/","").replace(",","")\
                     
                     # skip all rows referring to sigillum
                     if s == "supra" or s == "sigillum":
@@ -119,10 +126,12 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                         s = s[:-1]
 
                     if len(s) > 0 and not (s in "[],/↓→⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
-                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior"):
+                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito"):
                         sequences.append(s)
                     
                     j += 1
+                    if s == "separatum":
+                        j += 1
                 print(sequences,link)
 
                 signs_counter = 0
