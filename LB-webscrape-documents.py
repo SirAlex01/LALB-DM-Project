@@ -97,7 +97,7 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                 j = 0
                 while j < len(doc_text):
                     s = doc_text[j]
-                    if s in "[],/↓→⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
+                    if s in "[],/↓→↗⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
                         s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito":
                         j += 1
                         continue
@@ -125,7 +125,7 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                     if s.endswith("-"):
                         s = s[:-1]
 
-                    if len(s) > 0 and not (s in "[],/↓→⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
+                    if len(s) > 0 and not (s in "[],/↓→↗⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
                         s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito"):
                         sequences.append(s)
                     
