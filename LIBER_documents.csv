@@ -2220,10 +2220,10 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 2309,KN Xe 8598,https://liber.cnr.it/tablet/view/2309,,,103,,,Herakleion M.,1,1
 2310,KN Xe 8696,https://liber.cnr.it/tablet/view/2310,,,103?,,,Herakleion M.,1,1
 2311,MI Z 2,https://liber.cnr.it/tablet/view/2311,W. Gate Area - W. of Room 4,,,,LH III B2,Nauplio M.,2,2
-2312,MI Wv 3,https://liber.cnr.it/tablet/view/2312,W. Gate Area - Room 6b,,,,LH III B2,Nauplio M. 28115,2,2
+2312,MI Wv 3,https://liber.cnr.it/tablet/view/2312,W. Gate Area - Room 6b,,,,LH III B2,Nauplio M. 28115,1,1
 2313,MI Z 4,https://liber.cnr.it/tablet/view/2313,W. Gate Area - Rooms 6b and 7 approximate findspot,approximate findspot,511,,LH III B2,Nauplio M.,3,1
-2314,MI Wv 5,https://liber.cnr.it/tablet/view/2314,"Lower terrace, near Megaron - Room 7",,,,LH III B2,Nauplio M. Gr.Nr. 2667,5,3
-2315,MI Wv 6,https://liber.cnr.it/tablet/view/2315,S.W. slope - S.E. of Rooms 1-4 approximate findspot,approximate findspot,,,LH III B2,Nauplio M. 28141,11,4
+2314,MI Wv 5,https://liber.cnr.it/tablet/view/2314,"Lower terrace, near Megaron - Room 7",,,,LH III B2,Nauplio M. Gr.Nr. 2667,4,2
+2315,MI Wv 6,https://liber.cnr.it/tablet/view/2315,S.W. slope - S.E. of Rooms 1-4 approximate findspot,approximate findspot,,,LH III B2,Nauplio M. 28141,10,3
 2316,MY Au 102,https://liber.cnr.it/tablet/view/2316,House of Oil Merchant - Room 2,,52,,LH III B1,National Archaeological M. Athens 7668,75,33
 2317,MY Au 609+frr.,https://liber.cnr.it/tablet/view/2317,House of Sphinxes - Room 6,,57,,LH III B1,National Archaeological M. Athens 7707,49,26
 2318,MY Au 653,https://liber.cnr.it/tablet/view/2318,W. House - Room 1,,62,,LH III B1,Mycenae M. 2051 BE 29137,19,8
@@ -2299,7 +2299,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 2389,MY Wt 506,https://liber.cnr.it/tablet/view/2389,"House of Sphinxes - Room 1, Doorway",,65,,LH III B1,National Archaeological M. Athens 7632,8,3
 2390,MY Wt 507,https://liber.cnr.it/tablet/view/2390,"House of Sphinxes - Room 1, Doorway",,65,,LH III B1,National Archaeological M. Athens 7632,6,2
 2391,MY Wt 700,https://liber.cnr.it/tablet/view/2391,Citadel House - not stratified,,,,LH III B2,Mycenae M. 9790,1,1
-2392,MY Wt 712,https://liber.cnr.it/tablet/view/2392,Panagia House II - Room 15,,,,LH III B,Mycenae M. 1698 BE 15103,7,4
+2392,MY Wt 712,https://liber.cnr.it/tablet/view/2392,Panagia House II - Room 15,,,,LH III B,Mycenae M. 1698 BE 15103,6,3
 2393,MY Wt 713,https://liber.cnr.it/tablet/view/2393,Acropolis - W. of Building K approximate findspot,approximate findspot,,,LH III B2,Mycenae M.,1,1
 2394,MY X ‹1›,https://liber.cnr.it/tablet/view/2394,S. of Petsas House approximate findspot,approximate findspot,,,,Mycenae 2044 BE 29148,5,2
 2395,MY X 2,https://liber.cnr.it/tablet/view/2395,Petsas House - Room Gamma,,,,LH III A2,Mycenae M. MM 2062,14,5
@@ -4377,7 +4377,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 4497,KN Mc 9940,https://liber.cnr.it/tablet/view/4497,,,,,,Herakleion M.,1,1
 4498,KN Mc 9941,https://liber.cnr.it/tablet/view/4498,,,132?,,,Herakleion M.,1,1
 4499,KN Mc 9942,https://liber.cnr.it/tablet/view/4499,,,132?,,,Herakleion M.,1,1
-4500,MI Wv 1,https://liber.cnr.it/tablet/view/4500,"Lower terrace, near Megaron - Room 7",,,,LH III B2,Nauplio M. Gr.Nr. 1437,4,3
+4500,MI Wv 1,https://liber.cnr.it/tablet/view/4500,"Lower terrace, near Megaron - Room 7",,,,LH III B2,Nauplio M. Gr.Nr. 1437,3,2
 4501,KN Dd 1144+8416+8513,https://liber.cnr.it/tablet/view/4501,(J1) E.W. Corridor,117,,LM III A2,Herakleion M. 658,17,10
 4502,KN Do 924+7563+7869,https://liber.cnr.it/tablet/view/4502,"(I3) Area of Bull Relief Minos 31-32, p. 80, 110; Minos 35-36, p. 225 (ex I3?)","Minos 31-32, p. 80, 110; Minos 35-36, p. 225 (ex I3?)",106,,LM III A2,Herakleion M. 690,14,12
 4504,KN Dp 2004+fr.,https://liber.cnr.it/tablet/view/4504,,215?,,,Herakleion M.,5,5
@@ -4632,7 +4632,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 4762,PY Cn 440+1068+frr.(7),https://liber.cnr.it/tablet/view/4762,Room 8 (8.2284),,,LH III B2,National Archaeological M. Athens 23584,8,8
 4763,PY Cn 441+frr.(3)[+]fr.[+]1069+frr.[+]frr.(3),https://liber.cnr.it/tablet/view/4763,"Room 8 (8.2273, 3450)",1,,LH III B2,National Archaeological M. Athens 23585,22,10
 4765,PY Cn 453[+]836,https://liber.cnr.it/tablet/view/4765,Room 8 (8.1430),X1 (X1.55),1,,LH III B2,National Archaeological M. Athens 23589,20,8
-4766,PY Cn 485+1076+1077+frr.[+]fr.[+]1075(α)[+]1078(β)[+]1167+fr.(γ)[+]1470(δ),https://liber.cnr.it/tablet/view/4766,Room 8 (8.2231 –41 –51),1,,LH III B2,National Archaeological M. Athens 23606,62,33
+4766,PY Cn 485+1076+1077+frr.[+]fr.[+]1075(α)[+]1078(β)[+]1167+fr.(γ)[+]1470(δ),https://liber.cnr.it/tablet/view/4766,Room 8 (8.2231 –41 –51),1,,LH III B2,National Archaeological M. Athens 23606,54,25
 4767,PY Cn 491+1116+frr.(4),https://liber.cnr.it/tablet/view/4767,"Room 8 (8.2166, 2280)",1,,LH III B2,National Archaeological M. Athens 23610,24,17
 4768,PY Cn 570+1445+fr.,https://liber.cnr.it/tablet/view/4768,"Room 8 (8.2284, 33)",1,,LH III B2,National Archaeological M. Athens 23659,16,8
 4769,PY Cn 595,https://liber.cnr.it/tablet/view/4769,Room 8 (8.2146 –56),1?/21/—,,LH III B2,National Archaeological M. Athens 23677,53,27
@@ -4657,7 +4657,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 4788,PY Ea 52,https://liber.cnr.it/tablet/view/4788,Room 8 (8.1182B),43,Energetikos,LH III B2,National Archaeological M. Athens 23366,22,9
 4789,PY Ea 56,https://liber.cnr.it/tablet/view/4789,Room 8 (8.1106B –14B –25B –82B),43,,LH III B2,National Archaeological M. Athens 23368,16,8
 4790,PY Ea 57[+]1007,https://liber.cnr.it/tablet/view/4790,Room 8 (8.1182B),43,,LH III B2,National Archaeological M. Athens 23369,16,7
-4791,PY Ea 59,https://liber.cnr.it/tablet/view/4791,Room 8 (8.1182B),43,,LH III B2,National Archaeological M. Athens 23371,131,80
+4791,PY Ea 59,https://liber.cnr.it/tablet/view/4791,Room 8 (8.1182B),43,,LH III B2,National Archaeological M. Athens 23371,103,52
 4792,PY Ea 71,https://liber.cnr.it/tablet/view/4792,Room 8 (8.1310B),43,Energetikos,LH III B2,National Archaeological M. Athens 23380,18,10
 4793,PY Ea 102+107,https://liber.cnr.it/tablet/view/4793,Room 8 (8.1217B –18B –68),43,,LH III B2,National Archaeological M. Athens 23391,12,6
 4794,PY Ea 109,https://liber.cnr.it/tablet/view/4794,Room 8 (8.1214B –16B),43,,LH III B2,National Archaeological M. Athens 23397,17,8
@@ -5301,7 +5301,7 @@ id,document_name,link,findspot,scribe,palmprint,chronology,museum_inventory_numb
 5439,PY Wo 1199,https://liber.cnr.it/tablet/view/5439,"Room 32 in sifting (Palaima 1988, p. 145)","in sifting (Palaima 1988, p. 145)",34?,,LH III B2,National Archaeological M. Athens 24045,4,1
 5440,PY Wo 1247,https://liber.cnr.it/tablet/view/5440,"Room 24 on the floor by the first pithos to the left of the doorway from Corridor 25 (Palaima 1988, p. 168, fig. 23:1)","on the floor by the first pithos to the left of the doorway from Corridor 25 (Palaima 1988, p. 168, fig. 23:1)",,,LH III B2,National Archaeological M. Athens 24089,5,1
 5441,PY Wp 1327,https://liber.cnr.it/tablet/view/5441,"Room 98 N corner (Palaima 1988, p. 156, fig. 19)","N corner (Palaima 1988, p. 156, fig. 19)",,,LH III B2,National Archaeological M. Athens 8525,6,3
-5442,PY Wp 1415,https://liber.cnr.it/tablet/view/5442,SW Area 27,,,LH III B2,National Archaeological M. Athens 9055,6,3
+5442,PY Wp 1415,https://liber.cnr.it/tablet/view/5442,SW Area 27,,,LH III B2,National Archaeological M. Athens 9055,5,2
 5443,PY Wr 1325,https://liber.cnr.it/tablet/view/5443,"Room 98 on floor near the doorway (Palaima 1988, p. 156-157, fig. 19)","on floor near the doorway (Palaima 1988, p. 156-157, fig. 19)",29,,LH III B2,National Archaeological M. Athens 8488,3,2
 5444,PY Wr 1326,https://liber.cnr.it/tablet/view/5444,"Room 98 N corner (Palaima 1988, p. 156, fig. 19)","N corner (Palaima 1988, p. 156, fig. 19)",20,,LH III B2,National Archaeological M. Athens 8478α,4,1
 5445,PY Wr 1328,https://liber.cnr.it/tablet/view/5445,"Room 98 N corner (Palaima 1988, p. 157, fig. 19)","N corner (Palaima 1988, p. 157, fig. 19)",,,LH III B2,National Archaeological M. Athens 8487,4,2
