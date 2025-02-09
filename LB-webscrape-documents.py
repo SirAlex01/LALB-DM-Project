@@ -97,8 +97,8 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                 j = 0
                 while j < len(doc_text):
                     s = doc_text[j]
-                    if s in "[],/↓→↗⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".")  or s.startswith("(") or s.endswith(")") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
-                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito" or s == "vestigia" or s.startswith("II"):
+                    if s in "[],◦/⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".")  or s.startswith("(") or s.endswith(")") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
+                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito" or s == "vestigia" or s.startswith("II") or s =="Tallying" or s=="angustum" or s == "maior" or s =="rpsr":
                         j += 1
                         continue
 
@@ -106,8 +106,10 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                     s = s.replace("[•]", "(TEMP)").replace("[-•-]","(TEMPP)").replace("'","").replace('"',"").replace("-]", "-").replace("[-", "-").replace("]-", "-") \
                          .replace("-[", "-").replace("--", "-").replace("?", "").replace("(TEMP)","[?]").replace("(TEMPP)","-[?]-").replace("•-•","[?]-[?]") \
                          .replace("⟦","").replace("⟧","").replace("[[","[").replace("]]","]").replace("⸥","").replace("⸤","").replace("•","[?]").replace("/","").replace(",","")\
-                         .replace("TELA^x", "TELAx").replace("OVIS[f", "OVISf").replace("OVIS[m", "OVISm").replace("OVIS]f", "OVISf").replace("OVIS]m", "OVISm")
-                    
+                         .replace("TELA^x", "TELAx").replace("OVIS[f", "OVISf").replace("OVIS[m", "OVISm").replace("OVIS]f", "OVISf").replace("OVIS]m", "OVISm") \
+                         .replace("1]8", "18").replace("1]4", "14").replace("2TELA", "TELA").replace("3TELA", "TELA").replace("CYP[", "CYP").replace("OVIS[+", "OVIS+") \
+                         .replace("TELA1[]", "TELA1").replace("TELA1[", "TELA1").replace("TELA[1]", "TELA1").replace("TELA[1+TE", "TELA+TE").replace("[?]jo", "[?]-jo").replace("‹", "").replace("›", "").replace("*202VAS[", "*202VAS") \
+                         
                     # skip all rows referring to sigillum
                     if s == "supra" or s == "sigillum":
                         for k in range(j+6 if s == "sigillum" else j+7):
@@ -126,8 +128,10 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                     if s.endswith("-"):
                         s = s[:-1]
 
-                    if len(s) > 0 and not (s in "[],/↓→↗⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s.startswith("(") or s.endswith(")") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
-                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito" or s == "vestigia" or s.startswith("II")):
+                    if s.startswith("↓") or s.startswith("→") or s.startswith("↗"):
+                        sequences.append("separatum")
+                    elif len(s) > 0 and not (s in "[],◦/⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s.startswith("(") or s.endswith(")") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
+                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito" or s == "vestigia" or s.startswith("II") or s =="Tallying" or s=="angustum" or s == "maior" or s =="rpsr"):
                         sequences.append(s)
                     
                     j += 1
