@@ -97,8 +97,8 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                 j = 0
                 while j < len(doc_text):
                     s = doc_text[j]
-                    if s in "[],/↓→↗⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
-                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito" or s == "vestigia":
+                    if s in "[],/↓→↗⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".")  or s.startswith("(") or s.endswith(")") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
+                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito" or s == "vestigia" or s.startswith("II"):
                         j += 1
                         continue
 
@@ -106,6 +106,7 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                     s = s.replace("[•]", "(TEMP)").replace("[-•-]","(TEMPP)").replace("'","").replace('"',"").replace("-]", "-").replace("[-", "-").replace("]-", "-") \
                          .replace("-[", "-").replace("--", "-").replace("?", "").replace("(TEMP)","[?]").replace("(TEMPP)","-[?]-").replace("•-•","[?]-[?]") \
                          .replace("⟦","").replace("⟧","").replace("[[","[").replace("]]","]").replace("⸥","").replace("⸤","").replace("•","[?]").replace("/","").replace(",","")\
+                         .replace("TELA^x", "TELAx").replace("OVIS[f", "OVISf").replace("OVIS[m", "OVISm").replace("OVIS]f", "OVISf").replace("OVIS]m", "OVISm")
                     
                     # skip all rows referring to sigillum
                     if s == "supra" or s == "sigillum":
@@ -125,8 +126,8 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                     if s.endswith("-"):
                         s = s[:-1]
 
-                    if len(s) > 0 and not (s in "[],/↓→↗⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
-                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito" or s == "vestigia"):
+                    if len(s) > 0 and not (s in "[],/↓→↗⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s.startswith("(") or s.endswith(")") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
+                        s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito" or s == "vestigia" or s.startswith("II")):
                         sequences.append(s)
                     
                     j += 1
