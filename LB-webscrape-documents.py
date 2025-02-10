@@ -64,10 +64,17 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                 doc_response = make_request(link)
                 doc_soup = BeautifulSoup(doc_response.text, "html.parser")
 
-                info = doc_soup.find_all("h6", class_="info_tab")
-                # extract Findspot, Scribe, Palmprint, Chronology
-                for j in range(1, len(info)):
-                    val =  " ".join(info[j].text.split())
+                info = doc_soup.find_all("div", class_="row")[1]
+                
+                # extract Findspot, Scribe, Palmprint, Chronology, Museum Inventory Number
+                find_spot = info.find("a")
+                find_spot = "—" if find_spot is None else find_spot.text
+                scribe = info.find("span", id="scriba").text
+                palmprint = info.find("span", id="palmprint").text
+                chronology = info.find("span",  id="d_fase").text + info.find("span",  id="d_period").text + info.find("span",  id="d_sub").text
+                museum_inventory_number = info.find("span", id="museo_nr").text
+                vals = [find_spot, scribe, palmprint, chronology, museum_inventory_number]
+                for val in vals:
                     data[i].append(val if val != "—" else None)
 
 
@@ -109,7 +116,7 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                          .replace("TELA^x", "TELAx").replace("OVIS[f", "OVISf").replace("OVIS[m", "OVISm").replace("OVIS]f", "OVISf").replace("OVIS]m", "OVISm") \
                          .replace("1]8", "18").replace("1]4", "14").replace("2TELA", "TELA").replace("3TELA", "TELA").replace("CYP[", "CYP").replace("OVIS[+", "OVIS+") \
                          .replace("TELA1[]", "TELA1").replace("TELA1[", "TELA1").replace("TELA[1]", "TELA1").replace("TELA[1+TE", "TELA+TE").replace("[?]jo", "[?]-jo").replace("‹", "").replace("›", "").replace("*202VAS[", "*202VAS") \
-                         
+                         .replace("]SUSf", "SUSf").replace("]Z", "Z")
                     # skip all rows referring to sigillum
                     if s == "supra" or s == "sigillum":
                         for k in range(j+6 if s == "sigillum" else j+7):
@@ -143,9 +150,9 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                 sign_data = []
                 for j, seq in enumerate(sequences):
                     length = seq.count("-") + 1
-                    writer_seq.writerow([j+1, seq, complete, length, doc_id, doc_name, link, len(sequences)])
+                    writer_seq.writerow([j+1, seq, complete, length, doc_id, doc, link, len(sequences)])
                     for k, sign in enumerate(seq.split("-")):
-                        sign_data.append([signs_counter+k+1, sign, doc_id, doc_name, link])
+                        sign_data.append([signs_counter+k+1, sign, doc_id, doc, link])
                     signs_counter += length
 
                 for j in range(signs_counter):
