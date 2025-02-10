@@ -8,7 +8,9 @@ OUTPUT_SIGNS_FILE = "processed_signs_LB.csv"
 OUTPUT_SEQUENCES_FILE = "processed_sequences_LB.csv"
 
 def preprocess(s):
-    return s.replace("₂", "2").replace("₃", "3")
+    return s.replace("₂", "2").replace("₃", "3").replace("TU+RO2", "TU+RYO").replace("A2","HA").replace("A3","AI")\
+            .replace("pu2","phu").replace("ro2","ryo").replace("ra2", "rya").replace("ra3", "rai").replace("ta2", "tya")\
+            .replace("a2","ha").replace("a3","ai")
 
 # Process the signs_LB.csv
 with open(SIGNS_LB, mode='r', newline='', encoding='utf-8') as infile:
