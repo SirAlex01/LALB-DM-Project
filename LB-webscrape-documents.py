@@ -136,10 +136,10 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
                         s = s[:-1]
 
                     if s.startswith("↓") or s.startswith("→") or s.startswith("↗"):
-                        sequences.append("separatum")
+                        sequences.append(("separatum", True))
                     elif len(s) > 0 and not (s in "[],◦/⸤⸥/⟦⟧:×" or s.startswith(".") or s.endswith(".") or s.startswith("(") or s.endswith(")") or s=="vacat" or s == "vest." or s == "deest" or s == "margo" or \
                         s == "reliqua" or s == "pars" or s == "sine" or s == "regulis" or s == "prior" or s == "Graffito" or s == "vestigia" or s.startswith("II") or s =="Tallying" or s=="angustum" or s == "maior" or s =="rpsr"):
-                        sequences.append(s)
+                        sequences.append((s,complete))
                     
                     j += 1
                     if s == "separatum":
@@ -148,7 +148,7 @@ with open("signs_LB.csv", "w", encoding="utf-8",newline="") as csvfile:
 
                 signs_counter = 0
                 sign_data = []
-                for j, seq in enumerate(sequences):
+                for j, (seq, complete) in enumerate(sequences):
                     length = seq.count("-") + 1
                     writer_seq.writerow([j+1, seq, complete, length, doc_id, doc, link, len(sequences)])
                     for k, sign in enumerate(seq.split("-")):
