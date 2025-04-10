@@ -10,7 +10,6 @@ import unicodedata
 import spacy
 from IPython.display import display
 
-
 def transliteration_iliad_and_odyssey(path, path2):
 
 	#lemmatizer = BackoffGreekLemmatizer()
