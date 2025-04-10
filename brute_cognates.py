@@ -111,8 +111,11 @@ def match(lin_b_words, greek_words):
                 elif len(lb_syl) == 2:
                     cons = lb_syl[0]
                     if cons == "k":
+                        # check παγχυλιων-like stuff
+                        double_gut = j + 2 < len(g_list) and "".join(g_list[j+1:j+3]) == lb_syl
+
                         # matched
-                        if g_char == "k":
+                        if g_char == "k" and not double_gut:
                             skipped_consecutive = 0
                             # matched ks
                             if g_list[j+1] == "s" and i < len(lb_list) - 1:
@@ -125,7 +128,7 @@ def match(lin_b_words, greek_words):
                                         j += 1
                                 else:
                                     i += 1
-                                    j += 2
+                                    j += 1
                                     if j < len(g_list) and lb_syl[1] == g_list[j]:
                                         j += 1
                             else:
@@ -153,7 +156,7 @@ def match(lin_b_words, greek_words):
                                         j += 1
                                 else:
                                     i += 1
-                                    j += 2
+                                    j += 1
                                     if j < len(g_list) and lb_syl[1] == g_list[j]:
                                         j += 1
                             else:
@@ -167,7 +170,7 @@ def match(lin_b_words, greek_words):
                             skipped_consecutive += 1
 
                     if cons == "q":
-                        if g_char == "q" or g_char == "*":
+                        if g_char == "q" or g_char == "*" or g_char == "k":
                             skipped_consecutive = 0
                             i += 1
                             j += 1
@@ -306,9 +309,13 @@ def match(lin_b_words, greek_words):
                     # matching occurred
                     if old_i != len(lb_list)-1 and (lb_list[old_i][0] == g_list[old_j] or (lb_list[old_i][0] == "p" and g_list[old_j] == "*")):
                         if old_j + 1 < len(g_list) and g_list[old_j+1] != lb_list[old_i][1] and g_list[old_j+1] in "aeiou":
+                            # salva le occorrenze del dittongo "ou"
+                            if old_j + 2 < len(g_list) and lb_list[old_i][1] == "u" and g_list[old_j+1] == "o" and g_list[old_j+2] == "u":
+                                j += 2
                             # WRONG SYLLABOGRAM
-                            wrong_syl = True
-                            break
+                            else:
+                                wrong_syl = True
+                                break
 
                 if len(lb_syl) == 3:
                     if lb_syl == "phu":
@@ -377,10 +384,13 @@ def match(lin_b_words, greek_words):
                     max_sc = 0
 
             # constraints: mapping succesful, first letter matches, do not add too much letters
-            begin_with_same = lb[0] == g[0] or (lb[0] == "p" and g_list[0] == "*")
-            if i >= len(lb_list) - 1 and j >= len(g) - 3 and skipped < 4 and begin_with_same and max_sc < 2 and not wrong_syl:
-                if len(lb_list) <= 3 and skipped < 2 and j >= len(g) - 2:
-                    matchings[lb].append((g, i/len(lb_list)))
+            begin_with_same = lb[0] == g[0] or (lb[0] == "p" and g_list[0] == "*") or (lb[0] == "t" and g_list[0] == "s" and g_list[1] == "t") or \
+                              (lb[0] == "w" and g_list[0] == "f") or  (lb[0] == "q" and (g_list[0] == "k" or g_list[0] == "*")) or \
+                              (lb[0] == "p" and g_list[0] == "s" and g_list[1] == "p")
+
+            if i >= len(lb_list) - 1 and j >= len(g) - 3 and skipped < 4 and begin_with_same and max_sc <= 2 and not wrong_syl:
+                if (len(lb_list) <= 3 and skipped <= 2 and j >= len(g) - 2 and max_sc < 2) or len(lb_list) > 3:
+                    matchings[lb].append((greek_words[g], i/len(lb_list)))
             #check compatibility
                 
                 
@@ -401,12 +411,68 @@ latinize_greek(greek_file, latinized_greek_file)
 lin_b_words = collect_lin_b_words(linear_b_file)
 greek_words = collect_greek_words(latinized_greek_file)
 
-#matching = match(["pi-pi"], {"*i*es": ""})
+#matching = match(["tu-ra-te-u"], {"terateus": ""})
 matching = match(lin_b_words, greek_words)
 
+
 matching = {k: sorted(v, key = lambda x:x[1], reverse=True) for (k, v) in matching.items()}
-for k, v in matching.items():
-    print(k)
-    print(v)
+out = "cognates.cog"
+with open(out, "w", encoding="utf-8") as f:
+    f.write("converted_linear_b\tgreek\n")
+    for k, values in matching.items():
+        max_likelihood = 0
+        to_insert = []
+        for v in values:
+            max_likelihood = max(max_likelihood, v[1])
+            if v[1] == max_likelihood:
+                to_insert.append(v[0])
+        to_insert = "|".join(to_insert)
+        f.write(f"{k}\t{to_insert}\n")
+
+
+
+#for lb in lin_b_words:
+#    if lb not in matching:
+#        print("MISSING", lb)
 #print(matching)
 
+input_file_path = "converted_linear_b-greek.cog"
+output_file_path = "cognates.cog"
+
+# Load the input (gold standard) data
+with open(input_file_path, "r", encoding="utf-8") as infile:
+    input_lines = infile.readlines()[1:]  # Skip header
+    gold_standard = {line.strip().split('\t')[0]: set(line.strip().split('\t')[1].split('|')) for line in input_lines}
+
+# Load the output (predicted) data
+with open(output_file_path, "r", encoding="utf-8") as outfile:
+    output_lines = outfile.readlines()[1:]  # Skip header
+    predicted = {line.strip().split('\t')[0]: set(line.strip().split('\t')[1].split('|')) for line in output_lines}
+
+#print(gold_standard)
+#print(predicted)
+# Evaluate accuracy: precision, recall, F1
+total = len(gold_standard)
+matched = 0
+precision_list = []
+recall_list = []
+
+for k in gold_standard:
+    gold_set = gold_standard.get(k, set())
+    pred_set = predicted.get(k, set())
+    if not gold_set:
+        continue
+    true_positives = gold_set & pred_set
+    if true_positives:
+        matched += 1
+    precision = len(true_positives) / len(pred_set) if pred_set else 0
+    recall = len(true_positives) / len(gold_set) if gold_set else 0
+    precision_list.append(precision)
+    recall_list.append(recall)
+
+# Compute macro-averaged precision, recall, F1 score
+macro_precision = sum(precision_list) / len(precision_list)
+macro_recall = sum(recall_list) / len(recall_list)
+f1_score = (2 * macro_precision * macro_recall) / (macro_precision + macro_recall) if (macro_precision + macro_recall) else 0
+
+print(matched, total, matched / total, macro_precision, macro_recall, f1_score)
