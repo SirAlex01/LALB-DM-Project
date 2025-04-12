@@ -85,13 +85,12 @@ for text in df['TRANSLIT']:
                     raise KeyError(f"Unexpected character: {char}")
 
                 normalized += diacritic_to_base.get(char, char) 
-            print(f"Original: {word} Normalized: {normalized}")
-            words_set.add(normalized)
+            #print(f"Original: {word} Normalized: {normalized}")
+            words_set.add(normalized.lower())
 
     
-
-df = pd.DataFrame(sorted(words_set), columns=["word"]) 
-df.to_csv("./homeric_greek_words_normalized.csv", index=True)
+df = pd.DataFrame(sorted(words_set - {""}), columns=["word"]) 
+df.to_csv("./homeric_greek_words_normalized.csv", index=False)
 print("Words successfully normalized, now converting into latin text...")
 
 latinize_greek("./homeric_greek_words_normalized.csv", "./latinized_homeric_greek_words.tsv")
