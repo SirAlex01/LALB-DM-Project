@@ -5,6 +5,8 @@ import os
 import google.generativeai as genai
 import time
 from tqdm import tqdm
+import pickle
+import random
 # recall proper names types: anthroponym, ethnonym, phytonym, toponym, patronymic, theonym
 
 
@@ -22,7 +24,7 @@ def latinize_greek(greek_file, latinized_greek_file):
     # Greek-to-Latin character mapping dictionary
     greek_to_latin = {
         'α': 'a', 'β': 'q', 'γ': 'k', 'δ': 'd', 'ε': 'e', 'ζ': 'z', 'η': 'e', 'θ': 't',
-        'ι': 'i', 'κ': 'k', 'λ': 'r', 'μ': 'm', 'ν': 'n', 'ξ': 'ks', 'ο': 'o', 'π': '*',
+        'ι': 'i', 'κ': 'k', 'λ': 'r', 'μ': 'm', 'ν': 'n', 'ξ': 'ks', 'ο': 'o', 'π': '#',
         'ρ': 'r', 'σ': 's', 'τ': 't', 'υ': 'u', 'φ': 'p', 'χ': 'k', 'ψ': 'ps', 'ω': 'o', 'ς': 's',
         #'ά': 'á', 'έ': 'é', 'ή': 'í', 'ί': 'í', 'ό': 'ó', 'ύ': 'ý', 'ώ': 'ó', 'ς': 's', # Special characters
         #'ϊ': 'i', 'ΰ': 'y', 'ϋ': 'y', 'ΐ': 'i'
@@ -51,11 +53,10 @@ def collect_lin_b_words(linear_b_file):
     words = {}
     with open(linear_b_file, 'r', encoding='utf-8') as f:
         # Skip the header (if present)
-        header = f.readline()
         for i, r in enumerate(f):
             # DEBUG
-            #if i < 560: continue
-            #if i > 800: break
+            #if i < 620: continue
+            #if i > 200: break
             
             word, valid = r.strip().split("\t")
             words[word] = {"valid": bool(int(valid)), "cognates":[]}
@@ -138,7 +139,7 @@ def match(lin_b_words, greek_words):
 
                     if cons == "p":
                         # matching ps
-                        if g_char == "p" or g_char == "*":
+                        if g_char == "p" or g_char == "#":
                             skipped_consecutive = 0
                             # matched ks
                             if j+1 < len(g_list) and g_list[j+1] == "s" and i < len(lb_list) - 1:
@@ -165,7 +166,7 @@ def match(lin_b_words, greek_words):
                             skipped_consecutive += 1
 
                     if cons == "q":
-                        if g_char == "q" or g_char == "*" or g_char == "k":
+                        if g_char == "q" or g_char == "#" or g_char == "k":
                             skipped_consecutive = 0
                             i += 1
                             j += 1
@@ -304,7 +305,7 @@ def match(lin_b_words, greek_words):
                             skipped_consecutive += 1
                     
                     # matching occurred
-                    if old_i != len(lb_list)-1 and (lb_list[old_i][0] == g_list[old_j] or (lb_list[old_i][0] == "p" and g_list[old_j] == "*")):
+                    if old_i != len(lb_list)-1 and (lb_list[old_i][0] == g_list[old_j] or (lb_list[old_i][0] == "p" and g_list[old_j] == "#")):
                         if old_j + 1 < len(g_list) and g_list[old_j+1] != lb_list[old_i][1] and g_list[old_j+1] in "aeiou":
                             # salva le occorrenze del dittongo "ou"
                             if old_j + 2 < len(g_list) and lb_list[old_i][1] == "u" and g_list[old_j+1] == "o" and g_list[old_j+2] == "u":
@@ -338,7 +339,7 @@ def match(lin_b_words, greek_words):
                             skipped += 1
                             skipped_consecutive += 1
                     elif lb_syl == "pte":
-                        if j+2 < len(g_list) and (g_char == "p" or g_char == "*") and g_list[j+1] == lb_syl[1] and g_list[j+2] == lb_syl[2]:
+                        if j+2 < len(g_list) and (g_char == "p" or g_char == "#") and g_list[j+1] == lb_syl[1] and g_list[j+2] == lb_syl[2]:
                             skipped_consecutive = 0
                             i += 1
                             j += 3
@@ -369,6 +370,7 @@ def match(lin_b_words, greek_words):
                             skipped += 1
                             skipped_consecutive += 1
                     elif lb_syl.startswith("*"):
+                        #print(lb_syl, g_char)
                         # unknown syllabogram how am I supposed to deal with this shit at all?
                         i += 1
                         j += 2
@@ -383,10 +385,10 @@ def match(lin_b_words, greek_words):
                     max_sc = 0
 
             # constraints: mapping succesful, first letter matches, do not add too much letters
-            begin_with_same = lb[0] == g[0] or (lb[0] == "p" and g_list[0] == "*") or (lb[0] == "t" and g_list[0] == "s" and g_list[1] == "t") or \
-                              (lb[0] == "w" and g_list[0] == "f") or  (lb[0] == "q" and (g_list[0] == "k" or g_list[0] == "*")) or \
-                              (lb[0] == "p" and g_list[0] == "s" and g_list[1] == "p")
-
+            begin_with_same = lb[0] == g[0] or (lb[0] == "p" and g_list[0] == "#") or (lb[0] == "t" and g_list[0] == "s" and g_list[1] == "t") or \
+                              (lb[0] == "w" and g_list[0] == "f") or  (lb[0] == "q" and (g_list[0] == "k" or g_list[0] == "#")) or \
+                              (lb[0] == "p" and g_list[0] == "s" and g_list[1] == "p") or lb[0] == "*"
+            
             if i >= len(lb_list) - 1 and j >= len(g) - 3 and skipped < 4 and begin_with_same and max_sc <= 2 and not wrong_syl:
                 if (len(lb_list) <= 3 and skipped <= 2 and j >= len(g) - 2 and max_sc < 2) or len(lb_list) > 3:
                     gr = list(greek_words[g])
@@ -400,19 +402,32 @@ def match(lin_b_words, greek_words):
                 
                 
     return lin_b_words
+# File where the matching dictionary is saved
+matching_file = "matching.pkl"
+MAX_LEN = 10
+if not os.path.exists(matching_file):
+    # Collect words and compute matching
+    lin_b_words = collect_lin_b_words("linb_words.tsv")
+    greek_words = collect_greek_words("latinized_homeric_greek_words.tsv")
+    
+    matching = match(lin_b_words, greek_words)
+    #matching = match({"*18-jo":{"cognates":[], "valid":True}}, {"toio":""})
 
-# Specify your input and output file names
-linear_b_file = "linb_words.tsv"
-greek_file = "latinized_homeric_greek_words.tsv"
+    # Sort cognates by likelihood score
+    for k in matching.keys():
+        if len(matching[k]["cognates"]) > MAX_LEN:
+            matching[k]["cognates"] = random.sample(matching[k]["cognates"], MAX_LEN)
+        matching[k]["cognates"] = sorted(matching[k]["cognates"], key=lambda x: x[1], reverse=True)
 
-
-lin_b_words = collect_lin_b_words(linear_b_file)
-greek_words = collect_greek_words(greek_file)
-
-#matching = match({"a-da-wa-si-jo":{"valid":True, "cognates":[]}}, {"a*odrfas": ""})
-matching = match(lin_b_words, greek_words)
-for k in matching.keys():
-    matching[k]["cognates"] = sorted(matching[k]["cognates"], key = lambda x:x[1], reverse=True)
+    # Save to file
+    with open(matching_file, "wb") as f:
+        pickle.dump(matching, f)
+    print("Created and saved matching.")
+else:
+    # Load from file
+    with open(matching_file, "rb") as f:
+        matching = pickle.load(f)
+    print("Loaded matching from file.")
 
 print(matching)
 
@@ -778,48 +793,63 @@ def make_prompt(word, info_dict, api_key):
     return list(set(pred.split(", ")))
 
 # Open the file in write mode ('w') first, to clear it before writing new data
+
 out = "cognates.cog"
-with open(out, "w", encoding="utf-8") as f:
-    # Write the header to the file (this happens only once at the beginning)
-    f.write("converted_linear_b\tgreek\tgemini\tvalid\n")
-    f.flush()
-    # Initialize previous index to check for the change in api_key usage
-    prec_idx = 0
-    
-    # Iterate through the matching keys
-    for i, word in tqdm(enumerate(matching.keys())):
-        # Sleep logic for API call limit
-        #if i != 0 and i % (15 * len(api_keys)) == 0:
-        #    time.sleep(25)
-        
-        # Determine which API key to use
-        idx = (i % (15 * len(api_keys))) // 15
-        api_key = api_keys[idx]
-        print(api_key)
-        
-        # Check if the API key has changed and sleep for a while if it has
-        if idx != prec_idx:
-            time.sleep(3)
-        prec_idx = idx
-        
-        # Make the request and get the response
-        matching[word]["gemini"] = make_prompt(word, matching[word], api_key)
-        
-        # Now, append each line to the file right after processing the response
-        max_likelihood = 0
-        to_insert = []
-        for cog in matching[word]["cognates"]:
-            max_likelihood = max(max_likelihood, cog[1])
-            if cog[1] == max_likelihood:
-                to_insert.append(cog[0])
-        
-        # Collect Gemini responses
-        gemini = [cog for cog in matching[word]["gemini"]]
-        
-        # Join the lists with a pipe separator
-        to_insert = "|".join(to_insert)
-        gemini = "|".join(gemini)
-        
-        # Append the results for the current word to the file
-        with open(out, "a", encoding="utf-8") as f_append:
-            f_append.write(f"{word}\t{to_insert}\t{gemini}\t{int(matching[word]['valid'])}\n")
+
+# Check if file exists
+file_exists = os.path.exists(out)
+
+# If file doesn't exist, create it and write the header
+if not file_exists:
+    with open(out, "w", encoding="utf-8") as f:
+        f.write("converted_linear_b\tgreek\tgemini\tvalid\n")
+        f.flush()
+    start_index = 0
+else:
+    # If file exists, count the number of existing data rows (excluding header)
+    with open(out, "r", encoding="utf-8") as f:
+        line_count = sum(1 for line in f) - 1  # subtract 1 for header
+    start_index = line_count
+
+# Initialize previous index for API key management
+prec_idx = 0
+
+# Iterate through the matching keys starting from where we left off
+for i, word in tqdm(enumerate(sorted(matching.keys())[start_index:], start=start_index)):
+    # Determine which API key to use
+    #if i % 300 == 0:
+    #    time.sleep(60)
+    idx = (i % (15 * len(api_keys))) // 15
+    api_key = api_keys[idx]
+    print(api_key, word)
+
+    # Check if the API key has changed
+    if idx != prec_idx:
+        time.sleep(5)
+    prec_idx = idx
+
+    while True:
+        try:
+            # Attempt to make the request and get the response
+            matching[word]["gemini"] = make_prompt(word, matching[word], api_key)
+            break  # Exit the loop if successful
+        except Exception as e:
+            print(f"Error occurred: {e}. Retrying in 65 seconds...")
+            time.sleep(65)
+
+    # Find the max likelihood cognates
+    max_likelihood = 0
+    to_insert = []
+    for cog in matching[word]["cognates"]:
+        max_likelihood = max(max_likelihood, cog[1])
+        if cog[1] == max_likelihood:
+            to_insert.append(cog[0])
+
+    gemini = [cog for cog in matching[word]["gemini"]]
+
+    to_insert = "|".join(to_insert)
+    gemini = "|".join(gemini)
+
+    # Append the results
+    with open(out, "a", encoding="utf-8") as f_append:
+        f_append.write(f"{word}\t{to_insert}\t{gemini}\t{int(matching[word]['valid'])}\n")

@@ -437,7 +437,7 @@ with open(out, "w", encoding="utf-8") as f:
 #print(matching)
 
 input_file_path = "converted_linear_b-greek.cog"
-output_file_path = "cognates.cog"
+output_file_path = "_cognates.cog"
 
 # Load the input (gold standard) data
 with open(input_file_path, "r", encoding="utf-8") as infile:
