@@ -7,6 +7,9 @@ import time
 from tqdm import tqdm
 import pickle
 import random
+import json
+from collections import OrderedDict
+
 # recall proper names types: anthroponym, ethnonym, phytonym, toponym, patronymic, theonym
 
 
@@ -429,8 +432,10 @@ else:
         matching = pickle.load(f)
     print("Loaded matching from file.")
 
-print(matching)
+for k in matching.keys():
+    matching[k]["type"] = "common"
 
+proper_names_types = ["anthroponym", "ethnonym", "phytonym", "toponym", "patronymic", "theonym"]
 # Open and process the CSV file
 with open("Linear B Lexicon.csv", newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
@@ -442,6 +447,10 @@ with open("Linear B Lexicon.csv", newline='', encoding='utf-8') as csvfile:
         #assert transcription in matching.keys()
         if transcription in matching:
             matching[transcription]["definition"] = row["definition"]
+            for pn in proper_names_types:
+                if pn in row["definition"]:
+                    matching[transcription]["type"] = "proper"
+                    break
 
 with open("converted_linear_b-greek.cog", newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile, delimiter="\t")
@@ -455,6 +464,7 @@ with open("converted_linear_b-greek.cog", newline='', encoding='utf-8') as csvfi
 
 
 def make_prompt(word, info_dict, api_key):
+
     # Create the root XML element
     prompt = ET.Element("root")
     
@@ -482,8 +492,8 @@ def make_prompt(word, info_dict, api_key):
 
     # Core rules
     rules = [
-    	"OUTPUT: Maximum 3 cognates separated by commas if 'valid' is True, otherwise only the best match, DO NOT OUTPUT ANYTHING ELSE, ALWAYS OUPUT ONLY THESE THINGS NOT REASONING STEPS",
-        "CRUCIAL: Use ONLY these characters in your output: fhαβγδεζηθικλμνξοπρςστυφχψω. DO NOT USE ACCENTS, SUBSCRIPT IOTA, SPIRITS.",
+    	"OUTPUT: Maximum 3 cognates separated by commas if 'valid' is True, otherwise only the best match",
+        "CRUCIAL: Use ONLY these characters in your output: fhαβγδεζηθικλμνξοπρςστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ. do NOT use ANY OTHER LATIN CHARACTER, ACCENTS, SUBSCRIPT IOTA, SPIRITS.",
         "For each proposed correspondence, verify that it is consistent with Principle 1 (Distributional Similarity)",
         "Every transformation must respect the relative ordering of phonemes, as required by Principle 2 (Monotonic Mapping)",
         "Prioritize one-to-one correspondences between phonemes, as indicated by Principle 3 (Structural Sparsity)",
@@ -518,9 +528,9 @@ def make_prompt(word, info_dict, api_key):
     }
     
     notes = {
-        "k": "Linear B does not distinguish between κ, χ, and γ. Principle 3: maintain one-to-one correspondences where possible.",
-        "p": "Represents π and φ undifferentiated. Principle 1: consider phonetic context to determine the correct correspondence.",
-        "q": "Typically represents labiovelar consonants. Principle 2: ensure transformations follow documented sound change patterns.",
+        "k": "Linear B does not distinguish between κ, χ, and γ. May become ξ, usually when followed by a syllabogram starting with s. Principle 3: maintain one-to-one correspondences where possible.",
+        "p": "Represents π and φ undifferentiated. May become ψ, usually when followed by a syllabogram starting with s. Principle 1: consider phonetic context to determine the correct correspondence.",
+        "q": "Typically represents labiovelar consonants. May become ξ or ψ, usually when followed by a syllabogram starting with s. Principle 2: ensure transformations follow documented sound change patterns.",
         "r": "Represents both liquids ρ and λ. Apply Principle 4 to determine the most likely correspondence in this specific context.",
         "j": "Represents yod (semivowel). Principle 1: examine distributional patterns to determine its most likely Greek reflex.",
         "w": "Represents digamma (ϝ). Principle 3: mark with 'f' to maintain structural sparsity in the mapping.",
@@ -542,7 +552,7 @@ def make_prompt(word, info_dict, api_key):
         "a": "Generally stable as α. Principle 1: examine distributional context for potential contractions.",
         "e": "Typically corresponds to ε, but may represent η in certain positions. Apply Principle 4 based on documented patterns.",
         "i": "Corresponds to ι. Apply Principle 2 to maintain monotonic mapping with any adjacent vowels.",
-        "o": "Usually represents ο, but may represent ω in certain positions. Apply Principle 3 for sparsity in mapping.",
+        "o": "Usually represents ο, but may represent ω in certain positions, especially at the end of the words in verbs. Apply Principle 3 for sparsity in mapping.",
         "u": "Corresponds to υ. Apply Principles 1 and 4 to determine the most likely correspondence."
     }
     
@@ -552,27 +562,76 @@ def make_prompt(word, info_dict, api_key):
 
     # Examples with principle-based explanations
     examples = ET.SubElement(prompt, "examples")
-    
+
     ex1 = ET.SubElement(examples, "example")
     ET.SubElement(ex1, "input").text = "a-e-ti-to"
     ET.SubElement(ex1, "output").text = "αεθιστος, εθιζω"
-    ET.SubElement(ex1, "principles_applied").text = "Principle 2 (Monotonic Mapping) preserved in both cognates. Principle 3 (Structural Sparsity) demonstrated in one-to-one phoneme correspondences."
-    
+    ET.SubElement(ex1, "principles_applied").text = "Principle 1: t → θ correspondence follows consistent patterns. Principle 2: Preserves monotonic ordering of phonemes. Principle 3: Maintains one-to-one mapping between Linear B and Greek sounds."
+
     ex2 = ET.SubElement(examples, "example")
     ET.SubElement(ex2, "input").text = "a-di-nwa-ta"
     ET.SubElement(ex2, "output").text = "αδινfατας"
-    ET.SubElement(ex2, "principles_applied").text = "Principle 2 (Monotonic Mapping) preserved. Principle 4 (Cognate Overlap) evidenced by consistent handling of digamma."
-    
+    ET.SubElement(ex2, "principles_applied").text = "Principle 2: Preserves monotonic mapping in nw → νf sequence. Principle 4: Consistent handling of digamma (w → f) reinforces observed patterns."
+
     ex3 = ET.SubElement(examples, "example")
     ET.SubElement(ex3, "input").text = "e-ma-ha"
     ET.SubElement(ex3, "output").text = "ερμαhαι, ερμαhας"
-    ET.SubElement(ex3, "principles_applied").text = "Principle 1 (Distributional Similarity) used to infer the ρ. Principle 3 (Structural Sparsity) maintained with one-to-one mapping."
-    
+    ET.SubElement(ex3, "principles_applied").text = "Principle 1: Distributional similarity used to infer ρ. Principle 3: Structural sparsity maintained with one-to-one sound mapping. Principle 4: Consistent h-series representation."
+
     ex4 = ET.SubElement(examples, "example")
     ET.SubElement(ex4, "input").text = "ko-no-so" 
-    ET.SubElement(ex4, "output").text = "κνωσος"
-    ET.SubElement(ex4, "principles_applied").text = "All four principles applied: consonant distribution, monotonic ordering, one-to-one mapping, and alignment with known patterns."
+    ET.SubElement(ex4, "output").text = "Κνωσος"
+    ET.SubElement(ex4, "principles_applied").text = "All four principles applied: Principle 1: k/o sound correspondence. Principle 2: Monotonic ordering preserved. Principle 3: One-to-one mapping. Principle 4: Aligns with known patterns for toponyms."
 
+    ex5 = ET.SubElement(examples, "example")
+    ET.SubElement(ex5, "input").text = "wo-no-qe-wa"
+    ET.SubElement(ex5, "output").text = "fονοκεfα"
+    ET.SubElement(ex5, "principles_applied").text = "Principle 1: w → f and q → κ correspondences follow consistent patterns. Principle 2: Monotonic ordering preserved. Principle 4: Reinforces observed digamma patterns."
+
+    ex6 = ET.SubElement(examples, "example")
+    ET.SubElement(ex6, "input").text = "wo-ro-ki-jo-ne-jo"
+    ET.SubElement(ex6, "output").text = "fοργιονειος, οργεωνες"
+    ET.SubElement(ex6, "principles_applied").text = "Principle 1: Distributional similarity in vowel sequences. Principle 2: Preserves monotonic mapping. Principle 4: Aligns with suffix transformation patterns."
+
+    ex7 = ET.SubElement(examples, "example")
+    ET.SubElement(ex7, "input").text = "qi-si-pe-e"
+    ET.SubElement(ex7, "output").text = "ξιφεε, ξιφη"
+    ET.SubElement(ex7, "principles_applied").text = "Principle 1: q + s → ξ correspondence in this context. Principle 3: Maintains sparse one-to-one mapping. Principle 4: Vowel contraction pattern (e-e → η) follows established rules."
+
+    ex8 = ET.SubElement(examples, "example")
+    ET.SubElement(ex8, "input").text = "re-u-ko-to-ro"
+    ET.SubElement(ex8, "output").text = "Λευκτρον, Λευκτροι"
+    ET.SubElement(ex8, "principles_applied").text = "Principle 1: r → λ distributional context. Principle 2: Preserves monotonic mapping. Principle 3: Maintains sparse mapping in consonant clusters. Principle 4: Aligns with known toponym patterns."
+
+    ex9 = ET.SubElement(examples, "example")
+    ET.SubElement(ex9, "input").text = "qo-u-qo-ta"
+    ET.SubElement(ex9, "output").text = "βουβοτας"
+    ET.SubElement(ex9, "principles_applied").text = "Principle 1: q → β correspondence in appropriate contexts. Principle 2: Preserves monotonic mapping. Principle 4: Diphthong formation patterns (o-u → ου) align with documented cases."
+
+    ex10 = ET.SubElement(examples, "example")
+    ET.SubElement(ex10, "input").text = "qe-qi-no-me-na"
+    ET.SubElement(ex10, "output").text = "γεγινωμενα"
+    ET.SubElement(ex10, "principles_applied").text = "Principle 1: q → γ correspondence in specific environments. Principle 2: Monotonic mapping preserved. Principle 4: Verbal form transformations follow established patterns."
+
+    ex11 = ET.SubElement(examples, "example")
+    ET.SubElement(ex11, "input").text = "po-ro-wi-to-jo"
+    ET.SubElement(ex11, "output").text = "πλωfιστοιο"
+    ET.SubElement(ex11, "principles_applied").text = "Principle 2: Monotonic mapping preserved despite syllable reduction. Principle 3: Maintains structural sparsity. Principle 4: Genitive ending transformation follows documented patterns."
+
+    ex12 = ET.SubElement(examples, "example")
+    ET.SubElement(ex12, "input").text = "po-ti-pi"
+    ET.SubElement(ex12, "output").text = "πορτις, πορτιφι"
+    ET.SubElement(ex12, "principles_applied").text = "Principle 1: Context-appropriate sound correspondences. Principle 3: One-to-one mapping maintained. Principle 4: Case ending transformation follows established patterns."
+
+    ex13 = ET.SubElement(examples, "example")
+    ET.SubElement(ex13, "input").text = "a-ri-qa"
+    ET.SubElement(ex13, "output").text = "Αρισβας"
+    ET.SubElement(ex13, "principles_applied").text = "Principle 1: q → β correspondence in this phonetic environment. Principle 2: Monotonic mapping preserved. Principle 4: Consonant addition follows patterns observed in anthroponyms."
+
+    ex14 = ET.SubElement(examples, "example")
+    ET.SubElement(ex14, "input").text = "ko-no"
+    ET.SubElement(ex14, "output").text = "σκοινος"
+    ET.SubElement(ex14, "principles_applied").text = "Principle 1: Initial k- often corresponds to σκ- in Greek. Principle 2: Monotonic mapping preserved with initial consonant addition. Principle 4: Aligns with observed prosthetic consonant patterns."
     # Refined evaluation criteria based on the principles
     evaluation = ET.SubElement(prompt, "evaluation_criteria")
     
@@ -649,24 +708,40 @@ def make_prompt(word, info_dict, api_key):
             ET.SubElement(cognates, "ancient_greek_word").text = cog
             ET.SubElement(cognates, "matching_level").text = f"{val:.3f}"
     
-    # Special handling for named entities
-    if "type" in info_dict:
-        ET.SubElement(word_elem, "entity_type").text = info_dict["type"]
+    ET.SubElement(word_elem, "entity_type").text = info_dict["type"] + " name"
         
-        if info_dict["type"] == "anthroponym":
-            ET.SubElement(word_elem, "naming_pattern_note").text = "Apply all four principles with special attention to Principle 4 for personal names"
-        elif info_dict["type"] == "toponym":
-            ET.SubElement(word_elem, "naming_pattern_note").text = "Apply all four principles with special attention to Principle 1 for place names"
+
+    # Create output format section with capitalization rules
+    output_format = ET.SubElement(prompt, "output_format")
+    ET.SubElement(output_format, "output_description").text = """format your output in json.
+    Return an array of cognates (even if you are returning a single one) containing three fields: 
+    - the field cognate containing the cognate itself;
+    - the field likelihood containing an estimate between 0 and 1 of how much you are sure the words are cognates
+    - the field note containing the reasoning behind the choice, the applied phenomena and the passed and unpassed checks.
+    For the cognate field, STRICTLY FOLLOW THE OUTPUT FORMATTING RULES"""
     
+    output_rules = [
+        "CHARACTER SET: use ONLY these characters: fhαβγδεζηθικλμνξοπρςστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ. DO NOT use accents, breathing marks, subscript iota, or other diacritics."
+        "CAPITALIZATION: for personal names (anthroponyms), place names (toponyms), and all other proper names, the first letter MUST be capitalized (e.g., Αριστοκλης not αριστοκλης). For common nouns and other words, use lowercase (e.g., ανθρωπος not Ανθρωπος)."
+        "FORMAT: if valid=True: Output up to 3 cognates. If valid=False: Output only the single best match."
+    ]
+
+    for i, r in enumerate(output_rules):
+        ET.SubElement(output_format, f"output_formatting_rule_{i}").text = output_rules[i]
+
+
     # Generate XML string
     prompt = ET.tostring(prompt, "utf-8").decode()
+    #print(prompt)
 
     # Using Gemini model to generate response
     genai.configure(api_key=api_key)
     gemini_model = genai.GenerativeModel('models/gemini-2.0-flash')
     response = gemini_model.generate_content(prompt)
     pred = response.text.strip()
-    return list(set(pred.split(", ")))
+    pred = pred[pred.find('['):pred.rfind(']')+1]
+    #print(json.loads(pred) )
+    return json.loads(pred)  # This will return a list of dictionaries
 
 # Open the file in write mode ('w') first, to clear it before writing new data
 
@@ -717,7 +792,8 @@ for i, word in tqdm(enumerate(sorted(matching.keys())[start_index:], start=start
     while True:
         try:
             # Attempt to make the request and get the response
-            matching[word]["gemini"] = make_prompt(word, matching[word], api_key)
+            gemini_cognates = make_prompt(word, matching[word], api_key)
+            matching[word]["gemini"] = gemini_cognates
             break  # Exit the loop if successful
         except Exception as e:
             print(f"Error occurred: {e}. Retrying in 65 seconds...")
@@ -731,13 +807,19 @@ for i, word in tqdm(enumerate(sorted(matching.keys())[start_index:], start=start
         if cog[1] == max_likelihood:
             to_insert.append(cog[0])
 
-    gemini = [cog for cog in matching[word]["gemini"]]
+    # Collect unique cognate surface forms (in order of appearance)
+    unique_gemini = list(OrderedDict.fromkeys(cog['cognate'] for cog in gemini_cognates if 'cognate' in cog))
 
     to_insert = "|".join(to_insert)
-    gemini = "|".join(gemini)
+    gemini = "|".join(unique_gemini)
     
     seq_list = words2seqlist[word]
 
     # Append the results
     with open(out, "a", encoding="utf-8") as f_append:
         f_append.write(f"{word}\t{to_insert}\t{gemini}\t{int(matching[word]['valid'])}\t{seq_list}\n")
+    
+    with open("gemini_output.jsonl", "a", encoding="utf-8") as f_jsonl:
+        json_line = json.dumps({word: {"valid": matching[word]['valid'], "output": gemini_cognates}}, ensure_ascii=False)
+        f_jsonl.write(json_line + "\n")
+
