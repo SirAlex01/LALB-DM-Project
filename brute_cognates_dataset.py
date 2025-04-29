@@ -751,9 +751,9 @@ def make_prompt(word, info_dict, api_key):
     - The cognate proposal conflicts with existing scholarship
     - The semantic match requires significant stretching."""
 
-    ET.SubElement(downweighting, "factor_1").text = """Reduce likelihood by 0.35-0.4 if an unknown syllabogram appears in the linear B sequence. The likelihood of sequences with unknown syllabograms MUST ALWAYS BE LESS THAN 0.7 ."""
+    ET.SubElement(downweighting, "factor_3").text = """Reduce likelihood by 0.35-0.4 if an unknown syllabogram appears in the linear B sequence. The likelihood of sequences with unknown syllabograms MUST ALWAYS BE LESS THAN 0.7 ."""
 
-    ET.SubElement(downweighting, "factor_3").text = """Even if all principles are satisfied, without attestation in scholarly literature, 
+    ET.SubElement(downweighting, "factor_4").text = """Even if all principles are satisfied, without attestation in scholarly literature, 
     no novel cognate proposal should receive likelihood above 0.85."""
 
     calibration_examples = ET.SubElement(likelihood_calibration, "example_likelihoods")
