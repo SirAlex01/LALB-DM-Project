@@ -20,6 +20,7 @@ load_dotenv()
 
 api_keys = [os.getenv("GOOGLE_API_KEY_1"), os.getenv("GOOGLE_API_KEY_2"), os.getenv("GOOGLE_API_KEY_3"), os.getenv("GOOGLE_API_KEY_4"), os.getenv("GOOGLE_API_KEY_5")
             , os.getenv("GOOGLE_API_KEY_6"), os.getenv("GOOGLE_API_KEY_7"), os.getenv("GOOGLE_API_KEY_8"), os.getenv("GOOGLE_API_KEY_9")]
+#api_keys = [os.getenv("GOOGLE_API_KEY_10"), os.getenv("GOOGLE_API_KEY_11"), os.getenv("GOOGLE_API_KEY_12"), os.getenv("GOOGLE_API_KEY_13")]
 
 
 
@@ -494,6 +495,7 @@ def make_prompt(word, info_dict, api_key):
     rules = [
     	"OUTPUT: Maximum 3 cognates separated by commas if 'valid' is True, otherwise only the best match",
         "CRUCIAL: Use ONLY these characters in your output: fhαβγδεζηθικλμνξοπρςστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ. do NOT use ANY OTHER LATIN CHARACTER, ACCENTS, SUBSCRIPT IOTA, SPIRITS.",
+        "CRUCIAL: Consider that our proposed cognates are just proposals of words with similar root in the Homeric scripts. DO NOT RELY ON THEM FOR FINDING THE COGNATES, FIND THEM YOURSELF FROM THE ENTIRE ANCIENT GREEK CORPUS!!!"
         "For each proposed correspondence, verify that it is consistent with Principle 1 (Distributional Similarity)",
         "Every transformation must respect the relative ordering of phonemes, as required by Principle 2 (Monotonic Mapping)",
         "Prioritize one-to-one correspondences between phonemes, as indicated by Principle 3 (Structural Sparsity)",
@@ -726,10 +728,78 @@ def make_prompt(word, info_dict, api_key):
         "FORMAT: if valid=True: Output up to 3 cognates. If valid=False: Output only the single best match."
     ]
 
+    
     for i, r in enumerate(output_rules):
         ET.SubElement(output_format, f"output_formatting_rule_{i}").text = output_rules[i]
 
+    likelihood_calibration = ET.SubElement(output_format, "likelihood_calibration")
+    ET.SubElement(likelihood_calibration, "calibration_instructions").text = """When estimating likelihood, use the following calibrated scale:
+    0.95-1.00: Reserved ONLY for established cognates confirmed in scholarly literature with near certainty
+    0.75-0.94: Strong evidence with multiple corresponding patterns and minimal uncertainties
+    0.50-0.74: Good evidence but with some uncertainties or competing explanations
+    0.40-0.49: Plausible connection with significant uncertainties
+    0.20-0.39: Speculative connection with major uncertainties
+    0.00-0.19: Highly speculative with minimal supporting evidence"""
 
+    downweighting = ET.SubElement(likelihood_calibration, "automatic_downweighting")
+    ET.SubElement(downweighting, "factor_1").text = """Reduce likelihood by 0.2-0.3 if the cognate requires:
+    - Three or more non-trivial sound transformations
+    - Any reordering of phonemes
+    - Addition/deletion of multiple phonemes."""
+
+    ET.SubElement(downweighting, "factor_2").text = """Reduce likelihood by 0.1-0.2 if:
+    - The word is rare in the corpus
+    - The cognate proposal conflicts with existing scholarship
+    - The semantic match requires significant stretching."""
+
+    ET.SubElement(downweighting, "factor_1").text = """Reduce likelihood by 0.35-0.4 if an unknown syllabogram appears in the linear B sequence. The likelihood of sequences with unknown syllabograms MUST ALWAYS BE LESS THAN 0.7 ."""
+
+    ET.SubElement(downweighting, "factor_3").text = """Even if all principles are satisfied, without attestation in scholarly literature, 
+    no novel cognate proposal should receive likelihood above 0.85."""
+
+    calibration_examples = ET.SubElement(likelihood_calibration, "example_likelihoods")
+    ET.SubElement(calibration_examples, "high_example").text = """ko-no-so → Κνωσος: likelihood = 0.95 
+    (Near certainty: well-documented toponym with scholarly consensus)"""
+
+    ET.SubElement(calibration_examples, "medium_high_example").text = """a-ko-ra → αγορα: likelihood = 0.85 
+    (Good correspondence but with some phonological uncertainties)"""
+
+    ET.SubElement(calibration_examples, "medium_example").text = """po-ti-ni-ja → ποτνια: likelihood = 0.75 
+    (Reasonable correspondence but requires several transformations)"""
+
+    ET.SubElement(calibration_examples, "lower_medium_example").text = """a-re-ka-sa-da-ra → Αλεξανδρα: likelihood = 0.65 
+    (Plausible but with multiple phonological adaptations and uncertainties)"""
+
+    ET.SubElement(calibration_examples, "lower_medium_example").text = """pe-ma → σπερμα: likelihood = 0.65 
+    (Speculative connection requiring multiple unsupported transformations)"""
+
+    ET.SubElement(calibration_examples, "low_example").text = """a-ka-ma-to → αγαμαι: likelihood = 0.5 
+    (Unclear transformation at the end of the word, now matching suffixes but probably a similar root)"""
+    
+    ET.SubElement(calibration_examples, "lower_example").text = """*47-so-de → Ασος: likelihood = 0.4
+    (Unclear transformation in the suffix and unknown syllabogram in the sequence)"""
+
+    ET.SubElement(calibration_examples, "lower_example").text = """*34-za-te-si → Ζατεσις: likelihood = 0.3
+    (Unknown syllabogram in the sequence, complete omission of a syllabogram for no good reason)"""
+
+    ET.SubElement(calibration_examples, "lower_example").text = """*56-ko-qe → κλαγγη: likelihood = 0.2 
+    (Plenty of unclear transformation phenomena and unknown syllabogram in the sequence)"""
+
+    ET.SubElement(calibration_examples, "lower_example").text = """*56-ni-di-ja → Ανδρα: likelihood = 0.0 
+    (No clear connection or matching between the two words)"""
+
+    critical_thinking = ET.SubElement(output_format, "critical_evaluation")
+    ET.SubElement(critical_thinking, "instruction").text = """For each cognate proposal:
+    - Actively search for weaknesses in the proposed cognate connection
+    - List at least one specific uncertainty or alternative explanation
+    - Consider what evidence would be needed to increase confidence
+    - Apply higher standards for novel cognate proposals than for established ones"""
+
+    ET.SubElement(critical_thinking, "uncertainty_prompt").text = """Before finalizing your likelihood score, ask:
+    - What scholarly sources would I need to confirm this?
+    - What alternative cognates might explain this Linear B term?
+    - What specific sound changes require justification?
+    - Would experts in Mycenaean Greek agree with this analysis?"""
     # Generate XML string
     prompt = ET.tostring(prompt, "utf-8").decode()
     #print(prompt)
@@ -753,7 +823,7 @@ file_exists = os.path.exists(out)
 # If file doesn't exist, create it and write the header
 if not file_exists:
     with open(out, "w", encoding="utf-8") as f:
-        f.write("converted_linear_b\tgreek\tgemini\tvalid\tsequence_id\n")
+        f.write("converted_linear_b\tgreek\tgemini\tvalid\tlikelihood\tsequence_id\n")
         f.flush()
     start_index = 0
 else:
@@ -808,16 +878,23 @@ for i, word in tqdm(enumerate(sorted(matching.keys())[start_index:], start=start
             to_insert.append(cog[0])
 
     # Collect unique cognate surface forms (in order of appearance)
-    unique_gemini = list(OrderedDict.fromkeys(cog['cognate'] for cog in gemini_cognates if 'cognate' in cog))
+    unique_gemini = sorted(
+        list(OrderedDict.fromkeys((cog['cognate'], cog['likelihood']) for cog in gemini_cognates if 'cognate' in cog and 'likelihood' in cog)),
+        key=lambda x: x[1],  # Sort by the likelihood (second element in the tuple)
+        reverse=True  # Set to True to sort in descending order (highest likelihood first)
+    )
 
     to_insert = "|".join(to_insert)
-    gemini = "|".join(unique_gemini)
-    
-    seq_list = words2seqlist[word]
+    gemini_cogs = [cog[0] for cog in unique_gemini]  # Extract cognates
+    gemini_likelihoods = [str(cog[1]) for cog in unique_gemini]  # Extract likelihoods and convert to strings
+    # Join them with "|" separator
+    gemini_cogs = "|".join(gemini_cogs)
+    gemini_likelihoods = "|".join(gemini_likelihoods)
 
+    seq_list = words2seqlist[word]
     # Append the results
     with open(out, "a", encoding="utf-8") as f_append:
-        f_append.write(f"{word}\t{to_insert}\t{gemini}\t{int(matching[word]['valid'])}\t{seq_list}\n")
+        f_append.write(f"{word}\t{to_insert}\t{gemini_cogs}\t{int(matching[word]['valid'])}\t{gemini_likelihoods}\t{seq_list}\n")
     
     with open("gemini_output.jsonl", "a", encoding="utf-8") as f_jsonl:
         json_line = json.dumps({word: {"valid": matching[word]['valid'], "output": gemini_cognates}}, ensure_ascii=False)
