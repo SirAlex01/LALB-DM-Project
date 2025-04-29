@@ -494,7 +494,7 @@ def make_prompt(word, info_dict, api_key):
     # Core rules
     rules = [
     	"OUTPUT: Maximum 3 cognates separated by commas if 'valid' is True, otherwise only the best match",
-        "CRUCIAL: Use ONLY these characters in your output: fhαβγδεζηθικλμνξοπρςστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ. do NOT use ANY OTHER LATIN CHARACTER, ACCENTS, SUBSCRIPT IOTA, SPIRITS.",
+        "CRUCIAL: Use ONLY these characters in your output: fhαβγδεζηθικλμνξοπρςστυφχψω. do NOT use ANY OTHER LATIN CHARACTER, ACCENTS, SUBSCRIPT IOTA, SPIRITS.",
         "CRUCIAL: Consider that our proposed cognates are just proposals of words with similar root in the Homeric scripts. DO NOT RELY ON THEM FOR FINDING THE COGNATES, FIND THEM YOURSELF FROM THE ENTIRE ANCIENT GREEK CORPUS!!!"
         "For each proposed correspondence, verify that it is consistent with Principle 1 (Distributional Similarity)",
         "Every transformation must respect the relative ordering of phonemes, as required by Principle 2 (Monotonic Mapping)",
@@ -582,7 +582,7 @@ def make_prompt(word, info_dict, api_key):
 
     ex4 = ET.SubElement(examples, "example")
     ET.SubElement(ex4, "input").text = "ko-no-so" 
-    ET.SubElement(ex4, "output").text = "Κνωσος"
+    ET.SubElement(ex4, "output").text = "κνωσος"
     ET.SubElement(ex4, "principles_applied").text = "All four principles applied: Principle 1: k/o sound correspondence. Principle 2: Monotonic ordering preserved. Principle 3: One-to-one mapping. Principle 4: Aligns with known patterns for toponyms."
 
     ex5 = ET.SubElement(examples, "example")
@@ -602,7 +602,7 @@ def make_prompt(word, info_dict, api_key):
 
     ex8 = ET.SubElement(examples, "example")
     ET.SubElement(ex8, "input").text = "re-u-ko-to-ro"
-    ET.SubElement(ex8, "output").text = "Λευκτρον, Λευκτροι"
+    ET.SubElement(ex8, "output").text = "λευκτρον, λευκτροι"
     ET.SubElement(ex8, "principles_applied").text = "Principle 1: r → λ distributional context. Principle 2: Preserves monotonic mapping. Principle 3: Maintains sparse mapping in consonant clusters. Principle 4: Aligns with known toponym patterns."
 
     ex9 = ET.SubElement(examples, "example")
@@ -627,7 +627,7 @@ def make_prompt(word, info_dict, api_key):
 
     ex13 = ET.SubElement(examples, "example")
     ET.SubElement(ex13, "input").text = "a-ri-qa"
-    ET.SubElement(ex13, "output").text = "Αρισβας"
+    ET.SubElement(ex13, "output").text = "αρισβας"
     ET.SubElement(ex13, "principles_applied").text = "Principle 1: q → β correspondence in this phonetic environment. Principle 2: Monotonic mapping preserved. Principle 4: Consonant addition follows patterns observed in anthroponyms."
 
     ex14 = ET.SubElement(examples, "example")
@@ -713,7 +713,7 @@ def make_prompt(word, info_dict, api_key):
     ET.SubElement(word_elem, "entity_type").text = info_dict["type"] + " name"
         
 
-    # Create output format section with capitalization rules
+    # Create output format section with rules
     output_format = ET.SubElement(prompt, "output_format")
     ET.SubElement(output_format, "output_description").text = """format your output in json.
     Return an array of cognates (even if you are returning a single one) containing three fields: 
@@ -723,8 +723,7 @@ def make_prompt(word, info_dict, api_key):
     For the cognate field, STRICTLY FOLLOW THE OUTPUT FORMATTING RULES"""
     
     output_rules = [
-        "CHARACTER SET: use ONLY these characters: fhαβγδεζηθικλμνξοπρςστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ. DO NOT use accents, breathing marks, subscript iota, or other diacritics."
-        "CAPITALIZATION: for personal names (anthroponyms), place names (toponyms), and all other proper names, the first letter MUST be capitalized (e.g., Αριστοκλης not αριστοκλης). For common nouns and other words, use lowercase (e.g., ανθρωπος not Ανθρωπος)."
+        "CHARACTER SET: use ONLY these characters: fhαβγδεζηθικλμνξοπρςστυφχψω. DO NOT use accents, breathing marks, subscript iota, or other diacritics."
         "FORMAT: if valid=True: Output up to 3 cognates. If valid=False: Output only the single best match."
     ]
 
@@ -758,7 +757,7 @@ def make_prompt(word, info_dict, api_key):
     no novel cognate proposal should receive likelihood above 0.85."""
 
     calibration_examples = ET.SubElement(likelihood_calibration, "example_likelihoods")
-    ET.SubElement(calibration_examples, "high_example").text = """ko-no-so → Κνωσος: likelihood = 0.95 
+    ET.SubElement(calibration_examples, "high_example").text = """ko-no-so → κνωσος: likelihood = 0.95 
     (Near certainty: well-documented toponym with scholarly consensus)"""
 
     ET.SubElement(calibration_examples, "medium_high_example").text = """a-ko-ra → αγορα: likelihood = 0.85 
@@ -767,7 +766,7 @@ def make_prompt(word, info_dict, api_key):
     ET.SubElement(calibration_examples, "medium_example").text = """po-ti-ni-ja → ποτνια: likelihood = 0.75 
     (Reasonable correspondence but requires several transformations)"""
 
-    ET.SubElement(calibration_examples, "lower_medium_example").text = """a-re-ka-sa-da-ra → Αλεξανδρα: likelihood = 0.65 
+    ET.SubElement(calibration_examples, "lower_medium_example").text = """a-re-ka-sa-da-ra → αλεξανδρα: likelihood = 0.65 
     (Plausible but with multiple phonological adaptations and uncertainties)"""
 
     ET.SubElement(calibration_examples, "lower_medium_example").text = """pe-ma → σπερμα: likelihood = 0.65 
@@ -776,16 +775,16 @@ def make_prompt(word, info_dict, api_key):
     ET.SubElement(calibration_examples, "low_example").text = """a-ka-ma-to → αγαμαι: likelihood = 0.5 
     (Unclear transformation at the end of the word, now matching suffixes but probably a similar root)"""
     
-    ET.SubElement(calibration_examples, "lower_example").text = """*47-so-de → Ασος: likelihood = 0.4
+    ET.SubElement(calibration_examples, "lower_example").text = """*47-so-de → ασος: likelihood = 0.4
     (Unclear transformation in the suffix and unknown syllabogram in the sequence)"""
 
-    ET.SubElement(calibration_examples, "lower_example").text = """*34-za-te-si → Ζατεσις: likelihood = 0.3
+    ET.SubElement(calibration_examples, "lower_example").text = """*34-za-te-si → ζατεσις: likelihood = 0.3
     (Unknown syllabogram in the sequence, complete omission of a syllabogram for no good reason)"""
 
     ET.SubElement(calibration_examples, "lower_example").text = """*56-ko-qe → κλαγγη: likelihood = 0.2 
     (Plenty of unclear transformation phenomena and unknown syllabogram in the sequence)"""
 
-    ET.SubElement(calibration_examples, "lower_example").text = """*56-ni-di-ja → Ανδρα: likelihood = 0.0 
+    ET.SubElement(calibration_examples, "lower_example").text = """*56-ni-di-ja → ανδρα: likelihood = 0.0 
     (No clear connection or matching between the two words)"""
 
     critical_thinking = ET.SubElement(output_format, "critical_evaluation")
