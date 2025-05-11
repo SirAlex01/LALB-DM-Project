@@ -718,7 +718,7 @@ def make_prompt(word, info_dict, api_key):
     ET.SubElement(output_format, "output_description").text = """format your output in json.
     Return an array of cognates (even if you are returning a single one) containing three fields: 
     - the field cognate containing the cognate itself;
-    - the field likelihood containing an estimate between 0 and 1 of how much you are sure the words are cognates
+    - the field likelihood containing an estimate between 0 and 1 of how much you are sure the words are cognates, according to rules specified below in the section likelihood calibration and downweighting.
     - the field note containing the reasoning behind the choice, the applied phenomena and the passed and unpassed checks.
     For the cognate field, STRICTLY FOLLOW THE OUTPUT FORMATTING RULES"""
     
@@ -733,25 +733,23 @@ def make_prompt(word, info_dict, api_key):
 
     likelihood_calibration = ET.SubElement(output_format, "likelihood_calibration")
     ET.SubElement(likelihood_calibration, "calibration_instructions").text = """When estimating likelihood, use the following calibrated scale:
-    0.95-1.00: Reserved ONLY for established cognates confirmed in scholarly literature with near certainty
-    0.75-0.94: Strong evidence with multiple corresponding patterns and minimal uncertainties
-    0.50-0.74: Good evidence but with some uncertainties or competing explanations
-    0.40-0.49: Plausible connection with significant uncertainties
-    0.20-0.39: Speculative connection with major uncertainties
-    0.00-0.19: Highly speculative with minimal supporting evidence"""
+    0.75-1.00: Reserved ONLY for established cognates confirmed in scholarly literature with near certainty
+    0.56-0.74: Good evidence but with some uncertainties or competing explanations
+    0.40-0.55: Plausible connection with significant uncertainties
+    0.00-0.39: Highly speculative with minimal supporting evidence"""
 
     downweighting = ET.SubElement(likelihood_calibration, "automatic_downweighting")
-    ET.SubElement(downweighting, "factor_1").text = """Reduce likelihood by 0.2-0.3 if the cognate requires:
+    ET.SubElement(downweighting, "factor_1").text = """Reduce likelihood by 0.3 if the cognate requires:
     - Three or more non-trivial sound transformations
     - Any reordering of phonemes
     - Addition/deletion of multiple phonemes."""
 
-    ET.SubElement(downweighting, "factor_2").text = """Reduce likelihood by 0.1-0.2 if:
+    ET.SubElement(downweighting, "factor_2").text = """Reduce likelihood by 0.2 if:
     - The word is rare in the corpus
     - The cognate proposal conflicts with existing scholarship
     - The semantic match requires significant stretching."""
 
-    ET.SubElement(downweighting, "factor_3").text = """Reduce likelihood by 0.35-0.4 if an unknown syllabogram appears in the linear B sequence. The likelihood of sequences with unknown syllabograms MUST ALWAYS BE LESS THAN 0.7 ."""
+    ET.SubElement(downweighting, "factor_3").text = """Reduce likelihood by 0.4 if an unknown syllabogram appears in the linear B sequence. The likelihood of sequences with unknown syllabograms MUST ALWAYS BE LESS THAN 0.7, THIS IS A HARD CAP, NON-NEGOTIABLE. All unknown syllabograms are those starting with '*' and ending in a number, like '*19' or '*22'."""
 
     ET.SubElement(downweighting, "factor_4").text = """Even if all principles are satisfied, without attestation in scholarly literature, 
     no novel cognate proposal should receive likelihood above 0.85."""

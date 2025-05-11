@@ -2,3 +2,5 @@
 *.png
 *.env
 *.pkl
+./gemini_output.jsonl
+./cognates.cog
