@@ -1,0 +1,24 @@
+linear_b,greek_cognates,explanation
+a-da-ma-o,"['αδαμαο', 'αδαμας']",Removed capital letters. The Linear B 'a-da-ma-o' corresponds to Greek 'αδαμαο' (Adamao) and 'αδαμας' (Adamas).
+a-da-me-we,"['αδαμεfεις', 'αδαμευς']",Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both cognate forms.
+a-da-ra-ti-jo,['αδραστιος'],Removed capital letter and accent from 'ά'. The Linear B 'a-da-ra-ti-jo' corresponds to Greek 'αδραστιος'.
+a-de-te,['ανδετηρ'],First word from the pair. Removed accent from 'ή'.
+a-de-te-re,['ανδετηρες'],Second word from the pair. Removed accent from 'ή'.
+a-di-nwa-ta,['αδινfατας'],Removed capital letter and accent from 'ά'. Converted digamma 'F' to lowercase 'f'. The Linear B 'a-di-nwa-ta' corresponds to Greek 'αδινfατας'.
+a-di-ri-ja-pi,['ανδριαφι'],First word from the group. Removed accent from 'ί'.
+a-di-ri-ja-te,['ανδριαντει'],Second word from the group. Removed accent from 'ά' and 'ε'.
+a-di-ri-jo,"['ανδριος', 'ανερ']",Third word from the group. Removed accent from 'ί'. Included both cognate forms.
+a-e-ri-qo-ta,['αελιποτας'],Removed accent from 'ί'.
+a-e-ti-to,"['αεθιστος', 'εθιζω']",Removed accent and breathing mark from 'ά'. Removed parentheses and following text. Linear B 'a-e-ti-to' corresponds to Greek 'αεθιστος' and 'εθιζω'.
+ai-ka-sa-ma,"['αιξμας', 'αιχμη']",Removed parentheses and the included text. Dropped disallowed character 'ν'.  Removed accent from 'ά'. Converted 'αιξμά&gt;' to 'αιχμή'.
+ai-ke-u,['αιγευς'],First word from the list. Removed accent from 'έ'.
+a-i-ke-u,['αιγευς'],Second word from the list. Removed accent from 'έ'.
+ai-ki-e-we,['αιγευς'],Third word from the list. Removed accent from 'έ'.
+a-i-qe-we,['αιγευς'],Fourth word from the list. Removed accent from 'έ'.
+ai-ki-e-wo,['αιγευς'],Fifth word from the list. Removed accent from 'έ'.
+a-1-qe-wo,[],"Sixth word from the list. Contains disallowed character '1', so the cognate is dropped."
+ai-ki-a2-ri-jo,['αιγιhαλιος'],"The a2 sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate. Removed accent from 'ά'."
+ai-ki-no-o,['αιγινοος'],Removed accent from 'ί'. The Linear B 'ai-ki-no-o' corresponds to Greek 'αιγινοος'.
+ai-ki-pa-ta,['αιγιπατας'],The Linear B 'ai-ki-pa-ta' corresponds to Greek 'αιγιπατας'. Removed accent from 'ά'.
+a-i-ki-pa-ta,['αιγιπατας'],The Linear B 'a-i-ki-pa-ta' corresponds to Greek 'αιγιπατας'. Removed accent from 'ά'.
+ai-ki-po,['αιγιπως'],No changes needed as it has no accents or special characters.

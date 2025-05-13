@@ -58,6 +58,6 @@ with open(input_file, mode='r', newline='', encoding='utf-8') as infile, \
 
     for row in reader:
         # Clean first two fields
-        row[0] = row[0].replace('"', '').replace("'", '').replace(" ", "")
+        row[0] = row[0].replace('"', '').replace("'", '').replace("to2", "tyo").replace("ro2", "ryo").replace("si2", "*64").replace("sa2", "*82").replace("ra3", "rai").replace("ra2", "rya").replace("pu2", "phu").replace("ta2","tya").replace("a3", "ai").replace("a2", "ha")
         row[1] = row[1].replace('"', '').replace("'", '').replace(" ", "")
         writer.writerow(row)
