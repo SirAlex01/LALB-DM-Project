@@ -1,0 +1,13 @@
+prefixes:
+po-ro-: pro- (prima)
+-qe-to-ro-,πετρο- (>τετρα-),petro- (>tetra-),tetra-: four
+we-,Fέκ-,fek-,hex- (six)
+e-ne-wo-,εwεFο-,ennevo-,ηιηe- (nine)
+
+suffixes:
+-qe: and
+-wo-ko: worker
+-wo-wo: mountain
+-te,-θεν,-then,away from a place (ablative)
+-de,-δε,-de,"not, οη the other side"
+-de,-δε,-de,allative/ demonstrative
