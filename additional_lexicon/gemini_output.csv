@@ -1,24 +1,1339 @@
-linear_b,greek_cognates,explanation
-a-da-ma-o,"['αδαμαο', 'αδαμας']",Removed capital letters. The Linear B 'a-da-ma-o' corresponds to Greek 'αδαμαο' (Adamao) and 'αδαμας' (Adamas).
-a-da-me-we,"['αδαμεfεις', 'αδαμευς']",Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both cognate forms.
-a-da-ra-ti-jo,['αδραστιος'],Removed capital letter and accent from 'ά'. The Linear B 'a-da-ra-ti-jo' corresponds to Greek 'αδραστιος'.
-a-de-te,['ανδετηρ'],First word from the pair. Removed accent from 'ή'.
-a-de-te-re,['ανδετηρες'],Second word from the pair. Removed accent from 'ή'.
-a-di-nwa-ta,['αδινfατας'],Removed capital letter and accent from 'ά'. Converted digamma 'F' to lowercase 'f'. The Linear B 'a-di-nwa-ta' corresponds to Greek 'αδινfατας'.
-a-di-ri-ja-pi,['ανδριαφι'],First word from the group. Removed accent from 'ί'.
-a-di-ri-ja-te,['ανδριαντει'],Second word from the group. Removed accent from 'ά' and 'ε'.
-a-di-ri-jo,"['ανδριος', 'ανερ']",Third word from the group. Removed accent from 'ί'. Included both cognate forms.
-a-e-ri-qo-ta,['αελιποτας'],Removed accent from 'ί'.
-a-e-ti-to,"['αεθιστος', 'εθιζω']",Removed accent and breathing mark from 'ά'. Removed parentheses and following text. Linear B 'a-e-ti-to' corresponds to Greek 'αεθιστος' and 'εθιζω'.
-ai-ka-sa-ma,"['αιξμας', 'αιχμη']",Removed parentheses and the included text. Dropped disallowed character 'ν'.  Removed accent from 'ά'. Converted 'αιξμά&gt;' to 'αιχμή'.
-ai-ke-u,['αιγευς'],First word from the list. Removed accent from 'έ'.
-a-i-ke-u,['αιγευς'],Second word from the list. Removed accent from 'έ'.
-ai-ki-e-we,['αιγευς'],Third word from the list. Removed accent from 'έ'.
-a-i-qe-we,['αιγευς'],Fourth word from the list. Removed accent from 'έ'.
-ai-ki-e-wo,['αιγευς'],Fifth word from the list. Removed accent from 'έ'.
-a-1-qe-wo,[],"Sixth word from the list. Contains disallowed character '1', so the cognate is dropped."
-ai-ki-a2-ri-jo,['αιγιhαλιος'],"The a2 sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate. Removed accent from 'ά'."
-ai-ki-no-o,['αιγινοος'],Removed accent from 'ί'. The Linear B 'ai-ki-no-o' corresponds to Greek 'αιγινοος'.
-ai-ki-pa-ta,['αιγιπατας'],The Linear B 'ai-ki-pa-ta' corresponds to Greek 'αιγιπατας'. Removed accent from 'ά'.
-a-i-ki-pa-ta,['αιγιπατας'],The Linear B 'a-i-ki-pa-ta' corresponds to Greek 'αιγιπατας'. Removed accent from 'ά'.
-ai-ki-po,['αιγιπως'],No changes needed as it has no accents or special characters.
+linear_b,greek_cognates,dubious,explanation,translation
+a-da-ma-o,αδαμαο|αδαμας,,Removed accent from 'ά'. Included both cognates.,personal name
+a-da-me-we,αδαμεfεις|αδαμευς,,Removed accents from 'έ'. Converted digamma 'F' to lowercase 'f'.,personal name
+a-da-ra-ti-jo,αδραστιος,,Removed capital letter from 'Α'.,personal name
+a-de-te,ανδετηρ,,First word from the pair. Removed accent from 'ή'.,binder (>άνδημα= head- band)
+a-de-te-re,ανδετηρες,,Second word from the pair. Removed accent from 'έ'.,binder (>άνδημα= head- band)
+a-di-nwa-ta,αδινfατας,,No changes needed as it has no accents or special characters. Converted digamma 'F' to lowercase 'f'.,personal name
+a-di-ri-ja-pi,ανδριαφι,,First word from the triple. Removed accent from 'ί'.,(decorated) with men
+a-di-ri-ja-te,ανδριαντει,,Second word from the triple. Removed accent from 'ά' and 'ε'.,(decorated) with men
+a-di-ri-jo,ανδριος|ανερ,,Third word from the triple. Removed accent from 'ί'. Included both forms.,(decorated) with men
+a-e-ri-qo-ta,αελιποτας,,No modifications needed. The Linear B 'a-e-ri-qo-ta' corresponds to Greek 'αελιποτας' (personal name).,personal name
+a-e-ti-to,αεθιστος|εθιζω,,Removed accent from 'έ'.,not used? (>εθίζω= to accustom)
+ai-ka-sa-ma,αιξμανς|αιξμας|αιχμη,,Removed accent from 'ά'. Included both variants with and without the letter in parenthesis and the one within parenthesis. Included both forms.,pointed head of a weapon
+ai-ke-u,αιγευς,,First word from the group of Linear B words. Removed capital letter from 'Α'.,personal name (also a decorating style)
+a-i-ke-u,αιγευς,,Second word from the group of Linear B words. Removed capital letter from 'Α'.,personal name (also a decorating style)
+ai-ki-e-we,αιγευς,,Third word from the group of Linear B words. Removed capital letter from 'Α'.,personal name (also a decorating style)
+a-i-qe-we,αιγευς,,Fourth word from the group of Linear B words. Removed capital letter from 'Α'.,personal name (also a decorating style)
+ai-ki-e-wo,αιγευς,,Fifth word from the group of Linear B words. Removed capital letter from 'Α'.,personal name (also a decorating style)
+a-i-qe-wo,αιγευς,,Sixth word from the group of Linear B words. Removed capital letter from 'Α'.,personal name (also a decorating style)
+ai-ki-ha-ri-jo,αιγιhαλιος,,"The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.",coastal (see also 'aigihaliande')
+ai-ki-no-o,αιγινοος,,"No modifications needed as the input contains no diacritics, digamma or parentheses.",personal name
+ai-ki-pa-ta,αιγιπατας,,First word from the pair. Removed capital letter.,"personal name (αιξ, αίγα= goat)"
+a-i-ki-pa-ta,αιγιπατας,,Second word from the pair. Removed capital letter.,"personal name (αιξ, αίγα= goat)"
+ai-ki-po,αιγιπως,,No modifications were necessary. The Linear B 'ai-ki-po' corresponds to Greek 'αιγιπως'.,personal name
+ai-ko-ta,αικοντας,,No changes needed as it has no accents or special characters.,personal name
+ai-ku-pi-ti-jo,αιγυπτιος,,Removed accent from 'ί'. The Linear B 'ai-ku-pi-ti-jo' corresponds to Greek 'αιγυπτιος' (personal name).,personal name
+ai-ta-re-u-si,αιθαλευσι|αιθαλευς,,Removed capital letter and accent from 'έ'. Included both forms 'Αιθαλεύσι' and 'Αιθαλεύς' as both are present within parentheses in the original data.,place name
+ai-ta-ro-we,αιθαλοfεις,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,personal name (>αιθαλόεις= 'smoky')
+a-ta-ro-we,αιθαλοfεις,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,personal name (>αιθαλόεις= 'smoky')
+ai-ti-jo-qe,αιθιοπες,,First word from the pair. Removed accent from 'ί'.,"ethnic/personal name (>αιθός= shining, blazing)"
+ai-ti-jo-qo,αιθιοψ,,Second word from the pair. Removed accent from 'ί'.,"ethnic/personal name (>αιθός= shining, blazing)"
+ai-to,αιθων,,No changes needed.,personal name
+ai-wa-ja,αιfαια|αια,,Converted digamma 'F' to lowercase 'f'.,ethnic/place name
+ai-wa-ta,αιfατας,,Converted digamma 'F' to lowercase 'f'.,personal name
+ai-wo-ro,αιfολος,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,personal/ animal name  (=  'nibble')
+a-wo-ro,αιfολος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,personal/ animal name  (=  'nibble')
+ai-za,αιζα|αιγα,,Included both the original form 'αιζα' and the evolved form 'αιγα' as possible cognates.,goat
+ai-za,αιζαι|αιγαι,,"Included both forms, with 'ζ' and 'γ'. Removed parentheses.",place name
+a-ja-me-na,αιασμενα,,First word from the pair. Removed accent from 'έ'.,inscribed/ decorated
+a-ja-me-no,αιασμενος,,Second word from the pair. Removed accent from 'έ'.,inscribed/ decorated
+a-ka-ma-no,αλκμανωρ,,Removed capital letter from 'Α'.,personal name
+a-ka-ra-no,ακαρανος,,No changes needed as it has no accents or special characters.,(>άκαρα= legs/ kara= head)
+a-ka-si-jo-ne,ακασιονει|ακασιον,,"Removed accents from 'ό'. Included both forms, with and without 'ει', as per handling of parenthetical elements in Greek cognates.",place name
+a-ka-ta-jo,ακταιος,,Removed capital letter and accent from 'Α'.,personal name
+a-ka-wo,αχαιfος|αχαιος,,"Removed accent from 'ό'. Converted digamma 'F' to lowercase 'f'. Included both forms, with and without digamma conversion.",personal/ ethnic name of 'Ahaivia'
+a-ke,αγει|αγω,,First word from the pair. Removed accent from 'ά'.,to send
+a-ke-e,αγειν,,Second word from the pair. Removed accent from 'ά'.,to send
+a-ke-o-jo,αργειοιο,,Removed accent from 'έ'.,ethnic name of 'Argos'
+a-ke-jo,αργειος,,Removed accent from 'έ'.,ethnic name of 'Argos'
+a-ke-ra-wo,αρχελαfος|αρχελαfων,,Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'. The Linear B 'a-ke-ra-wo' corresponds to Greek 'αρχελαfος' or 'αρχελαfων'.,personal name
+a-ke-re,αγειρει|αγειρειν|αγειρω,,Removed accents from 'έ'. The Linear B 'a-ke-re' corresponds to Greek 'αγειρει(ν)(αγειρω)'.,to gather together/collect
+a-ke-re-u,αγρευς,,First word from the pair. Removed accent from 'έ'.,place name
+a-ke-re-u-te,αγρευθεν,,Second word from the pair. Removed accent from 'έ'.,place name
+a-ke-re-wa,αγρεfα,,First word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,place name (fem. of 'Agreus'?)
+a-ke-re-wa-de,αγρεfανδε,,Second word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,place name (fem. of 'Agreus'?)
+a-ke-re-we,αγρεfα,,Third word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,place name (fem. of 'Agreus'?)
+a-ke-re-wi-jo,αγρεfιος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,ethnic name of 'Agrefa'
+a-ke-ro,αγγελος,,Removed accent from 'ά'.,messenger
+a-ke-ro,αχερων,,Removed accent from 'έ'. The Linear B 'a-ke-ro' corresponds to Greek 'αχερων'.,personal name (also modern river)
+a-ke-te-re,αγετερες|ασκετερες,,Multiple possible cognates. Removed all accents. The Linear B 'a-ke-te-re' can correspond to either 'αγετερες' or 'ασκετερες'.,official title/ occupation (see also 'asketreiai')
+a-ke-ti-rya,ασκητριαων|ασκητριαι,,"First word from the pair, without the optional 'o'. Removed accent from 'ά'. The Linear B 'a-ke-ti-rya' can correspond to either 'ασκητριαων' or 'ασκητριαι'.",decorators? (fem.) (>ασκέω/ασκώ= to work)
+a-ke-ti-rya-o,ασκητριαων|ασκητριαι,,"Second word from the pair, with the optional 'o'. Removed accent from 'ά'. The Linear B 'a-ke-ti-rya-o' can correspond to either 'ασκητριαων' or 'ασκητριαι'.",decorators? (fem.) (>ασκέω/ασκώ= to work)
+a-ke-ti-ri-ja,ασκητριαων|ασκητριαι,,Third word from the pair. Removed accent from 'ά'. The Linear B 'a-ke-ti-ri-ja' can correspond to either 'ασκητριαων' or 'ασκητριαι'.,decorators? (fem.) (>ασκέω/ασκώ= to work)
+a-ke-ti-ri-ja-i,ασκητριαων|ασκητριαι,,Fourth word from the pair. Removed accent from 'ά'. The Linear B 'a-ke-ti-ri-ja-i' can correspond to either 'ασκητριαων' or 'ασκητριαι'.,decorators? (fem.) (>ασκέω/ασκώ= to work)
+a-ke-u,αλκευς,,First word from the pair. Removed capital letter.,personal name
+a-ke-wo,αλκευς,,Second word from the pair. Removed capital letter.,personal name
+a-ki-ha-ri-ja-de,αιγιhαλιανδε|αιγιhαλια,,"Handling parentheses: included both forms inside and outside the parentheses. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.",place name
+a-ki-re-u,αχιλευς,,First word from the pair. Removed capital letter.,personal name
+a-ki-re-we,αχιλευς,,Second word from the pair. Removed capital letter.,personal name
+a-ki-ti-to,ακτιστος,,Removed accent from 'ά'.,"'untitled?' (>κτίσις= founding, settling)"
+a-ko,αγος|αγκος,,Multiple possible cognates. Removed accent from 'ά'. The Linear B 'a-ko' can correspond to either 'αγος' or 'αγκος'.,"holy place/grove, valley (see 'ti-mi- to-a-ke-e')"
+a-ko-ra,αγορα,,Removed accent from 'ά'. The Linear B 'a-ko-ra' corresponds to Greek 'αγορά'.,assembly >market place
+a-ko-ra-ja,αγοραια,,First word from the pair. Removed accent from 'α'. The Linear B 'a-ko-ra-ja' corresponds to Greek 'αγοραια'.,used for communal purposes (see also 'agora')
+a-ko-ra-jo,αγοραιος,,Second word from the pair. Removed accent from 'α'. The Linear B 'a-ko-ra-jo' corresponds to Greek 'αγοραιοσ'.,used for communal purposes (see also 'agora')
+a-ko-ro,αγρος,,First word from the pair. No changes needed.,field
+a-ko-ro-we,αγρος,,Second word from the pair. No changes needed.,field
+a-ko-so-ne,αξονες,,Removed accent from 'ά'.,axles
+a-ko-so-ta,αξοτας,,First word from the pair. No changes needed as it has no accents or special characters.,personal name
+a-ko-so-ta-o,αξοταο,,Second word from the pair. No changes needed as it has no accents or special characters.,personal name
+a-ko-te-u,αργοθευς,,No changes were needed to the Greek cognate. The Linear B 'a-ko-te-u' corresponds to Greek 'αργοθευς'.,personal name
+a-ko-to,ακτωρ|αχθων,,Multiple possible cognates. Removed accent from 'Ά'. The Linear B 'a-ko-to' can correspond to either 'ακτωρ' or 'αχθων'.,personal name
+a-ko-to-no,ακτοινος,,Removed accent from 'ά'. The Linear B 'a-ko-to-no' corresponds to Greek 'ακτοινος' (without land).,without land (see 'ktoina')
+a-ko-wo,ακορφος,,Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,"childless, unaccompanied (see  'korfos')"
+a-ku-ro,αργυρος,,Removed accent from 'ά'.,silver
+a-ma-ru-ta-o,αμαρυταο|αμαρυτας,,Removed accent from 'ά'. Included both cognates as the second one is within parentheses.,personal name
+a-mi-ni-si-jo,αμνισιος,,No changes needed as it has no accents or special characters.,ethnic name of 'Amnisos'
+a-mi-ni-so-de,αμνισονδε|αμνισος,,Removed accent from 'ό'.,place name
+a-mo,αρμον,,First word from the pair. Removed accent from 'ά'.,wheel/chariot ('undercarriage')
+a-mo-si,αρμοσι,,Second word from the pair. Removed accent from 'ά'.,wheel/chariot ('undercarriage')
+a-mo-ta,αρμοτα,,Third word from the pair. Removed accent from 'ά'.,wheel/chariot ('undercarriage')
+a-mo-te,αρμοτε,,Fourth word from the pair. Removed accent from 'ά'.,wheel/chariot ('undercarriage')
+a-mo-i-je-to,αρμοιεντοι,,Removed accent from 'ί'.,just delivered? (see 'iento')
+a-mo-ra-ma,αμωραμαρ,,Removed accent from 'ά' and 'ά' in the Greek cognate.,"'from day to day, daily?'"
+a-mo-ta-jo,αρμοτεων,,First word from the pair. Removed accent from 'ώ'.,(to the) workshop of  'armota'
+a-mo-te-jo-na-de,αρμοτεωνανδε,,Second word from the pair. Removed accent from 'ώ'.,(to the) workshop of  'armota'
+a-mo-te-re,αρμοστηρες|αρμοστηρ,,No modifications needed. The Linear B 'a-mo-te-re' corresponds to Greek 'αρμοστηρες' and 'αρμοστηρ'.,>(of stones) laid with the grain
+a-mo-te-wi-ja,αρμοθηfia,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'F'.,description of a pot
+a-mu-ta-wo,αμυνθαfων,,Removed capital letter. Converted digamma 'F' to lowercase 'f'.,personal name
+a-na-ta,αναιτα,,First word from the pair. Removed accent from 'ά'.,not decorated
+a-na-to,αναιτον,,Second word from the pair. Removed accent from 'ά'.,not decorated
+a-na-ta,αναιτα,,First word from the pair. Removed accent from 'ά'.,not decorated
+a-na-to,αναιτον,,Second word from the pair. Removed accent from 'ά'.,not decorated
+a-na-mo-ta,αναρμοστα,,Linear B 'a-na-mo-ta' corresponds to Greek 'αναρμοστα'. Removed accent from 'ά'.,(about chariots) not assembled
+a-na-mo-to,αναρμοστον,,Linear B 'a-na-mo-to' corresponds to Greek 'αναρμοστον'. Removed accent from 'ό'.,(about chariots) not assembled
+a-na-pu-ke,αναμπυκες,,No modifications needed as it has no accents or special characters.,without head- bands (see 'ampykes')
+a-ne-mo,ανεμων,,No changes needed as it has no accents or special characters.,wind
+a-ne-mo-i-e-re-ja,ανεμωνιερεια,,Removed accent from 'έ'.,priestess of winds
+a-ne-ta,ανετα|ανιημι,,Removed accent from 'ά'.,"not due, of ηο charge (>ανίημι= to set free)"
+a-ne-u-te,ανευθεν|ανευτει|ανευς,,No changes needed as it has no accents or special characters.,place name
+a-ni-ja,ανια|ηνια,,First word from the pair. Removed accent from 'ί'.,reιns
+a-ni-ja-pi,ανιαφι|ηνιαφι,,Second word from the pair. Removed accent from 'ί'.,reιns
+a-ni-ja-to,ανιατος,,No changes needed as it has no accents or special characters.,personal name
+a-no-no,ανονον|ανωνον,,Multiple possible cognates. Removed accent from 'ά'.,"not rented, (see opp. 'onaton')"
+a-no-po,ανωπος,,No changes needed as it has no accents or special characters.,"without  'holes,' not pierced"
+a-no-we,ανωfεις,,First word from the pair. Removed accent from 'ώ'. Converted digamma 'F' to lowercase 'f'.,without 'ears'/ handles
+a-no-wo-to,ανωfτος,,Second word from the pair. Removed accent from 'ώ'. Converted digamma 'F' to lowercase 'f'.,without 'ears'/ handles
+a-nu-ko,ανυκος,,Removed accent from 'Ά'. The Linear B 'a-nu-ko' corresponds to Greek 'ανυκος' (Anykos).,personal name
+a-nu-to,ανυτος,,Removed accent from 'Ά'.,personal name
+a-pa-je-u,αρπαγευς,,The Linear B 'a-pa-je-u' corresponds to Greek 'αρπαγευς' (Arpayeus).,personal name
+a-pa-re-u,αφαρευς,,First word from pair. Removed accent from 'έ'.,place name
+a-pa-re-u-pi,αφαρευς,,Second word from pair. Removed accent from 'έ'.,place name
+a-pa-sa-ki-jo,αψαγιος,,The Linear B 'a-pa-sa-ki-jo' corresponds to Greek 'αψαγιος'. No modifications needed as there are no accents or digammas.,personal name
+a-pa-ta,ασπαρτα,,Removed accent from 'ά'.,not sown/ cultivated?
+a-pa-ta-wa,απταρfα|απτερα,,The Linear B 'a-pa-ta-wa' corresponds to Greek 'απταρfα'. Removed accent from 'Ά'. Converted digamma 'F' to lowercase 'f'.,place name
+a-pa-ta-wa-ja,απταρfαια,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'α'.,ethnic name of 'Aptarfa'
+a-pa-ta-wa-jo,απταρfαιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'α'.,ethnic name of 'Aptarfa'
+a-pe-a-sa,απεασα|απειμι,,First word from the pair. Removed accent from 'έ'.,absent
+a-pe-o-te,απεοντες|απειμι,,Second word from the pair. Removed accent from 'έ'.,absent
+a-pe-e-ke,απεηκε|αφιημι,,Removed accent from 'έ'. The Linear B 'a-pe-e-ke' corresponds to Greek 'απεηκε' (to let go).,to let go
+a-pe-ri-ta-wo,απελιταfων,,Converted digamma 'F' to lowercase 'f'. Removed capital letter.,personal name
+a-pe-ti-rya,αφετριαι|αφετρια,,Removed accent from 'έ'.,item found together with a 'torpeza'
+a-pi,αμφι,,"The Linear B 'a-pi' corresponds to Greek 'αμφι' (bi-, both).","bi-, both"
+a-pi-ha-ro,αμφιhαλος,,"The Linear B 'a-pi-ha-ro' corresponds to Greek 'αμφιhαλος'. The 'ha' sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate. Removed capital letter.",personal name
+a-pi-e-ke,αμφιεχει|αμφιεχειν|αμφιεχω,,Multiple possible cognates. Removed accents from 'έ' and 'ώ'.,to be covered all over
+a-pi-ja-ko-ro,αμφιαγρος,,First word from the pair. Removed accent from 'ί'.,personal name
+a-pi-ja-ko-ro-jo,αμφιαγρος,,Second word from the pair. Removed accent from 'ί'.,personal name
+a-pi-do-ro,αμφιδωρος,,Removed capital letter from 'Α'.,personal name
+a-pi-ja-re-wo,αμφιαρεfος|αμφιαρευς,,Removed capital letter and accent from 'ί'. Converted digamma 'F' to lowercase 'f'. Included both forms.,personal name
+a-pi-je-ta,αμφιγετας,,No changes needed as it has no accents or special characters.,personal name
+a-pi-me-de,αμφιμηδης,,First word from the pair. Removed accent from 'ή'.,personal name
+a-pi-me-de-o,αμφιμηδεο,,Second word from the pair. Removed accent from 'ή'.,personal name
+a-pi-no-e-wi-jo,αμφινοεfιοι,,Removed capital letter. Converted digamma 'F' to lowercase 'f'.,ethnic name of 'Amphoneus'
+a-po-re-we,αμφορηfες|αμφορευς,,Split the Linear B sequence. Removed accent from 'ή'. Converted digamma 'F' to lowercase 'f'. Handled parentheses for Greek cognate: included word without parentheses as well.,amphora
+a-pi-po-re-we,αμφιφορηfες|αμφιφορευς,,Split the Linear B sequence. Removed accent from 'ή'. Converted digamma 'F' to lowercase 'f'. Handled parentheses for Greek cognate: included word without parentheses as well.,amphora
+a-pi-po-ro,αμφιπολος,,First word from the pair. Removed accent from 'ί'.,attendant
+a-pi-qo-ro-i,αμφιπολος,,Second word from the pair. Removed accent from 'ί'.,attendant
+a-pi-qo-ta,αμφιποτας,,Removed accent from 'ό'.,personal name
+a-pi-qo-to,αμφιποτος|αμφιβατος,,"Removed accent from 'ί'. Included both cognates, and removed parentheses.",(table) with legs apart
+a-pi-ra-wo,αμφιλαfος|αμφιλαfων,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,personal name
+a-po-ne-we,αμφονεfει|αμφονευς,,First word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,place name
+a-pu-ne-we,αμφονεfει|αμφονευς,,Second word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,place name
+a-po-re-we,αμφορηfες|αμφορευς,,Split the Linear B sequence. Removed accent from 'ή'. Converted digamma 'F' to lowercase 'f'. Handled parentheses for Greek cognate: included word without parentheses as well.,amphora
+a-po-te-ra,αμφοτερα|αμφοτεραι,,Removed accent from 'ό'. Included both variants with and without final 'ι'.,both
+a-po-te-ro-te,αμφοτερωθεν,,No modifications needed as it has no accents or special characters.,οη both sides
+a-pu-do-ke,απυδωκε|αποδιδωμι,,First word from the pair. Removed accent from 'ύ'. Included cognate in parentheses.,to deliver
+a-pe-do-ke,απεδωκε|αποδιδωμι,,Second word from the pair. Removed accent from 'έ'. Included cognate in parentheses.,to deliver
+a-pu-do-si,απυδοσις|αποδοσις,,"Removed accent from 'ύ' and 'ό'. Included both forms, with 'πυ' and later evolved 'πο'.",delivery
+a-pu-ka,αμπυξ,,First word from the pair. Removed accent from 'ά'.,"head- band, tiara/ reιns"
+a-pu-ke,αμπυκες,,Second word from the pair. Removed accent from 'ά'.,"head- band, tiara/ reιns"
+a-pu-ko-wo-ko,αμπυκοfεργος,,No modifications were needed. The Linear B 'a-pu-ko-wo-ko' corresponds to Greek 'αμπυκοfεργος'. Converted digamma 'F' to lowercase 'f'.,maker of 'ampykes'
+a-phu-ka-ne,αφυγανες,,Removed accent from 'ύ'.,ethnic name of 'Aphy'
+a-phu,αφυ,,First word from the triple. No modifications needed as the word contains only allowed characters and no diacritics.,place name (απύ= steep)
+a-phu-de,αφυνδε,,Second word from the triple. No modifications needed as the word contains only allowed characters and no diacritics.,place name (απύ= steep)
+a-phu-we,αφυfει,,Third word from the triple. Converted digamma 'F' to lowercase 'f'.,place name (απύ= steep)
+a-qa-to,αμβατος,,Removed accent from 'Ά'.,personal name
+a-qe-mo,ακβαιμων,,Removed capital letter and accent from 'ά'.,personal name
+a-qo-ta,αμβοτας,,No changes needed as it has no accents or special characters.,personal name
+a-ra-ka-te-ja,αλακατειαι,,Removed accent from 'ά'.,weavers (fem.) (ηλάκατα= wool/ ηλακάτη= spindle)
+a-ra-ka-te-ja-o,αλακατειαιον,,Removed accent from 'ί'. The Linear B 'a-ra-ka-te-ja-o' corresponds to Greek 'αλακατειαιον'.,weavers'  place
+a-ra-ro-mo-te-me-na,αραρμοτhεμενα,,First word from the pair. Removed parenthesis from (η). The Linear B 'a-ra-ro-mo-te-me-na' corresponds to Greek 'αραρμοτhεμενα'.,assembled
+a-ra-ro-mo-te-me-no,αραρμοτhεμενος,,Second word from the pair. Removed parenthesis from (η). The Linear B 'a-ra-ro-mo-te-me-no' corresponds to Greek 'αραρμοτhεμενος'.,assembled
+a-ra-ru-ja,αραρυια,,No changes needed as it has no accents or special characters.,bound/equipped (fem.)
+a-ra-ru-wo-a,αραρυfοα|αραρυοντα,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ύ'.,bound/equipped (neut.)
+a-re-ja,αρεια,,First word from the pair. No modifications were needed as it contains allowed characters only.,divine epithet (>Άρης= god Mars)
+a-re-jo,αρειος,,Second word from the pair. No modifications were needed as it contains allowed characters only.,divine epithet (>Άρης= god Mars)
+a-re-i-jo,αρειιος,,Third word from the pair. No modifications were needed as it contains allowed characters only.,divine epithet (>Άρης= god Mars)
+a-re-ka-sa-da-ra,αλεξανδρα,,No changes needed as it has no accents or special characters.,personal name (fem.)
+a-re-ke-se-u,αλεξευς,,No changes needed as it has no accents or special characters.,personal name
+a-re-ki-si-to-jo,αλεξιτοιο|αλεξιτος,,Removed accent from 'ί'.,personal name
+a-re-ku-tu-ru-wo,αλεκτρυfων,,First word from the triple. Removed capital letter and accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,personal name (= 'cock')
+a-re-ku-tu-ru-wo-ne,αλεκτρυfων,,Second word from the triple. Removed capital letter and accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,personal name (= 'cock')
+a-re-ku-tu-ru-wo-no,αλεκτρυfων,,Third word from the triple. Removed capital letter and accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,personal name (= 'cock')
+a-re-me-ne,αρειμενης,,Removed parentheses. Removed accent from 'έ'.,personal name
+a-re-pa,αλειφαρ,αλοιφη,First word from the group. Removed accent from 'ά'.,"cream, ointment"
+a-ro-pa,αλειφαρ,αλοιφη,Second word from the group. Removed accent from 'ά'.,"cream, ointment"
+a-re-pa-te,αλειφαρ,αλοιφη,Third word from the group. Removed accent from 'ά'.,"cream, ointment"
+a-re-pa-to,αλειφαρ,αλοιφη,Fourth word from the group. Removed accent from 'ά'.,"cream, ointment"
+a-re-pa-zo-o,αλειφαζοος,αλειφοβιος,"First word from the pair. Removed accent from 'ό'. Parenthetical element dropped as requested in rule 2.2. Including αλειφοβιος as dubious, but keeping the original value of αλειφαζοος.",occupation (= 'anointer')
+a-re-po-zo-o,αλειφαζοος,αλειφοβιος,"Second word from the pair. Removed accent from 'ό'. Parenthetical element dropped as requested in rule 2.2. Including αλειφοβιος as dubious, but keeping the original value of αλειφαζοος.",occupation (= 'anointer')
+a-ryo-a,αρειονα,,Removed accent from 'ί'.,"better (neut., plur.)"
+a-ryo-e,αρειονες,,Removed accent from 'ί'.,"better (masq., plur.)"
+a-ryo-jo,αρειονιο,,Removed accent from 'ί'.,"better (masq., sing., gen.)"
+a-ru-ra,αρουρα,,The Linear B 'a-ru-ra' corresponds to Greek 'αρουρα' (unit of land).,unit of land
+a-ro-u-ra,αρουρα,,The Linear B 'a-ro-u-ra' corresponds to Greek 'αρουρα' (unit of land).,unit of land
+a-sa-mi-to,ασαμινθος,,No modifications needed.,bath tab
+a-si-ja-ti-ja,ασιατιαι,,Removed accent from 'ί'. The Linear B 'a-si-ja-ti-ja' corresponds to Greek 'ασιατιαι' (place name).,place name
+a-si-wi-ja,ασιfια,,Converted digamma 'F' to lowercase 'f'. The Linear B 'a-si-wi-ja' corresponds to Greek 'ασιfια'.,ethnic name
+a-si-wi-jo,ασιfιος,,Converted digamma 'F' to lowercase 'f'.,
+a-ta-ma-ne-u,αθαμανευς|αθαμας,,First word from the pair. Removed capital letter and accent from 'ύ'. Included both forms.,personal name
+a-ta-ma-ne-we,αθαμανευς|αθαμας,,Second word from the pair. Removed capital letter and accent from 'ύ'. Included both forms.,personal name
+a-ta-na,αθηνα,,The Linear B 'a-ta-na' corresponds to Greek 'ατανα'. Removed accent from 'ά'.,goddess' s name (goddess Athena)
+a-ta-na-po-ti-ni-ja,αθηναποτνια,Atana (-potnia= beloved),goddess' s name (goddess Athena)
+a-ta-no,αντανωρ,,First word from the pair. Removed capital letter.,personal name 
+a-ta-no-re,αντανωρ,,Second word from the pair. Removed capital letter.,personal name 
+a-ta-no-ro,αντανωρ,,Third word from the pair. Removed capital letter.,personal name 
+a-ta-ra-si-jo,αταλανσιος,,No changes needed as it has no accents or special characters.,without copper (see also 'talansia' )
+a-te-mi-ti-jo,αρτεμιτιος,,Removed capital letter from 'Α'.,personal name
+a-te-mo,αρτεμων|ανθεμων,,Multiple possible cognates. Removed accents. Linear B 'a-te-mo' can correspond to either 'αρτεμων' or 'ανθεμων'.,personal name
+a-te-re-wi-ja,ατρειfια,,Converted digamma 'F' to lowercase 'f'.,ethnic/place name
+a-te-we,ατηfει,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ή'.,kind of pot (jug)
+a-to-po-qo,αρτοποπος|αρτοποιος,,Removed accents from 'ό'. Included both forms 'αρτοποπος' and 'αρτοποιος'.,baker
+a-ti-mi-te,αρτιμιτει|αρτεμις,,Removed accent from 'ί'.,goddess' s name
+a-to-ro-po,ανθρωπω|ανθρωπος,,Removed accent from 'ώ'. The Linear B 'a-to-ro-po' corresponds to Greek 'ανθρωπω' (human).,human
+a-tu-ko,ατυκος|ατυγος,,Removed accents from 'Ά'. The Linear B 'a-tu-ko' corresponds to Greek 'ατυκος' and 'ατυγος' (personal name).,personal name
+au-ke-wa,αυγεfαν|αυγευς,,Converted digamma 'F' to lowercase 'f'.,personal name
+au-ro,αυλοι|αυλος,,Multiple possible cognates. Removed accent from 'ί'. The Linear B 'au-ro' can correspond to either 'αυλοι' or 'αυλος'.,pipe (> musical instrument)
+au-tya,αυτιας,,No changes needed as it has no accents or special characters.,personal name
+a-we-ke-se-u,αfειξευς,,First word from the pair. Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,personal name
+a-we-ke-se-we,αfειξευς,,Second word from the pair. Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,personal name
+ha-ro-u-do-pi,hαλοσυδωρφι,,No modifications needed. The Linear B 'ha-ro-u-do-pi' corresponds to Greek 'hαλοσυδωρφι'.,aquamanne (gem)/with wave- like patterns (άλς= sea+ ύδωρ= water)
+ha-ru-wo-te,hαρυfοθεν|χαρυβδος,,Removed accents from 'ύ'. Converted digamma 'F' to lowercase 'f'. Included both forms 'hαρυfοθεν' and 'χαρυβδος' as cognates.,place name
+ha-te-ro,ετερος,,Removed accent from 'ά'.,other
+da-da-re-jo-de,δαδαλειονδε|δαδαλειον,,Included both variants of the greek cognate present in the parentheses. Removed accent from 'έ'.,place name/ sanctuary
+da-i-qo-ta,δαιποντας,,Removed accent from 'ό'.,personal name
+da-i-ta-ra-ro,δαιτραρος,,No modifications needed. The Linear B 'da-i-ta-ra-ro' corresponds to Greek 'δαιτραρος'.,personal name
+da-ja-ro,δαιαρος,,No changes needed as it has no accents or special characters.,personal name
+da-ma-te,δημητηρ,,No modifications needed. The Linear B 'da-ma-te' corresponds to Greek 'δαματερ'.,goddess' s name (>Demeter)
+da-ma-te,δαματες,,First word from the pair. Removed accent from 'ά'.,related to 'damos' (family groups?)
+du-ma-te,δυματες,,Second word from the pair. Removed accent from 'ύ'.,related to 'damos' (family groups?)
+da-mi-ni-jo,δαμνιος,,No changes needed as it has no accents or special characters.,ethnic name of 'Damnos'
+da-mo,δαμος|δημος,,Removed accent from 'ά'. The Linear B 'da-mo' corresponds to Greek 'δαμος'.,municipality
+da-mo-ko-ro,δαμοκλος,,Removed accent from 'ά'. The Linear B 'da-mo-ko-ro' corresponds to Greek 'δαμοκλος'.,official title
+da-phu-ri-to-jo,λαβυρινθοιο|λαβυρινθος,,Removed characters not in the allowed characters. The Linear B 'da-phu-ri-to-jo' corresponds to the Greek 'δαφυρινθοιο' and 'λαβυρινθος'.,(of the) labyrinth
+da-ro,δαρων,,The Linear B 'da-ro' corresponds to Greek 'δαρων'.,personal name
+da-ta-ja-ro,δαταιαρος,,No changes were necessary.,personal name
+da-wi-ja,δαfia,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ία'.,ethnic name of 'Dafos/Dafοη'
+da-wi-jo,δαfιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,ethnic name of 'Dafos/Dafοη'
+da-we-u-pi,δαfευφι,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,place name
+da-wo,δαfος|δαfων,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,place name
+de-de-me-no,δεδεμενος,,Removed accent from 'έ'. The Linear B 'de-de-me-no' corresponds to Greek 'δεδεμενος' (bound).,bound
+de-di-ku-ja,δεδιδακυια|διδασκω,,Removed accent from 'ύ'.,being apprenticing (see also 'didaskalei')
+de-do-me-na,δεδομενα|διδωμι,,Removed accent from 'έ'.,(things) being offered
+de-ka-sa-to,δεξατο|δεχομαι,,Removed accent from 'έ'.,to be accepted
+de-ku-tu-wo-ko,δεκτυfεργος,,Converted digamma 'F' to lowercase 'f'.,maker of nets
+de-me-o-te,δεμεοντες,,Removed accent from 'έ'.,they who build
+de-mi-ni-a,δεμνια,,No changes needed as it has no accents or special characters.,bedsteads
+de-qo-no,δειπνον,,No changes needed as it has no accents or special characters.,"dinner, meal"
+de-re-u-ko,δλευκος,,No changes needed as it has no accents or special characters.,must (of wine)
+de-so-mo,δεσμοις|δεσμος,,No changes needed as it has no accents or special characters.,(with) straps
+de-u-ka-ri-jo,δευκαλιων,,Removed accent from 'ί'. The Linear B 'de-u-ka-ri-jo' corresponds to Greek 'δευκαλιων'.,personal name
+de-u-ki-jo-jo,δευκιοιο|δευκιος,,Removed accent from 'ί'.,month name
+de-we-ro-ai-ko-ra-i-ja,δεfυροαιχωραιαι,,No changes needed as it has no accents or special characters. Converted digamma 'F' to lowercase 'f'.,place name (compare to 'peraiaihoraiai')
+di-da-ka-re,διδασκαλει|διδασκαλος,,Removed accent from 'ά'. The Linear B 'di-da-ka-re' corresponds to Greek 'διδασκαλει'.,at the place of the practitioner (see also 'dedikyia')
+di-ka-ta-de,δικτανδε|δικτη,,Removed parentheses and angle brackets. The Linear B 'di-ka-ta-de' corresponds to Greek 'δικτανδε' (Δίκτα>Δίκτη).,place name (mountain)
+di-ka-ta-jo,δικταιος,,No accents or digamma to convert. The Linear B 'di-ka-ta-jo' corresponds to Greek 'δικταιος' (Diktaios).,epithet of god Zeus
+di-ko-na-re-ja,δικοναρεια,,The Linear B 'di-ko-na-re-ja' corresponds to Greek 'δικοναρεια'. Removed accent from 'έ'.,personal name (fem.)
+di-ko-na-ro,δικοναρος,,No changes needed as it has no accents or special characters.,personal name
+di-pa,διπας|δεπας,,Removed accent from 'ί'. Included both forms.,a kind of cup
+di-pi-se-wi-jo,διψιεfιος,,First word from the pair. Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,person from 'Dipsos'  (same as next)
+di-pi-si-je-wi-jo,διψιεfιος,,Second word from the pair. Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,person from 'Dipsos'  (same as next)
+di-pi-si-ja,διψια,,First word from the pair. Removed capital letter.,ethnic name of 'Dipsos'
+di-pi-si-jo,διψιος,,Second word from the pair. Removed capital letter.,ethnic name of 'Dipsos'
+di-pi-so-i,διψωι|διψος,,Removed accent from 'ώ'. Included both variants from the Greek cognate. The Linear B 'di-pi-so-i' corresponds to Greek 'διψωι' and 'διψος'.,place name
+di-pte-ra,διπτερα,,Removed accent from 'ί'. The Linear B 'di-pte-ra' corresponds to Greek 'διπτερα' (leather hide >writing material).,leather hide (>writing material)
+di-pte-ra-po-ro,διπτεραφορος,,Removed accent from 'ό'. The Linear B 'di-pte-ra-po-ro' corresponds to Greek 'διπτεραφορος' (ceremonial title).,ceremonial title
+di-ri-mi-jo,δριμιος,,Removed accent from 'ί'.,god's name
+di-ro,διρος,,No changes needed as it has no accents or special characters.,place name
+di-u-ja,διυια,,First word from the pair. Removed accent from 'ί'.,priestess of god Zeus/goddess' s name
+di-wi-ja,διfia,,Second word from the pair. Removed accent from 'ί'. Converted digamma 'F' to lowercase 'f'.,priestess of god Zeus/goddess' s name
+di-wi-je-ja,διfia,,Third word from the pair. Removed accent from 'ί'. Converted digamma 'F' to lowercase 'f'.,priestess of god Zeus/goddess' s name
+di-u-ja-jo,διυαιον,,First word from the set. Removed accent from 'ί'.,sanctuary dedicated to Diyia
+di-wi-ja-jo-de,διfιαιονδε,,Second word from the set. Converted digamma 'F' to lowercase 'f'.,sanctuary dedicated to Diyia
+di-wi-ja-wo,διfιαfιον,,Third word from the set. Converted digamma 'F' to lowercase 'f'.,sanctuary dedicated to Diyia
+di-u-ja-wo,διυαfων,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,personal name/ priest of 'Difia'
+di-u-jo,διυος,,First word from the pair. Removed accent from 'ύ'.,belonging to god Zeus
+di-wi-jo,διfιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,belonging to god Zeus
+di-we,διfει,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'εί'.,god' s name (god Zeus)
+di-wo,διfος|διας,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ός'.,god' s name (god Zeus)
+di-wi-ja-me-ro,δfιαμερον|δfιημερον,,Removed digamma 'f' from F. Included both variants with 'ι' and 'η'.,two day period
+di-wi-ja-ta,διfιαται,,Converted digamma 'F' to lowercase 'f'.,ethnic/place name
+di-wi-je-u,διfιευς,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name/ priest of god Zeus
+di-wi-je-we,διfιευς,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name/ priest of god Zeus
+di-wi-jo,διfιον,,First word from the triple. Converted digamma 'F' to lowercase 'f'.,sanctuary dedicated to Zeus
+di-wi-jo-de,διfιονδε,,Second word from the triple. Converted digamma 'F' to lowercase 'f'.,sanctuary dedicated to Zeus
+di-wi-jo-jo,διfιονιο,,Third word from the triple. Converted digamma 'F' to lowercase 'f'.,sanctuary dedicated to Zeus
+di-wo,διfων,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,personal name
+di-wo-i-je-we,διfοσυιfει,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,'to the Son of Zeus'
+di-wo-ni-so-jo,διfονυσοιο|διfονυσος,,"Converted digamma 'F' to lowercase 'f'. Included both forms 'ΔιFονυσοίο' and 'Διόνυσος', removing accents.",god's  name (god Dionysus)
+do-de,δομονδε,,No modifications needed as the Greek cognate contains allowed characters only.,"refeπing to the >δόμος= house, dwelling"
+do-e-ra,δουλη,,The Linear B 'do-e-ra' corresponds to Greek 'δοελα' and 'δουλη'. Removed accent from 'έ'.,slave (fem.)
+do-e-ro,δουλος,,Removed accent from 'ό'.,slave (masq.)
+do-e-ro-i,δουλοι,,Included both the original and later evolved forms.,slaves (masq. plur.)
+do-po-ta,δοσποτα,,No changes needed as it has no accents or special characters.,goddess' s name
+do-qe-ja,δορπεια,,First word from the pair. Removed accent from 'ε'.,δόρπον= supper/ Δορπία= name of feast
+do-qe-u,δορπευς,,Second word from the pair. Removed accent from 'ε'.,δόρπον= supper/ Δορπία= name of feast
+do-ra,δωρα,,The Linear B 'do-ra' corresponds to Greek 'δωρα' (gifts). Removed accent from 'ώ'.,gifts
+do-ri-je-we,δωριεfει|δωριεfες|δωριευς,,Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,ethnic/personal name
+do-ro-me-u,δρομευς,,No modifications needed. The Linear B 'do-ro-me-u' corresponds to Greek 'δρομευς' (Dromeus).,personal name
+do-se,δωσει,,First word from the group. Removed accent from 'ώ'.,to give
+do-so-si,δωσουσι,,Second word from the group. Removed accent from 'ώ'.,to give
+di-do-si,διδοασι,,Third word from the group. Removed accent from 'ί'.,to give
+do-so-mo,δοσμοι|δοσμος,,Removed accent from 'ό'.,offerings
+do-we-jo,δορφειος,,Converted digamma 'F' to lowercase 'f'.,made of wood
+du-ma,δυμας,,First word from the pair. The Linear B 'du-ma' corresponds to Greek 'δυμας'.,official/religious title (see also 'damates')
+du-ma-te,δυματες,,Second word from the pair. The Linear B 'du-ma-te' corresponds to Greek 'δυματες'.,official/religious title (see also 'damates')
+du-ni-jo,δυνιος,,No modifications needed.,personal name
+du-ni-jo-jo,δυνιοιο,,No modifications needed.,personal name
+du-re-u,δυρευς,,No changes needed as it has no accents or special characters.,personal name
+du-ru-to-mo,δρυτομος,,No modifications were needed. The Linear B 'du-ru-to-mo' corresponds to Greek 'δρυτομος' (lumberjack).,lumberjack
+du-ta-so,δυτασος,,No changes needed as it has no accents or special characters.,personal name
+du-wo-jo-jo,δυfοιοιο|δυfοιος,,Removed parentheses from Greek cognate. Converted digamma 'F' to lowercase 'f'.,personal name
+du-wo-u-pi,δυfουπι|δυο,,Converted digamma 'F' to lowercase 'f'.,consisting of two (see also  'dwo')
+du-wo-we,δυfωfτεις,,Converted digamma 'F' to lowercase 'f'.,"with two 'ears,' handles"
+dwo,δfο|δυfο,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,two
+dwo-jo,δfο|δυfο,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,two
+e-da-e-u,εδαευς,,First word from the pair. Removed accent from 'έ'.,personal name
+e-da-e-wo,εδαεfο,,Second word from the pair. Removed accent from 'έ'.,personal name
+e-do-me-ne-u,ειδομενευς,,First word from the pair. Removed accent from 'ύ'.,personal name
+e-do-mo-ne-we,ειδομονεfει|ειδομονεfες,,Second word from the pair. Removed accent from 'έ'.,personal name
+e-e-si,εενσι|ειμι,,First word from the pair. Removed accent from 'έ'. Labeling ειμι as dubious because it is too modified compared to the effective greek cognate.,they/there are
+e-ne-e-si,ενεενσι|ενειμι,,Second word from the pair. Removed accent from 'έ'. Labeling ενειμι as dubious because it is too modified compared to the effective greek cognate.,they/there are
+e-ka-ma-pi,εγμαφι,,First word from the pair. Removed accent from 'έ'.,stay
+e-ka-ma-te,εγματει|εγμα,,Second word from the pair. Removed accent from 'έ'. Included parenthetical element.,stay
+e-ka-ra,εσχαρα,,Removed accent from 'ά'.,griddle
+e-ka-ra-e-we,εγγραεfεις,γραω,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'. Labeling γραω as dubious because it is too modified compared to the effective greek cognate.,description of rarns (γράω= to eat)
+e-ke,εχει,,First word from the triple. Removed accent from 'έ'.,he has/ to have/ they have
+e-ke-e,εχειν,,Second word from the triple. Removed accent from 'έ'.,he has/ to have/ they have
+e-ko-si,εχουσιν|εχουσι,,Third word from the triple. Removed accent from 'έ'. Included both the original and evolved forms.,he has/ to have/ they have
+e-ke-da-mo,εχεδαμος|εχεδαμων,,Removed accents from 'έ'. The Linear B 'e-ke-da-mo' corresponds to Greek 'εχεδαμος' and 'εχεδαμων' (personal name).,personal name
+e-ke-jo-to,εγκειοντοι|εγκειμαι,,Removed accent from 'έ'.,they are included
+e-ke-me-de,εχεμηδης,,No changes needed as it has no accents or special characters.,personal name
+e-ke-rya-wo,εχελιαfων,,First word from the pair. Removed capital letter and accent from 'ί'. Converted digamma 'F' to lowercase 'f'.,personal name
+e-ke-rya-wo-ne,εχελιαfων,,Second word from the pair. Removed capital letter and accent from 'ί'. Converted digamma 'F' to lowercase 'f'.,personal name
+e-ke-ro,εγχερος,,No modifications needed. The Linear B 'e-ke-ro' corresponds to Greek 'εγχερος' (Enheros).,personal name
+e-ke-ro-qo-no,εγχεροπονοι,,Removed accent from 'ό'.,wage earners (>έγχερον= wage+ πόνος= labor)
+e-ki-no,εχινος,,First word from the pair. Removed accent from 'ί'.,personal name
+e-ki-no-jo,εργινος,,Second word from the pair. Removed accent from 'ί'. ,personal name
+e-ko,εχων,,First word from the pair. Removed accent from 'έ'.,having (see also 'ehei')
+e-ko-te,εχοντες,,Second word from the pair. Removed accent from 'έ'.,having (see also 'ehei')
+e-ko,εγχος,,First word from the pair. Removed accent from 'έ'.,spear
+e-ke-si,εγχουσι,,Second word from the pair. Removed accent from 'έ'.,spear
+e-ko-me-na-ta-o,ερχομεναταο|ερχομενατας,,Removed accent from 'ά'. Included both forms.,personal name
+e-ko-me-no,ερχομενος|ορχομενος,,"Removed accent from 'ό'. Included both forms, with 'ερ' and the later evolved 'ορ'.",place name
+e-ko-so,εξων,,First word from the pair. Removed accent from 'ώ'.,place name
+e-ko-so-no,εξωνος,,Second word from the pair. Removed accent from 'ώ'.,place name
+e-ko-so-wo-ko,εξωfοργοι,,No changes needed. The Linear B 'e-ko-so-wo-ko' corresponds to Greek 'εξωfοργοι'. Converted digamma 'F' to lowercase 'f'.,'outside workers'(compare to 'entosνorgoi ')
+e-ko-to,εκτωρ,,No changes needed as it has no accents or special characters.,personal name (Hector)
+e-ku-se-we,εγχυσηfες|εγχεω,,Removed accent from 'ή'. Converted digamma 'F' to lowercase 'f'.,'funnels' (>εγχέω= to pour in)
+e-ku-se-we-qe,εγχυσηfες|εγχεω,,Removed accent from 'ή'. Converted digamma 'F' to lowercase 'f'.,'funnels' (>εγχέω= to pour in)
+e-ma-ha,ερμης,,Removed accent from 'ά'. The Linear B 'e-ma-ha' corresponds to Greek 'ερμαhαι'. Labelling ερμης as dubious because it is too modified compared to the effective greek cognate.,(related to) god Hermes
+e-me,ενι,,Multiple possible cognates. Removed accent from 'έ'.,with one
+e-mi-to,εμμισθων|εμμισθος,,No changes needed as it has no accents or special characters.,"in pay, hired"
+e-na-po-ro,εναπλους,,Removed capital letter.,place name
+e-ne-ka,ενεκα,,Removed accent from 'έ'. The Linear B 'e-ne-ka' corresponds to Greek 'ενεκα' (because of).,because of
+e-ne-si-da-o-ne,ενεσιδαονει|ενεσιδαων,,Removed accents from 'ί'. Included both forms 'ενεσιδαονει' and 'ενεσιδαων'.,epithet of god Poseidon  (='earth- shaker')
+e-ne-wo-pe-za,εννεfοπεζα,,Converted digamma 'F' to lowercase 'f'. The Linear B 'e-ne-wo-pe-za' corresponds to Greek 'εννεfοπεζα' (table) with nine legs.,(table) with nine legs
+e-ni-pa-te-we,ενιπατευfει|ενιπατευς,,Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'. Included the parenthetical cognate.,place name
+e-nu-wa-ri-jo,ενυfαλιος,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,god's name
+e-nwa-ri-jo,ενυfαλιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,god's name
+e-o,εων,ειμι,The Linear B 'e-o' corresponds to Greek 'εων'. Removed accents from 'έ'. Considering ειμι as dubious because it is too modified compared to the effective greek cognate.,being/existing
+e-pi,επι,,First word from the pair. No changes needed.,towards/on top
+o-pi,επι,,Second word from the pair. No changes needed.,towards/on top
+e-pi-di-da-to,επιδιδαστοι,επιδιδωμι,"Removed accent from 'ί'. Labeled επιδίδωμι as dubious because it is a verb, which is a very different form compared to επιδίδαστοι",distributed
+e-pi-ja-ta,εφιαλτας,,No modifications needed. The Linear B 'e-pi-ja-ta' corresponds to Greek 'εφιαλτας' (personal name).,personal name
+e-pi-ki-to-ni-ja,επιχιτωνια,,No changes needed as it has no accents or special characters.,kind of clothing (see also  'hiton')
+e-pi-ko-wo,επικορfοι,,No changes needed as it has no accents or special characters. Converted digamma 'F' to lowercase 'f'.,"observers, guards"
+e-pi-we-ti-ri-jo,επιfεστριος,,No changes needed. Converted digamma 'F' to lowercase 'f'.,kind of occupation (working with 'over-garments')
+e-pi-zo-ta,επιζωστα,,No changes needed. The Linear B 'e-pi-zo-ta' corresponds to Greek 'επιζωστα' (tied οη top).,tied οη top
+e-qa-ro,εμβαρος,,Removed accent from 'Έ'. The Linear B 'e-qa-ro' corresponds to Greek 'εμβαρος'.,personal name
+e-qe-si-jo,επεσιος,,First word from the pair. Removed accent from 'έ'.,related to the 'epetas'
+e-qe-si-ja,επεσια,,Second word from the pair. Removed accent from 'έ'.,related to the 'epetas'
+e-qe-ta,επετας,,First word from the set. Removed accent from 'έ'.,official title (= 'attendant')
+e-qe-ta-e,επετας,,Second word from the set. Removed accent from 'έ'.,official title (= 'attendant')
+e-qe-ta-i,επετας,,Third word from the set. Removed accent from 'έ'.,official title (= 'attendant')
+e-ra,ερα,,Removed accent from 'Έ'. The Linear B 'e-ra' corresponds to Greek 'ερα'.,goddess' s name (Hera)
+e-ra,ερα,,Removed accent from 'Έ'. The Linear B 'e-ra' corresponds to Greek 'ερα'.,place name
+e-ra-ja,εραια,,Removed capital letter from 'Ε'. The Linear B 'e-ra-ja' corresponds to Greek 'εραια'.,ethnic name of 'Era' (fem.)
+e-ra-pe-me-na,ερραπμενη|ερραμμενη,,"Removed parenthesis and associated character from the Greek cognate. Lowercased Greek cognates, removed accent from 'έ' and parentheses.",sewed (fem.)
+e-ra-po,ελαφων,,Removed accent from 'ά'.,place name (='port of the deers')(see also 'limenes')
+ri-me-ne,λιμενες,,Removed accent from 'έ'.,place name (='port of the deers')(see also 'limenes')
+e-ra-po-ri-me-ne,ελαφωνλιμενες,,Hand made,place name (='port of the deers')(see also 'limenes')
+e-ra-ta-ra,εραθρα,,No changes needed as it has no accents or special characters.,personal name (fem.)
+e-ra-te-i,ελατει,,First word from the pair. Removed accent from 'ά'.,place name
+e-ra-to-de,ελατονδε|ελατος,,Second word from the pair. Removed accent from 'ό'.,place name
+e-ra-te-i-jo,ελατειος,,Removed capital letter and accent from 'ά'.,ethnic name of 'Elatos'
+e-ra-te-re-we,εραθρεfει,,First word from the pair. Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,place name
+e-ra-te-re-wa-pi,εραθρεfα,,Second word from the pair. Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,place name
+e-ra-wo,ελαιfον,,First word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,olive/essential oil
+e-rai-wo,ελαιfον,,Second word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,olive/essential oil
+e-re-e,ελεει|ελος,,First word from the pair. Removed accent from 'έ'.,place name (έλος= marsh)
+e-re-i,ελεει|ελος,,Second word from the pair. Removed accent from 'έ'.,place name (έλος= marsh)
+e-re-e,ερεττειν,,Multiple cognates provided. Removed parentheses. The Linear B 'e-re-e' corresponds to Greek 'ερεεν' and 'ερεττειν'. Removed accent from 'έ'.,to row
+e-re-e-u,ερετευς,,No changes needed as it has no accents or special characters.,"master rower, 'coxswain' (see also 'eretai')"
+e-re-mo,ερημος|ερημον,,Removed accent from 'έ'.,place deserted/ isolated
+e-re-pa,ελεφας,,First word from the group. Removed accent from 'έ'.,elephant (implying ivory)
+e-re-pa-te,ελεφαντει,,Second word from the group. Removed accent from 'έ'.,elephant (implying ivory)
+e-re-pa-te-ja-pi,ελεφαντειαφι,,Third word from the group. Removed accent from 'έ'.,elephant (implying ivory)
+e-re-pa-te-jo,ελεφαντειος,,Fourth word from the group. Removed accent from 'έ'.,elephant (implying ivory)
+e-re-pa-to,ελεφαντος,,Fifth word from the group. Removed accent from 'έ'.,elephant (implying ivory)
+e-re-ta,ερεται|ερετης,,First word from the pair. Removed accent from 'έ'.,rowers
+e-re-ta-o,ερεταων,Second word from the pair. Removed accent from 'έ'. 'ερετας' has been added to dubious.,rowers
+e-re-u-te-ra,ελευθερα,,First word from the pair. Removed accent from 'έ'. The Linear B 'e-re-u-te-ra' corresponds to Greek 'ελευθερα' ('deliνered ').,'deliνered '/free
+e-re-u-te-ro,ελευθερος,,Second word from the pair. Removed accent from 'έ'. The Linear B 'e-re-u-te-ro' corresponds to Greek 'ελευθερος' (free).,'deliνered '/free
+e-re-u-te-re,ελευθερει|ελευθεραι,,Removed accent from 'έ'. Included both forms 'Ελευθέρει' and 'Ελευθέραι'.,place name?
+e-re-u-te-ro-se,ελευθερωσε|ελευθερω,,Removed accent from 'έ'.,to set free/ to deliver
+e-re-u-ti-ja,ελευθια,,Removed accent from 'ί'.,goddess' s name (= 'Deliνerer')
+e-ri-ka,ελικας|ελικη,,First word from the pair. Removed accent from 'ί'. Included both forms.,willow tree
+e-ri-ka-we-e,ελικας|ελικη,,Second word from the pair. Removed accent from 'ί'. Included both forms.,willow tree
+e-ri-ke-re-we,ερικλεfεις|ερικλευς,,Removed accents from 'έ'. Converted digamma 'F' to lowercase 'f'.,personal name
+e-ri-ko-wo,ερικοrfος,,Converted digamma 'F' to lowercase 'f'. Removed capital letter.,personal name
+e-ri-nu,ερινυς,,First word from the pair. No changes needed as it has no accents or special characters.,goddess' s name
+e-n-nu-we,ερινυς,,Second word from the pair. No changes needed as it has no accents or special characters.,goddess' s name
+e-ri-ta,εριθα,,No changes needed as it has no accents or special characters.,personal name (fem.)
+e-ro-ma-to,ελομανθος|ερυμανθος,,Removed capital letter and accent from 'ό'. Converted digamma 'F' to lowercase 'f'.,place name
+e-ro-pa-ke-ja,ελλοφαγεια,,No changes needed as it has no accents or special characters.,game (hunting)
+e-ro-pa-ke-ta,ελλοφαγέτας,,First word from the pair. Removed accent from 'έ'.,(deer) hunter (ελλός= young deer)
+e-ro-pa-ke-u,ελλοφαγεύς,,Second word from the pair. Removed accent from 'έ'.,(deer) hunter (ελλός= young deer)
+e-ru-mi-ni-ja,ελυμνιαι,,No modifications needed. The Linear B 'e-ru-mi-ni-ja' corresponds to Greek 'ελυμνιαι' (roof beams).,roof beams
+e-ru-ta-ra,ερυθρα,,No changes needed as it has no accents or special characters.,red
+e-ru-ta-ra,ερυθρας,,Removed accent from 'ύ'. The Linear B 'e-ru-ta-ra' corresponds to Greek 'ερυθρας' (Erythras).,personal name
+e-ru-to-ro,ερυθρος,,Removed accent from 'ό'. The Linear B 'e-ru-to-ro' corresponds to Greek 'ερυθρος'.,personal name (= red)
+e-sa-re-wi-ja,εσαλεfια,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,ethnic name of 'Esalos'
+e-sa-re-u,εσαλευς,,First word from the group. Removed accent from 'έ'.,place name
+e-sa-re-we,εσαλεfει,,Second word from the group. No changes were applied as no rules matched.,place name
+e-sa-ro,εσαλος,,Third word from the group. No changes were applied as no rules matched.,place name
+e-ta-je-u,εταγευς,,The Linear B 'e-ta-je-u' corresponds to Greek 'εταγευς' (place name).,place name
+e-ta-wo-ne-u,εταfονευς,,First word from the triple. Removed capital letter and accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,personal name
+e-ta-wo-ne-we,εταfονευς,,Second word from the triple. Removed capital letter and accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,personal name
+e-ta-wo-ne-wo,εταfονευς,,Third word from the triple. Removed capital letter and accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,personal name
+e-te,ενθεν,,No changes needed as it has no accents or special characters.,(from) inside
+e-te-wa,ετεfας,,Converted digamma 'F' to lowercase 'f'.,personal name
+e-te-wo-ke-re-we-i-jo,ετεfοκλεfειος|ετεοκλιος,,Removed capital letters and accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both forms.,'son of Eteokleus'
+e-to-ki-ja,εντοιχια,,No modifications needed. The Linear B 'e-to-ki-ja' corresponds to Greek 'εντοιχια' (fittings for insertion in walls).,fittings for insertion in walls
+e-to-ni-jo,ετωνιον,,No modifications needed. The Linear B 'e-to-ni-jo' corresponds to Greek 'ετωνιον' (free-hold).,free-hold
+e-to-ro-qa-ta,εντροπωτεροι|τροπωτηρ|τροπωτεροι,"Removed accent from 'ά'. Included 'εντροπαται', as a possible cognate, and 'τροπωτηρ' as a dubious form, with a higher degree of modification.",oar-thongs
+e-to-wo-ko,εντοσfοργοι,,Converted digamma 'F' to lowercase 'f'.,'inside workers' (see aslo 'eksovorgoi')
+e-u-da-mo,ευδαμος,,Removed accent from 'ύ'.,personal name
+e-u-de-we-ro,ευδειfελος,,Converted digamma 'F' to lowercase 'f'.,place name
+e-u-do-no,ευδονος,,No changes needed as it has no accents or special characters.,personal name
+e-u-ke-to,ευχετο|ευχομαι,,Removed accent from 'ύ'.,he/she wishes
+e-u-ko-me-no,ευχομενος,,Removed accent from 'ό'. The Linear B 'e-u-ko-me-no' corresponds to Greek 'ευχομενος' (personal name).,personal name
+e-u-me-de,ευμεδης,,No changes needed as it has no accents or special characters.,personal name
+e-u-me-ne,ευμενης,,The Linear B 'e-u-me-ne' corresponds to Greek 'ευμενης'. Removed accent from 'έ'.,personal name
+e-u-me-ta,ευμετας,,No changes needed as it has no accents or special characters.,personal name
+e-u-na-wo,ευναfος,,Converted digamma 'F' to lowercase 'f'.,personal name
+e-u-o-mo,ευορμος,,No changes needed as it has no accents or special characters.,personal name
+e-u-po-ro-wo,ευπλοfος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ύ'.,personal name
+e-u-ru-da-mo,ευρυδαμος,,Removed accent from 'ύ'.,personal name
+e-u-ru-po-to-re-mo-jo,ευρυπτολεμοιο|ευρυπτολεμος,,Removed capital letters. The Linear B 'e-u-ru-po-to-re-mo-jo' corresponds to Greek 'ευρυπτολεμοιο'.,personal name
+e-u-ru-qo-ta,ευρυποτας,,First word from the pair. No changes needed.,personal name
+e-u-ru-wo-ta,ευρυfοτας,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+e-u-ta-re-wo,ευθαλεfος,,Converted digamma 'F' to lowercase 'f'.,place name (see also 'vorvos')
+e-u-wa-ko-ro,ευfαγρος,,First word from the pair. Removed accent from 'ύ'.,personal name
+e-wa-ko-ro,ευfαγρος,,Second word from the pair. Removed accent from 'ύ'.,personal name
+e-we-pe-se-so-me-na,ευfπεσουμενα,,Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,'(things) to be retumed'
+e-wi-ri-pi-ja,εfριπια|ευριπια,,Converted digamma 'F' to lowercase 'f'.,ethnic name of 'Evripos' (fem.)
+e-wi-ri-po,εfριπως|ευριπος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,place name
+e-wi-su-zo-ko,εfισυζορκος,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ύ'.,decorative motif ('with deer οη both sides?') (>επίσης= equaly+ >δορκάς= roe deer)
+e-wi-su-*79-ko,εfισυρκος,εfισυζυρκος,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ύ'. Labeling εfισυζυρκος as dubious because it is too modified compared to the effective greek cognate.,decorative motif ('with deer οη both sides?') (>επίσης= equaly+ >δορκάς= roe deer)
+e-wi-ta-jo,εfιταιος,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,ethnic name of 'Eviteus'
+e-wi-te-wi-jo,εfιτεfιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,ethnic name of 'Eviteus'
+e-wi-te-u,εfιτευς,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,place name
+e-wi-te-we,εfιτεfει,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,place name
+e-zo-wo,εζωfος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'Έ'.,personal name
+i-do-me-ne-ja,ιδομενεια,,First word from the pair. Removed accent from 'έ'.,personal name (fem.)
+i-do-me-ne-jo,ιδομενειος,,Second word from the pair. Removed accent from 'έ'.,personal name (fem.)
+i-ja-te,ιατηρ,,Multiple possible cognates. Removed accent from 'ά'.,doctor/curator
+i-ja-wo-ne,ιαfονει|ιαfων,,Removed accent from 'ό'. Converted digamma 'F' to lowercase 'f'. Included the word within parentheses.,personal name
+i-je-re-ja,ιερεια,,Removed accent from 'έ'.,priestess
+i-e-re-u,ιερευς,,First word from pair. Removed accent from 'έ'.,priest
+i-je-re-u,ιερευς,,First word from pair. Removed accent from 'έ'.,priest
+i-je-re-wo,ιερεfος,,Second word from pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,priest
+i-re-wo,ιερεfος,,Second word from pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,priest
+i-je-re-wi-jo,ιερεfιος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,(someone) belonging to the priesthood
+i-je-ro,ιερος,,First word from the pair. Removed accent from 'έ'.,"sacred, holly"
+i-je-ro-jo,ιεροιο,,Second word from the pair. Removed accent from 'έ'.,"sacred, holly"
+i-je-ro-wo-ko,ιεροfεργος|ιερουργος,,Converted digamma 'F' to lowercase 'f'. Removed parentheses and content inside the parentheses. Removed accent from 'ό'.,a sacrificing priest
+i-je-to,ιεντοι|ιετο|ιημι,,Multiple possible cognates. Removed accent from 'ί'.,delivered (also with the religious meaning)
+i-je-we,υιεfει,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,son
+i-jo,υιος,,Second word from the pair.,son
+i-jo-te,ιοντες|ειμι,,Removed accent from 'ό'. The Linear B 'i-jo-te' corresponds to Greek 'ιοντες'.,(they who are) com1ng
+i-ke-u,ικετης,,No changes needed as it has no accents or special characters.,suppliant
+i-ni-ja,ινια,,Removed accent from 'Ί'. The Linear B 'i-ni-ja' corresponds to Greek 'ινια'.,personal name (fem.)
+i-pe-me-de-ja,ιφεμεδεια|ιφιμηδεια,,Removed accents and parentheses. Linear B 'i-pe-me-de-ja' corresponds to Greek 'ιφεμεδεια' and 'ιφιμηδεια'.,goddess' s name
+i-pe-me-de-ja-jo,ιφεμεδειαιον,,No changes needed as it has no accents or special characters.,sanctuary of 'Iphemedeia'
+i-pe-se-wa,ιψεfας,,Converted digamma 'F' to lowercase 'f'. Removed capital letter.,personal name
+i-po-no,ιπνος,,No changes needed as it has no accents or special characters.,"kind of pot/ cooking bowl (>ιπνός= oven, furnace)"
+i-po-po-qo-i,ιπποκομοι|ιπποκομος,,Multiple possible cognates. Removed parentheses. The Linear B 'i-po-po-qo-i' can correspond to either 'ιπποποποι' or 'ιπποκομος'.,horse- grooms (problematic orthograph y)
+i-qe-a,ιππεια,,Removed parentheses from Greek cognate. Removed accents from 'ί'.,goddess' s name (='mistress of the horses')
+i-qi-ja,ιππια,,First word from the pair. Removed parentheses. The Linear B 'i-qi-ja' corresponds to Greek 'ιππια'.,chariot
+i-qi-jo,ιππιον,,Second word from the pair. Removed parentheses. The Linear B 'i-qi-jo' corresponds to Greek 'ιππιο'.,chariot
+i-qo,ιππος,,No changes needed.,horse
+i-su-ku-wo-do-to,ισυχυfδοτος,,Converted digamma 'F' to lowercase 'f'.,personal name
+i-te-ja-o,ιθειαων|ιθειαι,,First word from the pair. Removed accent from 'ά'. Included both cognates.,weavers (>ιθύνω= to make straight)
+i-te-u,ιθυς,,Second word from the pair. Removed accent from 'ύ'.,weavers (>ιθύνω= to make straight)
+i-wa-ka,ιfαξ,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+i-wa-ka-o,ιfαξ,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+i-wa-so,ιfασος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'Ί'.,personal name
+jo-do-so-si,ωςδωσουσι,,First word from the pair. No changes needed as it has no accents or special characters.,introductory particle (see also 'ο-')
+jo-o-po-ro,ωςωφελον,,Second word from the pair. No changes needed as it has no accents or special characters.,introductory particle (see also 'ο-')
+ka-da-mi-ja,καρδαμια|καρδαμον,,Removed accent from 'ί'. Included both forms separated by (>).,(some product related to) garden cress
+ka-da-ro,χανδαρος,,No changes needed as it has no accents or special characters. The Linear B 'ka-da-ro' corresponds to Greek 'χανδαρος'.,personal name
+ka-e-sa-me-no,καεσαμενος,,No changes needed as it has no accents or special characters.,personal name
+ka-e-se-u,καεσευς,,First word from the pair. Removed capital letter and accent from 'ύ'.,personal name
+ka-e-se-we,καεσευς,,Second word from the pair. Removed capital letter and accent from 'ύ'.,personal name
+ka-ke-u,χαλκευς,,First word from the triple. Removed accent from 'ύ'.,copper worker
+ka-ke-u-si,χαλκευσι,,Second word from the triple. Removed accent from 'ύ'.,copper worker
+ka-ke-we,χαλκηfες,,Third word from the triple. Removed accent from 'ή'. Converted digamma 'F' to lowercase 'f'.,copper worker
+ka-ke-u,χαλκευς,,No changes needed as it has no accents or special characters.,personal name
+ka-ki-ja,χαλκια,,First word from the triple. No changes needed as it has no accents or special characters.,made of copper
+ka-ke-ja,χαλκια,,Second word from the triple. No changes needed as it has no accents or special characters.,made of copper
+ka-ki-jo,χαλκιος,,Third word from the triple. No changes needed as it has no accents or special characters.,made of copper
+ka-ko,χαλκος|χαλκον,,First word from the pair. No changes needed.,copper
+ka-ke-ja-pi,χαλκειαφι,,Second word from the pair. No changes needed.,copper
+ka-ma,κτημα,,No changes needed as it has no accents or special characters.,unit of land
+ka-ma-e-u,κτημαευς,,First word from the pair. Removed accent from 'ύ'.,owner of a 'kama'
+ka-ma-e-we,κτημαευς,,Second word from the pair. Removed accent from 'ύ'.,owner of a 'kama'
+ka-na-ko,κνακος|κνηκος,,Handled parentheses for Greek cognate. Removed accent from 'ά'.,safflower (plant)
+ka-na-pe-u,κναπευς,,First word from the pair. Removed accent from 'ύ'.,occupation (κνάπτω= to card)
+ka-na-pe-we,κναπευς,,Second word from the pair. Removed accent from 'ύ'.,occupation (κνάπτω= to card)
+ka-pa-si-ja,καρπασια,,First word from the pair. Removed capital letter and accent from 'ί'.,personal/ ethnic name of 'Karpathos'(fem.)
+ka-pa-ti-ja,καρπαθια,,Second word from the pair. Removed capital letter and accent from 'ί'.,personal/ ethnic name of 'Karpathos'(fem.)
+ka-pi-ni-ja,καπνια,,Removed accent from 'ί'. The Linear B 'ka-pi-ni-ja' corresponds to Greek 'καπνια' (chimney).,'chimney'
+ka-po,καρπος,,No changes needed as it has no accents or special characters.,fruit
+ka-ra-a-pi,καρααφι,,No changes needed as it has no accents or special characters.,with a head
+ka-ra-do-ro,χαραδρος,,First word from the pair. Removed accent from 'ά'.,place name (= gorge)
+ka-ra-do-ro-de,χαραδρος,,Second word from the pair. Removed accent from 'ά'.,place name (= gorge)
+ka-ra-do-wa-ta,χαραδοfατας,,Converted digamma 'F' to lowercase 'f'.,personal name
+ka-ra-ko,γλαχων|βληχων,,The Linear B 'ka-ra-ko' corresponds to Greek 'γλάχων' and 'βλήχων'. Removed accent from 'ά'.,pennyroyal (plant)
+ka-ra-ma-to,κλασματος|κλασμα,,The Linear B 'ka-ra-ma-to' corresponds to Greek 'κλασματος' and 'κλασμα'. Removed accent from 'ά'.,"fragment, part"
+ka-ra-pa-so,καρπασος|καρπαθος,,Removed capital letter.,place name
+ka-ra-re-we,κλαρεfες|κλαρεfεις|κλαρευς,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,kind of pot (stirrup jar)
+ka-ra-u-ko,γλαυκος,,The Linear B 'ka-ra-u-ko' corresponds to Greek 'γλαυκος'. Removed capital letter.,personal name
+ka-ra-we,γραfες,,Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,old women
+ka-ra-wi-po-ro,κλαfιφορος|κλαδFιφορος|κλειδοφορος,,Converted digamma 'F' to lowercase 'f'. Removed parentheses in linear b and greek cognate and kept both options.,religious title (='key-bearer?')
+ka-ri-se-u,χαρισευς,,No changes needed as it has no accents or special characters.,personal name
+ka-ri-si-jo,χαρισιος,,Removed capital letter from 'Χ'.,personal name
+ka-ro-qo,χαροψ,,No changes needed as it has no accents or special characters.,personal name
+ka-ru-ke,καρυκες|κηρυξ|κηρυκες,,Removed accent from 'ά'. The Linear B 'ka-ru-ke' corresponds to Greek 'καρυκες' (heralds) and 'κηρυξ'.,heralds
+ka-ru-pi,καρυφι,,First word from the pair. Removed accent from 'ύ'.,(made of) nut- tree
+ka-ru-we,καρυfει|καρυα,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ύ'.,(made of) nut- tree
+ka-ru-to,καρυστος,,Removed capital letter and accent from 'ά'. The Linear B 'ka-ru-to' corresponds to Greek 'καρυστος'.,place name
+ka-sa-to,ξανθος,,The Linear B 'ka-sa-to' corresponds to Greek 'ξανθος' (Xanthos).,personal name
+ka-ta-wa,καταfας,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,personal name
+ka-ti,καρτις,,Removed accent from 'ά'.,kind of pot (hydria)
+ka-to,καστωρ,,First word from the pair. Removed capital letter.,personal name
+ka-to-ro,καστωρ,,Second word from the pair. Removed capital letter.,personal name
+ka-tu-re-wi-ja,κανθηλfιαι,,First word from the pair. Removed accent from 'ή'. Converted digamma 'F' to lowercase 'f'.,saddle- bags
+ka-tu-ryo,κανθηλfων,,Second word from the pair. Removed accent from 'ή'.,saddle- bags
+ka-u-no,χαυνος,,The Linear B 'ka-u-no' corresponds to Greek 'χαυνος'. Removed accent from 'ύ'.,personal name
+ka-zo-e,κακιονες,,Removed accents from 'ά'. Ignored 'Υ' as it's not in allowed characters. Included both cognates 'καζοες' and 'κακιονες'.,(of) worse (quality)
+ke-e,κειει,,First word from the pair. Removed capital letters.,place name (>κρήνη= spring)
+ke-i-ja-ka-ra-na,κειακρανα,,Second word from the pair. Removed capital letters.,place name (>κρήνη= spring)
+ke-i-jo,κειος,,Removed capital letter.,ethnic name of 'Keia/Κeie'
+ke-ka-u-me-no,κεκαυμενος,,Removed accent from 'έ'. The Linear B 'ke-ka-u-me-no' corresponds to Greek 'κεκαυμενος' (burnt).,burnt
+ke-ke-me-na,κεκειμενα,,First word from the pair. Removed accent from 'έ'.,common (refeπing to ktoina= plot; see opp. 'ktimena')
+ke-ke-me-no,κεκειμενος,,Second word from the pair. Removed accent from 'έ'.,common (refeπing to ktoina= plot; see opp. 'ktimena')
+ke-ki,κελχις,,Removed capital letter from 'Κ'.,place name
+ke-ki-de,κελχιδες,,Removed capital letter. The Linear B 'ke-ki-de' corresponds to Greek 'κελχιδες'.,ethnic name of 'Kelhis'
+ke-ki-jo,κερκιος,,Removed capital letter and accent from 'έ'.,personal name
+ke-ra,κερας,,First word from the pair. Removed accent from 'έ'.,horn (implying the material)
+ke-ra-ha,κεραhα,,"Second word from the pair. Removed accent from 'έ'. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.",horn (implying the material)
+ke-ra-e,κερας,,Third word from the pair. Removed accent from 'έ'.,horn (implying the material)
+ke-ra,κερας,,"Fourth word from the pair, first variant without parenthesis. Removed accent from 'έ'.",horn (implying the material)
+ke-ra-ja,κεραια,,"Fourth word from the pair, second variant with parenthesis. Removed accent from 'έ'.",horn (implying the material)
+ke-ra-i-ja,κεραια,,"Fifth word from the pair, first variant without parenthesis.",horn (implying the material)
+ke-ra-ja-pi,κεραιαφι,,"Sixth word from the pair, removed the -pi syllable.",horn (implying the material)
+ke-ra-e-we,κεραεfεις|κεραευς,,Removed accents from 'έ'. Converted digamma 'F' to lowercase 'f'.,horn worker
+ke-ra-me-ja,κεραμεια,,Removed accent from 'ί'.,personal name (fem.)
+ke-ra-me-u,κεραμευς,,First word from the pair. Removed accent from 'έ'.,personal name
+ke-ra-me-wo,κεραμεfος,,Second word from the pair. Removed accent from 'έ'.,personal name
+ke-ra-me-u,κεραμευς,,Removed accent from 'εύ'.,potter
+ke-ra-no,κελαινος,,No changes needed as it has no accents or special characters.,"dark, black"
+ke-ra-so,κερασω,,Removed accent from 'ώ'.,personal name (fem.)
+ke-ra-ti-jo-jo,κερατιοιο,,Removed capital letter and accent from 'ί'.,place name (see also 'vorvos')
+ke-ra-u-jo,κεραυιος,,Removed accent from 'ύ'.,personal name
+ke-re-ha,σκελεhα|σκελος,,"Removed accent from 'έ'. Greek cognates presented as an array because there are multiple possible cognates. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.",legs
+ke-re-si-jo we-ke,κρησιοfεργης,,Converted digamma 'F' to lowercase 'f'.,of Cretan style
+ke-re-te-u,κρηθευς,,Removed accent from 'ύ'. The Linear B 'ke-re-te-u' corresponds to Greek 'κρηθευς'.,personal name
+ke-re-ti-wo,κρηθιfος,,Converted digamma 'F' to lowercase 'f'.,place name
+ke-ro-si-ja,γερουσια,,Removed accent from 'ία'. Included both forms.,council of elders ('senate')
+ke-ro-wo,κεροfος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,personal name
+ke-sa-do-ro,κεσανδρος,,Removed accent from 'έ'.,personal name
+ke-se-ne-wi-ja,ξενfια|ξενια,,First word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,divine epithet (ξένιος= 'hospitable')
+ke-se-ni-wi-ja,ξενfια|ξενια,,Second word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,divine epithet (ξένιος= 'hospitable')
+ke-se-nu-wi-ja,ξενfια|ξενια,,Third word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,divine epithet (ξένιος= 'hospitable')
+ke-se-ni-wi-jo,ξενfιος|ξενιος,,Fourth word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,divine epithet (ξένιος= 'hospitable')
+ke-se-nu-wo,ξενος,,Fifth word from the pair. Contains disallowed character.,divine epithet (ξένιος= 'hospitable')
+ke-u-po-da,χευσπονδας,,First word from the sequence. Removed accent from 'ό'.,(=libation pourer)
+ke-u-po-da-o,χευσπονδας,,Second word from the sequence. Removed accent from 'ε'.,(=libation pourer)
+ke-u-po-de-ja,χευσπονδεια,,Third word from the sequence. Removed accent from 'ε'.,(=libation pourer)
+ke-u-sa,κεουσας,,No changes needed as it has no accents or special characters.,personal name
+ke-we-to-jo,κηfετοιο|κηfετος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'. Included both forms with and without the 'ιο'.,personal name
+ki-ni-di-ja,κνιδια|κνιδιαι,,Removed accent from 'ί'.,ethnic name (fem.)
+ki-ri-ta,κριθη,,No changes needed as it has no accents or special characters.,barley
+ki-si-wi-ja,ξιfια,,Removed accent from 'ί'. Converted digamma 'F' to lowercase 'f'.,ethnic name of '>Chios?' (fem.)
+ki-ta-no,κιρτανος|κριτανος,,Multiple possible cognates. Removed accent from 'ί'. Included both variants.,terebinth tree (see also 'ti-mi-to')
+ki-ti-je-si,κτιουσι,,No changes needed as it has no accents or special characters.,"they cultivate (>κτίζω?= to settle, to found)"
+ki-ti-me-na,κτιμενα,,First word from the pair. Removed accent from 'έ'.,"settled, owned (see also 'ktoina')"
+ki-ti-me-no,κτιμενος,,Second word from the pair. Removed accent from 'έ'.,"settled, owned (see also 'ktoina')"
+ki-ti-ta,κτιτης,,"No modifications needed. The Linear B 'ki-ti-ta' corresponds to Greek 'κτιτας' (inhabitant, settler).","inhabitant, settler"
+ki-to,χιτων,,"The Linear B 'ki-to' corresponds to Greek 'χιτων' (chiton, type of clothing).","chiton, type of clothing"
+ki-wo,κιfων,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,pillar
+ki-wo-na-de,κιfωνα,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,pillar
+ko-do-jo,κοδοιο|κοδος,,Removed accent from 'ό'. Included word in parentheses. The Linear B 'ko-do-jo' corresponds to Greek 'κοδοιο' and 'κοδος'.,personal name
+ko-ka-ro,κωκαλος,,First word from the pair. Removed accent from 'ώ'.,personal name
+ku-ka-ro,κυκαλος,,Second word from the pair. Removed accent from 'ύ'.,personal name
+ko-ki-da,κολχιδας,,Removed accent from 'ό'.,personal name
+ko-ki-jo,κολχιος,,Removed capital letter from 'Κ'.,personal name
+ko-ki-re-ja,κοχλιρεια|κοχλιας,,Removed accent from 'ί'. Included both forms with and without 'λχ' to 'χλ' transformation.,"shell-shaped, spiral"
+ko-ku,κογχυς,,No changes needed as it has no accents or special characters.,(>κόγχη= a mussel/something sharp)
+ko-ku-ro,κογχυλος,,No changes needed as it has no accents or special characters.,shell-shaped/ purple
+ko-ma-we,κομαfεις,,First word from the set. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,personal name (>κομάεις=  'with nice  hair')
+ko-ma-we-te,κομαfεντει,,Second word from the set. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,personal name (>κομάεις=  'with nice  hair')
+ko-ma-we-to,κομαfεντος,,Third word from the set. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,personal name (>κομάεις=  'with nice  hair')
+ko-ma-we-ta,κομαfεντα,,Converted digamma 'F' to lowercase 'f'.,(κόμμα= stamp)
+ko-ma-we-te-ja,κομαfεντεια,,Converted digamma 'F' to lowercase 'f'.,goddess' s name (κόμα>κόμη= hair)
+ko-no,σκοινος,,"The Linear B 'ko-no' corresponds to Greek 'σκοινος' (schinus, rush (plant)).'","schinus, rush (plant)"
+ko-no-si-ja,κνωσια,,First word from the pair. Removed capital letter and accent from 'ώ'. The Linear B 'ko-no-si-ja' corresponds to Greek 'κνωσια'.,ethnic name of 'Knossos'
+ko-no-si-jo,κνωσιος,,Second word from the pair. Removed capital letter and accent from 'ώ'. The Linear B 'ko-no-si-jo' corresponds to Greek 'κνωσιος'.,ethnic name of 'Knossos'
+ko-no-so,κνωσος,,First word from the pair. Removed capital letter and accent from 'ό'.,place name
+ko-no-so-de,κνωσονδε,,Second word from the pair. Removed capital letter and accent from 'ό'.,place name
+ko-pi-na,κοφινα|κοφινος,,Removed accent from 'ί'. Included both variants within parentheses.,'coffin?' (>κόφινος= basket)
+ko-re-te,κορετηρ,,First word from the pair. Removed accent from 'έ'.,official title ('mayor')
+ko-re-te-re,κορετηρες,,Second word from the pair. Removed accent from 'έ'.,official title ('mayor')
+ko-re-te-ri-jo,κορετηριον,,No changes needed as it has no accents or special characters.,refeπing to the 'koreter' (='mayor's  house')
+ko-ri-ha-da-na,κολιανδρα,,First word from the set. Removed accent from 'ί'.,coriander (plant)
+ko-ri-ja-da-na,κολιανδρα,,Second word from the set. Removed accent from 'ί'.,coriander (plant)
+ko-ri-ja-do-no,κολιανδρον,,Third word from the set. Removed accent from 'ί'.,coriander (plant)
+ko-ri-jo-da-na,κολιανδρα,,Fourth word from the set. Removed accent from 'ί'.,coriander (plant)
+ko-ri-si-ja,κορινθια,,"First word from pair. Removed capital letter and accent from 'ί'. Included both forms, with 'νσ' and the later evolved 'νθ'.",ethnic name of 'Koήnthos'
+ko-ri-si-jo,κορινθιος,,"Second word from pair. Removed capital letter and accent from 'ί'. Included both masculine forms, with 'νσ' and the later evolved 'νθ'.",ethnic name of 'Koήnthos'
+ko-ri-to,κορινθος,,Removed capital letter and accent from 'ό'. The Linear B 'ko-ri-to' corresponds to Greek 'κορινθος'.,place name
+ko-ro-jo-wo-wi-ja,κροιοfορfια,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,place name
+ko-ro-ku-ra-i-jo,κερκυραιοι,,Removed capital letters and accents from 'ί'. Included both forms.,ethnic name of >'Kerkyra' (Corfu)?
+ko-ro-no-we-sa,κορονοfεσσα,,Removed accent from 'ό'. Converted digamma 'F' to lowercase 'f'.,"(pot decoration) (κορωνός= curved, crooked,κορώνη= sea-crow"
+ko-ru,κορυς,,First word from the pair. Removed accent from 'ό'.,helmet
+ko-ru-pi,κορυφι,,Second word from the pair. Removed accent from 'ό'.,helmet
+ko-ru-we-ja,κορυfεια,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ε'.,related to 'ko-wa'/ to 'ko-ru?' (see also 'qo-wi- ja')
+ko-so-u-to,ξουθος|ξουθος,,Removed accent from 'ύ'.,"personal name (= blond, tawny)"
+ko-to-i-na,κτημα,,First word from the group. Removed accent from 'ί'.,plot of land
+ko-to-na,κτημα,,Second word from the group. Removed accent from 'ί'.,plot of land
+ko-to-na-o,κτηματων,,Third word from the group. Removed accent from 'ί'.,plot of land
+ko-to-no-ko,κτημεχων,,Removed parenthetical element -o-. The Linear B 'ko-to-no-ko' corresponds to Greek 'κτοινοοχοι'.,plot owners
+ko-to-no-o-ko,κτημεχων,,The Linear B 'ko-to-no-o-ko' corresponds to Greek 'κτοινοοχοι'.,plot owners
+ko-tu-ryo,κοτυριων,,First word from the pair. Removed capital letter and accent from 'ί'.,personal name
+ko-tu-ryo-ne,κοτυριονει,,Second word from the pair. Removed capital letter and accent from 'ί'.,personal name
+ko-tu-we,κοτυfει,,First word from the pair. Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,place name
+ko-tu-wo,κοτυfος,,Second word from the pair. Removed accent from 'ό'. Converted digamma 'F' to lowercase 'f'.,place name
+ko-we-ja,κορfεια|κουρια,,Removed accent from 'ό'. Converted digamma 'F' to lowercase 'f'. Included both variants of the Greek cognate.,like a 'korfa' (see next)
+ko-wa,κορfη|κορη|κουρη,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,"young woman, girl"
+ko-wo,κορfος|κουρος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,young man
+ko-wo,κωfας|κωας,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,fleece
+ku-do-ni-ja,κυδωνια,,Removed capital letter and accent from 'ί'. The Linear B 'ku-do-ni-ja' corresponds to Greek 'κυδωνια'.,place name (modern Chania)
+ku-ka-da-ro,κυκαδαρος,,Removed capital letter from 'Κ'.,personal name
+ku-ke-re-u,κυκλευς,,Removed accent from 'ύ'. Removed capital letter.,personal name
+ku-mi-no,κυμινον,,First word from the pair. Removed accent from 'ύ'. The Linear B 'ku-mi-no' corresponds to Greek 'κυμινον'.,cumin (plant)
+ku-mi-no-jo,κυμινοιο,,Second word from the pair. Removed accent from 'ύ'. The Linear B 'ku-mi-no-jo' corresponds to Greek 'κυμινονιο'.,cumin (plant)
+ku-na-ja,γυναια|γυνη,,First word from the pair. No accents to remove. The Linear B 'ku-na-ja' corresponds to Greek 'γυναια'.,woman
+ku-na-ki-si,γυναιξι,,Second word from the pair. No accents to remove. The Linear B 'ku-na-ki-si' corresponds to Greek 'γυναιξι'.,woman
+ku-na-ke-ta,κυναγετης,,First word from the pair. Removed accent from 'έ'.,hunter
+ku-na-ke-ta-i,κυναγεται,,Second word from the pair. Removed accent from 'έ'.,hunter
+ku-pa-ri-si-jo,κυπαρισιοι|κυπαρισιος,,Removed capital letter and accent from 'ί'. Included both forms.,ethnic name of 'Kypaήsos'
+ku-pa-ri-so,κυπαρισσος,,Removed capital letter from 'Κ'.,place name
+ku-pa-ro,κυπαιρος,,Removed accent from 'ύ'. The Linear B 'ku-pa-ro' corresponds to Greek 'κυπαιρος' (cyperus plant).,cyperus (plant)
+ku-pa-ro-we,κυπαιροfεν,,Converted digamma 'F' to lowercase 'f'.,made with 'kypairos'  (see previous)
+ku-pe-se-ro,κυψελος,,Removed accent from 'ύ'.,personal name
+ku-pi-ri-jo,κυπριος,,Removed capital letter and accent from 'ύ'.,ethnic name (of Cyprus)
+ku-ra-no,κυλανος,,Removed capital letter and accent from 'ύ'. The Linear B 'ku-ra-no' corresponds to Greek 'κυλανος'.,personal name
+ku-re-we,κουρηfες|κουρητες,,Removed accents from 'ή'. Converted digamma 'F' to lowercase 'f'. Included both forms 'κουρηfες' and 'κουρητες'.,group name
+ku-ru-me-no,κλυμενος,,First word from the pair. Removed capital letter and accent from 'έ'.,personal name
+ku-ru-me-no-jo,κλυμενος,,Second word from the pair. Removed capital letter and accent from 'έ'.,personal name
+ku-ru-so,χρυσος,,The Linear B 'ku-ru-so' corresponds to Greek 'χρυσός' (gold). Removed accent from 'ό'.,gold
+ku-ru-so-wo-ko,χρυσοfεργος,,Converted digamma 'F' to lowercase 'f'.,gold worker
+ku-ru-su-*56,χρυσυφαια,,Removed accent from 'ί'.,kind of pot (tripod amphora)
+ku-su,ξυν|συν,,Multiple possible cognates provided. The Linear B 'ku-su' can correspond to either 'ξυν' or 'συν'.,plus
+ku-su-pa,ξυμπαν|συμπαν,,"Removed accent from 'ύ'. Included both variants, one with 'ξ' and the later evolved 'σ'.",whole
+ku-su-to-ro-pa,ξυστροφη|συστροφη,,"Removed parentheses and content after the '>'. Changed '(&gt;' to '>'. Linear B 'ku-su-to-ro-pa' corresponds to Greek 'ξυ(ν)στροφά(&gt;συστροφή)' after removing optional characters, parentheses, and accent from 'ά'.","collection, gathering"
+ku-ta-to,κυταιστος,,First variant without the optional 'i'. Removed capital letter and accent from 'ύ'.,place name
+ku-ta-i-to,κυταιστος,,Second variant with the optional 'i'. Removed capital letter and accent from 'ύ'.,place name
+ku-ta-ti-jo,κυταισιος,,Removed capital letter and accent from 'ί'.,ethnic name of 'Kytaistos'
+ku-te-se-jo,κυτεσειος|κυτεσειοις|κυτισος,,Removed accent from 'έ'. Included all possible Greek cognates.,made from ebony/ in ebony
+ku-te-ra-o,κυθεραιος,,First word from the pair. Removed capital letter and accent from 'έ'.,ethnic name of 'Kythera'
+ku-te-rai,κυθερεαι|κυθερεα,,Second word from the pair. Removed capital letter and accent from 'έ'.,ethnic name of 'Kythera'
+ku-te-re-u-pi,κυθερευφι|κυθηρα,,Removed capital letter and accent from 'ύ'. dubious cognate because is a too modified version compared to the correct match.,place name (modern Κithira)
+ku-tu-qa-no,κτυγιανωρ,,The Linear B 'ku-tu-qa-no' corresponds to Greek 'κτυγιανωρ'. Removed capital letter from 'Κ'.,personal name
+ku-wa-no,κυfανος|κυανος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ύ'. Included both cognates with and without digamma.,"gemstone, lapis lazuli (κύανος= blue)"
+ku-wa-no-wo-ko,κυfανοfεργος,,Converted digamma 'F' to lowercase 'f'.,gemstone worker
+ma-ka,μαγα,ματεργαια,Removed capital letter from 'Μ'.,='mother earth?' (goddess' name)
+ma-ka-wo,μαχαfων,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,personal name
+ma-na-sa,μανασσα,,No changes needed as it has no accents or special characters.,goddess' s name
+ma-na-si-we-ko,μνασιfεργος,,Converted digamma 'F' to lowercase 'f'.,personal name
+ma-ni-ko,μανιχος,,No modifications needed. The Linear B 'ma-ni-ko' corresponds to Greek 'μανιχος'.,personal name
+ma-no-u-ro,μανουρος,,No changes needed as it has no accents or special characters.,personal name
+ma-ra-ne-ni-jo,μαλανενιοι,,Removed accent from 'έ'.,ethnic name (related to 'Marineu '?)
+ma-ra-te-u,μαλατευς|μαλθευς,,Removed accent from 'έ'.,personal/ ethnic name
+ma-ra-te-we,μαλαθηfες,,First word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,ethnic name
+ma-ri-ti-wi-jo,μαλθιfιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,ethnic name
+ma-ra-tu-wo,μαραθfον|μαραθfος,,Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,fennel (plant)
+ma-re-u,μαλευς,,First word from the pair. Removed accent from 'έ'.,personal name
+ma-re-wo,μαλευς,,Second word from the pair. Removed accent from 'έ'.,personal name
+ma-ri-ne-u,μαρινευς,,First word from the pair. Removed accent from 'έ'.,god's name?
+ma-ri-ne-we,μαρινευς,,Second word from the pair. Removed accent from 'έ'.,god's name?
+ma-ri-ne-we-ja-i,μαρινεfειαι|μαρινεfεια,,Removed capital letter. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,priestess of 'Marineus'?
+ma-ri-ta,μαλιτας,,Removed accent from 'ά'.,personal/ ethnic name
+ma-ro-pi,μαλοφι|μαλος,,Removed accent from 'ό'. Included both Malophi and Malos as cognates based on the Pronunciation (Greek) field.,place name
+ma-te,ματηρ,,First word from the pair. Removed accent from 'ά'. The Linear B 'ma-te' corresponds to Greek 'μάτερ'.,mother
+ma-te-re,ματηρες,,Second word from the pair. Removed accent from 'ά'. The Linear B 'ma-te-re' corresponds to Greek 'μάτερ'.,mother
+ma-to-pu-ro,ματροπυλος,,Removed accent from 'ό'. The Linear B 'ma-to-pu-ro' corresponds to Greek 'ματροπυλος' (Matropylos).,place name
+ma-to-ro-pu-ro,ματροπυλος,,Removed accent from 'ό'. The Linear B 'ma-to-pu-ro' corresponds to Greek 'ματροπυλος' (Matropylos).,place name
+ma-u-ti-jo,μαυτιος,,No changes needed.,personal name
+me-de-i-jo,μεδειος,,Removed accent from 'έ'.,personal name
+me-ni-jo,μηνιος,,No changes needed as it has no accents or special characters.,related to 'mein' (see next)
+me-no,μην|μηνας,,The Linear B 'me-no' corresponds to Greek 'μηνος' (month). Removed accent from 'ό'.,month (μήν= month/moon/an Anatolian deity)
+me-no-e-ja,μηνοεια,,No changes needed as it has no accents or special characters.,moon shaped?
+me-re-ti-rya,μελεστριαι,,First word from the pair. Removed accent from 'έ'.,flour grinders (fem.)
+me-re-ti-ri-ja,μαλεστριαι,,Second word from the pair. Removed accent from 'έ'.,flour grinders (fem.)
+me-re-u-ro,μαλευρον,,Removed accent from 'έ'.,flour
+me-ri,μελι,,First word from the pair. Removed accent from 'έ'. The Linear B 'me-ri' corresponds to Greek 'μελιν/μελιτον' (honey).,honey
+me-ri-to,μελιτος|μελιτον,,Second word from the pair. Removed accent from 'έ'. The Linear B 'me-ri-to' corresponds to Greek 'μελιν/μελιτον' (honey).,honey
+me-ri-da-ma-te,μελιδαματες,,First word from the pair. Removed accent from 'ά'.,ceremonial title (=' distήbutors of honey'?)
+me-ri-du-ma-te,μελιδυματες,,Second word from the pair. Removed accent from 'ύ'.,ceremonial title (=' distήbutors of honey'?)
+me-ri-te-wo,μελιτεfος|μελιτευς,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,personal name/ occupation (μέλι= honey)
+me-ta,μετα,,No changes needed.,"after, with"
+me-ta-ke-ku-me-na,μετακεκυμενα,,No changes needed as it has no accents or special characters.,dismantled?
+me-ta-ki-ti-ta,μετακτιτας,,Removed accent from 'ά'. The Linear B 'me-ta-ki-ti-ta' corresponds to Greek 'μετακτιτας'.,settler οη a second- stage (see also 'ktitas')
+me-ta-pa,μεταπα,,First word from the pair. Removed accent from 'ά'.,place name
+me-ta-pa-de,μεταπανδε,,Second word from the pair. Removed accent from 'ά'.,place name
+me-ta-pi-jo,μεταπιος,,No changes needed as it has no accents or special characters.,ethnic name of 'Metapa'
+me-to-qe-u,μετωπευς,,Removed accent from 'εύ'.,personal name
+me-u-jo-ha,μειονα,,Converted digamma 'F' to lowercase 'f'. Removed parentheses. Removed accent from 'ί'.,smaller (many things)
+me-wi-jo,μεfιων|μεfιον,,First word from pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,smaller (one person)
+me-u-jo,μειων|μειον,,Second word from pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,smaller (one person)
+me-wi-jo-e,μεfιονες,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,smaller (many persons)
+me-u-jo-e,μειονες,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,smaller (many persons)
+me-zo,μεζων|μεζον|μειζων|μειζον,,Multiple possible cognates. Removed accent from 'έ'. Included variant form μείζων.,"greater, bigger (one person)"
+me-zo-ha,μεζοhα|μειζοhα,,"The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate. Removed accent from 'ό'.","greater, bigger (many things)"
+me-zo-e,μεζονες|μειζονες,,Removed accent from 'έ'. Labeling μειζονες as dubious because it is too modified compared to the effective greek cognate.,"greater, bigger (many persons)"
+mi-ra-ti-ja,μιλατια,,Removed accent from 'ά'.,ethnic name of 'Milatos'  (Miletus)
+mi-ta,μινθα|μινθη,,"Removed accent from 'ί'. Included both forms, the original and the evolved form within parentheses.","mentha, mint (plant)"
+mi-to-we-sa,μιλτοfεσσα,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,(painted) red
+mi-to-we-sa-e,μιλτοfεσσα,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,(painted) red
+mo-qo-so,μοψος,,No changes needed as it has no accents or special characters.,personal name
+mo-re-u,μολευς,,Removed accent from 'έ'.,personal name
+mo-ri-wo-do,μολυβδος,,No changes needed as it has no accents or special characters.,lead
+mo-ro-qa,μοροπας,,No changes needed as it has no accents or special characters.,official (military?) title
+mo-ro-po-ro,μοροπλος,,First word from the pair. Removed accent from 'ό'.,personal name
+mo-ro-qo-ro-jo,μοροπλος,,Second word from the pair. Removed accent from 'ό'.,personal name
+na-i-se-wi-jo,ναισεfιος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,personal name
+na-u-do-mo,ναυδομος,,No changes needed as it has no accents or special characters.,ship worker
+na-u-si-ke-re,ναυσικλεfεις|ναυσικλης,,First variant without the optional 'we'. Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both forms.,personal name
+na-u-si-ke-re-we,ναυσικλεfης|ναυσικλης,,Second variant with the optional 'we'. Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both forms.,personal name
+na-wi-jo,ναfιος|ναfος|ναος,,"Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'. Included all possible cognates, and cognates within the parenthesis.",of the temple
+na-wi-ro,ναfιλος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,personal name
+ne-de-wa-ta,νεδfατας,,First word from the pair. Removed capital letter and accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,personal name
+ne-de-wa-ta-o,νεδfατας,,Second word from the pair. Removed capital letter and accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,personal name
+ne-de-we,νεδεfει|νεδfη,,First word from the triple. Removed accent from 'εί'. Converted digamma 'F' to lowercase 'f'.,place name (>Νέδα= a modern river)
+ne-de-we-e,νεδεfει,,"First word from the triple, with the parenthetical element. Removed accent from 'εί'. Converted digamma 'F' to lowercase 'f'.",place name (>Νέδα= a modern river)
+ne-do-wo-ta-de,νεδfοτανδε,,Second word from the triple. Converted digamma 'F' to lowercase 'f'.,place name (>Νέδα= a modern river)
+ne-do-wo-te,νεδfοθεν,,Third word from the triple. Converted digamma 'F' to lowercase 'f'. Removed accents from 'έ'. Included all cognates.,place name (>Νέδα= a modern river)
+ne-ti-ja-no,νεστιανωρ,,Removed capital letter from 'Ν'.,personal name
+ne-ti-ja-no-re,νεστιανωρ,,Removed capital letter from 'Ν'.,personal name
+ne-wa,νεfα|νεα,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,new
+ne-wo,νεfος|νεος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,new
+no-pe-re-ha,νωφελεα,,First word from the pair. Removed accent from 'έ'.,useless
+no-pe-re,νωφελεα,,First word from the pair without the optional 'e'. Removed accent from 'έ'.,useless
+no-pe-re-e,νωφελεα,,First word from the pair with the optional 'e'. Removed accent from 'έ'.,useless
+nu-wa-ja,νυμfαια,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'α'.,kind of cloth/textile (>νυμφαία= yellow water-lily/ νύμφα= bride)
+nu-wa-i-ja,νυμfαια,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'α'.,kind of cloth/textile (>νυμφαία= yellow water-lily/ νύμφα= bride)
+o,ος,,First word from the pair. No changes needed as it has no accents or special characters.,"introductory/ prothetic world ='who, in this manner' (see also 'jo-')"
+o-ha,οhα,,"Second word from the pair. Removed accent from 'ά'. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.","introductory/ prothetic world ='who, in this manner' (see also 'jo-')"
+o-da-ha,οδαhα,,"Third word from the pair. Removed accent from 'ά'. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.","introductory/ prothetic world ='who, in this manner' (see also 'jo-')"
+o-de-qa-ha,οδεταhα,,"Fourth word from the pair. Removed accent from 'ά'. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.","introductory/ prothetic world ='who, in this manner' (see also 'jo-')"
+o-da-twe-ta,οδοντfεντα|οδους,οδατθεντα,First word from pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both possible cognates. Added dubious 'οδατθεντα' because it's likely not matching the Linear B sequence.,provided with 'teeth'  (of wheels)
+o-da-tu-we-ta,οδοντfεντα|οδους,οδατουεντα,Second word from pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both possible cognates. Added dubious 'οδατουεντα' because it's likely not matching the Linear B sequence.,provided with 'teeth'  (of wheels)
+o-da-ke-we-ta,οδοντfεντα|οδους,οδακεfεντα,Third word from pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both possible cognates. Added dubious 'οδακεfεντα' because it's likely not matching the Linear B sequence.,provided with 'teeth'  (of wheels)
+o-da-ku-we-ta,οδοντfεντα|οδους,οδακουεντα,Fourth word from pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both possible cognates. Added dubious 'οδακουεντα' because it's likely not matching the Linear B sequence.,provided with 'teeth'  (of wheels)
+o-du-ru-we,οδρυfει,,First word from the pair. Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,place name
+o-du-ru-wo,οδρυς,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed parenthesis from 'Οδρύς;'.,place name
+o-du-ru-wi-ja,οδρυfia,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,ethnic name of 'Odryvei/Odrys'
+o-du-ru-wi-jo,οδρυfιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,ethnic name of 'Odryvei/Odrys'
+o-ka,αρχη,,"Greek cognate presented with optional characters within parentheses: included both variants, with and without the parenthesized letter. Removed accent from 'ά'. The Linear B 'o-ka' corresponds to Greek 'ορχά(&gt;αρχή)' (command/mission/ (military) unit).",command/mission/ (military) unit
+o-ka-ra,οιχαλαι,,Removed capital letter.,place name
+o-ka-rai,οιχαλεα|οιχαλεαι,,Removed accent from 'έ'.,ethnic name of 'Oihalai'
+o-ko-me-ne-u,ορχομενευς,,Removed accent from 'εύ'.,personal name
+o-ku-na-wo,οκυναfος|οκυναfων,,Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'. Included both possible cognates.,personal name
+o-mo-pi,ορμοφι|ορμος,,Removed accent from 'ό'. Included both cognates 'ορμοφι' and 'ορμος' as indicated. The Linear B 'o-mo-pi' corresponds to Greek 'ορμοφι' and 'ορμος'.,with chains
+o-na-te-re,ωνητης|ωνηται,,Removed accent from 'ά'. The Linear B 'o-na-te-re' corresponds to Greek 'ονατερες'.,lessees (see next)
+o-na-ta,ωνητεα,,First word from the pair. Removed accent from 'ό'.,lease (ωνέομαι= to buy)
+o-na-to,ωνητεος,,Second word from the pair. Removed accent from 'ό'.,lease (ωνέομαι= to buy)
+o-ni-ti-a-pi,ορνιθιαφι|ορνις|ορνιθα,,"Multiple cognates provided, all included. Removed accent from 'ί'.",(with) birds
+o-no,ονος|ωνος,,Multiple possible cognates. Removed accent from 'ό' and 'ώ'. The Linear B 'o-no' can correspond to either 'ονος' (ass) or 'ωνοι' (payment).,ass/(ώνια= payment)
+o-nu-ka,ονυξ,,First word from the pair. No changes needed as it has no accents or special characters.,"(anything like a) claw, nail"
+o-nu-ke,ονυχες,,Second word from the pair. No changes needed as it has no accents or special characters.,"(anything like a) claw, nail"
+o-pa,οπλα,,Removed accent from 'ό'. Included both cognates with and without parentheses.,term related with the delivery of things
+o-pe-ro,οφελος|οφειλη,,Removed accent from 'ό'.,"debt, liability"
+o-pe-ro-sa,οφειλουσα,,First word from the set. Removed accent from 'ό'.,she/he/they who owe
+o-pe-ro-ta,οφειλοντας,,Second word from the set. Removed accent from 'ό'.,she/he/they who owe
+o-pe-ro-te,οφειλοντες,,Third word from the set. Removed accent from 'ό'.,she/he/they who owe
+o-pe-ro-si,οφειλουσι,,"Removed accent from 'ό'. Included both forms, before and after the simplification.",they owe
+o-pe-ta,οφελτας,,No changes needed as it has no accents or special characters.,name
+o-pi-ha-ra,οπιhαλα,,"No changes needed as it has no accents or special characters. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.","places by the sea, coastline (>άλιος= of the sea)"
+o-pi-de-so-mo,οπιδεσμοι,,No changes needed as it has no accents or special characters.,binding straps (see also 'de-so-mo')
+o-pi-i-ja-pi,οπιιαφι,,No changes needed as it has no accents or special characters.,parts of the reins
+o-pi-ka-pe-e-we,οπισκαφεfες,,Converted digamma 'F' to lowercase 'f'.,"overseers of digging operations (σκάμμα= trench, pit)"
+o-pi-ke-re-mi-ni-ja,οπικελεμνια,,First word from the pair. Removed accent from 'έ'.,part of decoration (of chairs)
+o-pi-ke-re-mi-ja-pi,οπικελεμνιαφι,,Second word from the pair. Removed accent from 'έ'.,part of decoration (of chairs)
+o-pi-ri-mi-ni-jo,οπιλιμνιος|οπλιμνιος,,Multiple possible cognates. Removed capital letter and accent from 'ί'.,personal name
+o-pi-su-ko,οπισυκος,,"No modifications needed as the Linear B 'o-pi-su-ko' corresponds directly to Greek 'οπισυγός' without disallowed characters, accents, or digamma. Removed accent from 'ό'.",'fig- overseer' (see also 'suza')
+o-pi-te-te-re,οπιθετηρες,,Removed accent from 'έ'.,chocks
+o-pi-te-u-ke-e-u,οπιτευχεευς,,First word from the set. Removed accent from 'ύ'.,overseer of weapons (=τεύχεα)
+o-pi-te-ke-e-u,οπιτευχεευς,,Second word from the set. Removed accent from 'ύ'.,overseer of weapons (=τεύχεα)
+o-pi-te-u-ke-e-we,οπιτευχεfες,,Third word from the set. Removed accent from 'ύ'.,overseer of weapons (=τεύχεα)
+o-pi-te-u-ke-we,οπιτευχεfες,,Third word from the set. Removed accent from 'ύ'.,overseer of weapons (=τεύχεα)
+o-po-qo,οπωπιος|οπωπιοι,,Multiple possible cognates. Removed accents from 'ώ'. The Linear B 'o-po-qo' can correspond to either 'οπωπω' or 'οπωποι'.,blinders
+o-po-ro,ωφελον|οφειλω,,Removed accent from 'ώ'. The Linear B 'o-po-ro' corresponds to Greek 'ωφλον'.,they owed (see also 'o-pe-ro- si')
+o-re-i,ορει|ορος,,Removed accent from 'ό'. Included both cognates from parenthesis.,mountain
+o-re-ta,ορεστας,,Removed accent from 'έ'.,personal name
+o-ro-me-no,ορομενος|ορω,,Removed accent from 'ό'. Multiple cognates. The Linear B 'o-ro-me-no' corresponds to Greek 'ορομενος' or 'ορω'.,watching over
+o-ru-ma-to,ορυμανθος,,Removed accent from 'ύ'.,place name
+o-ti-na-wo,ορτιναfος|ορτιναfων,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,personal name
+o-te,οτε,,Removed accent from 'ό'. The Linear B 'o-te' corresponds to Greek 'οτε'.,when
+o-u-di-do-si,ουδιδοασι,,First word from the pair. No changes needed as it has no accents or special characters.,they don't giνe/ they are not given (see also 'di-do- si')
+o-u-di-do-to,ουδιδονται|ουδιδοται,,Second word from the pair. No changes needed as it has no accents or special characters.,they don't giνe/ they are not given (see also 'di-do- si')
+o-u,ου,,First word from the pair. No changes needed as it has no accents or special characters.,not
+o-u-ki,ουχι,,Second word from the pair. No changes needed as it has no accents or special characters.,not
+o-u-qe,ουτε,,Included both cognates as provided. Removed accent from 'έ'.,neither
+o-te-mi,ουτερμις,,Removed parentheses and its content from the Linear B sequence. Removed parentheses from the Greek cognate and removed accent from 'έ'.,without edges? (see 'te-mi ')
+o-u-wo-ze,ουfεργαζει,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,not working (see also  'wo-ze')
+o-wi-de-ta-i,οfιδεται,οfιδετας,Converted digamma 'F' to lowercase 'f'. Labeling οfιδετας as dubious because it is too modified compared to the effective greek cognate.,religious title ('sheep- flayers?')
+o-wi-to-ni-jo,οfιτονιοι,,Converted digamma 'F' to lowercase 'f'.,ethnic name of 'Ovitnos'
+o-wi-to-no,οfιτνος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'Ό'.,place name
+o-wo-we,οfωfτεις|οfος|ουfς,,Converted digamma 'F' to lowercase 'f'. dubious included as it's considered as wrong transliteration and a correct match is already present.,"with  'ears,' handles"
+pa-da-je-u,πανδαγευς,,First word from the group. Removed accent from 'έ'.,personal name
+pa-da-je-we,πανδαγεfες,,Second word from the group. Changed the greek cognate in order to match the F transformation. Removed accent from 'έ'.,personal name
+pa-da-je-wo,πανδαγευς,,Third word from the group. Changed the greek cognate in order to match the F transformation. Removed accent from 'έ'.,personal name
+pa-di-jo,πανδιων,,The Linear B 'pa-di-jo' corresponds to Greek 'πανδιων'. Removed accent from 'ί' and capital letter.,personal name
+pa-i-ti-ja,φαιστια,,First word from the pair. Removed accent from 'ί'.,ethnic name of 'Phaistos'
+pa-i-ti-jo,φαιστιος,,Second word from the pair. Removed accent from 'ί'.,ethnic name of 'Phaistos'
+pa-i-to,φαιστος,,No changes needed as it has no accents or special characters.,place name
+pa-ja-wo-ne,παιαfονει|παιαfων,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,god's name (>related to Apollo?)
+pa-ka-na,φασγανα,,No modifications needed. The Linear B 'pa-ka-na' corresponds to Greek 'φασγανα'.,"small swords, knives"
+pa-ke-te-re,πακτηρες,,No changes needed as it has no accents or special characters.,pegs
+pa-ki-ja-na,φασγιαναι|σφαγιαναι,,First word from the pair. Removed capital letter and accent from 'ά'. Included both initial 'φ' and 'σφ' variants.,place name (religious center near Pylos)
+pa-ki-ja-na-de,φασγιαναι|σφαγιαναι,,Second word from the pair. Removed capital letter and accent from 'ά'. Included both initial 'φ' and 'σφ' variants.,place name (religious center near Pylos)
+pa-ki-ja-ne,φασγιαναι|σφαγιαναι,,Third word from the pair. Removed capital letter and accent from 'ά'. Included both initial 'φ' and 'σφ' variants.,place name (religious center near Pylos)
+pa-ki-ja-pi,φασγιαναι|σφαγιαναι,,Fourth word from the pair. Removed capital letter and accent from 'ά'. Included both initial 'φ' and 'σφ' variants.,place name (religious center near Pylos)
+pa-ki-ja-si,φασγιαναι|σφαγιαναι,,Fifth word from the pair. Removed capital letter and accent from 'ά'. Included both initial 'φ' and 'σφ' variants.,place name (religious center near Pylos)
+pa-ki-ja-ni-ja,φασγιανια|σφαγιανια|φασγιανιαι|σφαγιανιαι,,"First form. Removed capital letter. Included all variant forms with and without final 'ι', as well as both 'φ' and 'σφ' initial forms.",ethnic name of 'Phasgianai/ Sphagianai'
+pa-ki-ja-ni-jo,φασγιανιοι|σφαγιανιοι,,Second form. Removed capital letter. Included both initial 'φ' and 'σφ' variants of the masculine form.,ethnic name of 'Phasgianai/ Sphagianai'
+pa-ki-ja-ni-jo-i,φασγιανιοι|σφαγιανιοι,,Third form with dative ending. Removed capital letter. Included both initial 'φ' and 'σφ' variants.,ethnic name of 'Phasgianai/ Sphagianai'
+pa-ki-ja-ni-jo-jo,φασγιανιοιο|σφαγιανιοιο,,Fourth form with genitive ending. Removed capital letter. Included both initial 'φ' and 'σφ' variants.,ethnic name of 'Phasgianai/ Sphagianai'
+pa-ko-si-jo,σφακοσιοιο|σφακοσιος,,First variant without the optional 'jo'. Removed capital letter and accent from 'ί'. Included both variants.,personal name
+pa-ko-si-jo-jo,σφακοσιοιο|σφακοσιος,,Second variant with the optional 'jo'. Removed capital letter and accent from 'ί'. Included both variants.,personal name
+pa-ko-we,σφακοfεν,,Converted digamma 'F' to lowercase 'f'.,made with siege (plant)
+pa-ku-ryo,παγχυλιων,,Removed accent from 'ίων'.,personal name
+pa-ma-ko,φαρμακον,,The Linear B 'pa-ma-ko' corresponds to Greek 'φαρμακον'.,medicine
+pa-ra-jo,παλαιος,,Multiple possible cognates. Removed accent from 'έ'.,personal name/old
+pa-ra-ku,βαρακις,,First word from the pair. Removed '>'. The Linear B 'pa-ra-ku' corresponds to Greek 'βαρακις'.,dye- substance
+pa-ra-ku-ja,βαρακις,,Second word from the pair. Removed '>'. The Linear B 'pa-ra-ku-ja' corresponds to Greek 'βαρακις'.,dye- substance
+*56-ra-ku-ja,βαρακις,,Third word from the pair. Removed '>'. The Linear B '*56-ra-ku-ja' corresponds to Greek 'βαρακις'.,dye- substance
+pa-ro,παρα,,Removed accent from 'ό'. Included both variants 'παρο' and 'παρα'.,"to whom, 'chez'"
+pa-sa,πασαν|πασα,,Removed accent from 'ά'.,all (fem.)
+pa-sa-lo,ψαλιον,,Removed accent from 'ά'.,"chain, part of the bridle"
+pa-si,πασι|φασι|φημι,φαμι,Multiple possible cognates. The Linear B 'pa-si' can correspond to either 'πανσι' or 'φασι'.,all (neut.)/they say
+pa-si-te-o-i,πασιθεοις,,Removed accent from 'ί'.,to all gods
+pa-ta,πατας,,No modifications needed. The Linear B 'pa-ta' corresponds to Greek 'πατας' (personal name).,personal name
+pa-ta-ja,παλτα|παλτον,,First word from the pair. Removed accent from 'ά'.,arrow
+pa-ta-jo,παλτα|παλτον,,Second word from the pair. Removed accent from 'ό'.,arrow
+pa-te,παντες|πατηρ,,Multiple possible cognates. Removed all accents and breathing marks.,all (masq.)/father
+pa-te-ko-to,παντεκτων,,No changes needed as it has no accents or special characters.,'all-builder'
+pa-we-a,φαρfεα,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,textiles
+pa-we-o,φαρfεα,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,textiles
+pa-we-pi,φαρfεα,,Third word from the pair. Converted digamma 'F' to lowercase 'f'.,textiles
+pa-we-si,φαρfεα,,Fourth word from the pair. Converted digamma 'F' to lowercase 'f'.,textiles
+pa-wo,φαρfεα,,Fifth word from the pair. Converted digamma 'F' to lowercase 'f'.,textiles
+pa-wo-ke,παρfεργεις,,First word from the pair. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,ancillaries
+pa-wo-ko,παρfεργος,,Second word from the pair. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,ancillaries
+pe-da,πεδα,,No changes needed as it has no accents or special characters.,towards/after
+pe-de-we-sa,πεδfεσσα,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,having legs
+pe-di-ra,πεδιλα,,First word from the pair. Removed accent from 'έ'.,sandals
+pe-di-ro,πεδιλον,,Second word from the pair. Removed accent from 'έ'.,sandals
+pe-di-ro-i,πεδιλωι,,Second word from the pair. Removed accent from 'έ'.,sandals
+pe-i,σφεις,,No changes needed as it has no accents or special characters.,them
+pe-ko-to,πεκοτον,,Removed accent from 'έ'.,kind of textile
+pe-ma,σπερμα,,First word from the pair. Removed accent from 'έ'.,graιn
+pe-mo,σπερμον,,Second word from the pair. Removed accent from 'έ'.,graιn
+pe-ne-we-ta,πνεfεντα,,No changes needed as it has no accents or special characters. Converted digamma 'F' to lowercase 'f'.,type of cloth
+pe-pi-te-me-no-jo,πεπιθνενοιο|πεπιθνενος,,Removed accent from 'έ'.,personal name
+pe-qa-to,ποδfατοι,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,part of a chariot (foot boards?)
+pe-ra-a-ko-ra-i-ja,περαιαιχωραιαι,,First word from the group. Removed accents from 'έ'. Removed parentheses. No changes needed for 'h' as it doesn't have 'ha'. Removed = sign. The Linear B 'pe-ra-a-ko-ra-i-ja' corresponds to Greek 'περαιαιχωραιαι'.,place name (see opp. 'devroaihoraiai')
+pe-ra-a-ko-ra-i-jo,περαιαιχωραιαι,,Second word from the group. Removed accents from 'έ'. Removed parentheses. No changes needed for 'h' as it doesn't have 'ha'. Removed = sign. The Linear B 'pe-ra-a-ko-ra-i-jo' corresponds to Greek 'περαιαιχωραιαι'.,place name (see opp. 'devroaihoraiai')
+pe-rai-ko-ra-i-ja,περαιαιχωραιαι,,Third word from the group. Removed accents from 'έ'. Removed parentheses. No changes needed for 'h' as it doesn't have 'ha'. Removed = sign. The Linear B 'pe-rai-ko-ra-i-ja' corresponds to Greek 'περαιαιχωραιαι'.,place name (see opp. 'devroaihoraiai')
+pe-re,φερει|φερειν,,No changes needed as it has no accents or special characters.,to bring
+pe-re-ke-u,πελεκευς,,First word from the pair. Removed accent from 'ύ'.,hewer (πέλεκυς= axe)
+pe-re-ke-we,πελεκευς,,Second word from the pair. Removed accent from 'ύ'.,hewer (πέλεκυς= axe)
+pe-re-qo-ta,πρεσποτας,,First word from the set. Removed accent from 'ό'.,personal name
+pe-re-qo-ta-o,πρεσποτας,,Second word from the set. Removed accent from 'ό'.,personal name
+qe-re-qo-ta-o,πρεσποτας,,Third word from the set. Removed accent from 'ό'.,personal name
+pe-re-u-ro-na-de,πλευρωνανδε|πλευρων,,Removed capital letter and accent from 'ώ'. Included the word within parentheses,place name
+pe-re-u-ro-ni-jo,πλευρωνιος,,Removed capital letter and accent from 'ώ'. The Linear B 'pe-re-u-ro-ni-jo' corresponds to Greek 'πλευρωνιος'.,ethnic name of 'Pleuron'
+pe-re-*82,πρεσφα,,No changes needed as it has no accents or special characters.,goddess' s name
+pe-re-*82-jo,πρεσφαιον,,Removed capital letter from 'Π'.,sanctuary dedicated to 'Presfa'
+pe-ri,περι,,No changes needed as it has no accents or special characters.,about/of
+pe-ri-me-de,περιμηδης,,No changes needed as it has no accents or special characters.,personal name
+pe-ri-ta,πελιτας,,Removed accent from 'ί'.,personal name
+pe-ri-te-u,περιτευς,,No modifications needed. The Linear B 'pe-ri-te-u' corresponds to Greek 'περιτευς' (personal name).,personal name
+pe-ri-to-wo,περιθοfος,,Converted digamma 'F' to lowercase 'f'.,personal name
+pe-ru-si-nu-wa,περυσινfα,,First word from the group. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,of last year
+pe-ru-si-nu-wo,περυσινυfο,περυσινfα,"Second word from the group. Removed accent from 'ό'. Converted digamma 'F' to lowercase 'f'. Marked 'περυσινfα' as dubious, as it is a likely wrong transliteration for this case.",of last year
+pe-ru-si-nwa,περυσινfα,,Third word from the group. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,of last year
+pe-ru-si-nwa-o,περυσινfα,περυσινυfο,"Fourth word from the group. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'. Marked 'περυσινυfο' as dubious, as it is a likely wrong transliteration for this case.",of last year
+pe-se-ro,ψελλος,,No changes needed as it has no accents or special characters.,personal name
+pe-ta-ro,πεταλος,,Removed accent from 'έ'.,personal name
+pe-te-re-wa,πτελεfας|πτελεα,,First word from the pair. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'. Included both variants with and without 'ς'.,(made of) elm wood
+pte-re-wa,πτελεfας|πτελεα,,Second word from the pair. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'. Included both variants with and without 'ς'.,(made of) elm wood
+pe-to-no,πετονος|πετνος,,First word from the pair. Removed accent from 'ό'. The Linear B 'pe-to-no' corresponds to Greek 'πετονος' and 'πετνος'.,place name
+pe-to-no-de,πετονος|πετνος,,Second word from the pair. Removed accent from 'ό'. The Linear B 'pe-to-no-de' corresponds to Greek 'πετονος' and 'πετνος'.,place name
+pe-to-ni-jo,πετονιος|πετνιος,,Removed accent from 'ό'. The Linear B 'pe-to-ni-jo' corresponds to either 'πετονιος' or 'πετνιος'.,ethnic name of Petonos/Petnos
+pi-ha-ra,φιhαλη|φιαλη,,"First word from the pair. Removed accent from 'ά'. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate. Removed parentheses.",kind of pot
+pi-je-rai,φιαλαι|φιαλη,,Second word from the pair. Removed accent from 'ά'. Removed parentheses.,kind of pot
+pi-ke-re-u,πικερευς,,First word from the set. Removed accent from 'έ'.,personal name
+pi-ke-re-we,πικερευς,,Second word from the set. Removed accent from 'έ'.,personal name
+pi-ke-re-wo,πικερευς,,Third word from the set. Removed accent from 'έ'.,personal name
+pi-pi,πιπης,,No changes needed as it has no accents or special characters.,personal name
+pi-ri-ja-o,φλιαιων|φλιαι,,"Removed accent from 'ί'. Included both forms, inside and outside parentheses. The Linear B 'pi-ri-ja-o' corresponds to Greek 'φλιαιων' and 'φλιαι' (doorposts).",doorposts
+pi-ri-je-te,πριετηρ,,First word from the pair. Removed accent from 'έ'.,ivory worker (πρίω= to saw)
+pi-ri-je-te-re,πριετερες,,Second word from the pair. Removed accent from 'έ'.,ivory worker (πρίω= to saw)
+pi-ri-e-te-si,πριετεσι,,Third word from the pair. Removed accent from 'έ'.,ivory worker (πρίω= to saw)
+pi-ro-we-ko,φιλοfεργος,,Converted digamma 'F' to lowercase 'f'.,personal name
+pi-*82,πισφα|πισσια,,Multiple cognates separated by '/'. Removed accent from 'ί'.,place name
+pi-sa-wa-ta,πισfατας,,Converted digamma 'F' to lowercase 'f'.,personal name
+pi-ta-ke-u,πιτακευς,,Removed accent from 'ύ'.,personal name
+pi-ti-ryo-we-sa,πτιλιοfεσσα|πτιλον,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,furnished with feathers? (πτίλον= feather)
+po-da-ko,ποδαργος,,Removed accent from 'ό'.,personal/ animal name
+po-de,ποδει|πους,,First word from the pair. No changes needed as it has no accents or special characters.,with legs
+po-pi,ποφι,,Second word from the pair. No changes needed as it has no accents or special characters.,with legs
+po-ki-ro-nu-ka,ποικιλωνυχα,,Removed accent from 'ώ'.,kind of decoration (compare with 'leukonyha')
+po-me,ποιμην,,First word from the triple. No changes needed as it has no accents or special characters.,shepherd
+po-me-no,ποιμενος,,Second word from the triple. No changes needed as it has no accents or special characters.,shepherd
+po-me-ne,ποιμενει,,Third word from the triple. No changes needed as it has no accents or special characters.,shepherd
+po-ni-ke,φοινικει,,Removed accent from 'ί'.,decorated with a griffin or palm trees
+po-ni-ke-a,φοινικια,,First variant without the optional 'j'. Removed accent from 'ί'.,cnmson
+po-ni-ke-ja,φοινικια,,Second variant with the optional 'j'. Removed accent from 'ί'.,cnmson
+po-ni-ki-ja,φοινικια,,Word from the pair. Removed accent from 'ί'.,cnmson
+po-ni-ki-jo,φοινικιος,,Word from the pair. Removed accent from 'ί'.,cnmson
+po-pu-re-ja,πορφυρεια,,The Linear B 'po-pu-re-ja' corresponds to Greek 'πορφυρεια' (purple).,purple (fem.)
+po-pu-ryo,πορφυριων,,The Linear B 'po-pu-ryo' corresponds to Greek 'πορφυριων'. Removed accent from 'ί'.,personal name
+po-qe-wi-a,φορβειαι,,Converted digamma 'F' to lowercase 'f'. Removed accents. Included both forms.,halters
+po-re-na,φορηναι,,Removed accent from 'ή'. The Linear B 'po-re-na' corresponds to Greek 'φορηναι'.,attendees in sacrificial ceremonιes (φέρομαι=  to be brought)
+po-ri-wo,πολιfος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,personal name
+po-ro,πωλος|πωρος,,Multiple possible cognates. Removed accent from 'ώ'. The Linear B 'po-ro' can correspond to either 'πωλος' (young horse) or 'πωρος' (porous stone (kind of marble)).,young horse/porous stone (kind of marble)
+po-ro-du-ma-te,προδυματες,,No changes needed as it has no accents or special characters.,family groups? (see also 'dymates')
+po-ro-e-ke,προεχης,,Removed accent from 'έ'.,(table) fitting against the wall
+po-ro-ko-re-te-re,προκορετερες,,Removed accent from 'έ'.,official title/ 'vice- mayors' (see also 'koreter')
+po-ro-te-u,πρωτευς,,The Linear B 'po-ro-te-u' corresponds to Greek 'πρωτευς'. Removed accent from 'ύ'.,personal name
+po-ro-u-te-u,πλουτευς,,First word from the pair. Removed accent from 'έ'.,personal name
+po-ro-u-te-we,πλουτεfες,,Second word from the pair. Removed accent from 'έ'.,personal name
+po-ro-u-te-wo,πλουτευς,,Third word from the pair. Removed accent from 'έ'.,personal name
+po-ro-wi-to,πλωfιστος,,Removed parentheses. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,month name
+po-ro-wi-to-jo,πλωfιστοιο,,Removed parentheses. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,month name
+po-ru-ka-to,πολυκαστος,,Removed accent from 'ύ'.,personal name
+po-ru-po-de,πολυποδει|πολυπους,,Multiple possible cognates. Removed accents from 'ύ'. The Linear B 'po-ru-po-de' can correspond to either 'πολυποδει' or 'πολυπους'.,(decorated with an) octopus
+po-ru-qo-ta,πολυβοτας,,Removed accent from 'ό'. The Linear B 'po-ru-qo-ta' corresponds to Greek 'πολυβοτας'.,personal name
+po-se-da-o,ποσειδων,,First word from the pair. Removed accent from 'ά'. The Linear B 'po-se-da-o' corresponds to Greek 'ποσειδαων'.,god's  name (>Poseidon)
+po-se-da-o-ne,ποσειδονι,,Second word from the pair. Removed accent from 'ό'. The Linear B 'po-se-da-o-ne' corresponds to Greek 'ποσειδαονει'.,god's  name (>Poseidon)
+po-se-da-o-ni,ποσειδονι,,Third word from the pair. Removed accent from 'ό'. The Linear B 'po-se-da-o-ni' corresponds to Greek 'ποσειδαονι'.,god's  name (>Poseidon)
+po-si,ποσι,,No changes needed as it has no accents or special characters.,up/on
+po-si-da-e-ja,ποσιδαιεια,,Removed accent from 'έ'.,goddess' s name
+po-si-da-e-we,ποσιδαεfες,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,cult association related to 'Poseidaon'
+po-si-da-i-je-u,ποσιδαιγευς,,First word from the pair. Removed accent from 'εύ'.,priest of 'Poseidaon'
+po-si-da-i-je-u-si,ποσιδαιγευς,,Second word from the pair. Removed accent from 'εύ'.,priest of 'Poseidaon'
+po-si-da-i-jo,ποσιδαιον,,First word from the pair. Removed accent from 'ί'.,place dedicated to 'Poseidaon'
+po-si-da-i-jo-de,ποσιδαιον,,Second word from the pair. Removed accent from 'ί'.,place dedicated to 'Poseidaon'
+po-si-ke-te-re,οικετης,,Removed accent from 'έ'. Included the word within parentheses. The Linear B 'po-si-ke-te-re' corresponds to Greek 'ποσικετερες' and 'οικετης'.,dweller/house servant ('immigrants?')
+po-so-pe-re-i,ψωφρει|ψωφρης,,Multiple possible cognates. Removed accents from 'ώ'.,personal name
+po-so-ra-ko,ψωρακος,,No changes needed.,personal name
+po-so-re-ja,ψωρεια,,Removed accent from 'ε'. The Linear B 'po-so-re-ja' corresponds to Greek 'ψωρεια'.,personal name (fem.)
+po-so-ro,ψωρος,,No changes needed as it has no accents or special characters.,personal name
+po-ti-ni-ja,ποτνια,,No changes needed as it has no accents or special characters.,goddess/ 'beloved one'
+po-ti-ni-ja-we-ja,ποτνιαfεια,,First word from the multiple words separated by '/'. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,person related/ dedicated to 'potnia'
+po-ti-ni-ja-we-jo,ποτνιαfειος,,Second word from the multiple words separated by '/'. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,person related/ dedicated to 'potnia'
+po-ti-ni-ja-we-i-jo,ποτνιαfειος,,Third word from the multiple words separated by '/'. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,person related/ dedicated to 'potnia'
+po-ti-ni-ja-wi-jo,ποτνιαfειος,,Third word from the multiple words separated by '/'. Removed accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,person related/ dedicated to 'potnia'
+po-ti-pi,πορτιφι|πορτις,,Multiple possible cognates. Removed accent from 'ό'.,(decorated  with a) young cow
+po-ti-ro,ποντιλοι,,No changes needed as it has no accents or special characters.,sailors
+pu-ke-se-ro,πύξελος,,Multiple possible cognates. Removed accents from 'έ' and 'ύ'.,personal name
+pu-ko-so,πυξος,,The Linear B 'pu-ko-so' corresponds to Greek 'πυξος'.,box- wood
+pu-ra-so,πυρασος,,Removed accent from 'ύ'. The Linear B 'pu-ra-so' corresponds to Greek 'πυρασος'.,personal name
+pu-ra-ta,πυρατας,,First word from the pair. Removed accent from 'ά'.,personal name
+pu-ra-ta-o,πυρατας,,Second word from the pair. Removed accent from 'ά'.,personal name
+pu-ra-u-to-ro,πυραστρον,,No changes needed as it has no accents or special characters.,"cooking vessel (>πύραστρον, πυράγρα= forceps)"
+pu-ro,πυλος,,Removed accent from 'ύ'. The Linear B 'pu-ro' corresponds to Greek 'πυλος' (Pylos).,place name
+phu-ke,φυγης,,No changes needed as it has no accents or special characters.,personal name
+phu-ke-qi-ri,φυγεκλης,,Removed accent from 'ή'.,personal name
+phu-rya-a-ke-re-u,φυλιασαγρευς,,First word from the pair. Removed capital letter and accent from 'ί'.,place name (φυλία= wild olive)
+phu-rya-a-ki-ri-jo,φυλιασαγρευς,,Second word from the pair. Removed capital letter and accent from 'ί'.,place name (φυλία= wild olive)
+phu-si-ja-ko,φυσιαρχος,,Removed accent from 'ί'.,personal name
+phu-te,φυτευτης,,First word from the pair. The Linear B 'phu-te' corresponds to Greek 'φυτερ'.,planter
+pu-te,φυτευτης,,Second word from the pair. The Linear B 'pu-te' corresponds to Greek 'φυτερ'.,planter
+phu-te-re,φυτευτης,,Third word from the pair. The Linear B 'phu-te-re' corresponds to Greek 'φυτερ'.,planter
+phu-te-ri-ja,φυτερια,,The Linear B 'phu-te-ri-ja' corresponds to Greek 'φυτερια'.,"planted, cultivated (related to 'ktoina'=  plots)"
+pte-no,στενοι,,No changes needed. The Linear B 'pte-no' corresponds to Greek 'φτενοι'.,parts of a chariot (φτενός=    'thin')
+qa-da-so,καδασος,,No changes needed. Removed accent from 'ά'.,personal name
+qa-nu-wa-so,καρνυfασος,,Converted digamma 'F' to lowercase 'f'.,personal name
+qa-ra,καρα,,Removed capital letter and accent from 'ά'. The Linear B 'qa-ra' corresponds to Greek 'καρα'.,place name
+qa-ra-i-so,κραραισος,,Removed capital letter from 'Κ' and accent from 'ά'.,personal name
+qa-ra-to-ro,σπαλαθρον,,Removed accent from 'ά'. Included both forms.,rake
+qa-si-re-u,βασιλευς,κασιλευς,Removed disallowed characters '/' and '''. Removed accent from 'εύ'. Labeling κασιλευς as dubious because it is too modified compared to the effective greek cognate.,title/occupation (latter the king)
+qa-si-re-wi-ja,βασιλεfια,,Converted digamma 'F' to lowercase 'f'.,of the 'kvasileus' (fem.)
+qe-qi-no-me-na,γεγινωμενα,,First word from the set. Removed accent from 'έ'.,made by twisting
+qe-qi-no-me-no,γεγινωμενος,,Second word from the set. Removed accent from 'έ'.,made by twisting
+qe-qi-no-to,γεγινωτος|δινωτος,,Third word from the set. Included both forms.,made by twisting
+qe-ra-na,κερνα,,Multiple possible cognates. Removed accent from 'έ'.,type of pot (ewer)
+qe-ra-si-ja,κερασια|θηρασια,,Removed capital letter and accent from 'ί'. Included both 'κερασια' and 'θερασια' as possible cognates.,goddess's name/epithet of Artemis?
+qe-re-ti-ri-jo,βλητρον,,Removed parenthesis. The Linear B 'qe-re-ti-ri-jo' corresponds to Greek 'βλητριω'.,a band or hoop (of ships)
+qe-ta-ra-je-u,κετραγευς,,Removed capital letter from 'Κ'.,personal name
+qe-ta-wo,κεταfος,,Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'. The Linear B 'qe-ta-wo' corresponds to Greek 'κεταfος' (Ketavos).,personal name
+qe-te-a,τελθος,,First word from the pair. Removed accent from 'έ'. Discarded characters >()?;. Linear B 'qe-te-a' corresponds to Greek 'τελθος'.,due (to the gods?) (>τέλθος= debt/ payment due)
+qe-te-ha,τελθος,,Second word from the pair. Removed accent from 'έ'. Discarded characters >()?;. Linear B 'qe-te-ha' corresponds to Greek 'τελθος'.,due (to the gods?) (>τέλθος= debt/ payment due)
+qe-te-a,τελθος,,First word from the pair without the optional 'j'. Removed accent from 'έ'. Discarded characters >()?;. Linear B 'qe-te-a' corresponds to Greek 'τελθος'.,due (to the gods?) (>τέλθος= debt/ payment due)
+qe-te-jo,τελθος,,Second word from the pair with the optional 'j'. Removed accent from 'έ'. Discarded characters >()?;. Linear B 'qe-te-jo' corresponds to Greek 'τελθος'.,due (to the gods?) (>τέλθος= debt/ payment due)
+qe-to,πιθος,,The Linear B 'qe-to' corresponds to Greek 'πιθος' (a kind of pot).,a kind of pot
+qe-to-ro-po-pi,πετροποφι|τετροποφι,,"Multiple possible cognates. No accents to remove, and no diacritics to handle. The Linear B 'qe-to-ro-po-pi' can correspond to either 'πετροποφι' or 'τετροποφι'.","with four legs, cattle"
+qe-to-ro-we,πετρωfτεις|τετρωfτεις,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ώ'.,with four 'ears/' handles
+qi-si-pe-e,ξιφεα,,Removed parentheses. The Linear B 'qi-si-pe-e' corresponds to Greek 'ξιφεε' and 'ξιφη'.,swords
+qi-si-pe,ξιφα,,Removed parentheses. The Linear B 'qi-si-pe' corresponds to Greek 'ξιφεε' and 'ξιφη'.,swords
+qo-o,βους,,Multiple possible cognates. No accents to remove. Included both cognates 'κροος' and 'βους'.,Οχ
+qo-ro-mu-ro,βρωμυλος,,No changes needed.,place name
+qo-u-ka-ra,βουκαρα,,First word from the pair. Removed accent from 'ύ'.,bull head (βους= οχ+ κάρα= head)
+qo-u-ka-ra-o-i,βουκαρα,,Second word from the pair. Removed accent from 'ύ'.,bull head (βους= οχ+ κάρα= head)
+qo-u-ko-ro,βουκολος,,The Linear B 'qo-u-ko-ro' corresponds to Greek 'βουκολος'.,"shepherd, cattle-driver"
+qo-u-qo-ta,βουβοτης,,No changes needed as it has no accents or special characters.,"shepherd, pastor"
+qo-wi-ja,κορυfια,,The Linear B 'qo-wi-ja' corresponds to Greek 'κορfια'. Converted digamma 'F' to lowercase 'f'.,divine (see also 'korfa')
+ra-e-ja,λαεια,,Removed accent from 'ί'. The Linear B 'ra-e-ja' corresponds to Greek 'λαια' (made of stone). The cognate λαεια is dubious because it contains characters not accepted in Linear B.,made of stone
+ra-ja,ραια,,No changes needed as it has no accents or special characters.,place name
+ra-ke-da-mi-ni-jo,λακεδαιμονιος,,Removed capital letters and accents. Included both variants from the Greek cognate.,ethnic name of '>Lacedaemon'
+ra-ke-u,λαχευς,,Removed accent from 'ύ'.,personal name
+ra-ku-ro,λαχυρος,,First word from pair. Removed capital letter.,personal name
+ra-ku-ro-jo,λαχυρος,,Second word from pair. Removed capital letter.,personal name
+ra-mi-ni-ja,λαμνιαι|λημνιαι,,Removed capital letter and accent from 'ά'. Included both forms 'λαμνιαι' and 'λημνιαι'.,ethnic name of '>Lemnos?' (fem.)
+ra-pa-sa-ko,λαμψακος,,Removed accent from 'ά'.,personal name
+ra-pa-to-me-no,λαπατος|λαπανδος,,Removed accent from 'ά'. The Linear B 'ra-pa-to-me-no' corresponds to Greek 'λαπατος' and 'λαπανδος'.,('Λαπάτω   μηνός'= in the month of Lapatos)
+ra-pi-ti-rya,ραπτρια|ραπτριαι,,First word from the pair. Removed accent from 'ά'.,seamstresses
+ra-pte-ri-ja,ραπτρια|ραπτριαι,,Second word from the pair. Removed accent from 'ά'.,seamstresses
+ra-qi-ti-rya,ραπτρια|ραπτριαι,,Third word from the pair. Removed accent from 'ά'.,seamstresses
+ra-pte,ραπτης,,First word from the pair. No changes were needed.,"tailor, clothes- mender"
+ra-pte-re,ραπτης,,Second word from the pair. No changes were needed.,"tailor, clothes- mender"
+ra-su-ti-jo,λασυνθιος,,Removed capital letter and accent from 'ύ'.,ethnic name of 'Lasynthos'
+ra-su-to,λασυνθος,,No changes needed as it has no accents or special characters.,place name
+ra-ti-jo,λατιος,,No changes needed as it has no accents or special characters.,ethnic name of 'Lato'
+ra-to,λατω,,No changes needed.,place name
+ra-wa-ke-ja,λαfαγεια,,First word from the group. Converted digamma 'F' to lowercase 'f'.,belonging to the 'lafagetas'
+ra-wa-ke-si-ja,λαfαγεσια,,Second word from the group. Converted digamma 'F' to lowercase 'f'.,belonging to the 'lafagetas'
+ra-wa-ke-si-jo,λαfαγεσιος,,Third word from the group. Converted digamma 'F' to lowercase 'f'.,belonging to the 'lafagetas'
+ra-wa-ke-si-ja-jo,λαfαγεσιαιος,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,premises of the 'lafagetas' 
+ra-wa-ke-si-jo-jo,λαfαγεσιαιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,premises of the 'lafagetas' 
+ra-wa-ke-ta,λαfαγετας,,Converted digamma 'F' to lowercase 'f'.,official title (= leader of the people)
+ra-wa-ra-ta,λαfρανθα,,First word from the pair. Removed capital letter and accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,place name
+ra-u-ra-ta,λαfρανθα,,Second word from the pair. Removed capital letter and accent from 'ά'. Converted digamma 'F' to lowercase 'f'.,place name
+ra-wa-ra-tya,λαfρανθια,,First word from pair. Removed capital letter and accent from 'ί'. Converted digamma 'F' to lowercase 'f'.,ethnic name of 'Lavrantha'
+ra-u-ra-ti-ja,λαfρανθια,,Second word from pair. Removed capital letter and accent from 'ί'. Converted digamma 'F' to lowercase 'f'.,ethnic name of 'Lavrantha'
+ra-wa-ra-ti-jo,λαfρανθιος,,Third word from pair. Removed capital letter and accent from 'ί'. Converted digamma 'F' to lowercase 'f'.,ethnic name of 'Lavrantha'
+ra-wa-ra-*66,,,Fourth word from pair. Removed '*' and number as they are not allowed characters.,ethnic name of 'Lavrantha'
+ra-wo,λαfος|λαος,,Removed accent from 'ό'. Converted digamma 'F' to lowercase 'f'. Included both forms with and without 'f'.,people
+ra-wo-do-ko,λαfοδοκος,,Converted digamma 'F' to lowercase 'f'.,personal name
+ra-wo-po-no,λαfοπονος,,Converted digamma 'F' to lowercase 'f'.,personal name
+re-ke-to-ro-te-ri-jo,λεχεστρωτηριον,,Removed accent from 'ή'.,religious feast
+re-pe-u-ri-jo,λεπευριος,,Removed accent from 'έ'. The Linear B 're-pe-u-ri-jo' corresponds to Greek 'λεπευριος' (ethnic name of 're-pe-u ').,ethnic name of 're-pe-u '
+re-po-to,λεπτον,,No changes needed as it has no accents or special characters.,"thin, fine"
+re-u-ka-so,λευκασος,,No changes needed as it has no accents or special characters.,personal name
+re-u-ko,λευκος,,First word from the pair. Removed accent from 'εύ'.,personal name
+re-u-ko-jo,λευκοιο,,Second word from the pair. Removed accent from 'εύ'.,personal name
+re-u-ko-nu-ka,λευκονυχα,,Removed accent from 'ό'. The Linear B 're-u-ko-nu-ka' corresponds to Greek 'λευκόνυχα'.,kind of decoration (for clothes)
+re-u-ko-o-phu-ru,λευκοφρυς,,First word from the pair. Removed parentheses. Removed accent from 'ό'.,personal name
+re-u-ko-ro-o-phu-ru,λευκοροφρυς,,Second word from the pair. Removed parentheses. Removed accent from 'ό'.,personal name
+re-u-ko-to-ro,λευκτροι|λευκτρον,,Removed accent from 'έ'. The Linear B 're-u-ko-to-ro' corresponds to Greek 'λευκτροι' and 'λευκτρον' (place name).,place name
+re-wo,λεfων,,First word from the triple. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,lion (implying decoration)
+re-wo-pi,λεfοντφι,,Second word from the triple. Converted digamma 'F' to lowercase 'f'.,lion (implying decoration)
+re-wo-te-jo,λεfοντιοις,,Third word from the triple. Converted digamma 'F' to lowercase 'f'.,lion (implying decoration)
+re-wo,λεfος|λεβης,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,"kettle, caldron "
+re-wo-te-re-jo,λεβηταριον,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,"kettle, caldron "
+re-wo-to-ro-ko-wo,λεfοτροκορfοι,,Converted digamma 'F' to lowercase 'f'.,bath- attendants
+ri-jo,ριον,,First word from the pair. No changes needed as it has no accents or special characters.,place name (= cape)
+ri-jo-de,ριονδε,,Second word from the pair. No changes needed as it has no accents or special characters.,place name (= cape)
+ri-me-ne,λιμενει|λιμην,,Removed accent from 'έ'.,harbor
+ri-na-ko-ro,λιναγρος,,No modifications required. The Linear B 'ri-na-ko-ro' corresponds to Greek 'λιναγρος'.,(= flax gatherer )
+ri-ne-ja,λινειαι,,Removed accent from 'εί'.,flax workers (fem.)
+ri-no,λινον,,No changes needed as it has no accents or special characters.,flax (plant)
+ro-i-ko,ροικος,,No changes needed as it has no accents or special characters.,crooked
+ro-ko,λωχος,,No changes needed. The Linear B 'ro-ko' corresponds to Greek 'λωχος'.,personal name
+ro-o-wa,ροοfα,,Converted digamma 'F' to lowercase 'f'.,place name
+ro-u-si-je-wi-ja,λουσιεfεια|λουσιεfειαι,,Removed capital letter and accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,originating in 'Lousos' (fem.)
+ro-u-si-jo,λουσιος,,No changes needed. The Linear B 'ro-u-si-jo' corresponds to Greek 'λουσιος' (ethnic name of 'Lousos').,ethnic name of 'Lousos'
+ro-u-so,λουσος,,Removed accent from 'ό'. The Linear B 'ro-u-so' corresponds to Greek 'λουσος' (place name).,place name
+ru-ke-wo-wo-wi-ja,λυνκεfυσfορfια,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ύ'.,place name (see also 'vorvos')
+ru-ki-ti-jo,λυκινθιος,,Removed accent from 'ί'. The Linear B 'ru-ki-ti-jo' corresponds to Greek 'λυκινθιος'.,ethnic name of 'Lykinthos'
+ru-ki-to,λυκινθος,,Removed capital letter from 'Λ'.,place name
+ru-ko-ro,λυκορος,,First word from the pair. Removed accent from 'ύ'.,personal name
+ru-ko-u-ro,λυκουρος,,Second word from the pair. Removed accent from 'ύ'.,personal name
+ru-ko-wo-ro,λυκοfορος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,personal name
+ru-na-so,ρυνασος,,The Linear B 'ru-na-so' corresponds to Greek 'ρυνασος' (personal name). Removed accent from 'ύ'.,personal name
+ru-ra-ta,λυρατας,,First variant without the optional 'e'. Removed capital letter from 'Λ'.,player οη the lyre
+ru-ra-ta-e,λυρατας,,Second variant with the optional 'e'. Removed capital letter from 'Λ'.,player οη the lyre
+sa-ke-re-u,σαγρευς,,First word from the group. Removed accent from 'έ'.,personal name
+sa-ke-re-we,σαγηλευς,,Second word from the group. Removed accent from 'έ'.,personal name
+sa-ke-re-wo,σαγρευς|σαγηλευς,,Third word from the group. Removed accent from 'έ'.,personal name
+sa-ma-ra,σαμαρα,,No changes needed as it has no accents or special characters.,place name
+sa-ma-ri-wa,σαμαριfα,,Converted digamma 'F' to lowercase 'f'.,place/ethnic name of  'Samara'?
+sa-pa-ke-te-ri-ja,σφακτηριαι|σφακτρια,,Multiple possible cognates. Removed accents from 'ί'. The Linear B 'sa-pa-ke-te-ri-ja' can correspond to either 'σφακτηριαι' or 'σφακτρια'.,animals for ritual slaughter 
+sa-pi-de,σαρποι,,No changes needed as it has no accents or special characters.,boxes
+sa-ra-pe-da,σραπεδας,,Removed capital letter from 'Σ'.,god's epithet ('Srapedas Poseidaon')
+sa-ri-nu-wo-te,σαλινουfοντει,,First word from the pair. Removed accent from 'όν'. Converted digamma 'F' to lowercase 'f'.,place name
+se-ri-no-te,σελινοφοντει,,"Second word from the pair, without the optional wo syllable. Removed accent from 'όν'. Converted digamma 'F' to lowercase 'f'.",place name
+se-ri-no-wo-te,σελινοφοντει,,"Second word from the pair, including the optional wo syllable. Removed accent from 'όν'. Converted digamma 'F' to lowercase 'f'.",place name
+sa-sa-ma,σησαμη,,Multiple possible cognates. Removed accent from 'ά'. The Linear B 'sa-sa-ma' can correspond to either 'σασαμα' or 'σησαμη'.,sesame (plant)
+se-re-mo-ka-ra-pi,σειρημοκαραφι,,First word from the pair. Removed accent from 'ί'.,(decorated) with heads of 'Sirens?'
+se-re-mo-ka-ra-o-i,σειρημοκαραοι,,Second word from the pair. Removed accent from 'ί'.,(decorated) with heads of 'Sirens?'
+se-re-mo-ka-ra-o-re,σειρημοκαραορει,,Third word from the pair. Removed accent from 'ί'.,(decorated) with heads of 'Sirens?'
+se-ri-no,σελινον,,Removed accent from 'έ'. The Linear B 'se-ri-no' corresponds to Greek 'σελινον' (celery (plant)).,celery (plant)
+se-to-i-ja,σητοια,,Removed accent from 'ί'. The Linear B 'se-to-i-ja' corresponds to Greek 'σητοια'.,place name
+si-ha-ro,συς|συhαλος,,"The Linear B 'si-ha-ro' corresponds to Greek 'σιhαλος' (Pig). The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.",Pig
+si-ja-du-we,σιγαδυfεις,,Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,personal name
+si-ma,σιμα,,The Linear B 'si-ma' corresponds to Greek 'σιμα' (Sima). Removed accent from 'ί'.,personal name(fem.)
+si-ma-ko,σιμακος,,The Linear B 'si-ma-ko' corresponds to Greek 'σιμακος' (personal name).,personal name
+si-mi-te-u,σμινθευς,,No changes needed. The Linear B 'si-mi-te-u' corresponds to Greek 'σμινθευς'.,personal name (>epithet of god Apollo)
+si-no-u-ro,σινουρος,,The Linear B 'si-no-u-ro' corresponds to Greek 'σινουρος'. Removed accent from 'ί'.,personal name
+si-ri-jo,σιριος,,First variant without the optional jo. Removed accent from 'ί'.,personal name
+si-ri-jo-jo,σιριοιο,,Second variant with the optional jo. Removed accent from 'ί'.,personal name
+si-to,σιτον,,No changes needed as it has no accents or special characters.,wheat
+si-to-ko-wo,σιτοκορfοι,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,occupation associated with wheat (grain- measurers?)
+si-to-po-ti-ni-ja,σιτοποτνια,,No changes needed as it has no accents or special characters.,goddess (= 'grain mistress')
+so-u-ro,σουρος,,The Linear B 'so-u-ro' corresponds to Greek 'σουρος' (personal name). Removed accent from 'ού'.,personal name
+so-we-no,σοfενοι|σοfενος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,vine? (plant)
+su-di-ni-ko,συδνικος,,Removed accent from 'ύ'.,personal name
+su-ki-ri-ta,συγριτα,,No changes needed as it has no accents or special characters.,place name
+su-qo-ta,συβοτας,,First word from the pair. Removed accent from 'ό'.,pig farmer
+su-qo-ta-o,συβοτας,,Second word from the pair. Removed accent from 'ό'.,pig farmer
+su-ri-mo,συριμος,,No changes needed as it has no accents or special characters.,place name
+su-ro,συρος,,First word from the pair. Removed accent from 'ύ'.,"personal name su-we-ro-wi-jo,ΣυFερόFιος,Syverovios,personal/ ethnicname"
+su-ro-no,συρος,,Second word from the pair. Removed accent from 'ύ'.,"personal name su-we-ro-wi-jo,ΣυFερόFιος,Syverovios,personal/ ethnicname"
+su-za,συκα,,Removed accent from 'ύ'. The Linear B 'su-za' corresponds to Greek 'συζα' and 'συκα'.,fig fruits
+ta-mi-je-u,ταμιευς,,No changes needed as it has no accents or special characters.,personal name
+ta-ni-ko,τανιχος,,No changes needed as it has no accents or special characters.,personal name
+ta-pa,ταρφα,,No changes needed.,thick/close/ frequent
+ta-pa-e-o-te,ταρφαεοντες,,Removed accent from 'έ'.,(έοντες= they being) (see also tarpha)
+ta-ra-ma-ta,θαλαματας,,First word from the pair. No changes needed as it has no accents or special characters.,personal name
+ta-ra-ma-ta-o,θαλαματας,,Second word from the pair. No changes needed as it has no accents or special characters.,personal name
+ta-ra-mi-ka,θαλαμικα|θαλαμισκα,,No modifications needed. The Linear B 'ta-ra-mi-ka' corresponds to Greek 'θαλαμικα' and 'θαλαμισκα'.,personal name
+ta-ra-nu,θρηνυς,,First word from the pair. Removed accent from 'ά'.,footstool
+ta-ra-nu-we,θρηνυfες,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,footstool
+ta-ra-si-ja,ταλανσια,,No modifications needed. The Linear B 'ta-ra-si-ja' corresponds to Greek 'ταλανσια'.,(unit of) copper
+ta-su,θαρσυς,,No changes needed as it has no accents or special characters.,"personal name (θάρσος= courage, confidence)"
+ta-ta-ke-u,στρατηγος,,Removed accents from 'ύ'. Included both cognates 'σταρταγευς' and 'στρατηγος'.,leader of the army
+ta-ta-ro,τανταλος,,Removed accent from 'ά'.,personal name
+ta-te-re,στατηρες,,Removed accent from 'έ'.,(>στατήρ= weight/coin)
+ta-ti-qo-we-u,στατιποfευς,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+ta-ti-qo-we-wo,στατιποfευς,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+ta-to-mo,σταθμος,,No changes needed as it has no accents or special characters.,farmstead/ standing-post
+te-ke,θηκε|θετω,,No modification needed as it has no accents or special characters. Includes both possible cognates.,he assigned
+te-ko-to-ne,τεκτονες,,No changes needed as it has no accents or special characters.,carpenters
+te-me-no,τεμενος,,"Removed accent from 'έ'. The Linear B 'te-me-no' corresponds to Greek 'τεμενος' (shrine, official/ religious place).","shrine, official/ religious place"
+te-mi-de-we-te,τερμιδfεντες|τερμιοεντες,,First word from the list. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,(= reaching to the feet) (see also 'termis')
+te-mi-dwe-ta,τερμιδfεντες|τερμιοεντες,,Second word from the list. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,(= reaching to the feet) (see also 'termis')
+te-mi-dwe-te,τερμιδfεντες|τερμιοεντες,,Third word from the list. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,(= reaching to the feet) (see also 'termis')
+te-mi-*71-te,τερμιδfεντες|τερμιοεντες,,Fourth word from the list. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,(= reaching to the feet) (see also 'termis')
+te-mi-dwe,τερμιδfες,,First word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,"(τέρμις= foot, border, edge)"
+te-mi,τερμις,,Second word from the pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,"(τέρμις= foot, border, edge)"
+te-mi-ti-ja,θεμιστια|τερμινθια,,First word from the pair. Removed capital letter and accent from 'ί'.,place name (see also 'ti-mi-to- a-ke-e' and 'ti-mi- to')
+ti-mi-ti-ja,θεμιστια|τερμινθια,,Second word from the pair. Removed capital letter and accent from 'ί'.,place name (see also 'ti-mi-to- a-ke-e' and 'ti-mi- to')
+te-o,θεον|θεος,,First word from the pair. Removed accent from 'ό'.,God
+te-o-i,θεοις,,Second word from the pair. Removed accent from 'ό'.,God
+te-o-jo,θεοιο,,Third word from the pair. Removed accent from 'ό'. Included word within parenthesis.,God
+te-o-do-ra,θεοδωρα,,No changes needed as it has no accents or special characters.,personal name (fem.)
+te-o-po-ri-ja,θεοφορια,,Removed accent from 'ί'. The Linear B 'te-o-po-ri-ja' corresponds to Greek 'θεοφορια' (religious feast).,religious feast
+te-qa-ja,θηβαια,,Removed parentheses. No accents to remove. The Linear B 'te-qa-ja' corresponds to Greek 'θηκβαια'.,personal/ethnic name of 'Thevai' (fem.)
+te-qa-de,θηβανδε|θηβαι,,No changes needed as it has no accents or special characters.,place name (>Thebes?)
+te-re-ta,τελεσται,,First word from the pair. Removed accent from 'έ'.,official title (τέλος = tax)
+te-re-ta-o,τελεσταων|τελεστας,,Second word from the pair. Removed accent from 'έ'. Included both variants of greek cognates.,official title (τέλος = tax)
+te-ru-ro,τελουρος,,No changes needed as it has no accents or special characters.,personal name
+te-se-u,θησευς,,No changes needed as it has no accents or special characters.,personal name
+te-tu-ku-wo-a,τετυχυfοα,,First word from the pair. Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'.,"well prepared, ready"
+te-tu-ku-wo-ha,τετυχυfοhα,,"Second word from the pair. Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.","well prepared, ready"
+te-tu-ru-we,τεθρυfες,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,ethnic/place name
+te-u-ke-pi,τευχεσφι|τευχος|τευχεα,,The Linear B 'te-u-ke-pi' corresponds to Greek 'τευχεσφι'. Removed accents from 'έ'.,"with implements, paraphernalia"
+ti-mi-to,τερμινθος,,Removed accent from 'ί'. Included both cognates as indicated by the greater than sign. ,terebinth (tree)
+ti-mi-to-a-ke-e,θεμιτοσαγος|τερμινθωναγκος|θεμιστωναγος,,First word from the pair. Removed capital letter and accent from 'έ'. Included cognates corresponding to the Linear B sequence 'ti-mi-to-a-ke-e'.,"'holy place of themis/themistes (=>oracles)'/ 'grove of the terebinth  trees' (see  'a-ke-e,'  'te-mi,' 'ti-mi-to')"
+ti-mi-to-a-ke-i,θεμιτοσαγος|τερμινθωναγκος|θεμιστωναγος,,Second word from the pair. Removed capital letter and accent from 'ώ'. Included cognate corresponding to the Linear B sequence 'ti-mi-to-a-ke-i'.,"'holy place of themis/themistes (=>oracles)'/ 'grove of the terebinth  trees' (see  'a-ke-e,'  'te-mi,' 'ti-mi-to')"
+ti-nwa-si-ja,τινfασια,,Converted digamma 'F' to lowercase 'f'.,place name
+ti-ri-da-ro,τριδαρος,,The Linear B 'ti-ri-da-ro' corresponds to Greek 'τριδαρος'. Removed accent from 'ό'.,personal name
+ti-ri-ja,τρια,,First word from the pair. Removed accent from 'ί'.,three
+ti-ri-si,τρισι,,Second word from the pair. No changes were needed.,three
+ti-ri-jo-we,τριωfτεις,,First word from the pair. Removed accent from 'ώ'. Converted digamma 'F' to lowercase 'f'.,"with three  'ears,' handles"
+ti-ri-o-we,τριωfτεις,,Second word from the pair. Removed accent from 'ώ'. Converted digamma 'F' to lowercase 'f'.,"with three  'ears,' handles"
+ti-ri-o-we-e,τριωfτεις,,Third word from the pair. Removed accent from 'ώ'. Converted digamma 'F' to lowercase 'f'.,"with three  'ears,' handles"
+ti-ri-po,τριπους,,First word from the pair. Removed accent from 'ί'. The Linear B 'ti-ri-po' can correspond to either 'τριπως' or 'τριπους'.,tripod (kind of stool)
+ti-ri-po-de,τριπους,,Second word from the pair. Removed accent from 'ί'. The Linear B 'ti-ri-po-de' can correspond to either 'τριπως' or 'τριπους'.,tripod (kind of stool)
+ti-ri-po-di-ko,τριποδισκοι,,Removed accent from 'ί'. The Linear B 'ti-ri-po-di-ko' corresponds to Greek 'τριποδισκοι'.,small tripods
+ti-ri-se-ro-e,τρισηρωις,,Removed accent from 'ώ'.,divine epithet (= 'the trice heroine')
+to-e,τοε|αυτον,,No changes needed as it has no accents or special characters.,him
+to-jo,τοιο|του|αυτου,,No changes needed. The Linear B 'to-jo' corresponds to Greek 'τοιο'.,his
+to-ke-u,τοκευς,,No modifications needed. The Linear B 'to-ke-u' corresponds to Greek 'τοκευς'.,personal name (= begetter)
+to-ko-do-mo,τοιχοδομοι,,Removed accent from 'ό'.,"builders (τοίχος=w all, δομώ= to built)"
+to-ko-so-ta,τοξοτης,,The Linear B 'to-ko-so-ta' corresponds to Greek 'τοξότας' (archer). Removed accent from 'ό'.,archer
+to-ko-so-wo-ko,τοξοfεργος|τοξfεργος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,arch worker
+to-ma-ko,στομαργος,,No changes needed as it has no accents or special characters.,personal/ animal name (= 'busy with the tongue')
+to-me,τονε|αυτον,,Removed accent from 'ό'. The Linear B 'to-me' corresponds to Greek 'τομε'.,him (see also 'toe')
+to-no,θρονος,,Included both variants in the greek cognates. Removed accent from 'ό'.,"chair, throne"
+to-no-e-ke-te-ri-jo,θρονοελκητηριον,,No modifications needed. The Linear B 'to-no-e-ke-te-ri-jo' corresponds to Greek 'θορνοελκητηριον'.,name of a festival
+to-pe-za,τραπεζα,,First word from the pair. Removed accent from 'ό'. Included both 'τορπεζα' and 'τραπεζα' as cognates.,table
+to-pe-zo,τραπεζα,,Second word from the pair. Removed accent from 'ό'. Included both 'τορπεζα' and 'τραπεζα' as cognates.,table
+to-qi-de,τροπιδει,,First word from pair. Removed accent from 'ί'.,in/having spirals
+to-qi-de-ja,τροπιδεια,,Second word from pair. Removed accent from 'ί'.,in/having spirals
+to-qi-de-jo,τροπιδειος,,Third word from pair. Removed accent from 'ί'.,in/having spirals
+to-qi-de-we-sa,τροπιδfεσσα,,Fourth word from pair. Removed accent from 'έ'. Converted digamma 'F' to lowercase 'f'.,in/having spirals
+to-ra-ka,θωραξ,,First word from the pair. No changes were required as the transliteration of the greek cognate did not contain any diacritics or uppercase characters.,armor
+to-ra-ke,θωρακες,,Second word from the pair. No changes were required as the transliteration of the greek cognate did not contain any diacritics or uppercase characters.,armor
+to-ri-jo,θωριος,,The Linear B 'to-ri-jo' corresponds to Greek 'θωριος' (Thorios).,personal name
+to-ro-no-wo-ko,θρονοfεργος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,maker of 'thornoi' (= thrones)
+to-sa-de,τοσαδε,,First word from the pair. Removed accent from 'ά'.,such (see also next)
+to-so-de,τοσοσδε,,Second word from the pair. Removed accent from 'ό'.,such (see also next)
+to-so-jo,τοσοιο,,No changes needed.,
+to-so-ne,τοσονε,,No changes needed as it has no accents or special characters.,
+to-so-pa,τοσοσπας,,No modifications needed. The Linear B 'to-so-pa' corresponds to Greek 'τοσοςπας'.,
+to-sa,τοσαι|τοσα,,Multiple cognates. Removed accent from 'ό'.,such (plur. fem./ plur. neut.)
+to-so,τοσοι|τοσον,,Multiple possible cognates. Removed all accents. The Linear B 'to-so' can correspond to either 'τοσοι' or 'τοσον'.,such (plur. masq./ sing. neut.)
+to-to,τουτον,,No changes needed as it has no accents or special characters.,this/such (see also 'toson')
+tu-ka-te,θυγατηρ,,First word from the pair. No accents to remove. The Linear B 'tu-ka-te' corresponds to Greek 'θυγατερ'.,daughter
+tu-ka-te-re,θυγατερες,,Second word from the pair. No accents to remove. The Linear B 'tu-ka-te-re' corresponds to Greek 'θυγατερες'.,daughter
+tu-ke-ne-u,τυχενευς,,No changes needed as it has no accents or special characters.,personal name
+tu-ra-te-u,θυρατευς,,First word from the group. No changes needed as it has no accents or special characters.,door keeper (θήρα= door)
+tu-ra-te-u-si,θυρατευσι,,Second word from the group. No changes needed as it has no accents or special characters.,door keeper (θήρα= door)
+tu-ra-te-we,θυρατεfες,,Third word from the group. No changes needed as it has no accents or special characters.,door keeper (θήρα= door)
+tu-ri-si-ja,τυλισια,,First word from the pair. Removed capital letter and accent from 'ί'.,ethnic name of 'Tylisos'
+tu-ri-si-jo,τυλισιος,,Second word from the pair. Removed capital letter and accent from 'ί'.,ethnic name of 'Tylisos'
+tu-ri-so,τυλισος,,Removed accent from 'ύ'. The Linear B 'tu-ri-so' corresponds to Greek 'τυλισος' (place name).,place name
+tu-ri-ta,τυλιτας,,No changes needed as it has no accents or special characters.,personal name
+tu-ryo,τυριον,,No changes needed as it has no accents or special characters.,cheese
+tu-ru-pte-ri-ja,στρυπτηρια,,Removed accent from 'ί'.,alum
+tu-we-a,θυfεα,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,sacrificial fire
+tu-wo,θυfος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,sacrificial fire
+tu-we-ta,θυfεστας,,Converted digamma 'F' to lowercase 'f'.,personal name
+u-do-ro,υδρος,,Removed accent from 'ύ'. The Linear B 'u-do-ro' corresponds to Greek 'υδρος'.,kind of pot (water jar?)
+u-po,υπο,,No changes needed as it has no accents or special characters.,under
+u-ra-jo,υλαιος,,Removed accent from 'ί'. The Linear B 'u-ra-jo' corresponds to Greek 'υλαιος' (personal name).,"personal name (ύλα= forest, wood)"
+u-ra-mo-no,υλαμνος,,Removed accent from 'Ύ'.,personal name
+u-re-u,υλευς,,No changes needed as it has no accents or special characters.,personal name
+u-ryo,υλιων|υριων,,The Linear B 'u-ryo' can correspond to either 'υλιων' or 'υριων'. Removed accent from 'ί'.,personal name
+u-ru-pi-ja-jo,υρυπιαιοι,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,ethnic name
+u-ru-pi-ja-jo-jo,υρυπιαιοιο,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,ethnic name
+u-ru-to,ρυοντοι|ρυομαι,,Converted digamma 'F' to lowercase 'f'. Removed parentheses from the greek word.,to guard
+u-ta-jo,υταιος,,Removed parentheses from Linear B. Removed capital letter from Greek cognate.,personal name
+u-ta-jo-jo,υταιοιο,,Removed parentheses from Linear B. Removed capital letter from Greek cognate.,personal name
+u-ta-no,υτανος,,Removed accent from 'Ύ'.,personal name
+u-wa-ta,υfατας,,Converted digamma 'F' to lowercase 'f'. The Linear B 'u-wa-ta' corresponds to Greek 'υfατας' (personal name).,personal name
+wa-na-ka,fαναξ,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,"wanax, king, leader aristocrat"
+wa-na-ka-te,fανακτει,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,"wanax, king, leader aristocrat"
+wa-na-ka-to,fανακτος,,Third word from the pair. Converted digamma 'F' to lowercase 'f'.,"wanax, king, leader aristocrat"
+wa-na-ke-te,fανακτει,,Fourth word from the pair. Converted digamma 'F' to lowercase 'f'.,"wanax, king, leader aristocrat"
+wa-na-ka-te-ra,fανακτερα,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,premises of the wanax
+wa-na-ka-te-ro,fανακτερων,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,premises of the wanax
+wa-na-sa,fανασσα,,Converted digamma 'F' to lowercase 'f'.,queen
+wa-na-se-wi-ja,fανασεfια,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,royal
+wa-na-se-wi-jo,fανασεfιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,royal
+wa-na-so,fανασος,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,place name
+wa-na-so-i,fανασος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,place name
+wa-no-so-i,fανασος,,Third word from the pair. Converted digamma 'F' to lowercase 'f'.,place name
+wa-na-ta-jo,fαναταιος,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+wa-na-ta-jo-jo,fαναταιοιο,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+wa-ni-ko,fανιχος,,Converted digamma 'F' to lowercase 'f'.,personal name
+wa-no-jo,fανοιο,,Converted digamma 'F' to lowercase 'f'.,place name
+wa-pa-ro-jo,fαφαλοιο|fαφαλος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,personal name
+wa-to,fατος,,Converted digamma 'F' to lowercase 'f'.,place name
+wa-tu,fαστυ,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,"city, town"
+wa-tu-o,fαστυ,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,"city, town"
+wa-tu-o-ko,fαστυοχος,,Converted digamma 'F' to lowercase 'f'.,personal name
+we-a-re-ja,υαλεα,,First word from the triple. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ε'.,made of glass
+we-a-re-jo,υαλεος,,Second word from the triple. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,made of glass
+we-ha-re-jo,υhαλεος,,Third word from the triple. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'. The ha sign doesn't imply adding 'h'.,made of glass
+we-ha-no,fεhανος,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,type of cloth
+we-ha-no-i,fεhανος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,type of cloth
+we-da-ne-u,fενδανευς,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,personal name
+we-da-ne-we,fενδανευς,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,personal name
+we-da-ne-wo,fενδανευς,,Third word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,personal name
+we-ke, εργον, ergon, work
+we-pe-za,fεκπεζα,,Converted digamma 'F' to lowercase 'f'.,(table) with six legs
+we-te-i-we-te-i,fετειfετει,,Converted digamma 'F' to lowercase 'f'.,'from year to year'
+we-to,fετος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,this year
+we-we-e-a,fειρfεια|ειρεια|ειρος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,woolen (fem.)
+we-we-si-jo,fεfεσιος,,Removed parentheses. Converted digamma 'F' to lowercase 'f'. Removed parentheses.,personal name
+we-we-si-jo-jo,fεfεσιοιο,,Removed parentheses. Converted digamma 'F' to lowercase 'f'. Removed parentheses.,personal name
+o-wi-de,οfιδε|οιδε,,Removed accent from 'ί' and parentheses with its content. Converted digamma 'F' to lowercase 'f'.,he saw ('o-wi-de'= 'this is what he saw')
+wi-de,οfιδε|οιδε,,Removed accent from 'ί' and parentheses with its content. Converted digamma 'F' to lowercase 'f'.,he saw ('o-wi-de'= 'this is what he saw')
+wi-do-wo-i-jo,fιδοfοιος,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+wi-du-wo-i-jo,fιδοfοιος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+wi-dwo-i-jo,fιδοfοιος,,Third word from the pair. Converted digamma 'F' to lowercase 'f'.,personal name
+wi-du-ro,fιδυλος,,Converted digamma 'F' to lowercase 'f'.,personal name
+wi-du-wa-ko,fιδουfακος,,Converted digamma 'F' to lowercase 'f'.,personal name
+wi-pi-no-o,fιφινοος,,Converted digamma 'F' to lowercase 'f'.,personal name
+wi-ri-ne-o,fρινειος,,First word from the set. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,made of leather
+wi-ri-ne-jo,fρινειος,,First word from the set. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,made of leather
+wi-ri-ne-we,fρινειος,,Second word from the set. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,made of leather
+wi-ri-ni-jo,fρινειος,,Third word from the set. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ί'.,made of leather
+wi-ri-no,fρινος,,Converted digamma 'F' to lowercase 'f'.,leather
+wi-se-jo,fισειος,,Converted digamma 'F' to lowercase 'f'.,personal name
+wi-su-ro,fισυλος,,Converted digamma 'F' to lowercase 'f'.,personal name
+wi-ti-mi-jo,fιτιμιος,,Converted digamma 'F' to lowercase 'f'.,personal name
+wi-tu-ri-jo,fιτυλιος,,Converted digamma 'F' to lowercase 'f'.,personal name
+wo-do-we,fροδοfεν,ροδοεν,Converted digamma 'F' to lowercase 'f'. Dropping invalid characters for the dubious cognate and adding it to the dubious array.,made with rose oil
+wo-i-ko-de,fοικονδε|fοικος,,First word from the pair. Converted digamma 'F' to lowercase 'f'.,(going) home
+wo-ko-de,fοικονδε|fοικος,,Second word from the pair. Converted digamma 'F' to lowercase 'f'.,(going) home
+wo-ka,fοχεια,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,vehicle
+wo-ne-we,fονεfει,fονευς,Converted digamma 'F' to lowercase 'f'. Removed parentheses and the word within it. Labeling fονευς as dubious because it is too modified compared to the effective greek cognate.,personal name
+wo-no,fοινος,,Converted digamma 'F' to lowercase 'f'.,wιne
+wo-no-qe-wa,fονοκεfαν|fονοκευς,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,personal name
+wo-no-qe-we,fονοκεfει|fονοκευς,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,personal name
+wo-no-qo-so,fοινωψ,,Converted digamma 'F' to lowercase 'f'.,personal name
+wo-qe-we,fοκεfει|fοκευς,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ' and included both variants within the parenthesis.,personal name
+wo-ra-we-sa,fοραfεσσα,,Converted digamma 'F' to lowercase 'f'.,"(description of a chariot) (>φέρω= to bear, to caπy)"
+wo-ro-ki-jo-ne-jo,fοργιονειος|Fοργιονες,,Converted digamma 'F' to lowercase 'f'. Removed accents from 'ό'. Included the word in parentheses.,cult association
+wo-ro-ne-ja,αρνεια,,Converted digamma 'F' to lowercase 'f'.,of a lamb
+wo-wo,fορfος|ορος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ό'.,mountain/limit
+wo-ze,fεργει|fεργω,οργω,"First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accents from 'ό'. The Linear B 'wo-ze' corresponds to Greek 'fόρζει(ν)' (to work), and 'έργω', considering possible evolution from 'όργω'.",to work
+wo-ze-e,fεργειν|fεργω,οργω,"Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accents from 'ό'. The Linear B 'wo-ze-e' corresponds to Greek 'fόρζει(ν)' (to work), and 'έργω', considering possible evolution from 'όργω'.",to work
+wo-zo,fεργων,,First word from the pair. Removed accent from 'ό'. Converted digamma 'F' to lowercase 'f'.,working
+wo-zo-te,fεργοντες,,Second word from the pair. Removed accent from 'ό'. Converted digamma 'F' to lowercase 'f'.,working
+wo-zo-me-na,fεργομενα,,First word from pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,being worked/ well-made
+wo-zo-me-no,fεργομενος,,Second word from pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,being worked/ well-made
+za-e-to-ro,ζαεθροι,,No changes needed as it has no accents or special characters.,place name
+za-ku-si-jo,ζακυνθιος,,"Removed parentheses. Removed accent from 'ύ'. Included both forms, with 'νσ' and the later evolved 'νθ'.",ethnic name of 'Zakynthos'
+za-ma-e-wi-a,ζαμαεfια,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,ethnic/place name
+za-we-te,ζαfετες,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'ά'.,this year
+ze-i-ja-ka-ra-na,ζειακρανα,,No modifications needed. The Linear B 'ze-i-ja-ka-ra-na' corresponds to Greek 'ζειακρανα'.,place name
+ze-phu-ra,ζεφυραι,,First word from the pair. Removed accent from 'έ'.,place name (>Halikarnassos?)
+ze-phu-ro,ζεφυρος,,Second word from the pair. Removed accent from 'έ'.,place name (>Halikarnassos?)
+ze-phu-rai,ζεφυρεαι|ζεφυρεα,,Removed accent from 'έ'.,ethnic name of 'Zephyrai'
+ze-so-me-no,ζεσομενος,,No changes needed as it has no accents or special characters. Just removing the capital letters.,boiling
+ze-u-ke-si,ζευγεσι,,First word from the pair. The Linear B 'ze-u-ke-si' corresponds to Greek 'ζευγεσι'.,paιr
+ze-u-ko,ζευγος,,Second word from the pair. The Linear B 'ze-u-ko' corresponds to Greek 'ζευγος'.,paιr

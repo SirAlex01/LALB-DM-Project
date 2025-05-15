@@ -3,6 +3,8 @@ po-ro-: pro- (prima)
 -qe-to-ro-,πετρο- (>τετρα-),petro- (>tetra-),tetra-: four
 we-,Fέκ-,fek-,hex- (six)
 e-ne-wo-,εwεFο-,ennevo-,ηιηe- (nine)
+a-pu-,απύ- (>από-),apy- (> apo-),from/with
+jo, ως
 
 suffixes:
 -qe: and
@@ -11,3 +13,4 @@ suffixes:
 -te,-θεν,-then,away from a place (ablative)
 -de,-δε,-de,"not, οη the other side"
 -de,-δε,-de,allative/ demonstrative
+-pi, instrumental/locative suffix

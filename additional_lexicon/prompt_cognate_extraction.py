@@ -45,25 +45,35 @@ def make_prompt(info_dict, api_key):
     principles.text = """
     PROCESSING RULES FOR LINEAR B TO GREEK COGNATES:
     
+    0. CRITICAL: DO NOT MAKE ANY MODIFICATION TO GREEK COGNATES OR LINEAR B SEQUENCES IF THE MODIFICATION IS NOT MENTIONED IN THE FOLLOWING RULES! DO NOT CHANGE THE INPUT IN ANY POSSIBBLE WAY AND ONLY APPLY THE GIVEN MODIFICATION RULES! NO FANTASY JUST BLINDLY OBEY!
+
     1. SPLITTING MULTIPLE WORDS: When Linear B field contains multiple words separated by "/", create separate JSON objects for each word, matching with the corresponding Greek cognate in the same position.
     
-    2. HANDLING PARENTHESES: For Linear B words with parenthetical elements like "po-ni-ke-(j)a", create two separate entries (one with and one without the parenthetical element).
+    2. HANDLING PARENTHESES: For Linear B words with parenthetical elements like "po-ni-ke-(j)a", create two separate entries (one with and one without the parenthetical element, like "po-ni-ke-ja" and "po-ni-ke-a").
     
+    2.2 HANDLING PARENTHESES FOR GREEK COGNATE: if a word is presented with optional greek characters with parenthetical elements like "αιξμά(ν)ς", include both variants with and without the letter in parenthesis. 
+
+    2.3 HANDLING PARENTHESES FOR GREEK COGNATE: if a word is presented within parentheses, include it regardless, like "Αιθαλεύσι(Αιθαλεύς)". 
+
     3. MULTIPLE TRANSLATIONS: If a Linear B word has multiple possible Greek cognates, include all of them as an array within the same JSON object.
     
     4. REMOVING DIACRITICS: Remove all accents, breathing marks, and other diacritics from Greek cognates.
     
-    5. HANDLING "a2" SIGN: When "ha" or "a2" appears in Linear B, ensure the corresponding Greek cognate includes "h".
+    5. HANDLING "ha" SIGN: When "ha" appears in Linear B, ensure the corresponding Greek cognate includes "h".
     
     6. DIGAMMA CONVERSION: Convert every instance of digamma "F" to lowercase "f" in Greek cognates.
     
-    7. ALLOWED CHARACTERS: Use ONLY these characters in Greek cognates: fhαβγδεζηθικλμνξοπρςστυφχψω
+    7. CRITICAL: ALLOWED CHARACTERS: Use ONLY these characters in Greek cognates: fhαβγδεζηθικλμνξοπρςστυφχψω. DO NOT USE ANY OTHER CHARACTER FOR ANY REASON!
     
-    8. NO "y" OR "Y": Never use "y" or "Y" in Greek cognates, even if they appear in the source.
+    8. DISALLOWED CHARACTERS: Drop cognates containing disallowed characters, but preserve valid cognates found within parentheses or other markers.
     
-    9. DISALLOWED CHARACTERS: Drop cognates containing disallowed characters, but preserve valid cognates found within parentheses or other markers.
+    9. IN SOME VERY RARE AND PARTICULAR CASES some cognates may be considered as DUBIOUS, IF AND ONLY IF THEY CONTAIN A LIKELY WRONG TRANSLITERATION AND A CORRECT MATCH IS ALREADY PRESENT. Put them in the "dubious" field, another optional array field in the JSON object.
+
+    10 if white spaces are present between syllables separated by - are present in the linear b sequence, remove them.
     
-    The final output must be a JSON array containing a separate JSON object for each processed Linear B word, with fields for the Linear B word, its Greek cognate(s) as an array, and a detailed explanation of the processing applied.
+    11. DO NOT USE PARENTHESES IN THE LINEAR B SEQUENCES OR IN THE GREEK COGNATE.
+    
+    The final output must be a JSON array containing a separate JSON object for each processed Linear B word, with fields for the Linear B word, its Greek cognate(s) as an array, and a detailed explanation of the processing applied, and optionally a dubious array field.
     """
     
     # Output format description with detailed examples for each rule
@@ -73,7 +83,7 @@ def make_prompt(info_dict, api_key):
     
     RULE 1 - Multiple words separated by "/":
     INPUT: 
-      linear_b: "ke-ra/ke-ra-a2", 
+      linear_b: "ke-ra/ke-ra-ha", 
       greek_cognate: "κέρας/κέραhα", 
       transliteration: "keras/keraha", 
       meaning: "horn"
@@ -86,9 +96,9 @@ def make_prompt(info_dict, api_key):
         "explanation": "First word from the pair. Removed accent from 'έ'. The Linear B 'ke-ra' corresponds to Greek 'κερας' (horn)."
       },
       {
-        "linear_b": "ke-ra-a2",
+        "linear_b": "ke-ra-ha",
         "greek_cognates": ["κεραhα"],
-        "explanation": "Second word from the pair. Removed accent from 'έ'. The a2 sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate."
+        "explanation": "Second word from the pair. Removed accent from 'έ'. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate."
       }
     ]
     
@@ -145,9 +155,9 @@ def make_prompt(info_dict, api_key):
       }
     ]
     
-    RULE 5 - Handling "ha" or "a2":
+    RULE 5 - Handling "ha" or "ha":
     INPUT:
-      linear_b: "te-tu-ku-wo-a/te-tu-ku-wo-a2", 
+      linear_b: "te-tu-ku-wo-a/te-tu-ku-wo-ha", 
       greek_cognate: "τετυχύFοα/τετυχύFοhα", 
       transliteration: "tetyhyvoa/tetyhyvoha", 
       meaning: "well prepared, ready"
@@ -157,12 +167,12 @@ def make_prompt(info_dict, api_key):
       {
         "linear_b": "te-tu-ku-wo-a",
         "greek_cognates": ["τετυχυfοα"],
-        "explanation": "First form without a2. Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'."
+        "explanation": "First form without ha. Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'."
       },
       {
-        "linear_b": "te-tu-ku-wo-a2",
+        "linear_b": "te-tu-ku-wo-ha",
         "greek_cognates": ["τετυχυfοhα"],
-        "explanation": "Second form with a2, which corresponds to 'h' in the Greek. Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'."
+        "explanation": "Second form with ha, which corresponds to 'h' in the Greek. Removed accent from 'ύ'. Converted digamma 'F' to lowercase 'f'."
       }
     ]
     
@@ -209,8 +219,9 @@ def make_prompt(info_dict, api_key):
     [
       {
         "linear_b": "qa-si-re-u",
-        "greek_cognates": ["κασιλευς", "βασιλευς"],
-        "explanation": "Removed disallowed characters '/' and '''. Removed accent from 'εύ'. Included both cognate forms."
+        "greek_cognates": ["βασιλευς"],
+        "dubious": ["κασιλευς"],
+        "explanation": "Removed disallowed characters '/' and '''. Removed accent from 'εύ'. Labeling κασιλευς as dubious because it is too modified compared to the effective greek cognate."
       }
     ]
     """
@@ -283,9 +294,9 @@ def make_prompt(info_dict, api_key):
       }
     ]
 
-    EXAMPLE 4 - Multiple variants with a2 (aspiration):
+    EXAMPLE 4 - Multiple variants with ha (aspiration):
     INPUT:
-      linear_b: "o-/o-a2/o-da-a2/o-de-qa-a2", 
+      linear_b: "o-/o-ha/o-da-ha/o-de-qa-ha", 
       greek_cognate: "ο-/οhά/οδάhα/οδετάhα", 
       transliteration: "ο-/oha/odaha/odetaha", 
       meaning: "introductory/prothetic world ='who, in this manner' (see also 'jo-')"
@@ -298,19 +309,19 @@ def make_prompt(info_dict, api_key):
         "explanation": "First form. No changes needed as it has no accents or special characters."
       },
       {
-        "linear_b": "o-a2",
+        "linear_b": "o-ha",
         "greek_cognates": ["οhα"],
-        "explanation": "Second form with a2. Removed accent from 'ά'. Added 'h' due to the a2 sign."
+        "explanation": "Second form with ha. Removed accent from 'ά'. Added 'h' due to the ha sign."
       },
       {
-        "linear_b": "o-da-a2",
+        "linear_b": "o-da-ha",
         "greek_cognates": ["οδαhα"],
-        "explanation": "Third form with a2. Removed accent from 'ά'. Added 'h' due to the a2 sign."
+        "explanation": "Third form with ha. Removed accent from 'ά'. Added 'h' due to the ha sign."
       },
       {
-        "linear_b": "o-de-qa-a2",
+        "linear_b": "o-de-qa-ha",
         "greek_cognates": ["οδεταhα"],
-        "explanation": "Fourth form with a2. Removed accent from 'ά'. Added 'h' due to the a2 sign."
+        "explanation": "Fourth form with ha. Removed accent from 'ά'. Added 'h' due to the ha sign."
       }
     ]
 
@@ -370,13 +381,13 @@ def make_prompt(info_dict, api_key):
         print("No valid JSON array found in response")
         return []
 
-start_index = 0
+start_index = 819
 prec_idx = 0
 output_file = "./gemini_output.csv"
 
-with open(output_file, mode='w', newline='', encoding='utf-8') as output_file:
+with open(output_file, mode='a', newline='', encoding='utf-8') as output_file:
     writer = None
-    with open('cleaned.csv', mode='r', newline='') as file:
+    with open('dataset.csv', mode='r', newline='', encoding='utf-8') as file:
         reader = csv.DictReader(file)
         
         # Convert the reader to a list of dicts
@@ -403,16 +414,21 @@ with open(output_file, mode='w', newline='', encoding='utf-8') as output_file:
                     gemini_cognates = make_prompt(info_dict, api_key) #this returns list of JSON objects
                     for record in gemini_cognates:
                       if writer is None:
-                          fieldnames = list(record.keys())
+                          fieldnames = ["linear_b","greek_cognates","dubious", "explanation", "translation"]
                           writer = csv.DictWriter(output_file, fieldnames=fieldnames)
                           if output_file.tell() == 0:  # Write header only if file is empty
                               writer.writeheader()
+                      record['greek_cognates'] = "|".join(record['greek_cognates'])
+                      if "dubious" in record.keys():
+                          record['dubious'] = "|".join(record['dubious'])
+                      record['translation'] = info_dict['Translation (English)']
                       writer.writerow(record)
+                      output_file.flush()
 
                       #Debug prints
                       print("INPUT WAS: ", info_dict)
                       print("WRITTEN OUTPUT: ", record)
-
+                      #exit()
                     print("\n")
                     break
                 except Exception as e:
@@ -421,7 +437,7 @@ with open(output_file, mode='w', newline='', encoding='utf-8') as output_file:
             
             
                 
-                
+# pay attention to: 1. same LB word inserted twice 2. αγοραιοσ, (sigma ending the word)            
                 
                 
                 
