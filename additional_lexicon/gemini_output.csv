@@ -195,11 +195,11 @@ a-ro-u-ra,αρουρα,,The Linear B 'a-ro-u-ra' corresponds to Greek 'αρου�
 a-sa-mi-to,ασαμινθος,,No modifications needed.,bath tab
 a-si-ja-ti-ja,ασιατιαι,,Removed accent from 'ί'. The Linear B 'a-si-ja-ti-ja' corresponds to Greek 'ασιατιαι' (place name).,place name
 a-si-wi-ja,ασιfια,,Converted digamma 'F' to lowercase 'f'. The Linear B 'a-si-wi-ja' corresponds to Greek 'ασιfια'.,ethnic name
-a-si-wi-jo,ασιfιος,,Converted digamma 'F' to lowercase 'f'.,
+a-si-wi-jo,ασιfιος,,Converted digamma 'F' to lowercase 'f'.,ethnic name
 a-ta-ma-ne-u,αθαμανευς|αθαμας,,First word from the pair. Removed capital letter and accent from 'ύ'. Included both forms.,personal name
 a-ta-ma-ne-we,αθαμανευς|αθαμας,,Second word from the pair. Removed capital letter and accent from 'ύ'. Included both forms.,personal name
 a-ta-na,αθηνα,,The Linear B 'a-ta-na' corresponds to Greek 'ατανα'. Removed accent from 'ά'.,goddess' s name (goddess Athena)
-a-ta-na-po-ti-ni-ja,αθηναποτνια,Atana (-potnia= beloved),goddess' s name (goddess Athena)
+a-ta-na-po-ti-ni-ja,αθηναποτνια,,Atana (-potnia= beloved),goddess' s name (goddess Athena)
 a-ta-no,αντανωρ,,First word from the pair. Removed capital letter.,personal name 
 a-ta-no-re,αντανωρ,,Second word from the pair. Removed capital letter.,personal name 
 a-ta-no-ro,αντανωρ,,Third word from the pair. Removed capital letter.,personal name 
@@ -398,7 +398,7 @@ e-re-pa-te-ja-pi,ελεφαντειαφι,,Third word from the group. Removed ac
 e-re-pa-te-jo,ελεφαντειος,,Fourth word from the group. Removed accent from 'έ'.,elephant (implying ivory)
 e-re-pa-to,ελεφαντος,,Fifth word from the group. Removed accent from 'έ'.,elephant (implying ivory)
 e-re-ta,ερεται|ερετης,,First word from the pair. Removed accent from 'έ'.,rowers
-e-re-ta-o,ερεταων,Second word from the pair. Removed accent from 'έ'. 'ερετας' has been added to dubious.,rowers
+e-re-ta-o,ερεταων,,Second word from the pair. Removed accent from 'έ'. 'ερετας' has been added to dubious.,rowers
 e-re-u-te-ra,ελευθερα,,First word from the pair. Removed accent from 'έ'. The Linear B 'e-re-u-te-ra' corresponds to Greek 'ελευθερα' ('deliνered ').,'deliνered '/free
 e-re-u-te-ro,ελευθερος,,Second word from the pair. Removed accent from 'έ'. The Linear B 'e-re-u-te-ro' corresponds to Greek 'ελευθερος' (free).,'deliνered '/free
 e-re-u-te-re,ελευθερει|ελευθεραι,,Removed accent from 'έ'. Included both forms 'Ελευθέρει' and 'Ελευθέραι'.,place name?
@@ -432,7 +432,7 @@ e-te-wa,ετεfας,,Converted digamma 'F' to lowercase 'f'.,personal name
 e-te-wo-ke-re-we-i-jo,ετεfοκλεfειος|ετεοκλιος,,Removed capital letters and accent from 'έ'. Converted digamma 'F' to lowercase 'f'. Included both forms.,'son of Eteokleus'
 e-to-ki-ja,εντοιχια,,No modifications needed. The Linear B 'e-to-ki-ja' corresponds to Greek 'εντοιχια' (fittings for insertion in walls).,fittings for insertion in walls
 e-to-ni-jo,ετωνιον,,No modifications needed. The Linear B 'e-to-ni-jo' corresponds to Greek 'ετωνιον' (free-hold).,free-hold
-e-to-ro-qa-ta,εντροπωτεροι|τροπωτηρ|τροπωτεροι,"Removed accent from 'ά'. Included 'εντροπαται', as a possible cognate, and 'τροπωτηρ' as a dubious form, with a higher degree of modification.",oar-thongs
+e-to-ro-qa-ta,εντροπωτεροι|τροπωτηρ|τροπωτεροι,,"Removed accent from 'ά'. Included 'εντροπαται', as a possible cognate, and 'τροπωτηρ' as a dubious form, with a higher degree of modification.",oar-thongs
 e-to-wo-ko,εντοσfοργοι,,Converted digamma 'F' to lowercase 'f'.,'inside workers' (see aslo 'eksovorgoi')
 e-u-da-mo,ευδαμος,,Removed accent from 'ύ'.,personal name
 e-u-de-we-ro,ευδειfελος,,Converted digamma 'F' to lowercase 'f'.,place name
@@ -575,7 +575,7 @@ ke-ra-so,κερασω,,Removed accent from 'ώ'.,personal name (fem.)
 ke-ra-ti-jo-jo,κερατιοιο,,Removed capital letter and accent from 'ί'.,place name (see also 'vorvos')
 ke-ra-u-jo,κεραυιος,,Removed accent from 'ύ'.,personal name
 ke-re-ha,σκελεhα|σκελος,,"Removed accent from 'έ'. Greek cognates presented as an array because there are multiple possible cognates. The ha sign in Linear B indicates aspiration, represented by 'h' in the Greek cognate.",legs
-ke-re-si-jo we-ke,κρησιοfεργης,,Converted digamma 'F' to lowercase 'f'.,of Cretan style
+ke-re-si-jo,κρησιος,,Converted digamma 'F' to lowercase 'f'.,of Cretan style
 ke-re-te-u,κρηθευς,,Removed accent from 'ύ'. The Linear B 'ke-re-te-u' corresponds to Greek 'κρηθευς'.,personal name
 ke-re-ti-wo,κρηθιfος,,Converted digamma 'F' to lowercase 'f'.,place name
 ke-ro-si-ja,γερουσια,,Removed accent from 'ία'. Included both forms.,council of elders ('senate')
@@ -1282,7 +1282,7 @@ we-ha-no-i,fεhανος,,Second word from the pair. Converted digamma 'F' to low
 we-da-ne-u,fενδανευς,,First word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,personal name
 we-da-ne-we,fενδανευς,,Second word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,personal name
 we-da-ne-wo,fενδανευς,,Third word from the pair. Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,personal name
-we-ke, εργον, ergon, work
+we-ke,εργον,,ergon,work
 we-pe-za,fεκπεζα,,Converted digamma 'F' to lowercase 'f'.,(table) with six legs
 we-te-i-we-te-i,fετειfετει,,Converted digamma 'F' to lowercase 'f'.,'from year to year'
 we-to,fετος,,Converted digamma 'F' to lowercase 'f'. Removed accent from 'έ'.,this year
