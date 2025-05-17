@@ -1,5 +1,6 @@
 1. common, anthroponym, toponym, ethnonym, theonym… (multi-class classifier)
-2. masculine vs feminine vs neuter
-3. singular vs plural vs dual
+2. masculine vs feminine vs neuter NO
+3. singular vs plural vs dual NO
 4. verb vs noun vs adjective (vs adverb???) (doable ?)
-5. case (nominative vs genitive vs dative etc)
+5. case (nominative vs genitive vs dative etc) NO
+6. inflection

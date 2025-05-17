@@ -1,0 +1,21 @@
+| Number | Case       | Fless. Tem. (M.) | Fless. Tem. (N.) | Fless. in -a (M.) | Fless. in -a (F.) | Fless. atem. (M./F.)  | Fless. atem. (N.) (?)              | 
+| ------ | ---------- | -----------      | -----------      | ----------------- | ----------------- | --------------        | --------------                     |
+| Sing.  | Nominative | -o               | -o               | -a                | -a                | variable              | variable                           |
+|        | Genitive   | -ojo             | -ojo             | -ao               | -a                | -o                    | -o                                 |
+|        | Dative     | -o               | -o               | -a                | -a                | -e/-i                 | -e/-i                              |
+|        | Accusative | -o               | -o               | -a                | -a                | -a                    | variable (identical to nominative) |
+| Plural | Nominative | -o/-oi           | -a               | -a                | -a                | -e                    | -a                                 |
+|        | Genitive   | -o               | -o               | -ao               | -ao               | -o                    | -o                                 |
+|        | Dative     | -oi              | -oi              | -ai               | -ai               | -si/-ti               | -si/-ti                            |
+|        | Accusative | -o               | -a               | -a                | -a                | -a/-e                 | -a                                 |
+
+Verbs: 
+- 3rd singular: last syllabogram ending with vowel -e
+- 3rd plural: last syllabogram is -si
+- infinite: last syllabogram ending with vowel e (optionally another syllabogram -e appears at the end)
+- participle: active -> terminates with -o (singular -ων ancient greek suffix, other suffixes follow atematic nouns, e.g. -o-te like i-jo-te -> ιοντες, from ειμι)
+- participle: medium/passive -> terminates with -me-no/-me-na suffixes (ancient greek -μενος/-μενη/-μενον suffixes)
+
+Adjectives:
+- tematic adjectives have same behavior as tematic nouns
+- atematic adjectives have same behavior as atematic nouns (variable nominative and same decletions)

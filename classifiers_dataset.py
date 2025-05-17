@@ -75,37 +75,80 @@ def make_prompt(info_dict, api_key):
     # Create classification tasks section
     classification_tasks = ET.SubElement(prompt, "classification_tasks")
     classification_tasks.text = """
-    CRITICAL: provide an answer IF AND ONLY IF YOU ARE COMPLETELY SURE DUE TO CERTAIN EVIDENCE!
+    CRITICAL: provide an answer IF AND ONLY IF YOU ARE COMPLETELY SURE DUE TO CERTAIN EVIDENCE! TAKE INTO ACCOUNT THE GIVEN DECLETION TABLES FOR ADJECTIVES AND NOUNS INFLECTIONS!
     Please classify the given Linear B word according to the following tasks:
     
-    1. Word Type: Determine if the word is an "anthroponym" (person name), "theonym" (deity name), "animal name", "toponym" (place name), or "common" word.
-       Classes: -1 = uncertain/not applicable, 0 = anthroponym, 1 = animal name, 2 = theonym, 3 = toponym, 4 = common
+    1. Word Type: Determine if the word is an "anthroponym" (person name), "animal name", "theonym" (deity name), "toponym" (place name), "ethnonym" (ethnic group name), or "common" word.
+       Classes: -1 = uncertain/not applicable, 0 = anthroponym, 1 = animal name, 2 = theonym, 3 = toponym, 4 = ethnonym, 5 = common
     
-    2. Gender: Determine the grammatical gender of the word.
-       Classes: -1 = uncertain/not applicable, 0 = masculine, 1 = feminine, 2 = neuter
-    
-    3. Number: Determine the grammatical number of the word.
-       Classes: -1 = uncertain/not applicable, 0 = singular, 1 = plural, 2 = dual
-    
-    4. Part of Speech: Determine the part of speech of the word.
+    2. Part of Speech: Determine the part of speech of the word.
        Classes: -1 = uncertain/not applicable, 0 = noun, 1 = verb, 2 = adjective, 3 = adverb
     
-    5. Case: Determine the grammatical case of the word (if applicable).
-       Classes: -1 = uncertain/not applicable, 0 = nominative/accusative/vocative, 1 = genitive, 2 = dative, 3 = instrumental
-    
-    For any classification where you are uncertain or the category is not applicable to the word, use -1.
+    3. Inflection: Determine the inflection class of the word.
+       For nouns: -1 = uncertain/not applicable, 0 = thematic in -o, 1 = thematic in -a, 2 = athematic
+       For adjectives: -1 = uncertain/not applicable, 0 = thematic, 1 = athematic
+       For verbs and adverbs: -1 (not applicable)
+
+    TAKE INTO ACCOUNT THE FOLLOWING: The provided declension table contains trailing suffixes, but being Linear B a syllabic language, they can be preceeded by an arbitrary consonant and be insterted in a syllable.
+
     """
     
+    # Create declension table section
+    nouns_section = ET.SubElement(prompt, "nouns")
+    decl_table = ET.SubElement(nouns_section, "declension_table")
+
+    # Declension table data
+    rows = [
+        ("Singular", "Nominative", "-o", "-o", "-a", "-a", "variable", "variable"),
+        ("Singular", "Genitive", "-ojo", "-ojo", "-ao", "-a", "-o", "-o"),
+        ("Singular", "Dative", "-o", "-o", "-a", "-a", "-e/-i", "-e/-i"),
+        ("Singular", "Accusative", "-o", "-o", "-a", "-a", "-a", "variable (identical to nominative)"),
+        ("Plural", "Nominative", "-o/-oi", "-a", "-a", "-a", "-e", "-a"),
+        ("Plural", "Genitive", "-o", "-o", "-ao", "-ao", "-o", "-o"),
+        ("Plural", "Dative", "-oi", "-oi", "-ai", "-ai", "-si/-ti", "-si/-ti"),
+        ("Plural", "Accusative", "-o", "-a", "-a", "-a", "-a/-e", "-a"),
+    ]
+
+    # Add each row to the XML
+    for number, case, tem_m, tem_n, a_m, a_f, athem, athem_n in rows:
+        row = ET.SubElement(decl_table, "row")
+        ET.SubElement(row, "number").text = number
+        ET.SubElement(row, "case").text = case
+        ET.SubElement(row, "thematic_o_masculine_feminine").text = tem_m
+        ET.SubElement(row, "thematic_o_neuter").text = tem_n
+        ET.SubElement(row, "thematic_a_masculine").text = a_m
+        ET.SubElement(row, "thematic_a_feminine").text = a_f
+        ET.SubElement(row, "athematic_masculine_feminine").text = athem
+        ET.SubElement(row, "athematic_neuter").text = athem
+
+    verbs_section = ET.SubElement(prompt, "verbs")
+    rules = {
+        "3rd singular": "last syllabogram ending with vowel -e",
+        "3rd plural": "last syllabogram is -si",
+        "infinite": "last syllabogram ending with vowel e (optionally another syllabogram -e appears at the end)",
+        "participle": "active -> terminates with -o (singular -ων ancient greek suffix, other suffixes follow athematic nouns, e.g. -o-te like i-jo-te -> ιοντες, from ειμι)",
+        "participle": "medium/passive -> terminates with -me-no/-me-na suffixes (ancient greek -μενος/-μενη/-μενον suffixes)"
+    }
+    for rule_key, rule_text in rules.items():
+        ET.SubElement(verbs_section, rule_key).text = rule_text
+
+    adjectives_section = ET.SubElement(prompt, "adjectives")
+    rules = {
+        "thematic adjectives": "thematic adjectives have same behavior as thematic nouns",
+        "athematic adjectives": "athematic adjectives have same behavior as athematic nouns (variable nominative and same decletions)"
+    }
+    for rule_key, rule_text in rules.items():
+        ET.SubElement(adjectives_section, rule_key).text = rule_text
+        
+
     # Create output format section
     output_format = ET.SubElement(prompt, "output_format")
     output_format.text = """Your response must be a JSON array containing exactly one object with the following structure:
     [
         {
-            "word_type": integer (0-4 or -1),
-            "gender": integer (0-2 or -1),
-            "number": integer (0-2 or -1),
+            "word_type": integer (0-5 or -1),
             "part_of_speech": integer (0-3 or -1),
-            "case": integer (0-3 or -1),
+            "inflection": integer (0-2 or -1),
             "confidence": float (0-1),
             "reasoning": "brief explanation of your classification decisions"
         }
@@ -113,7 +156,21 @@ def make_prompt(info_dict, api_key):
     
     Do not include any additional explanation or text outside of this JSON array. The confidence field should reflect your overall confidence in the classifications."""
     
-    # Create examples section with a few examples to help guide the model
+    # Create suffixes section to inform about elements that should be ignored
+    suffixes = ET.SubElement(prompt, "suffixes_to_ignore")
+    suffixes.text = """The following suffixes should be ignored when analyzing Linear B words, as they do not provide relevant information for the classification tasks. When you encounter these suffixes, consider the word without them for classification purposes:
+
+    1. -qe: conjunction suffix meaning "and" (equivalent to Latin -que)
+    2. -te: ablative suffix meaning "away from a place" (equivalent to Greek -θεν)
+    3. -de: can be either:
+       - Negative prefix meaning "not, on the other side"
+       - Allative/demonstrative suffix (equivalent to Greek -δε)
+    4. -pi: instrumental/locative suffix
+
+    Example: If analyzing "ko-to-na-qe" (and plot of land), you should classify "ko-to-na" (plot of land) ignoring the -qe conjunction suffix.
+    """
+
+    # Create examples section with more meaningful examples
     examples = ET.SubElement(prompt, "examples")
     examples.text = """Example 1:
     Word: a-to-ro-qo
@@ -122,13 +179,11 @@ def make_prompt(info_dict, api_key):
     Expected output:
     [
         {
-            "word_type": 4,
-            "gender": 0,
-            "number": 0,
+            "word_type": 5,
             "part_of_speech": 0,
-            "case": 0,
+            "inflection": 0,
             "confidence": 0.9,
-            "reasoning": "This is the common noun 'anthropos' meaning 'man/human', masculine singular in nominative case."
+            "reasoning": "This is the common noun 'anthropos' meaning 'man/human', a thematic noun in -o."
         }
     ]
     
@@ -140,12 +195,10 @@ def make_prompt(info_dict, api_key):
     [
         {
             "word_type": 2,
-            "gender": 1,
-            "number": 0,
             "part_of_speech": 0,
-            "case": 0,
+            "inflection": 1,
             "confidence": 0.95,
-            "reasoning": "This is 'potnia', a theonym/title for female deities, feminine singular in nominative case."
+            "reasoning": "This is 'potnia', a theonym/title for female deities, a thematic noun in -a."
         }
     ]
     
@@ -156,28 +209,162 @@ def make_prompt(info_dict, api_key):
     Expected output:
     [
         {
-            "word_type": 0,
-            "gender": 0,
-            "number": 0,
+            "word_type": 5,
             "part_of_speech": 0,
-            "case": 0,
+            "inflection": 1,
             "confidence": 0.8,
-            "reasoning": "This appears to be an anthroponym/title for a person (follower/companion), masculine singular in nominative case."
+            "reasoning": "This is an title for a person (follower/companion), a thematic noun in -a."
+        }
+    ]
+    
+    Example 4:
+    Word: pa-i-to
+    Cognates: Φαιστός (Phaistos)
+    Lexicon: Phaistos - name of a Minoan palace/city
+    Expected output:
+    [
+        {
+            "word_type": 3,
+            "part_of_speech": 0,
+            "inflection": 0,
+            "confidence": 0.9,
+            "reasoning": "This is 'Phaistos', a toponym (place name), a thematic noun in -o."
+        }
+    ]
+    
+    Example 5:
+    Word: e-ko-me-na
+    Cognates: ἐχόμενα (being held)
+    Lexicon: ekhomena - being held, possessed
+    Expected output:
+    [
+        {
+            "word_type": 5,
+            "part_of_speech": 2,
+            "inflection": -1,
+            "confidence": 0.85,
+            "reasoning": "This is a thematic adjective 'ekhomena' (being held), indicated by the -me-na ending typical of passive participles."
+        }
+    ]
+    
+    Example 6:
+    Word: e-re-u-te-ro
+    Cognates: ἐλεύθερος (free)
+    Lexicon: eleutheros - free, unencumbered
+    Expected output:
+    [
+        {
+            "word_type": 5,
+            "part_of_speech": 2,
+            "inflection": 0,
+            "confidence": 0.9,
+            "reasoning": "This is the common adjective 'eleutheros' meaning 'free', a thematic adjective in -o."
+        }
+    ]
+    
+    Example 7:
+    Word: do-e-ro
+    Cognates: δοῦλος (slave)
+    Lexicon: doelos - slave, servant
+    Expected output:
+    [
+        {
+            "word_type": 5,
+            "part_of_speech": 0,
+            "inflection": 0,
+            "confidence": 0.95,
+            "reasoning": "This is the common noun 'doelos' meaning 'slave', a thematic noun in -o."
+        }
+    ]
+    
+    Example 8:
+    Word: a-ke-re-u
+    Cognates: ἀγρεύς (hunter)
+    Lexicon: agreus - hunter, collector
+    Expected output:
+    [
+        {
+            "word_type": 0,
+            "part_of_speech": 0,
+            "inflection": 2,
+            "confidence": 0.8,
+            "reasoning": "This is an anthroponym 'agreus' meaning 'hunter', an athematic noun as indicated by the -u ending."
+        }
+    ]
+    
+    Example 9:
+    Word: ka-ke-u
+    Cognates: χαλκεύς (bronze-smith)
+    Lexicon: khalkeus - bronze-smith, metalworker
+    Expected output:
+    [
+        {
+            "word_type": 0,
+            "part_of_speech": 0,
+            "inflection": 2,
+            "confidence": 0.9,
+            "reasoning": "This is an anthroponym 'khalkeus' meaning 'bronze-smith', an athematic noun as indicated by the -u ending."
+        }
+    ]
+    
+    Example 10:
+    Word: di-we
+    Cognates: Διός/Ζεύς (Zeus, dative case)
+    Lexicon: dative form of Zeus
+    Expected output:
+    [
+        {
+            "word_type": 2,
+            "part_of_speech": 0,
+            "inflection": 2,
+            "confidence": 0.95,
+            "reasoning": "This is the dative form of Zeus (theonym), an athematic noun showing the characteristic -e ending for athematic datives."
+        }
+    ]
+    
+    Example 11:
+    Word: a-ka-so-ne 
+    Cognates: axones (axles)
+    Lexicon: axones - axles (wheels)
+    Expected output:
+    [
+        {
+            "word_type": 5,
+            "part_of_speech": 0,
+            "inflection": 2,
+            "confidence": 0.85,
+            "reasoning": "This is the common noun 'axones' meaning 'axles', an athematic noun."
+        }
+    ]
+    
+    Example 12:
+    Word: e-ko-si
+    Cognates: ἔχουσι (they have)
+    Lexicon: ekhousi - they have/hold
+    Expected output:
+    [
+        {
+            "word_type": 5,
+            "part_of_speech": 1,
+            "inflection": -1,
+            "confidence": 0.9,
+            "reasoning": "This is a verb form 'ekhousi' (they have), recognizable as 3rd person plural by the -si ending."
         }
     ]"""
     
     prompt_str = ET.tostring(prompt, "utf-8").decode()
     #print(prompt_str)
-
+    #exit()
+    
     # Using Gemini model to generate response
     genai.configure(api_key=api_key)
     gemini_model = genai.GenerativeModel(
         model_name='models/gemini-2.0-flash',
         generation_config=genai.types.GenerationConfig(
-            temperature=0.0,     # Minima creatività
-            top_p=1,             # Considera tutte le probabilità (nessun taglio)
-            top_k=1,             # Scegli la parola più probabile
-            max_output_tokens=512  # (Aumenta se ti serve output più lungo)
+            temperature=0.0,     # Minimal creativity
+            top_p=1,             # Consider all probabilities (no cutting)
+            top_k=1,             # Choose the most probable word
+            max_output_tokens=512  # (Increase if you need longer output)
         )
     )
     
@@ -198,6 +385,7 @@ def make_prompt(info_dict, api_key):
     else:
         print("No valid JSON array found in response")
         return []
+
 
 output_file = "classifiers_dataset.csv"
 prec_idx = 0
@@ -231,7 +419,7 @@ with open(output_file, mode='w', newline='', encoding='utf-8') as output_file:
 
                 for record in gemini_answer:
                     if writer is None:
-                        fieldnames = ["linear_b", "word_type", "gender", "number", "part_of_speech", "case", "confidence", "reasoning"]
+                        fieldnames = ["linear_b", "word_type", "part_of_speech", "inflection", "confidence", "reasoning"]
                         writer = csv.DictWriter(output_file, fieldnames=fieldnames)
                         if output_file.tell() == 0:  # Write header only if file is empty
                             writer.writeheader()
@@ -240,10 +428,8 @@ with open(output_file, mode='w', newline='', encoding='utf-8') as output_file:
                     row = {
                         "linear_b": word,
                         "word_type": record['word_type'],
-                        "gender": record['gender'],
-                        "number": record['number'],
                         "part_of_speech": record['part_of_speech'],
-                        "case": record['case'],
+                        "inflection": record['inflection'],
                         "confidence": record['confidence'],
                         "reasoning": record['reasoning']
                     }
