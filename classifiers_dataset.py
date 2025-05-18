@@ -59,10 +59,14 @@ def make_prompt(info_dict, api_key):
     word.text = info_dict["word"]
     
     # Add cognates if available
-    if "cognates" in info_dict:
-        cognates = ET.SubElement(word_info, "cognates")
-        cognates.text = "|".join(info_dict["cognates"])
-    
+    if "greek_cognates" in info_dict:
+        cognates = ET.SubElement(word_info, "greek_cognates")
+        cognates.text = "|".join(info_dict["greek_cognates"])
+        ET.SubElement(cognates, "greek_cognates_notice").text = """
+        IMPORTANT: When provided, Greek cognates are critical evidence to help determine the word type, part of speech, and inflection class. Carefully analyze the Greek cognate's morphology, ending patterns, and meaning to inform your classification decisions.
+        They are particularly important and you should USE THIS INFORMATION to PREDICT THE CORRECT INFLECTION also BASED ON THE DECLETION OF THE PROPOSED COGNATES.
+        """
+
     # Add lexicon entries if available
     if "lexicon_chadwick_ventris" in info_dict:
         cv_lexicon = ET.SubElement(word_info, "lexicon_chadwick_ventris")
@@ -85,18 +89,38 @@ def make_prompt(info_dict, api_key):
        Classes: -1 = uncertain/not applicable, 0 = noun, 1 = verb, 2 = adjective, 3 = adverb
     
     3. Inflection: Determine the inflection class of the word.
-       For nouns: -1 = uncertain/not applicable, 0 = thematic in -o, 1 = thematic in -a, 2 = athematic
-       For adjectives: -1 = uncertain/not applicable, 0 = thematic, 1 = athematic
+       For nouns AND adjectives: -1 = uncertain/not applicable, 0 = thematic in -o, 1 = thematic in -a, 2 = athematic
        For verbs and adverbs: -1 (not applicable)
-
+       Note: For adjectives, use the same inflection classes as nouns based on their endings.
+    
+    Note on Participles: When analyzing participles (verbal adjectives), always classify them as ADJECTIVES (part_of_speech = 2), not as verbs. For participles, determine their inflection class using the same criteria as for nouns and adjectives (0 = thematic in -o, 1 = thematic in -a, 2 = athematic).
     TAKE INTO ACCOUNT THE FOLLOWING: The provided declension table contains trailing suffixes, but being Linear B a syllabic language, they can be preceeded by an arbitrary consonant and be insterted in a syllable.
 
     """
     
     # Create declension table section
     nouns_section = ET.SubElement(prompt, "nouns")
-    decl_table = ET.SubElement(nouns_section, "declension_table")
+    decl_table = ET.SubElement(nouns_section, "declension_table").text = '''
+    This is the an exaustive table with Mycenean linear b declensions suffixes attested in the documents.
+    You MUST use this table to correctly classify the inflection of the world. It is based on ancient greek decletions: the first two coluns correspond to Ancient greek's second decletion, the second two columns correspond to the first decletions, while the last two correspond to the third decletion in ancient greek.
+    The same suffixes are also used for the adjectives of the first class (the first four columns), and for those of the second class (the last two columns).
+    | Number | Case       | Fless. Tem. (M.) | Fless. Tem. (N.) | Fless. in -a (M.) | Fless. in -a (F.) | Fless. atem. (M./F.)  | Fless. atem. (N.) (?)              | 
+    | ------ | ---------- | -----------      | -----------      | ----------------- | ----------------- | --------------        | --------------                     |
+    | Sing.  | Nominative | -o               | -o               | -a                | -a                | variable              | variable                           |
+    |        | Genitive   | -ojo             | -ojo             | -ao               | -a                | -o                    | -o                                 |
+    |        | Dative     | -o               | -o               | -a                | -a                | -e/-i                 | -e/-i                              |
+    |        | Accusative | -o               | -o               | -a                | -a                | -a                    | variable (identical to nominative) |
+    | Plural | Nominative | -o/-oi           | -a               | -a                | -a                | -e                    | -a                                 |
+    |        | Genitive   | -o               | -o               | -ao               | -ao               | -o                    | -o                                 |
+    |        | Dative     | -oi              | -oi              | -ai               | -ai               | -si/-ti               | -si/-ti                            |
+    |        | Accusative | -o               | -a               | -a                | -a                | -a/-e                 | -a                                 |
+    
+    PAY ATTENTION TO ATHEMATIC'S GENITIVE -o SUFFIX AND NOMINATIVE (FOR NEUTER WORDS) AND ACCUSATIVE -a SUFFIX: THEY ARE VERY SIMILAR TO THEMATIC TERMS' SUFFIXES AND YOU NEED TO LEVERAGE THE PROVIDED ANCIENT GREEK COGNATES TO BREAK TIES.
 
+    '''
+
+    # old table commented out
+    '''
     # Declension table data
     rows = [
         ("Singular", "Nominative", "-o", "-o", "-a", "-a", "variable", "variable"),
@@ -120,6 +144,7 @@ def make_prompt(info_dict, api_key):
         ET.SubElement(row, "thematic_a_feminine").text = a_f
         ET.SubElement(row, "athematic_masculine_feminine").text = athem
         ET.SubElement(row, "athematic_neuter").text = athem
+    '''
 
     verbs_section = ET.SubElement(prompt, "verbs")
     rules = {
@@ -219,7 +244,7 @@ def make_prompt(info_dict, api_key):
     
     Example 4:
     Word: pa-i-to
-    Cognates: Φαιστός (Phaistos)
+    Cognates: Φαιστος (Phaistos)
     Lexicon: Phaistos - name of a Minoan palace/city
     Expected output:
     [
@@ -234,22 +259,22 @@ def make_prompt(info_dict, api_key):
     
     Example 5:
     Word: e-ko-me-na
-    Cognates: ἐχόμενα (being held)
+    Cognates: εχομενα (being held)
     Lexicon: ekhomena - being held, possessed
     Expected output:
     [
         {
             "word_type": 5,
             "part_of_speech": 2,
-            "inflection": -1,
+            "inflection": 1,
             "confidence": 0.85,
-            "reasoning": "This is a thematic adjective 'ekhomena' (being held), indicated by the -me-na ending typical of passive participles."
+            "reasoning": "This is a participle 'ekhomena' (being held), which is classified as an adjective with the -me-na ending typical of passive participles. The ending indicates thematic in -a inflection."
         }
     ]
     
     Example 6:
     Word: e-re-u-te-ro
-    Cognates: ἐλεύθερος (free)
+    Cognates: ελευθερος (free)
     Lexicon: eleutheros - free, unencumbered
     Expected output:
     [
@@ -264,7 +289,7 @@ def make_prompt(info_dict, api_key):
     
     Example 7:
     Word: do-e-ro
-    Cognates: δοῦλος (slave)
+    Cognates: δουλος (slave)
     Lexicon: doelos - slave, servant
     Expected output:
     [
@@ -279,7 +304,7 @@ def make_prompt(info_dict, api_key):
     
     Example 8:
     Word: a-ke-re-u
-    Cognates: ἀγρεύς (hunter)
+    Cognates: αγρευς (hunter)
     Lexicon: agreus - hunter, collector
     Expected output:
     [
@@ -294,7 +319,7 @@ def make_prompt(info_dict, api_key):
     
     Example 9:
     Word: ka-ke-u
-    Cognates: χαλκεύς (bronze-smith)
+    Cognates: χαλκευς (bronze-smith)
     Lexicon: khalkeus - bronze-smith, metalworker
     Expected output:
     [
@@ -309,7 +334,7 @@ def make_prompt(info_dict, api_key):
     
     Example 10:
     Word: di-we
-    Cognates: Διός/Ζεύς (Zeus, dative case)
+    Cognates: Διος/Ζευς (Zeus, dative case)
     Lexicon: dative form of Zeus
     Expected output:
     [
@@ -324,7 +349,7 @@ def make_prompt(info_dict, api_key):
     
     Example 11:
     Word: a-ka-so-ne 
-    Cognates: axones (axles)
+    Cognates: αξονες (axles)
     Lexicon: axones - axles (wheels)
     Expected output:
     [
@@ -339,7 +364,7 @@ def make_prompt(info_dict, api_key):
     
     Example 12:
     Word: e-ko-si
-    Cognates: ἔχουσι (they have)
+    Cognates: εχουσι (they have)
     Lexicon: ekhousi - they have/hold
     Expected output:
     [
@@ -351,8 +376,21 @@ def make_prompt(info_dict, api_key):
             "reasoning": "This is a verb form 'ekhousi' (they have), recognizable as 3rd person plural by the -si ending."
         }
     ]"""
-    
+    check = ET.SubElement(prompt, "check").text = """
+    AFTER MAKING YOUR DECISION, PERFORM THE FOLLOWING CONSISTENCY CHECKS:
+    1. If you classified a word as a verb or adverb (part_of_speech = 1 or 3), confirm that inflection = -1
+    2. If you identified a participle, verify that you classified it as an adjective (part_of_speech = 2)
+    3. Ensure your word_type classification is consistent with the meaning of the word
+    4. Confirm that the inflection class matches the actual ending pattern of the word
+    5. Check that your reasoning fully explains and supports all classification decisions
+    6. Verify that there are no contradictions between your classifications and your reasoning
+    7. Check that the inflection is compatible with the ones of the greek cognates
+    8. REMEMBER THE FOLLOWING, WHICH IS A CRITICAL PROBLEM: PAY ATTENTION TO ATHEMATIC'S GENITIVE -o SUFFIX AND NOMINATIVE (FOR NEUTER WORDS) AND ACCUSATIVE -a SUFFIX: THEY ARE VERY SIMILAR TO THEMATIC TERMS' SUFFIXES AND YOU NEED TO LEVERAGE THE PROVIDED ANCIENT GREEK COGNATES TO BREAK TIES. FOR ANY MISTAKE OF THIS KIND AN INNOCENT KID WILL DIE.
+
+    REVISE ANY INCONSISTENCIES BEFORE SUBMITTING YOUR FINAL ANSWER.
+    """
     prompt_str = ET.tostring(prompt, "utf-8").decode()
+    
     #print(prompt_str)
     #exit()
     

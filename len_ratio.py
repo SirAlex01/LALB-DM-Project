@@ -11,7 +11,7 @@ def compute_avg_ratio_from_tsv(file_path):
         if not line or '\t' not in line:
             continue
 
-        latin, _, greek, _ = line.split('\t')
+        latin, greek = line.split('\t')
         linb_len = latin.count('-') + 1
 
         greek_variants = greek.split('|')
@@ -28,5 +28,5 @@ def compute_avg_ratio_from_tsv(file_path):
     print(f"Average Ratio: {total_ratio / count:.4f}" if count else "No valid entries found.")
 
 # Example usage
-compute_avg_ratio_from_tsv("cognates.cog")
+compute_avg_ratio_from_tsv("cognates_final.cog")
 

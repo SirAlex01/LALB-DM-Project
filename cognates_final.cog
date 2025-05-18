@@ -16,7 +16,7 @@ a-e-ri-qo-ta	αελιποτας
 a-e-ti-to	αεθιστος|εθιζω
 a-i-ke-u	αιγευς
 a-i-ki-pa-ta	αιγιπατας
-a-i-qe-u	αιγνυμι
+a-i-qe-u	αιγευς
 a-i-qe-we	αιγευς
 a-i-qe-wo	αιγευς
 a-ja-me-na	αιασμενα|αιασμενος
@@ -91,7 +91,7 @@ a-mo-ta-jo	αρμοτεων|αρμοτεωνανδε
 a-mo-te	αρμοτε
 a-mo-te-jo-na-de	αρμοτεωνανδε
 a-mo-te-re	αρμοστηρ|αρμοστηρες
-a-mo-te-wi-ja	αρμοθηfια|αρμοθηfia
+a-mo-te-wi-ja	αρμοθηfια
 a-mu-ta-wo	αμυνθαfων
 a-na-i-ta	αναιτα|αναιτον
 a-na-mo-ta	αναρμοστα|αναρμοστον
@@ -299,7 +299,7 @@ da-ta-ja-ro	δαταιαρος
 da-to-ro	δαιτορα|δαιτρος
 da-u-da-ro	δαιδαλος
 da-we-u-pi	δαfευφι|δαfος|δαfων
-da-wi-ja	δαfια|δαfιος|δαfia
+da-wi-ja	δαfια|δαfιος
 da-wi-jo	δαfιος
 da-wo	δαfος|δαfων
 de	δε
@@ -353,12 +353,12 @@ di-u-ja-wo	διυαfων
 di-u-jo	διfιος|διυος
 di-we	διfει|διfι|ζευς
 di-we-so	διfη
-di-wi-ja	διfia
+di-wi-ja	διfια
 di-wi-ja-jo-de	διfιαιονδε
 di-wi-ja-me-ro	δfιαμερον|διημερον|δfιημερον
 di-wi-ja-ta	διfιαται
 di-wi-ja-wo	διfιαfιον
-di-wi-je-ja	διfia
+di-wi-je-ja	διfια
 di-wi-je-u	διfιευς
 di-wi-je-we	διfιευς
 di-wi-jo	διfιον|διfιος
@@ -527,15 +527,15 @@ e-re-wi-jo-po-ti-ni-ja	ερεfιονποτνια
 e-ri-ka	ελικα|ελικας|ελικη
 e-ri-ka-we-e	ελικας|ελικη
 e-ri-ke-re-we	ερικλεfεις|ερικλευς
-e-ri-ko-wo	ερικορfος|ερικοrfος
+e-ri-ko-wo	ερικορfος
 e-ri-ma-si-jo	ερμαιος
 e-ri-nu	ερινυς
 e-ri-nu-we	ερινυς
 e-ri-ta	εριθα
 e-ro-ma-to	ελομανθος|ερυμανθος
 e-ro-pa-ke-ja	ελλοφαγεια
-e-ro-pa-ke-ta	ελλοφαγετας|ελλοφαγέτας
-e-ro-pa-ke-u	ελλοφαγευς|ελλοφαγεύς
+e-ro-pa-ke-ta	ελλοφαγετας
+e-ro-pa-ke-u	ελλοφαγευς
 e-ru-mi-ni-ja	ελυμνιαι
 e-ru-ta-ra	ερυθρα|ερυθρας
 e-ru-ta-ra-pi	ερυθρα
@@ -709,7 +709,7 @@ ka-ra-te-ra	κρατηρ|κρατερω
 ka-ra-u-ko	γλαυκος
 ka-ra-u-ro	καλαυρος
 ka-ra-we	γραυς|γραιες|γραfες
-ka-ra-wi-po-ro	κλαδfιφορος|κλειδοφορος|κλαfιφορος|κλαδFιφορος
+ka-ra-wi-po-ro	κλαδfιφορος|κλειδοφορος|κλαfιφορος
 ka-ri-se-u	χαρισευς
 ka-ri-si-jo	χαρισιος
 ka-ro-qo	χαροψ
@@ -735,7 +735,7 @@ ka-tu-re-wi-ja	κανθυληfιαι|κανθηλfιαι
 ka-tu-re-wi-ja-i	κανθυληfιαι
 ka-tu-ryo	φορτος|κανθηλfων
 ka-u-no	χαυνος
-ka-zo-e	καζοες|κακyοες|κακιονες
+ka-zo-e	καζοες|κακιονες
 ke-do-jo	κεδνος
 ke-e	κειακρανα|κειει
 ke-i-ja-ka-ra-na	κειακρανα
@@ -863,7 +863,7 @@ ko-ru-we-ja	κορυfεια|κουρηια
 ko-so-u-to	ξουθος
 ko-te-u	κοτευσ
 ko-to-i-na	κτοινα|κτοιναων|κτημα
-ko-to-na	χθονα|χθων|κτοίνα|κτημα
+ko-to-na	χθονα|χθων|κτοινα|κτημα
 ko-to-na-o	κτηματων
 ko-to-no	χθονος|χθονι|χθων
 ko-to-no-ko	κτημεχων
@@ -925,7 +925,7 @@ ku-te-rai	κυθηρα|κυθερεαι|κυθερεα
 ku-te-re-u	κυθηρευς
 ku-te-re-u-pi	κυθερευφι|κυθηρα
 ku-te-ro	κυθηρος
-ku-te-se-ja	κυτεσειa
+ku-te-se-ja	κυτεσεια
 ku-te-se-jo	κυτεσειοις|κυτεσειος|κυτισος
 ku-te-so	κυτισος
 ku-tu-qa-no	κτυγιανωρ
@@ -1055,7 +1055,6 @@ ne-ti-ja-no-re	νεστιανωρ
 ne-wa	νεfα|νεα
 ne-we-wi-ja	νεfηfιος
 ne-wo	νεfος|νεος
-ne-wo 	νεfος|νεος
 no-pe-re	νωφελεα
 no-pe-re-e	ανωφελης|ανωφελες|νωφελεα
 no-pe-re-ha	ανωφελεα|νωφελεα
@@ -1072,7 +1071,7 @@ o-de-qa-ha	οδεταhα
 o-di-do-si	διδωσι
 o-do-ke	εδωκε
 o-du-ru-we	οδρυfει|οδρυς
-o-du-ru-wi-ja	οδρυfια||οδρυfia
+o-du-ru-wi-ja	οδρυfια
 o-du-ru-wi-jo	οδρυfιος
 o-du-ru-wo	οδρυς
 o-ha	οhα
@@ -1389,7 +1388,7 @@ pte-re-wa	πτελεfα|πτελεα|πτελεfας
 pu	πυρ
 pu-ka-ta-ri-ja	πτυκταρια|πυκταρια|πυκναρια
 pu-ka-wo	πυρκαευς
-pu-ke-se-ro	πυγεσερος|πυξελος|πύξελος
+pu-ke-se-ro	πυγεσερος|πυξελος
 pu-ko-so	πυξος
 pu-ko-to	φυκτος
 pu-ko-wo	πυρκορος
@@ -1489,7 +1488,6 @@ ra-wa-ke-si-ja-jo	λαfαγεσιαιον|λαfαγεσιαιος
 ra-wa-ke-si-jo	λαfαγεσιος
 ra-wa-ke-si-jo-jo	λαfαγεσιαιος
 ra-wa-ke-ta	λαfαγετας|λαγετας
-ra-wa-ra-*66	
 ra-wa-ra-ta	λαfρανθαι|λαfρανθα
 ra-wa-ra-ti-jo	λαfρανθιος
 ra-wa-ra-tya	λαfρανθια
@@ -1498,7 +1496,7 @@ ra-wo	λαfος|λαος
 ra-wo-do-ko	λαfοδοκος
 ra-wo-po-no	λαfοπονος
 ra-wo-po-qo	λαfορβος
-ra-wo-qo-no	λαƒοχwονος
+ra-wo-qo-no	λαfοχωονος
 ra-wo-qo-ta	λαfοχωντας
 re-a	ρις
 re-ka	λεσχης
@@ -1668,14 +1666,14 @@ te-qa-de	θηβαι|θηβανδε
 te-qa-ja	θηβαια
 te-ra-po-ti	θεραποντις
 te-re-ja	τηρεια
-te-re-ta	τηρητής|τελεσται|τελεστας|τελεσταων
+te-re-ta	τηρητης|τελεσται|τελεστας|τελεσταων
 te-re-ta-o	τελεσταων|τελεστας
 te-ru-ro	τελουρος
 te-se-u	θησευς
 te-te-re-u	τερθρευς|μαντις
 te-tu-ko-wo-a	τετευχως
 te-tu-ko-wo-ha	τετευχως
-te-tu-ku-wo-a	τετευχυfοα|τετευχώς|τετυχυfοα
+te-tu-ku-wo-a	τετευχυfοα|τετευχως|τετυχυfοα
 te-tu-ku-wo-ha	τετυχυfοhα
 te-tu-ru-we	τεθρυfες
 te-u-ke-pi	τευχεα|τευχεσφι|τευχος
@@ -1724,7 +1722,7 @@ to-pe-za	τραπεζα
 to-pe-zo	τραπεζω|τραπεζοω|τραπεζα
 to-qi-de	τροπιδει|τροπις
 to-qi-de-ja	τροπιδεια
-to-qi-de-jo	τροπιδειος |τροπιδειος
+to-qi-de-jo	τροπιδειος|τροπιδειος
 to-qi-de-we-sa	τροπιδfεσσα
 to-ra	θωραξ
 to-ra-ka	θωραξ
@@ -1751,7 +1749,7 @@ tu-ka-te	θυγατηρ
 tu-ka-te-qe	θυγατηρ
 tu-ka-te-re	θυγατρες|θυγατερες
 tu-ke-ne-u	τυχενευς
-tu-ma-i-ta	θυμαιτας|θυμαίτη
+tu-ma-i-ta	θυμαιτας|θυμαιτη
 tu-mi	θυμος
 tu-ni-ja	θυνια
 tu-ni-jo	θυνιος
@@ -1883,7 +1881,7 @@ wo-no-qo-so	fοινωψ
 wo-no-wa-ti-si	fοινοfατις
 wo-qe-we	fοκεfει|fοκευς
 wo-ra-we-sa	fοραfεσσα
-wo-ro-ki-jo-ne-jo	fρωγιονειον|fοργιονειος|Fοργιονες
+wo-ro-ki-jo-ne-jo	fρωγιονειον|fοργιονειος|fοργιονες
 wo-ro-ne-ja	fαρνεια|αρνεια
 wo-we-u	fορfευς
 wo-wi-ja	fορfια
