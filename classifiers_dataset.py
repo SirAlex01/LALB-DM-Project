@@ -6,7 +6,7 @@ import tqdm
 import time
 import os
 from dotenv import load_dotenv
-
+import re
 
 cognates_dataset = {}
 with open('cognates_final.cog', 'r', encoding='utf-8') as tsvfile:
@@ -21,20 +21,28 @@ with open('Linear B Lexicon.csv', 'r', encoding='utf-8') as csvfile:
     next(reader)  # Skip header
     for row in reader:
         if row:  # Skip empty lines
-            if row[1] in cognates_dataset:
-                cognates_dataset[row[1]]["lexicon_chadwick_ventris"] = row[2]
+            word = row[1].strip().lower().replace('"', '').replace("'", '').replace("to2", "tyo").replace("ro2", "ryo").replace("si2", "*64").replace("sa2", "*82").replace("ra3", "rai").replace("ra2", "rya").replace("pu2", "phu").replace("ta2","tya").replace("a3", "ai").replace("a2", "ha")
+            if not (re.fullmatch(r"^(?:[a-z]+|\*\d{2})(?:-(?:[a-z]+|\*\d{2}))*$", word) is not None):
+                print(f"Carattere non valido in {word}, it will not be included")
             else:
-                cognates_dataset[row[1]] = {"lexicon_chadwick_ventris": row[2]}
+                if word in cognates_dataset:
+                    cognates_dataset[word]["lexicon_chadwick_ventris"] = row[2]
+                else:
+                    cognates_dataset[word] = {"lexicon_chadwick_ventris": row[2]}
 
 with open('./additional_lexicon/gemini_output.csv', 'r', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile)
     next(reader)
     for row in reader:
         if row:
-            if "lexicon_tselentis" not in cognates_dataset[row[0]]:
-                cognates_dataset[row[0]]["lexicon_tselentis"] = row[4]
+            word = row[0].strip().lower().replace("*66", "tya").replace("*71", "dwe")
+            if not (re.fullmatch(r"^(?:[a-z]+|\*\d{2})(?:-(?:[a-z]+|\*\d{2}))*$", word) is not None):
+                print(f"Carattere non valido in {word}, it will not be included")
             else:
-                cognates_dataset[row[0]]["lexicon_tselentis"] += "/" + row[4]
+                if "lexicon_tselentis" not in cognates_dataset[word]:
+                    cognates_dataset[word]["lexicon_tselentis"] = row[4]
+                else:
+                    cognates_dataset[word]["lexicon_tselentis"] += "/" + row[4]
 
 def make_prompt(info_dict, api_key):
     print(info_dict)
