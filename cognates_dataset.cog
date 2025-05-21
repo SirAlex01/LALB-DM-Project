@@ -407,7 +407,7 @@ e-qa-ro	εμβαρος
 e-qe-si-ja	επεεσσι
 e-qe-si-jo	επεσια|επεσιος
 e-qe-ta	επετας
-e-ra	ερα|ερα
+e-ra	ερα
 e-ra-ja	εραια
 e-ra-jo	εραιος
 e-ra-pe-ja	ελαφεια
@@ -568,7 +568,7 @@ ka-e-se-u	καεσευς
 ka-i-jo	καιριω
 ka-ka	κακοω
 ka-ke-ja-pi	χαλκεα
-ka-ke-u	χαλκευς|χαλκευσι|χαλκηfες|χαλκευς
+ka-ke-u	χαλκευς|χαλκευσι|χαλκηfες
 ka-ke-u-si	χαλκευς
 ka-ke-we	χαλκεfες
 ka-ki-ja	χαλκια|χαλκιος
@@ -625,7 +625,7 @@ ka-tu-re-wi-ja	κανθυληfιαι
 ka-tu-re-wi-ja-i	κανθυληfιαι
 ka-tu-ryo	φορτος
 ka-u-no	χαυνος
-ka-zo-e	καζοες|κακyοες|κακιονες
+ka-zo-e	καζοες|κακιονες
 ke-do-jo	κεδνος
 ke-e	κειακρανα|κειει
 ke-i-jo	κειος
@@ -642,7 +642,7 @@ ke-ra-e	κεραιε
 ke-ra-e-we	κεραεfεις|κεραευς
 ke-ra-ja-pi	κεραια
 ke-ra-me-ja	κεραμεια
-ke-ra-me-u	κεραμευς|κεραμευς
+ke-ra-me-u	κεραμευς
 ke-ra-me-we	κεραμευς
 ke-ra-me-wo	κεραμευς
 ke-ra-no	κελαινος
@@ -736,7 +736,7 @@ ko-ru-we-ja	κορυfεια|κουρηια
 ko-so-u-to	ξουθος
 ko-te-u	κοτευσ
 ko-to-i-na	κτοινα|κτοιναων
-ko-to-na	χθονα|χθων|κτοίνα
+ko-to-na	χθονα|χθων|κτοινα
 ko-to-no	χθονος|χθονι|χθων
 ko-to-no-o-ko	κτοινοοχοι|χθονοικος
 ko-to-no-o-ko-de	κτοινοικος|χθονοικος
@@ -791,7 +791,7 @@ ku-te-rai	κυθηρα
 ku-te-re-u	κυθηρευς
 ku-te-re-u-pi	κυθερευφι|κυθηρα
 ku-te-ro	κυθηρος
-ku-te-se-ja	κυτεσειa
+ku-te-se-ja	κυτεσεια
 ku-te-se-jo	κυτεσειοις|κυτεσειος|κυτισος
 ku-te-so	κυτισος
 ku-tu-qa-no	κτυγιανωρ
@@ -909,7 +909,7 @@ ne-ti-ja-no	νηστιανος
 ne-ti-ja-no-re	νεστιανωρ
 ne-wa	νεfα|νεα
 ne-we-wi-ja	νεfηfιος
-ne-wo 	νεfος|νεος
+ne-wo	νεfος|νεος
 no-pe-re-e	ανωφελης|ανωφελες
 no-pe-re-ha	ανωφελεα
 nu-ka	νυξ
@@ -920,7 +920,7 @@ o-da-twe-ta	οδους
 o-di-do-si	διδωσι
 o-do-ke	εδωκε
 o-du-ru-we	οδρυfει|οδρυς
-o-du-ru-wi-ja	οδρυfια|
+o-du-ru-wi-ja	οδρυfια
 o-du-ru-wi-jo	οδρυfιος
 o-ka	αρχη|ορχα
 o-ka-ra	οιχαλαι
@@ -1278,8 +1278,8 @@ ra-wo	λαfος|λαος
 ra-wo-do-ko	λαfοδοκος
 ra-wo-po-no	λαfοπονος
 ra-wo-po-qo	λαfορβος
-ra-wo-qo-no	λαƒοχwονος
-ra-wo-qo-ta	λαfοχωντας
+ra-wo-qo-no	λαfοφονος
+ra-wo-qo-ta	λαfοφοντης
 re-a	ρις
 re-ka	λεσχης
 re-ka-ta-ne	λεκτρον
@@ -1430,13 +1430,13 @@ te-qa-de	θηβαι|θηβανδε
 te-qa-ja	θηβαια
 te-ra-po-ti	θεραποντις
 te-re-ja	τηρεια
-te-re-ta	τηρητής|τελεσται|τελεστας|τελεσταων
+te-re-ta	τηρητης|τελεσται|τελεστας|τελεσταων
 te-ru-ro	τελουρος
 te-se-u	θησευς
 te-te-re-u	τερθρευς|μαντις
 te-tu-ko-wo-a	τετευχως
 te-tu-ko-wo-ha	τετευχως
-te-tu-ku-wo-a	τετευχυfοα|τετευχώς
+te-tu-ku-wo-a	τετευχυfοα|τετευχως
 te-tu-ru-we	τεθρυfες
 te-u-ke-pi	τευχεα|τευχεσφι|τευχος
 te-u-ta-ra-ko-ro	τευταρακος
@@ -1508,7 +1508,7 @@ tu-ka-te	θυγατηρ
 tu-ka-te-qe	θυγατηρ
 tu-ka-te-re	θυγατρες
 tu-ke-ne-u	τυχενευς
-tu-ma-i-ta	θυμαιτας|θυμαίτη
+tu-ma-i-ta	θυμαιτας|θυμαιτη
 tu-mi	θυμος
 tu-ni-ja	θυνια
 tu-ni-jo	θυνιος
@@ -1555,7 +1555,7 @@ wa-do-me-no	αδουμενος
 wa-na-ka	fανακτος|fαναξ
 wa-na-ka-te	fανακτει
 wa-na-ka-te-ra	fανακτορα|fανακτορια
-wa-na-ka-te-ro	fανακτορον||fανακτοριος
+wa-na-ka-te-ro	fανακτορον|fανακτοριος
 wa-na-ke-te	fαναξ
 wa-na-sa	fανασσα
 wa-na-se-wi-ja	fανασεfια
