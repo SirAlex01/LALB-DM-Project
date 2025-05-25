@@ -85,6 +85,7 @@ def make_prompt(info_dict, api_key):
         ts_lexicon.text = info_dict["lexicon_tselentis"]
     
     # Create classification tasks section
+    # After correction: THE FIRST 3 word_type FIELDS WERE AGGREGATED, THE REMAINING ONES SCALED BY 2
     classification_tasks = ET.SubElement(prompt, "classification_tasks")
     classification_tasks.text = """
     CRITICAL: provide an answer IF AND ONLY IF YOU ARE COMPLETELY SURE DUE TO CERTAIN EVIDENCE! TAKE INTO ACCOUNT THE GIVEN DECLETION TABLES FOR ADJECTIVES AND NOUNS INFLECTIONS!

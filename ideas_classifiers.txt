@@ -1,4 +1,5 @@
 1. common, anthroponym, toponym, ethnonym, theonym… (multi-class classifier)
+EDIT: After correction: THE FIRST 3 word_type FIELDS WERE AGGREGATED, THE REMAINING ONES SCALED BY 2
 2. masculine vs feminine vs neuter NO
 3. singular vs plural vs dual NO
 4. verb vs noun vs adjective (vs adverb???) (doable ?)
