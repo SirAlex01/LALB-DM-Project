@@ -8,8 +8,8 @@ with open("cognates_final.cog", "r", encoding="utf-8") as f_final:
         final_greek[row["transliterated_linear_b"]] = row["greek"]
 
 # Campi completi e ridotti
-full_fieldnames = ["transliterated linear b", "greek", "our_matching", "valid", "likelihood", "sequence_id"]
-short_fieldnames = ["transliterated linear b", "greek"]
+full_fieldnames = ["transliterated_linear_b", "greek", "our_matching", "valid", "likelihood", "sequence_id"]
+short_fieldnames = ["transliterated_linear_b", "greek"]
 
 # Apri i file di output
 with open("cognates.cog", "r", encoding="utf-8") as f_input, \
@@ -38,7 +38,7 @@ with open("cognates.cog", "r", encoding="utf-8") as f_input, \
             likelihood = row["likelihood"]
 
         full_row = {
-            "transliterated linear b": translit,
+            "transliterated_linear_b": translit,
             "greek": greek_value,
             "our_matching": new_matching,
             "valid": valid,
@@ -47,7 +47,7 @@ with open("cognates.cog", "r", encoding="utf-8") as f_input, \
         }
 
         short_row = {
-            "transliterated linear b": translit,
+            "transliterated_linear_b": translit,
             "greek": greek_value
         }
 
