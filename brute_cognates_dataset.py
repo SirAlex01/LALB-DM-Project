@@ -419,9 +419,9 @@ if not os.path.exists(matching_file):
 
     # Sort cognates by likelihood score
     for k in matching.keys():
-        if len(matching[k]["cognates"]) > MAX_LEN:
-            matching[k]["cognates"] = random.sample(matching[k]["cognates"], MAX_LEN)
         matching[k]["cognates"] = sorted(matching[k]["cognates"], key=lambda x: x[1], reverse=True)
+        if len(matching[k]["cognates"]) > MAX_LEN:
+            matching[k]["cognates"] = matching[k]["cognates"][:MAX_LEN]
 
     # Save to file
     with open(matching_file, "wb") as f:
@@ -453,11 +453,11 @@ with open("Linear B Lexicon.csv", newline='', encoding='utf-8') as csvfile:
                     matching[transcription]["type"] = "proper"
                     break
 
-with open("converted_linear_b-greek.cog", newline='', encoding='utf-8') as csvfile:
+with open("cognates_final.cog", newline='', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile, delimiter="\t")
     
     for row in reader:
-        word = row["converted_linear_b"]
+        word = row["transliterated_linear_b"]
         #assert word in matching.keys()
         if word in matching:
             matching[word]["cognates"] = [(r, 1.0) for r in row["greek"].split("|")]
@@ -799,8 +799,7 @@ def make_prompt(word, info_dict, api_key):
     - Would experts in Mycenaean Greek agree with this analysis?"""
     # Generate XML string
     prompt = ET.tostring(prompt, "utf-8").decode()
-    #print(prompt)
-
+    #print(prompt); exit()
     # Using Gemini model to generate response
     genai.configure(api_key=api_key)
     gemini_model = genai.GenerativeModel('models/gemini-2.0-flash')
