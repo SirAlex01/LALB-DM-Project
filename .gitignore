@@ -2,3 +2,10 @@
 *.png
 *.env
 *.pkl
+*.zip
+# Ignore everything in luo_metrics_extractor
+luo_metrics_extractor/*
+
+# Unignore the specific files
+!luo_metrics_extractor/autorun.py
+!luo_metrics_extractor/metrics_from_logs.py

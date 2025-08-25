@@ -11,16 +11,17 @@ import json
 from collections import OrderedDict
 
 # recall proper names types: anthroponym, ethnonym, phytonym, toponym, patronymic, theonym
+SUFFIX = "_top_10"
 
 
 # Load environment variables from .env file
 load_dotenv()
 
 # Retrieve the API key
-
-api_keys = [os.getenv("GOOGLE_API_KEY_1"), os.getenv("GOOGLE_API_KEY_2"), os.getenv("GOOGLE_API_KEY_3"), os.getenv("GOOGLE_API_KEY_4"), os.getenv("GOOGLE_API_KEY_5")
-            , os.getenv("GOOGLE_API_KEY_6"), os.getenv("GOOGLE_API_KEY_7"), os.getenv("GOOGLE_API_KEY_8"), os.getenv("GOOGLE_API_KEY_9")]
-#api_keys = [os.getenv("GOOGLE_API_KEY_10"), os.getenv("GOOGLE_API_KEY_11"), os.getenv("GOOGLE_API_KEY_12"), os.getenv("GOOGLE_API_KEY_13")]
+NUM_KEYS = 13
+api_keys = []
+for i in range(1, NUM_KEYS + 1):
+    api_keys.append(os.getenv(f"GOOGLE_API_KEY_{i}"))
 
 
 
@@ -407,11 +408,13 @@ def match(lin_b_words, greek_words):
                 
     return lin_b_words
 # File where the matching dictionary is saved
-matching_file = "matching.pkl"
+matching_file = f"matching{SUFFIX}.pkl"
+seq_lists_file = f"./linb_words{SUFFIX}.tsv"
+
 MAX_LEN = 10
 if not os.path.exists(matching_file):
     # Collect words and compute matching
-    lin_b_words = collect_lin_b_words("linb_words.tsv")
+    lin_b_words = collect_lin_b_words(seq_lists_file)
     greek_words = collect_greek_words("latinized_homeric_greek_words.tsv")
     
     matching = match(lin_b_words, greek_words)
@@ -810,8 +813,7 @@ def make_prompt(word, info_dict, api_key):
     return json.loads(pred)  # This will return a list of dictionaries
 
 # Open the file in write mode ('w') first, to clear it before writing new data
-
-out = "cognates.cog"
+out = f"cognates{SUFFIX}.cog"
 
 # Check if file exists
 file_exists = os.path.exists(out)
@@ -832,7 +834,6 @@ else:
 prec_idx = 0
 
 #Get sequences lists ids of words (where they appear)
-seq_lists_file = "./linb_words.tsv"
 words2seqlist = {}
 with open(seq_lists_file, "r", encoding="utf-8") as lin_b_words_file:
     line = lin_b_words_file.readline().strip().split("\t")
@@ -892,7 +893,7 @@ for i, word in tqdm(enumerate(sorted(matching.keys())[start_index:], start=start
     with open(out, "a", encoding="utf-8") as f_append:
         f_append.write(f"{word}\t{to_insert}\t{gemini_cogs}\t{int(matching[word]['valid'])}\t{gemini_likelihoods}\t{seq_list}\n")
     
-    with open("gemini_output.jsonl", "a", encoding="utf-8") as f_jsonl:
+    with open(f"gemini_output{SUFFIX}.jsonl", "a", encoding="utf-8") as f_jsonl:
         json_line = json.dumps({word: {"valid": matching[word]['valid'], "output": gemini_cognates}}, ensure_ascii=False)
         f_jsonl.write(json_line + "\n")
 
