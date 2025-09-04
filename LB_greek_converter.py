@@ -20,17 +20,16 @@ import csv
 def convert_file(file):
     with open(file, "r", encoding="utf-8") as csvfile:
         csvfile.readline()  # Skip header
-        with open("converted_"+file, "w", encoding="utf-8", newline='') as csvfile2:
+        with open("transliterated_"+file[:-4]+"_original.cog", "w", encoding="utf-8", newline='') as csvfile2:
             reader = csv.reader(csvfile, delimiter="\t")
-            writer = csv.writer(csvfile2)
-            writer.writerow(["LB", "Greek"])
+            writer = csv.writer(csvfile2, delimiter="\t")
+            writer.writerow(["transliterated_linear_b", "greek"])
             for row in reader:
                 myc = ""
                 for c in row[0]:
                     myc += linear_b_dict[c] + "-"
                 myc = myc[:-1]
-                if row[1] != "_":
-                    writer.writerow([myc, row[1]])
-
+                writer.writerow([myc, row[1]])
+                
 convert_file("linear_b-greek.cog")
 convert_file("linear_b-greek.names.cog")
