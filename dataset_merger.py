@@ -92,6 +92,27 @@ def merge_datasets(out_file, dict1, dict2, fields1, fields2, fields1_mapping=Non
                 return None
             
         elif key in dict2:
+            if field in {"likelihood", "greek"}:
+                val = dict2[key][fields2_mapping[field]]
+                likelihood_values = dict2[key][fields2_mapping["likelihood"]]
+                if "|" in likelihood_values:
+                    likelihood_values = likelihood_values.split("|")
+                    values = val.split("|")
+                    assert len(likelihood_values) == len(values), f"Mismatch in number of values for key {key}"
+                    ans = []
+                    for i, lv in enumerate(likelihood_values):
+                        try:
+                            lv = float(lv)
+                            if lv >= 0.7:
+                                ans.append(values[i])
+                            if len(ans) == 0:
+                                max_val = sorted(range(len(values)), key=lambda idx: float(likelihood_values[idx]), reverse=True)[0]
+                                ans.append(values[max_val])
+                        except ValueError:
+                            print(f"Warning: Non-numeric likelihood '{lv}' for key {key}")
+                    if field == "greek":
+                        print(key, values, likelihood_values, ans)
+                    return "|".join(ans)
             return dict2[key][fields2_mapping[field]]
         
         print(f"Warning: key {key} not found in either dictionary when processing field {field}")
